@@ -1,4 +1,4 @@
-# DataExchange\UK\20\TeachersApi
+# DataExchange\SIFUK20\TeachersApi
 
 All URIs are relative to *https://uk.staging.dataexchange.education/rest/sif/requests*
 
@@ -56,7 +56,7 @@ Method | HTTP request | Description
 
 
 # **createPersonDietaryPreferences**
-> \DataExchange\UK\20\Models\SifCreateResponse createPersonDietaryPreferences($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createPersonDietaryPreferences($body)
 
 Create multiple PersonDietaryPreferences
 
@@ -65,8 +65,8 @@ Create multiple PersonDietaryPreferences
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\PersonDietaryPreferences(); // \DataExchange\UK\20\Models\PersonDietaryPreferences | PersonDietaryPreferences to be created
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\PersonDietaryPreferences(); // \DataExchange\SIFUK20\Models\PersonDietaryPreferences | PersonDietaryPreferences to be created
 
 try {
     $result = $api_instance->createPersonDietaryPreferences($body);
@@ -81,11 +81,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\PersonDietaryPreferences**](../Model/\DataExchange\UK\20\Models\PersonDietaryPreferences.md)| PersonDietaryPreferences to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\PersonDietaryPreferences**](../Model/\DataExchange\SIFUK20\Models\PersonDietaryPreferences.md)| PersonDietaryPreferences to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -99,7 +99,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createTTSubjects**
-> \DataExchange\UK\20\Models\SifCreateResponse createTTSubjects($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createTTSubjects($body)
 
 Create multiple TTSubjects
 
@@ -108,8 +108,8 @@ Create multiple TTSubjects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\TTSubjects(); // \DataExchange\UK\20\Models\TTSubjects | TTSubjects to be created
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\TTSubjects(); // \DataExchange\SIFUK20\Models\TTSubjects | TTSubjects to be created
 
 try {
     $result = $api_instance->createTTSubjects($body);
@@ -124,11 +124,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTSubjects**](../Model/\DataExchange\UK\20\Models\TTSubjects.md)| TTSubjects to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\TTSubjects**](../Model/\DataExchange\SIFUK20\Models\TTSubjects.md)| TTSubjects to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -142,7 +142,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createTTTeachers**
-> \DataExchange\UK\20\Models\SifCreateResponse createTTTeachers($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createTTTeachers($body)
 
 Create multiple TTTeachers
 
@@ -151,8 +151,8 @@ Create multiple TTTeachers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\TTTeachers(); // \DataExchange\UK\20\Models\TTTeachers | TTTeachers to be created
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\TTTeachers(); // \DataExchange\SIFUK20\Models\TTTeachers | TTTeachers to be created
 
 try {
     $result = $api_instance->createTTTeachers($body);
@@ -167,11 +167,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTTeachers**](../Model/\DataExchange\UK\20\Models\TTTeachers.md)| TTTeachers to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\TTTeachers**](../Model/\DataExchange\SIFUK20\Models\TTTeachers.md)| TTTeachers to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createWorkforceAbsences**
-> \DataExchange\UK\20\Models\SifCreateResponse createWorkforceAbsences($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createWorkforceAbsences($body)
 
 Create multiple WorkforceAbsences
 
@@ -194,8 +194,8 @@ Create multiple WorkforceAbsences
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\WorkforceAbsences(); // \DataExchange\UK\20\Models\WorkforceAbsences | WorkforceAbsences to be created
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\WorkforceAbsences(); // \DataExchange\SIFUK20\Models\WorkforceAbsences | WorkforceAbsences to be created
 
 try {
     $result = $api_instance->createWorkforceAbsences($body);
@@ -210,11 +210,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\WorkforceAbsences**](../Model/\DataExchange\UK\20\Models\WorkforceAbsences.md)| WorkforceAbsences to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforceAbsences**](../Model/\DataExchange\SIFUK20\Models\WorkforceAbsences.md)| WorkforceAbsences to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -228,7 +228,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createWorkforceAssignments**
-> \DataExchange\UK\20\Models\SifCreateResponse createWorkforceAssignments($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createWorkforceAssignments($body)
 
 Create multiple WorkforceAssignments
 
@@ -237,8 +237,8 @@ Create multiple WorkforceAssignments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\WorkforceAssignments(); // \DataExchange\UK\20\Models\WorkforceAssignments | WorkforceAssignments to be created
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\WorkforceAssignments(); // \DataExchange\SIFUK20\Models\WorkforceAssignments | WorkforceAssignments to be created
 
 try {
     $result = $api_instance->createWorkforceAssignments($body);
@@ -253,11 +253,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\WorkforceAssignments**](../Model/\DataExchange\UK\20\Models\WorkforceAssignments.md)| WorkforceAssignments to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforceAssignments**](../Model/\DataExchange\SIFUK20\Models\WorkforceAssignments.md)| WorkforceAssignments to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createWorkforceContracts**
-> \DataExchange\UK\20\Models\SifCreateResponse createWorkforceContracts($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createWorkforceContracts($body)
 
 Create multiple WorkforceContracts
 
@@ -280,8 +280,8 @@ Create multiple WorkforceContracts
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\WorkforceContracts(); // \DataExchange\UK\20\Models\WorkforceContracts | WorkforceContracts to be created
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\WorkforceContracts(); // \DataExchange\SIFUK20\Models\WorkforceContracts | WorkforceContracts to be created
 
 try {
     $result = $api_instance->createWorkforceContracts($body);
@@ -296,11 +296,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\WorkforceContracts**](../Model/\DataExchange\UK\20\Models\WorkforceContracts.md)| WorkforceContracts to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforceContracts**](../Model/\DataExchange\SIFUK20\Models\WorkforceContracts.md)| WorkforceContracts to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -314,7 +314,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createWorkforcePersonals**
-> \DataExchange\UK\20\Models\SifCreateResponse createWorkforcePersonals($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createWorkforcePersonals($body)
 
 Create multiple WorkforcePersonals
 
@@ -323,8 +323,8 @@ Create multiple WorkforcePersonals
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\WorkforcePersonals(); // \DataExchange\UK\20\Models\WorkforcePersonals | WorkforcePersonals to be created
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\WorkforcePersonals(); // \DataExchange\SIFUK20\Models\WorkforcePersonals | WorkforcePersonals to be created
 
 try {
     $result = $api_instance->createWorkforcePersonals($body);
@@ -339,11 +339,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\WorkforcePersonals**](../Model/\DataExchange\UK\20\Models\WorkforcePersonals.md)| WorkforcePersonals to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforcePersonals**](../Model/\DataExchange\SIFUK20\Models\WorkforcePersonals.md)| WorkforcePersonals to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -357,7 +357,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deletePersonDietaryPreferenceByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deletePersonDietaryPreferenceByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deletePersonDietaryPreferenceByRefId($ref_id)
 
 Delete PersonDietaryPreference by RefId
 
@@ -366,7 +366,7 @@ Delete PersonDietaryPreference by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of PersonDietaryPreference
 
 try {
@@ -386,7 +386,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -400,7 +400,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deletePersonDietaryPreferences**
-> \DataExchange\UK\20\Models\SifDeleteResponse deletePersonDietaryPreferences($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deletePersonDietaryPreferences($body)
 
 Delete multiple PersonDietaryPreferences
 
@@ -409,8 +409,8 @@ Delete multiple PersonDietaryPreferences
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deletePersonDietaryPreferences($body);
@@ -425,11 +425,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -443,7 +443,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTSubjectByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTSubjectByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTSubjectByRefId($ref_id)
 
 Delete TTSubject by RefId
 
@@ -452,7 +452,7 @@ Delete TTSubject by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of TTSubject
 
 try {
@@ -472,7 +472,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -486,7 +486,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTSubjects**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTSubjects($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTSubjects($body)
 
 Delete multiple TTSubjects
 
@@ -495,8 +495,8 @@ Delete multiple TTSubjects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteTTSubjects($body);
@@ -511,11 +511,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -529,7 +529,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTTeacherByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTTeacherByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTTeacherByRefId($ref_id)
 
 Delete TTTeacher by RefId
 
@@ -538,7 +538,7 @@ Delete TTTeacher by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of TTTeacher
 
 try {
@@ -558,7 +558,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -572,7 +572,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTTeachers**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTTeachers($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTTeachers($body)
 
 Delete multiple TTTeachers
 
@@ -581,8 +581,8 @@ Delete multiple TTTeachers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteTTTeachers($body);
@@ -597,11 +597,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -615,7 +615,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteWorkforceAbsenceByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteWorkforceAbsenceByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteWorkforceAbsenceByRefId($ref_id)
 
 Delete WorkforceAbsence by RefId
 
@@ -624,7 +624,7 @@ Delete WorkforceAbsence by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforceAbsence
 
 try {
@@ -644,7 +644,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -658,7 +658,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteWorkforceAbsences**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteWorkforceAbsences($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteWorkforceAbsences($body)
 
 Delete multiple WorkforceAbsences
 
@@ -667,8 +667,8 @@ Delete multiple WorkforceAbsences
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteWorkforceAbsences($body);
@@ -683,11 +683,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -701,7 +701,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteWorkforceAssignmentByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteWorkforceAssignmentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteWorkforceAssignmentByRefId($ref_id)
 
 Delete WorkforceAssignment by RefId
 
@@ -710,7 +710,7 @@ Delete WorkforceAssignment by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforceAssignment
 
 try {
@@ -730,7 +730,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -744,7 +744,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteWorkforceAssignments**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteWorkforceAssignments($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteWorkforceAssignments($body)
 
 Delete multiple WorkforceAssignments
 
@@ -753,8 +753,8 @@ Delete multiple WorkforceAssignments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteWorkforceAssignments($body);
@@ -769,11 +769,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -787,7 +787,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteWorkforceContractByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteWorkforceContractByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteWorkforceContractByRefId($ref_id)
 
 Delete WorkforceContract by RefId
 
@@ -796,7 +796,7 @@ Delete WorkforceContract by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforceContract
 
 try {
@@ -816,7 +816,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -830,7 +830,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteWorkforceContracts**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteWorkforceContracts($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteWorkforceContracts($body)
 
 Delete multiple WorkforceContracts
 
@@ -839,8 +839,8 @@ Delete multiple WorkforceContracts
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteWorkforceContracts($body);
@@ -855,11 +855,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -873,7 +873,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteWorkforcePersonalByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteWorkforcePersonalByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteWorkforcePersonalByRefId($ref_id)
 
 Delete WorkforcePersonal by RefId
 
@@ -882,7 +882,7 @@ Delete WorkforcePersonal by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforcePersonal
 
 try {
@@ -902,7 +902,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -916,7 +916,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteWorkforcePersonals**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteWorkforcePersonals($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteWorkforcePersonals($body)
 
 Delete multiple WorkforcePersonals
 
@@ -925,8 +925,8 @@ Delete multiple WorkforcePersonals
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteWorkforcePersonals($body);
@@ -941,11 +941,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -959,7 +959,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPersonDietaryPreferenceByRefId**
-> \DataExchange\UK\20\Models\PersonDietaryPreferences getPersonDietaryPreferenceByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\PersonDietaryPreferences getPersonDietaryPreferenceByRefId($ref_id)
 
 Find PersonDietaryPreference by RefId
 
@@ -968,7 +968,7 @@ Find PersonDietaryPreference by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of PersonDietaryPreference
 
 try {
@@ -988,7 +988,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\PersonDietaryPreferences**](../Model/PersonDietaryPreferences.md)
+[**\DataExchange\SIFUK20\Models\PersonDietaryPreferences**](../Model/PersonDietaryPreferences.md)
 
 ### Authorization
 
@@ -1002,7 +1002,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPersonDietaryPreferences**
-> \DataExchange\UK\20\Models\PersonDietaryPreferences getPersonDietaryPreferences($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\PersonDietaryPreferences getPersonDietaryPreferences($navigation_page, $navigation_page_size)
 
 Return all PersonDietaryPreferences
 
@@ -1011,7 +1011,7 @@ Return all PersonDietaryPreferences
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1033,7 +1033,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\PersonDietaryPreferences**](../Model/PersonDietaryPreferences.md)
+[**\DataExchange\SIFUK20\Models\PersonDietaryPreferences**](../Model/PersonDietaryPreferences.md)
 
 ### Authorization
 
@@ -1047,7 +1047,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTSubjectByRefId**
-> \DataExchange\UK\20\Models\TTSubjects getTTSubjectByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\TTSubjects getTTSubjectByRefId($ref_id)
 
 Find TTSubject by RefId
 
@@ -1056,7 +1056,7 @@ Find TTSubject by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of TTSubject
 
 try {
@@ -1076,7 +1076,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTSubjects**](../Model/TTSubjects.md)
+[**\DataExchange\SIFUK20\Models\TTSubjects**](../Model/TTSubjects.md)
 
 ### Authorization
 
@@ -1090,7 +1090,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTSubjects**
-> \DataExchange\UK\20\Models\TTSubjects getTTSubjects($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTSubjects getTTSubjects($navigation_page, $navigation_page_size)
 
 Return all TTSubjects
 
@@ -1099,7 +1099,7 @@ Return all TTSubjects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1121,7 +1121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTSubjects**](../Model/TTSubjects.md)
+[**\DataExchange\SIFUK20\Models\TTSubjects**](../Model/TTSubjects.md)
 
 ### Authorization
 
@@ -1135,7 +1135,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTTeacherByRefId**
-> \DataExchange\UK\20\Models\TTTeachers getTTTeacherByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\TTTeachers getTTTeacherByRefId($ref_id)
 
 Find TTTeacher by RefId
 
@@ -1144,7 +1144,7 @@ Find TTTeacher by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of TTTeacher
 
 try {
@@ -1164,7 +1164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTTeachers**](../Model/TTTeachers.md)
+[**\DataExchange\SIFUK20\Models\TTTeachers**](../Model/TTTeachers.md)
 
 ### Authorization
 
@@ -1178,7 +1178,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTTeachers**
-> \DataExchange\UK\20\Models\TTTeachers getTTTeachers($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTTeachers getTTTeachers($navigation_page, $navigation_page_size)
 
 Return all TTTeachers
 
@@ -1187,7 +1187,7 @@ Return all TTTeachers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1209,7 +1209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTTeachers**](../Model/TTTeachers.md)
+[**\DataExchange\SIFUK20\Models\TTTeachers**](../Model/TTTeachers.md)
 
 ### Authorization
 
@@ -1223,7 +1223,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceAbsenceByRefId**
-> \DataExchange\UK\20\Models\WorkforceAbsences getWorkforceAbsenceByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\WorkforceAbsences getWorkforceAbsenceByRefId($ref_id)
 
 Find WorkforceAbsence by RefId
 
@@ -1232,7 +1232,7 @@ Find WorkforceAbsence by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforceAbsence
 
 try {
@@ -1252,7 +1252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\WorkforceAbsences**](../Model/WorkforceAbsences.md)
+[**\DataExchange\SIFUK20\Models\WorkforceAbsences**](../Model/WorkforceAbsences.md)
 
 ### Authorization
 
@@ -1266,7 +1266,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceAbsences**
-> \DataExchange\UK\20\Models\WorkforceAbsences getWorkforceAbsences($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforceAbsences getWorkforceAbsences($navigation_page, $navigation_page_size)
 
 Return all WorkforceAbsences
 
@@ -1275,7 +1275,7 @@ Return all WorkforceAbsences
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1297,7 +1297,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\WorkforceAbsences**](../Model/WorkforceAbsences.md)
+[**\DataExchange\SIFUK20\Models\WorkforceAbsences**](../Model/WorkforceAbsences.md)
 
 ### Authorization
 
@@ -1311,7 +1311,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceAssignmentByRefId**
-> \DataExchange\UK\20\Models\WorkforceAssignments getWorkforceAssignmentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\WorkforceAssignments getWorkforceAssignmentByRefId($ref_id)
 
 Find WorkforceAssignment by RefId
 
@@ -1320,7 +1320,7 @@ Find WorkforceAssignment by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforceAssignment
 
 try {
@@ -1340,7 +1340,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\WorkforceAssignments**](../Model/WorkforceAssignments.md)
+[**\DataExchange\SIFUK20\Models\WorkforceAssignments**](../Model/WorkforceAssignments.md)
 
 ### Authorization
 
@@ -1354,7 +1354,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceAssignments**
-> \DataExchange\UK\20\Models\WorkforceAssignments getWorkforceAssignments($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforceAssignments getWorkforceAssignments($navigation_page, $navigation_page_size)
 
 Return all WorkforceAssignments
 
@@ -1363,7 +1363,7 @@ Return all WorkforceAssignments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1385,7 +1385,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\WorkforceAssignments**](../Model/WorkforceAssignments.md)
+[**\DataExchange\SIFUK20\Models\WorkforceAssignments**](../Model/WorkforceAssignments.md)
 
 ### Authorization
 
@@ -1399,7 +1399,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceContractByRefId**
-> \DataExchange\UK\20\Models\WorkforceContracts getWorkforceContractByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\WorkforceContracts getWorkforceContractByRefId($ref_id)
 
 Find WorkforceContract by RefId
 
@@ -1408,7 +1408,7 @@ Find WorkforceContract by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforceContract
 
 try {
@@ -1428,7 +1428,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\WorkforceContracts**](../Model/WorkforceContracts.md)
+[**\DataExchange\SIFUK20\Models\WorkforceContracts**](../Model/WorkforceContracts.md)
 
 ### Authorization
 
@@ -1442,7 +1442,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceContracts**
-> \DataExchange\UK\20\Models\WorkforceContracts getWorkforceContracts($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforceContracts getWorkforceContracts($navigation_page, $navigation_page_size)
 
 Return all WorkforceContracts
 
@@ -1451,7 +1451,7 @@ Return all WorkforceContracts
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1473,7 +1473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\WorkforceContracts**](../Model/WorkforceContracts.md)
+[**\DataExchange\SIFUK20\Models\WorkforceContracts**](../Model/WorkforceContracts.md)
 
 ### Authorization
 
@@ -1487,7 +1487,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforcePersonalByRefId**
-> \DataExchange\UK\20\Models\WorkforcePersonals getWorkforcePersonalByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\WorkforcePersonals getWorkforcePersonalByRefId($ref_id)
 
 Find WorkforcePersonal by RefId
 
@@ -1496,7 +1496,7 @@ Find WorkforcePersonal by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforcePersonal
 
 try {
@@ -1516,7 +1516,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\WorkforcePersonals**](../Model/WorkforcePersonals.md)
+[**\DataExchange\SIFUK20\Models\WorkforcePersonals**](../Model/WorkforcePersonals.md)
 
 ### Authorization
 
@@ -1530,7 +1530,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforcePersonals**
-> \DataExchange\UK\20\Models\WorkforcePersonals getWorkforcePersonals($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforcePersonals getWorkforcePersonals($navigation_page, $navigation_page_size)
 
 Return all WorkforcePersonals
 
@@ -1539,7 +1539,7 @@ Return all WorkforcePersonals
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1561,7 +1561,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\WorkforcePersonals**](../Model/WorkforcePersonals.md)
+[**\DataExchange\SIFUK20\Models\WorkforcePersonals**](../Model/WorkforcePersonals.md)
 
 ### Authorization
 
@@ -1575,7 +1575,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePersonDietaryPreferenceByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updatePersonDietaryPreferenceByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updatePersonDietaryPreferenceByRefId($ref_id, $body)
 
 Update PersonDietaryPreference by RefId
 
@@ -1584,9 +1584,9 @@ Update PersonDietaryPreference by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of PersonDietaryPreference
-$body = new \DataExchange\UK\20\Models\PersonDietaryPreference(); // \DataExchange\UK\20\Models\PersonDietaryPreference | PersonDietaryPreference to be updated
+$body = new \DataExchange\SIFUK20\Models\PersonDietaryPreference(); // \DataExchange\SIFUK20\Models\PersonDietaryPreference | PersonDietaryPreference to be updated
 
 try {
     $result = $api_instance->updatePersonDietaryPreferenceByRefId($ref_id, $body);
@@ -1602,11 +1602,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of PersonDietaryPreference |
- **body** | [**\DataExchange\UK\20\Models\PersonDietaryPreference**](../Model/\DataExchange\UK\20\Models\PersonDietaryPreference.md)| PersonDietaryPreference to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\PersonDietaryPreference**](../Model/\DataExchange\SIFUK20\Models\PersonDietaryPreference.md)| PersonDietaryPreference to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -1620,7 +1620,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePersonDietaryPreferences**
-> \DataExchange\UK\20\Models\SifUpdateResponse updatePersonDietaryPreferences($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updatePersonDietaryPreferences($body)
 
 Update multiple PersonDietaryPreferences
 
@@ -1629,8 +1629,8 @@ Update multiple PersonDietaryPreferences
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\PersonDietaryPreferences(); // \DataExchange\UK\20\Models\PersonDietaryPreferences | PersonDietaryPreferences to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\PersonDietaryPreferences(); // \DataExchange\SIFUK20\Models\PersonDietaryPreferences | PersonDietaryPreferences to be updated
 
 try {
     $result = $api_instance->updatePersonDietaryPreferences($body);
@@ -1645,11 +1645,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\PersonDietaryPreferences**](../Model/\DataExchange\UK\20\Models\PersonDietaryPreferences.md)| PersonDietaryPreferences to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\PersonDietaryPreferences**](../Model/\DataExchange\SIFUK20\Models\PersonDietaryPreferences.md)| PersonDietaryPreferences to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -1663,7 +1663,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTSubjectByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTSubjectByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTSubjectByRefId($ref_id, $body)
 
 Update TTSubject by RefId
 
@@ -1672,9 +1672,9 @@ Update TTSubject by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of TTSubject
-$body = new \DataExchange\UK\20\Models\TTSubject(); // \DataExchange\UK\20\Models\TTSubject | TTSubject to be updated
+$body = new \DataExchange\SIFUK20\Models\TTSubject(); // \DataExchange\SIFUK20\Models\TTSubject | TTSubject to be updated
 
 try {
     $result = $api_instance->updateTTSubjectByRefId($ref_id, $body);
@@ -1690,11 +1690,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of TTSubject |
- **body** | [**\DataExchange\UK\20\Models\TTSubject**](../Model/\DataExchange\UK\20\Models\TTSubject.md)| TTSubject to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTSubject**](../Model/\DataExchange\SIFUK20\Models\TTSubject.md)| TTSubject to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -1708,7 +1708,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTSubjects**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTSubjects($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTSubjects($body)
 
 Update multiple TTSubjects
 
@@ -1717,8 +1717,8 @@ Update multiple TTSubjects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\TTSubjects(); // \DataExchange\UK\20\Models\TTSubjects | TTSubjects to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\TTSubjects(); // \DataExchange\SIFUK20\Models\TTSubjects | TTSubjects to be updated
 
 try {
     $result = $api_instance->updateTTSubjects($body);
@@ -1733,11 +1733,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTSubjects**](../Model/\DataExchange\UK\20\Models\TTSubjects.md)| TTSubjects to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTSubjects**](../Model/\DataExchange\SIFUK20\Models\TTSubjects.md)| TTSubjects to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -1751,7 +1751,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTTeacherByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTTeacherByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTTeacherByRefId($ref_id, $body)
 
 Update TTTeacher by RefId
 
@@ -1760,9 +1760,9 @@ Update TTTeacher by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of TTTeacher
-$body = new \DataExchange\UK\20\Models\TTTeacher(); // \DataExchange\UK\20\Models\TTTeacher | TTTeacher to be updated
+$body = new \DataExchange\SIFUK20\Models\TTTeacher(); // \DataExchange\SIFUK20\Models\TTTeacher | TTTeacher to be updated
 
 try {
     $result = $api_instance->updateTTTeacherByRefId($ref_id, $body);
@@ -1778,11 +1778,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of TTTeacher |
- **body** | [**\DataExchange\UK\20\Models\TTTeacher**](../Model/\DataExchange\UK\20\Models\TTTeacher.md)| TTTeacher to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTTeacher**](../Model/\DataExchange\SIFUK20\Models\TTTeacher.md)| TTTeacher to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -1796,7 +1796,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTTeachers**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTTeachers($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTTeachers($body)
 
 Update multiple TTTeachers
 
@@ -1805,8 +1805,8 @@ Update multiple TTTeachers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\TTTeachers(); // \DataExchange\UK\20\Models\TTTeachers | TTTeachers to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\TTTeachers(); // \DataExchange\SIFUK20\Models\TTTeachers | TTTeachers to be updated
 
 try {
     $result = $api_instance->updateTTTeachers($body);
@@ -1821,11 +1821,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTTeachers**](../Model/\DataExchange\UK\20\Models\TTTeachers.md)| TTTeachers to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTTeachers**](../Model/\DataExchange\SIFUK20\Models\TTTeachers.md)| TTTeachers to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -1839,7 +1839,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWorkforceAbsenceByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateWorkforceAbsenceByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateWorkforceAbsenceByRefId($ref_id, $body)
 
 Update WorkforceAbsence by RefId
 
@@ -1848,9 +1848,9 @@ Update WorkforceAbsence by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforceAbsence
-$body = new \DataExchange\UK\20\Models\WorkforceAbsence(); // \DataExchange\UK\20\Models\WorkforceAbsence | WorkforceAbsence to be updated
+$body = new \DataExchange\SIFUK20\Models\WorkforceAbsence(); // \DataExchange\SIFUK20\Models\WorkforceAbsence | WorkforceAbsence to be updated
 
 try {
     $result = $api_instance->updateWorkforceAbsenceByRefId($ref_id, $body);
@@ -1866,11 +1866,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of WorkforceAbsence |
- **body** | [**\DataExchange\UK\20\Models\WorkforceAbsence**](../Model/\DataExchange\UK\20\Models\WorkforceAbsence.md)| WorkforceAbsence to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforceAbsence**](../Model/\DataExchange\SIFUK20\Models\WorkforceAbsence.md)| WorkforceAbsence to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -1884,7 +1884,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWorkforceAbsences**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateWorkforceAbsences($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateWorkforceAbsences($body)
 
 Update multiple WorkforceAbsences
 
@@ -1893,8 +1893,8 @@ Update multiple WorkforceAbsences
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\WorkforceAbsences(); // \DataExchange\UK\20\Models\WorkforceAbsences | WorkforceAbsences to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\WorkforceAbsences(); // \DataExchange\SIFUK20\Models\WorkforceAbsences | WorkforceAbsences to be updated
 
 try {
     $result = $api_instance->updateWorkforceAbsences($body);
@@ -1909,11 +1909,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\WorkforceAbsences**](../Model/\DataExchange\UK\20\Models\WorkforceAbsences.md)| WorkforceAbsences to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforceAbsences**](../Model/\DataExchange\SIFUK20\Models\WorkforceAbsences.md)| WorkforceAbsences to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -1927,7 +1927,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWorkforceAssignmentByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateWorkforceAssignmentByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateWorkforceAssignmentByRefId($ref_id, $body)
 
 Update WorkforceAssignment by RefId
 
@@ -1936,9 +1936,9 @@ Update WorkforceAssignment by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforceAssignment
-$body = new \DataExchange\UK\20\Models\WorkforceAssignment(); // \DataExchange\UK\20\Models\WorkforceAssignment | WorkforceAssignment to be updated
+$body = new \DataExchange\SIFUK20\Models\WorkforceAssignment(); // \DataExchange\SIFUK20\Models\WorkforceAssignment | WorkforceAssignment to be updated
 
 try {
     $result = $api_instance->updateWorkforceAssignmentByRefId($ref_id, $body);
@@ -1954,11 +1954,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of WorkforceAssignment |
- **body** | [**\DataExchange\UK\20\Models\WorkforceAssignment**](../Model/\DataExchange\UK\20\Models\WorkforceAssignment.md)| WorkforceAssignment to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforceAssignment**](../Model/\DataExchange\SIFUK20\Models\WorkforceAssignment.md)| WorkforceAssignment to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -1972,7 +1972,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWorkforceAssignments**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateWorkforceAssignments($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateWorkforceAssignments($body)
 
 Update multiple WorkforceAssignments
 
@@ -1981,8 +1981,8 @@ Update multiple WorkforceAssignments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\WorkforceAssignments(); // \DataExchange\UK\20\Models\WorkforceAssignments | WorkforceAssignments to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\WorkforceAssignments(); // \DataExchange\SIFUK20\Models\WorkforceAssignments | WorkforceAssignments to be updated
 
 try {
     $result = $api_instance->updateWorkforceAssignments($body);
@@ -1997,11 +1997,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\WorkforceAssignments**](../Model/\DataExchange\UK\20\Models\WorkforceAssignments.md)| WorkforceAssignments to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforceAssignments**](../Model/\DataExchange\SIFUK20\Models\WorkforceAssignments.md)| WorkforceAssignments to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2015,7 +2015,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWorkforceContractByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateWorkforceContractByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateWorkforceContractByRefId($ref_id, $body)
 
 Update WorkforceContract by RefId
 
@@ -2024,9 +2024,9 @@ Update WorkforceContract by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforceContract
-$body = new \DataExchange\UK\20\Models\WorkforceContract(); // \DataExchange\UK\20\Models\WorkforceContract | WorkforceContract to be updated
+$body = new \DataExchange\SIFUK20\Models\WorkforceContract(); // \DataExchange\SIFUK20\Models\WorkforceContract | WorkforceContract to be updated
 
 try {
     $result = $api_instance->updateWorkforceContractByRefId($ref_id, $body);
@@ -2042,11 +2042,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of WorkforceContract |
- **body** | [**\DataExchange\UK\20\Models\WorkforceContract**](../Model/\DataExchange\UK\20\Models\WorkforceContract.md)| WorkforceContract to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforceContract**](../Model/\DataExchange\SIFUK20\Models\WorkforceContract.md)| WorkforceContract to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2060,7 +2060,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWorkforceContracts**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateWorkforceContracts($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateWorkforceContracts($body)
 
 Update multiple WorkforceContracts
 
@@ -2069,8 +2069,8 @@ Update multiple WorkforceContracts
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\WorkforceContracts(); // \DataExchange\UK\20\Models\WorkforceContracts | WorkforceContracts to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\WorkforceContracts(); // \DataExchange\SIFUK20\Models\WorkforceContracts | WorkforceContracts to be updated
 
 try {
     $result = $api_instance->updateWorkforceContracts($body);
@@ -2085,11 +2085,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\WorkforceContracts**](../Model/\DataExchange\UK\20\Models\WorkforceContracts.md)| WorkforceContracts to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforceContracts**](../Model/\DataExchange\SIFUK20\Models\WorkforceContracts.md)| WorkforceContracts to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2103,7 +2103,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWorkforcePersonalByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateWorkforcePersonalByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateWorkforcePersonalByRefId($ref_id, $body)
 
 Update WorkforcePersonal by RefId
 
@@ -2112,9 +2112,9 @@ Update WorkforcePersonal by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
 $ref_id = "ref_id_example"; // string | RefId of WorkforcePersonal
-$body = new \DataExchange\UK\20\Models\WorkforcePersonal(); // \DataExchange\UK\20\Models\WorkforcePersonal | WorkforcePersonal to be updated
+$body = new \DataExchange\SIFUK20\Models\WorkforcePersonal(); // \DataExchange\SIFUK20\Models\WorkforcePersonal | WorkforcePersonal to be updated
 
 try {
     $result = $api_instance->updateWorkforcePersonalByRefId($ref_id, $body);
@@ -2130,11 +2130,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of WorkforcePersonal |
- **body** | [**\DataExchange\UK\20\Models\WorkforcePersonal**](../Model/\DataExchange\UK\20\Models\WorkforcePersonal.md)| WorkforcePersonal to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforcePersonal**](../Model/\DataExchange\SIFUK20\Models\WorkforcePersonal.md)| WorkforcePersonal to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2148,7 +2148,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWorkforcePersonals**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateWorkforcePersonals($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateWorkforcePersonals($body)
 
 Update multiple WorkforcePersonals
 
@@ -2157,8 +2157,8 @@ Update multiple WorkforcePersonals
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TeachersApi();
-$body = new \DataExchange\UK\20\Models\WorkforcePersonals(); // \DataExchange\UK\20\Models\WorkforcePersonals | WorkforcePersonals to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
+$body = new \DataExchange\SIFUK20\Models\WorkforcePersonals(); // \DataExchange\SIFUK20\Models\WorkforcePersonals | WorkforcePersonals to be updated
 
 try {
     $result = $api_instance->updateWorkforcePersonals($body);
@@ -2173,11 +2173,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\WorkforcePersonals**](../Model/\DataExchange\UK\20\Models\WorkforcePersonals.md)| WorkforcePersonals to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\WorkforcePersonals**](../Model/\DataExchange\SIFUK20\Models\WorkforcePersonals.md)| WorkforcePersonals to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 

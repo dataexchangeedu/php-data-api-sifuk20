@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description A lesson on the timetable
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -77,7 +77,7 @@ class Lesson implements ArrayAccess
         'nt_code_ref' => 'string',
         'teacher_list' => 'string[]',
         'tt_room_ref_id' => 'string',
-        'sif_extended_elements' => '\DataExchange\UK\20\Models\SIFExtendedElement2[]'
+        'sif_extended_elements' => '\DataExchange\SIFUK20\Models\SIFExtendedElement2[]'
     ];
 
     public static function swaggerTypes()
@@ -444,7 +444,7 @@ class Lesson implements ArrayAccess
 
     /**
      * Gets sif_extended_elements
-     * @return \DataExchange\UK\20\Models\SIFExtendedElement2[]
+     * @return \DataExchange\SIFUK20\Models\SIFExtendedElement2[]
      */
     public function getSifExtendedElements()
     {
@@ -453,7 +453,7 @@ class Lesson implements ArrayAccess
 
     /**
      * Sets sif_extended_elements
-     * @param \DataExchange\UK\20\Models\SIFExtendedElement2[] $sif_extended_elements Allows an agent to include data not yet defined within a SIF data object as name/value pairs.
+     * @param \DataExchange\SIFUK20\Models\SIFExtendedElement2[] $sif_extended_elements Allows an agent to include data not yet defined within a SIF data object as name/value pairs.
      * @return $this
      */
     public function setSifExtendedElements($sif_extended_elements)
@@ -514,9 +514,9 @@ class Lesson implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

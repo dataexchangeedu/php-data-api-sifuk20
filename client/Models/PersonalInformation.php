@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This element contains basic personal and demographic information related to a person. This element is part of all &amp;quot;personal&amp;quot; objects, including LearnerPersonal, WorkforcePersonal, and ContactPersonal.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -67,17 +67,17 @@ class PersonalInformation implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => '\DataExchange\UK\20\Models\Name',
-        'other_names' => '\DataExchange\UK\20\Models\OtherNames',
-        'demographics' => '\DataExchange\UK\20\Models\Demographics',
-        'email' => '\DataExchange\UK\20\Models\Email',
-        'other_email_list' => '\DataExchange\UK\20\Models\Email1[]',
-        'address' => '\DataExchange\UK\20\Models\Address',
+        'name' => '\DataExchange\SIFUK20\Models\Name',
+        'other_names' => '\DataExchange\SIFUK20\Models\OtherNames',
+        'demographics' => '\DataExchange\SIFUK20\Models\Demographics',
+        'email' => '\DataExchange\SIFUK20\Models\Email',
+        'other_email_list' => '\DataExchange\SIFUK20\Models\Email1[]',
+        'address' => '\DataExchange\SIFUK20\Models\Address',
         'other_address_list' => 'string[]',
-        'phone_number' => '\DataExchange\UK\20\Models\PhoneNumber',
+        'phone_number' => '\DataExchange\SIFUK20\Models\PhoneNumber',
         'other_phone_number_list' => 'string[]',
-        'electronic_id_list' => '\DataExchange\UK\20\Models\ElectronicId[]',
-        'other_id_list' => '\DataExchange\UK\20\Models\OtherId[]'
+        'electronic_id_list' => '\DataExchange\SIFUK20\Models\ElectronicId[]',
+        'other_id_list' => '\DataExchange\SIFUK20\Models\OtherId[]'
     ];
 
     public static function swaggerTypes()
@@ -210,7 +210,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Gets name
-     * @return \DataExchange\UK\20\Models\Name
+     * @return \DataExchange\SIFUK20\Models\Name
      */
     public function getName()
     {
@@ -219,7 +219,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Sets name
-     * @param \DataExchange\UK\20\Models\Name $name
+     * @param \DataExchange\SIFUK20\Models\Name $name
      * @return $this
      */
     public function setName($name)
@@ -231,7 +231,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Gets other_names
-     * @return \DataExchange\UK\20\Models\OtherNames
+     * @return \DataExchange\SIFUK20\Models\OtherNames
      */
     public function getOtherNames()
     {
@@ -240,7 +240,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Sets other_names
-     * @param \DataExchange\UK\20\Models\OtherNames $other_names
+     * @param \DataExchange\SIFUK20\Models\OtherNames $other_names
      * @return $this
      */
     public function setOtherNames($other_names)
@@ -252,7 +252,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Gets demographics
-     * @return \DataExchange\UK\20\Models\Demographics
+     * @return \DataExchange\SIFUK20\Models\Demographics
      */
     public function getDemographics()
     {
@@ -261,7 +261,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Sets demographics
-     * @param \DataExchange\UK\20\Models\Demographics $demographics
+     * @param \DataExchange\SIFUK20\Models\Demographics $demographics
      * @return $this
      */
     public function setDemographics($demographics)
@@ -273,7 +273,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Gets email
-     * @return \DataExchange\UK\20\Models\Email
+     * @return \DataExchange\SIFUK20\Models\Email
      */
     public function getEmail()
     {
@@ -282,7 +282,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Sets email
-     * @param \DataExchange\UK\20\Models\Email $email
+     * @param \DataExchange\SIFUK20\Models\Email $email
      * @return $this
      */
     public function setEmail($email)
@@ -294,7 +294,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Gets other_email_list
-     * @return \DataExchange\UK\20\Models\Email1[]
+     * @return \DataExchange\SIFUK20\Models\Email1[]
      */
     public function getOtherEmailList()
     {
@@ -303,7 +303,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Sets other_email_list
-     * @param \DataExchange\UK\20\Models\Email1[] $other_email_list The person&#039;s other e-mail address(es).
+     * @param \DataExchange\SIFUK20\Models\Email1[] $other_email_list The person&#039;s other e-mail address(es).
      * @return $this
      */
     public function setOtherEmailList($other_email_list)
@@ -315,7 +315,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Gets address
-     * @return \DataExchange\UK\20\Models\Address
+     * @return \DataExchange\SIFUK20\Models\Address
      */
     public function getAddress()
     {
@@ -324,7 +324,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Sets address
-     * @param \DataExchange\UK\20\Models\Address $address
+     * @param \DataExchange\SIFUK20\Models\Address $address
      * @return $this
      */
     public function setAddress($address)
@@ -357,7 +357,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Gets phone_number
-     * @return \DataExchange\UK\20\Models\PhoneNumber
+     * @return \DataExchange\SIFUK20\Models\PhoneNumber
      */
     public function getPhoneNumber()
     {
@@ -366,7 +366,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Sets phone_number
-     * @param \DataExchange\UK\20\Models\PhoneNumber $phone_number
+     * @param \DataExchange\SIFUK20\Models\PhoneNumber $phone_number
      * @return $this
      */
     public function setPhoneNumber($phone_number)
@@ -399,7 +399,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Gets electronic_id_list
-     * @return \DataExchange\UK\20\Models\ElectronicId[]
+     * @return \DataExchange\SIFUK20\Models\ElectronicId[]
      */
     public function getElectronicIdList()
     {
@@ -408,7 +408,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Sets electronic_id_list
-     * @param \DataExchange\UK\20\Models\ElectronicId[] $electronic_id_list Electronic identifier(s) associated with this person.
+     * @param \DataExchange\SIFUK20\Models\ElectronicId[] $electronic_id_list Electronic identifier(s) associated with this person.
      * @return $this
      */
     public function setElectronicIdList($electronic_id_list)
@@ -420,7 +420,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Gets other_id_list
-     * @return \DataExchange\UK\20\Models\OtherId[]
+     * @return \DataExchange\SIFUK20\Models\OtherId[]
      */
     public function getOtherIdList()
     {
@@ -429,7 +429,7 @@ class PersonalInformation implements ArrayAccess
 
     /**
      * Sets other_id_list
-     * @param \DataExchange\UK\20\Models\OtherId[] $other_id_list
+     * @param \DataExchange\SIFUK20\Models\OtherId[] $other_id_list
      * @return $this
      */
     public function setOtherIdList($other_id_list)
@@ -490,9 +490,9 @@ class PersonalInformation implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

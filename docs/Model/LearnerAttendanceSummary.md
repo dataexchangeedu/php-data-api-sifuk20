@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **school_year** | **string** |  | 
 **start_date** | [**\DateTime**](Date.md) | Starting date of this attendance reporting period. | 
 **end_date** | [**\DateTime**](Date.md) | Ending date of this attendance reporting period. | 
-**reasons_list** | [**\DataExchange\UK\20\Models\Reason[]**](Reason.md) |  | 
+**reasons_list** | [**\DataExchange\SIFUK20\Models\Reason[]**](Reason.md) |  | 
 **sessions_attended_total** | **int** | The number of sessions the learner attended school when school was in session between the StartDate and EndDate, inclusive. | 
 **sessions_possible** | **int** | The number of sessions the learner was present plus the number of sessions the learner was absent (authorised and unauthorised) when school was in session during the period between the StartDate and EndDate, inclusive. | 
 **authorised_absences** | **int** | The number of sessions the learner was absent from school with a valid excuse when school was in session between the StartDate and EndDate, inclusive. Note that ts column can be derived from Reason Status. | [optional] 

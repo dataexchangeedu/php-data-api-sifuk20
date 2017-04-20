@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description A Teaching Group
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -69,9 +69,9 @@ class TeachingGroup implements ArrayAccess
     protected static $swaggerTypes = [
         'ref_id' => 'string',
         'school_group_ref_id' => 'string',
-        'group_definition' => '\DataExchange\UK\20\Models\GroupDefinition',
+        'group_definition' => '\DataExchange\SIFUK20\Models\GroupDefinition',
         'main_teacher_ref_id' => 'string',
-        'group_teacher_list' => '\DataExchange\UK\20\Models\GroupTeacher[]'
+        'group_teacher_list' => '\DataExchange\SIFUK20\Models\GroupTeacher[]'
     ];
 
     public static function swaggerTypes()
@@ -228,7 +228,7 @@ class TeachingGroup implements ArrayAccess
 
     /**
      * Gets group_definition
-     * @return \DataExchange\UK\20\Models\GroupDefinition
+     * @return \DataExchange\SIFUK20\Models\GroupDefinition
      */
     public function getGroupDefinition()
     {
@@ -237,7 +237,7 @@ class TeachingGroup implements ArrayAccess
 
     /**
      * Sets group_definition
-     * @param \DataExchange\UK\20\Models\GroupDefinition $group_definition
+     * @param \DataExchange\SIFUK20\Models\GroupDefinition $group_definition
      * @return $this
      */
     public function setGroupDefinition($group_definition)
@@ -270,7 +270,7 @@ class TeachingGroup implements ArrayAccess
 
     /**
      * Gets group_teacher_list
-     * @return \DataExchange\UK\20\Models\GroupTeacher[]
+     * @return \DataExchange\SIFUK20\Models\GroupTeacher[]
      */
     public function getGroupTeacherList()
     {
@@ -279,7 +279,7 @@ class TeachingGroup implements ArrayAccess
 
     /**
      * Sets group_teacher_list
-     * @param \DataExchange\UK\20\Models\GroupTeacher[] $group_teacher_list
+     * @param \DataExchange\SIFUK20\Models\GroupTeacher[] $group_teacher_list
      * @return $this
      */
     public function setGroupTeacherList($group_teacher_list)
@@ -340,9 +340,9 @@ class TeachingGroup implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

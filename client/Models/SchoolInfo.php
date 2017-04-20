@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This object contains basic information about a school or other educational establishment. Compare with US/Canada object with the same name.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -76,13 +76,13 @@ class SchoolInfo implements ArrayAccess
         'school_full_name' => 'string',
         'urn' => 'string',
         'school_url' => 'string',
-        'school_address' => '\DataExchange\UK\20\Models\SchoolAddress',
+        'school_address' => '\DataExchange\SIFUK20\Models\SchoolAddress',
         'address_list' => 'string[]',
-        'school_phone_number' => '\DataExchange\UK\20\Models\SchoolPhoneNumber',
+        'school_phone_number' => '\DataExchange\SIFUK20\Models\SchoolPhoneNumber',
         'other_phone_number_list' => 'string[]',
-        'school_email' => '\DataExchange\UK\20\Models\SchoolEmail',
-        'school_contact_list' => '\DataExchange\UK\20\Models\Contact[]',
-        'head_teacher_info' => '\DataExchange\UK\20\Models\HeadTeacherInfo',
+        'school_email' => '\DataExchange\SIFUK20\Models\SchoolEmail',
+        'school_contact_list' => '\DataExchange\SIFUK20\Models\Contact[]',
+        'head_teacher_info' => '\DataExchange\SIFUK20\Models\HeadTeacherInfo',
         'phase' => 'string',
         'school_type' => 'string',
         'governance' => 'string',
@@ -514,7 +514,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Gets school_address
-     * @return \DataExchange\UK\20\Models\SchoolAddress
+     * @return \DataExchange\SIFUK20\Models\SchoolAddress
      */
     public function getSchoolAddress()
     {
@@ -523,7 +523,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Sets school_address
-     * @param \DataExchange\UK\20\Models\SchoolAddress $school_address
+     * @param \DataExchange\SIFUK20\Models\SchoolAddress $school_address
      * @return $this
      */
     public function setSchoolAddress($school_address)
@@ -556,7 +556,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Gets school_phone_number
-     * @return \DataExchange\UK\20\Models\SchoolPhoneNumber
+     * @return \DataExchange\SIFUK20\Models\SchoolPhoneNumber
      */
     public function getSchoolPhoneNumber()
     {
@@ -565,7 +565,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Sets school_phone_number
-     * @param \DataExchange\UK\20\Models\SchoolPhoneNumber $school_phone_number
+     * @param \DataExchange\SIFUK20\Models\SchoolPhoneNumber $school_phone_number
      * @return $this
      */
     public function setSchoolPhoneNumber($school_phone_number)
@@ -598,7 +598,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Gets school_email
-     * @return \DataExchange\UK\20\Models\SchoolEmail
+     * @return \DataExchange\SIFUK20\Models\SchoolEmail
      */
     public function getSchoolEmail()
     {
@@ -607,7 +607,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Sets school_email
-     * @param \DataExchange\UK\20\Models\SchoolEmail $school_email
+     * @param \DataExchange\SIFUK20\Models\SchoolEmail $school_email
      * @return $this
      */
     public function setSchoolEmail($school_email)
@@ -619,7 +619,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Gets school_contact_list
-     * @return \DataExchange\UK\20\Models\Contact[]
+     * @return \DataExchange\SIFUK20\Models\Contact[]
      */
     public function getSchoolContactList()
     {
@@ -628,7 +628,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Sets school_contact_list
-     * @param \DataExchange\UK\20\Models\Contact[] $school_contact_list A list of contacts at the school.
+     * @param \DataExchange\SIFUK20\Models\Contact[] $school_contact_list A list of contacts at the school.
      * @return $this
      */
     public function setSchoolContactList($school_contact_list)
@@ -640,7 +640,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Gets head_teacher_info
-     * @return \DataExchange\UK\20\Models\HeadTeacherInfo
+     * @return \DataExchange\SIFUK20\Models\HeadTeacherInfo
      */
     public function getHeadTeacherInfo()
     {
@@ -649,7 +649,7 @@ class SchoolInfo implements ArrayAccess
 
     /**
      * Sets head_teacher_info
-     * @param \DataExchange\UK\20\Models\HeadTeacherInfo $head_teacher_info
+     * @param \DataExchange\SIFUK20\Models\HeadTeacherInfo $head_teacher_info
      * @return $this
      */
     public function setHeadTeacherInfo($head_teacher_info)
@@ -962,9 +962,9 @@ class SchoolInfo implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

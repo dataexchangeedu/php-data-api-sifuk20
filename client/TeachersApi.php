@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20;
+namespace DataExchange\SIFUK20;
 
-use \DataExchange\UK\20\ApiClient;
-use \DataExchange\UK\20\ApiException;
-use \DataExchange\UK\20\Configuration;
-use \DataExchange\UK\20\ObjectSerializer;
+use \DataExchange\SIFUK20\ApiClient;
+use \DataExchange\SIFUK20\ApiException;
+use \DataExchange\SIFUK20\Configuration;
+use \DataExchange\SIFUK20\ObjectSerializer;
 
 /**
  * TeachersApi Class Doc Comment
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -59,16 +59,16 @@ class TeachersApi
     /**
      * API Client
      *
-     * @var \DataExchange\UK\20\ApiClient instance of the ApiClient
+     * @var \DataExchange\SIFUK20\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \DataExchange\UK\20\ApiClient|null $apiClient The api client to use
+     * @param \DataExchange\SIFUK20\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\DataExchange\UK\20\ApiClient $apiClient = null)
+    public function __construct(\DataExchange\SIFUK20\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -81,7 +81,7 @@ class TeachersApi
     /**
      * Get API client
      *
-     * @return \DataExchange\UK\20\ApiClient get the API client
+     * @return \DataExchange\SIFUK20\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -91,11 +91,11 @@ class TeachersApi
     /**
      * Set the API client
      *
-     * @param \DataExchange\UK\20\ApiClient $apiClient set the API client
+     * @param \DataExchange\SIFUK20\ApiClient $apiClient set the API client
      *
      * @return TeachersApi
      */
-    public function setApiClient(\DataExchange\UK\20\ApiClient $apiClient)
+    public function setApiClient(\DataExchange\SIFUK20\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -106,9 +106,9 @@ class TeachersApi
      *
      * Create multiple PersonDietaryPreferences
      *
-     * @param \DataExchange\UK\20\Models\PersonDietaryPreferences $body PersonDietaryPreferences to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifCreateResponse
+     * @param \DataExchange\SIFUK20\Models\PersonDietaryPreferences $body PersonDietaryPreferences to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifCreateResponse
      */
     public function createPersonDietaryPreferences($body)
     {
@@ -121,9 +121,9 @@ class TeachersApi
      *
      * Create multiple PersonDietaryPreferences
      *
-     * @param \DataExchange\UK\20\Models\PersonDietaryPreferences $body PersonDietaryPreferences to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\PersonDietaryPreferences $body PersonDietaryPreferences to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createPersonDietaryPreferencesWithHttpInfo($body)
     {
@@ -166,23 +166,23 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifCreateResponse',
+                '\DataExchange\SIFUK20\Models\SifCreateResponse',
                 '/PersonDietaryPreferences'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -196,9 +196,9 @@ class TeachersApi
      *
      * Create multiple TTSubjects
      *
-     * @param \DataExchange\UK\20\Models\TTSubjects $body TTSubjects to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifCreateResponse
+     * @param \DataExchange\SIFUK20\Models\TTSubjects $body TTSubjects to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifCreateResponse
      */
     public function createTTSubjects($body)
     {
@@ -211,9 +211,9 @@ class TeachersApi
      *
      * Create multiple TTSubjects
      *
-     * @param \DataExchange\UK\20\Models\TTSubjects $body TTSubjects to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\TTSubjects $body TTSubjects to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTTSubjectsWithHttpInfo($body)
     {
@@ -256,23 +256,23 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifCreateResponse',
+                '\DataExchange\SIFUK20\Models\SifCreateResponse',
                 '/TTSubjects'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -286,9 +286,9 @@ class TeachersApi
      *
      * Create multiple TTTeachers
      *
-     * @param \DataExchange\UK\20\Models\TTTeachers $body TTTeachers to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifCreateResponse
+     * @param \DataExchange\SIFUK20\Models\TTTeachers $body TTTeachers to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifCreateResponse
      */
     public function createTTTeachers($body)
     {
@@ -301,9 +301,9 @@ class TeachersApi
      *
      * Create multiple TTTeachers
      *
-     * @param \DataExchange\UK\20\Models\TTTeachers $body TTTeachers to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\TTTeachers $body TTTeachers to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTTTeachersWithHttpInfo($body)
     {
@@ -346,23 +346,23 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifCreateResponse',
+                '\DataExchange\SIFUK20\Models\SifCreateResponse',
                 '/TTTeachers'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -376,9 +376,9 @@ class TeachersApi
      *
      * Create multiple WorkforceAbsences
      *
-     * @param \DataExchange\UK\20\Models\WorkforceAbsences $body WorkforceAbsences to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifCreateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforceAbsences $body WorkforceAbsences to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifCreateResponse
      */
     public function createWorkforceAbsences($body)
     {
@@ -391,9 +391,9 @@ class TeachersApi
      *
      * Create multiple WorkforceAbsences
      *
-     * @param \DataExchange\UK\20\Models\WorkforceAbsences $body WorkforceAbsences to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforceAbsences $body WorkforceAbsences to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createWorkforceAbsencesWithHttpInfo($body)
     {
@@ -436,23 +436,23 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifCreateResponse',
+                '\DataExchange\SIFUK20\Models\SifCreateResponse',
                 '/WorkforceAbsences'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -466,9 +466,9 @@ class TeachersApi
      *
      * Create multiple WorkforceAssignments
      *
-     * @param \DataExchange\UK\20\Models\WorkforceAssignments $body WorkforceAssignments to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifCreateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforceAssignments $body WorkforceAssignments to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifCreateResponse
      */
     public function createWorkforceAssignments($body)
     {
@@ -481,9 +481,9 @@ class TeachersApi
      *
      * Create multiple WorkforceAssignments
      *
-     * @param \DataExchange\UK\20\Models\WorkforceAssignments $body WorkforceAssignments to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforceAssignments $body WorkforceAssignments to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createWorkforceAssignmentsWithHttpInfo($body)
     {
@@ -526,23 +526,23 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifCreateResponse',
+                '\DataExchange\SIFUK20\Models\SifCreateResponse',
                 '/WorkforceAssignments'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -556,9 +556,9 @@ class TeachersApi
      *
      * Create multiple WorkforceContracts
      *
-     * @param \DataExchange\UK\20\Models\WorkforceContracts $body WorkforceContracts to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifCreateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforceContracts $body WorkforceContracts to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifCreateResponse
      */
     public function createWorkforceContracts($body)
     {
@@ -571,9 +571,9 @@ class TeachersApi
      *
      * Create multiple WorkforceContracts
      *
-     * @param \DataExchange\UK\20\Models\WorkforceContracts $body WorkforceContracts to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforceContracts $body WorkforceContracts to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createWorkforceContractsWithHttpInfo($body)
     {
@@ -616,23 +616,23 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifCreateResponse',
+                '\DataExchange\SIFUK20\Models\SifCreateResponse',
                 '/WorkforceContracts'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -646,9 +646,9 @@ class TeachersApi
      *
      * Create multiple WorkforcePersonals
      *
-     * @param \DataExchange\UK\20\Models\WorkforcePersonals $body WorkforcePersonals to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifCreateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforcePersonals $body WorkforcePersonals to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifCreateResponse
      */
     public function createWorkforcePersonals($body)
     {
@@ -661,9 +661,9 @@ class TeachersApi
      *
      * Create multiple WorkforcePersonals
      *
-     * @param \DataExchange\UK\20\Models\WorkforcePersonals $body WorkforcePersonals to be created (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforcePersonals $body WorkforcePersonals to be created (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifCreateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createWorkforcePersonalsWithHttpInfo($body)
     {
@@ -706,23 +706,23 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifCreateResponse',
+                '\DataExchange\SIFUK20\Models\SifCreateResponse',
                 '/WorkforcePersonals'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifCreateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifCreateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifCreateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -737,8 +737,8 @@ class TeachersApi
      * Delete PersonDietaryPreference by RefId
      *
      * @param string $ref_id RefId of PersonDietaryPreference (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deletePersonDietaryPreferenceByRefId($ref_id)
     {
@@ -752,8 +752,8 @@ class TeachersApi
      * Delete PersonDietaryPreference by RefId
      *
      * @param string $ref_id RefId of PersonDietaryPreference (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deletePersonDietaryPreferenceByRefIdWithHttpInfo($ref_id)
     {
@@ -799,19 +799,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/PersonDietaryPreferences/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -825,9 +825,9 @@ class TeachersApi
      *
      * Delete multiple PersonDietaryPreferences
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deletePersonDietaryPreferences($body)
     {
@@ -840,9 +840,9 @@ class TeachersApi
      *
      * Delete multiple PersonDietaryPreferences
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deletePersonDietaryPreferencesWithHttpInfo($body)
     {
@@ -885,19 +885,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/PersonDietaryPreferences'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -912,8 +912,8 @@ class TeachersApi
      * Delete TTSubject by RefId
      *
      * @param string $ref_id RefId of TTSubject (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteTTSubjectByRefId($ref_id)
     {
@@ -927,8 +927,8 @@ class TeachersApi
      * Delete TTSubject by RefId
      *
      * @param string $ref_id RefId of TTSubject (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTTSubjectByRefIdWithHttpInfo($ref_id)
     {
@@ -974,19 +974,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/TTSubjects/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1000,9 +1000,9 @@ class TeachersApi
      *
      * Delete multiple TTSubjects
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteTTSubjects($body)
     {
@@ -1015,9 +1015,9 @@ class TeachersApi
      *
      * Delete multiple TTSubjects
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTTSubjectsWithHttpInfo($body)
     {
@@ -1060,19 +1060,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/TTSubjects'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1087,8 +1087,8 @@ class TeachersApi
      * Delete TTTeacher by RefId
      *
      * @param string $ref_id RefId of TTTeacher (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteTTTeacherByRefId($ref_id)
     {
@@ -1102,8 +1102,8 @@ class TeachersApi
      * Delete TTTeacher by RefId
      *
      * @param string $ref_id RefId of TTTeacher (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTTTeacherByRefIdWithHttpInfo($ref_id)
     {
@@ -1149,19 +1149,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/TTTeachers/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1175,9 +1175,9 @@ class TeachersApi
      *
      * Delete multiple TTTeachers
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteTTTeachers($body)
     {
@@ -1190,9 +1190,9 @@ class TeachersApi
      *
      * Delete multiple TTTeachers
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTTTeachersWithHttpInfo($body)
     {
@@ -1235,19 +1235,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/TTTeachers'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1262,8 +1262,8 @@ class TeachersApi
      * Delete WorkforceAbsence by RefId
      *
      * @param string $ref_id RefId of WorkforceAbsence (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteWorkforceAbsenceByRefId($ref_id)
     {
@@ -1277,8 +1277,8 @@ class TeachersApi
      * Delete WorkforceAbsence by RefId
      *
      * @param string $ref_id RefId of WorkforceAbsence (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteWorkforceAbsenceByRefIdWithHttpInfo($ref_id)
     {
@@ -1324,19 +1324,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/WorkforceAbsences/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1350,9 +1350,9 @@ class TeachersApi
      *
      * Delete multiple WorkforceAbsences
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteWorkforceAbsences($body)
     {
@@ -1365,9 +1365,9 @@ class TeachersApi
      *
      * Delete multiple WorkforceAbsences
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteWorkforceAbsencesWithHttpInfo($body)
     {
@@ -1410,19 +1410,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/WorkforceAbsences'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1437,8 +1437,8 @@ class TeachersApi
      * Delete WorkforceAssignment by RefId
      *
      * @param string $ref_id RefId of WorkforceAssignment (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteWorkforceAssignmentByRefId($ref_id)
     {
@@ -1452,8 +1452,8 @@ class TeachersApi
      * Delete WorkforceAssignment by RefId
      *
      * @param string $ref_id RefId of WorkforceAssignment (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteWorkforceAssignmentByRefIdWithHttpInfo($ref_id)
     {
@@ -1499,19 +1499,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/WorkforceAssignments/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1525,9 +1525,9 @@ class TeachersApi
      *
      * Delete multiple WorkforceAssignments
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteWorkforceAssignments($body)
     {
@@ -1540,9 +1540,9 @@ class TeachersApi
      *
      * Delete multiple WorkforceAssignments
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteWorkforceAssignmentsWithHttpInfo($body)
     {
@@ -1585,19 +1585,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/WorkforceAssignments'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1612,8 +1612,8 @@ class TeachersApi
      * Delete WorkforceContract by RefId
      *
      * @param string $ref_id RefId of WorkforceContract (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteWorkforceContractByRefId($ref_id)
     {
@@ -1627,8 +1627,8 @@ class TeachersApi
      * Delete WorkforceContract by RefId
      *
      * @param string $ref_id RefId of WorkforceContract (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteWorkforceContractByRefIdWithHttpInfo($ref_id)
     {
@@ -1674,19 +1674,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/WorkforceContracts/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1700,9 +1700,9 @@ class TeachersApi
      *
      * Delete multiple WorkforceContracts
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteWorkforceContracts($body)
     {
@@ -1715,9 +1715,9 @@ class TeachersApi
      *
      * Delete multiple WorkforceContracts
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteWorkforceContractsWithHttpInfo($body)
     {
@@ -1760,19 +1760,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/WorkforceContracts'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1787,8 +1787,8 @@ class TeachersApi
      * Delete WorkforcePersonal by RefId
      *
      * @param string $ref_id RefId of WorkforcePersonal (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteWorkforcePersonalByRefId($ref_id)
     {
@@ -1802,8 +1802,8 @@ class TeachersApi
      * Delete WorkforcePersonal by RefId
      *
      * @param string $ref_id RefId of WorkforcePersonal (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteWorkforcePersonalByRefIdWithHttpInfo($ref_id)
     {
@@ -1849,19 +1849,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/WorkforcePersonals/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1875,9 +1875,9 @@ class TeachersApi
      *
      * Delete multiple WorkforcePersonals
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifDeleteResponse
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifDeleteResponse
      */
     public function deleteWorkforcePersonals($body)
     {
@@ -1890,9 +1890,9 @@ class TeachersApi
      *
      * Delete multiple WorkforcePersonals
      *
-     * @param \DataExchange\UK\20\Models\SifDeleteRequest $body  (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\SifDeleteRequest $body  (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifDeleteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteWorkforcePersonalsWithHttpInfo($body)
     {
@@ -1935,19 +1935,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifDeleteResponse',
+                '\DataExchange\SIFUK20\Models\SifDeleteResponse',
                 '/WorkforcePersonals'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifDeleteResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifDeleteResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifDeleteResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1962,8 +1962,8 @@ class TeachersApi
      * Find PersonDietaryPreference by RefId
      *
      * @param string $ref_id RefId of PersonDietaryPreference (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\PersonDietaryPreferences
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\PersonDietaryPreferences
      */
     public function getPersonDietaryPreferenceByRefId($ref_id)
     {
@@ -1977,8 +1977,8 @@ class TeachersApi
      * Find PersonDietaryPreference by RefId
      *
      * @param string $ref_id RefId of PersonDietaryPreference (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\PersonDietaryPreferences, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\PersonDietaryPreferences, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPersonDietaryPreferenceByRefIdWithHttpInfo($ref_id)
     {
@@ -2024,19 +2024,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\PersonDietaryPreferences',
+                '\DataExchange\SIFUK20\Models\PersonDietaryPreferences',
                 '/PersonDietaryPreferences/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\PersonDietaryPreferences', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\PersonDietaryPreferences', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\PersonDietaryPreferences', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\PersonDietaryPreferences', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2052,8 +2052,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\PersonDietaryPreferences
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\PersonDietaryPreferences
      */
     public function getPersonDietaryPreferences($navigation_page = null, $navigation_page_size = null)
     {
@@ -2068,8 +2068,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\PersonDietaryPreferences, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\PersonDietaryPreferences, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPersonDietaryPreferencesWithHttpInfo($navigation_page = null, $navigation_page_size = null)
     {
@@ -2111,19 +2111,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\PersonDietaryPreferences',
+                '\DataExchange\SIFUK20\Models\PersonDietaryPreferences',
                 '/PersonDietaryPreferences'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\PersonDietaryPreferences', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\PersonDietaryPreferences', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\PersonDietaryPreferences', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\PersonDietaryPreferences', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2138,8 +2138,8 @@ class TeachersApi
      * Find TTSubject by RefId
      *
      * @param string $ref_id RefId of TTSubject (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\TTSubjects
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\TTSubjects
      */
     public function getTTSubjectByRefId($ref_id)
     {
@@ -2153,8 +2153,8 @@ class TeachersApi
      * Find TTSubject by RefId
      *
      * @param string $ref_id RefId of TTSubject (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\TTSubjects, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\TTSubjects, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTTSubjectByRefIdWithHttpInfo($ref_id)
     {
@@ -2200,19 +2200,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\TTSubjects',
+                '\DataExchange\SIFUK20\Models\TTSubjects',
                 '/TTSubjects/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\TTSubjects', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\TTSubjects', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\TTSubjects', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\TTSubjects', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2228,8 +2228,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\TTSubjects
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\TTSubjects
      */
     public function getTTSubjects($navigation_page = null, $navigation_page_size = null)
     {
@@ -2244,8 +2244,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\TTSubjects, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\TTSubjects, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTTSubjectsWithHttpInfo($navigation_page = null, $navigation_page_size = null)
     {
@@ -2287,19 +2287,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\TTSubjects',
+                '\DataExchange\SIFUK20\Models\TTSubjects',
                 '/TTSubjects'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\TTSubjects', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\TTSubjects', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\TTSubjects', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\TTSubjects', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2314,8 +2314,8 @@ class TeachersApi
      * Find TTTeacher by RefId
      *
      * @param string $ref_id RefId of TTTeacher (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\TTTeachers
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\TTTeachers
      */
     public function getTTTeacherByRefId($ref_id)
     {
@@ -2329,8 +2329,8 @@ class TeachersApi
      * Find TTTeacher by RefId
      *
      * @param string $ref_id RefId of TTTeacher (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\TTTeachers, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\TTTeachers, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTTTeacherByRefIdWithHttpInfo($ref_id)
     {
@@ -2376,19 +2376,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\TTTeachers',
+                '\DataExchange\SIFUK20\Models\TTTeachers',
                 '/TTTeachers/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\TTTeachers', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\TTTeachers', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\TTTeachers', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\TTTeachers', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2404,8 +2404,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\TTTeachers
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\TTTeachers
      */
     public function getTTTeachers($navigation_page = null, $navigation_page_size = null)
     {
@@ -2420,8 +2420,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\TTTeachers, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\TTTeachers, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTTTeachersWithHttpInfo($navigation_page = null, $navigation_page_size = null)
     {
@@ -2463,19 +2463,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\TTTeachers',
+                '\DataExchange\SIFUK20\Models\TTTeachers',
                 '/TTTeachers'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\TTTeachers', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\TTTeachers', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\TTTeachers', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\TTTeachers', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2490,8 +2490,8 @@ class TeachersApi
      * Find WorkforceAbsence by RefId
      *
      * @param string $ref_id RefId of WorkforceAbsence (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\WorkforceAbsences
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\WorkforceAbsences
      */
     public function getWorkforceAbsenceByRefId($ref_id)
     {
@@ -2505,8 +2505,8 @@ class TeachersApi
      * Find WorkforceAbsence by RefId
      *
      * @param string $ref_id RefId of WorkforceAbsence (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\WorkforceAbsences, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\WorkforceAbsences, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWorkforceAbsenceByRefIdWithHttpInfo($ref_id)
     {
@@ -2552,19 +2552,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\WorkforceAbsences',
+                '\DataExchange\SIFUK20\Models\WorkforceAbsences',
                 '/WorkforceAbsences/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\WorkforceAbsences', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\WorkforceAbsences', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\WorkforceAbsences', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\WorkforceAbsences', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2580,8 +2580,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\WorkforceAbsences
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\WorkforceAbsences
      */
     public function getWorkforceAbsences($navigation_page = null, $navigation_page_size = null)
     {
@@ -2596,8 +2596,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\WorkforceAbsences, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\WorkforceAbsences, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWorkforceAbsencesWithHttpInfo($navigation_page = null, $navigation_page_size = null)
     {
@@ -2639,19 +2639,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\WorkforceAbsences',
+                '\DataExchange\SIFUK20\Models\WorkforceAbsences',
                 '/WorkforceAbsences'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\WorkforceAbsences', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\WorkforceAbsences', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\WorkforceAbsences', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\WorkforceAbsences', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2666,8 +2666,8 @@ class TeachersApi
      * Find WorkforceAssignment by RefId
      *
      * @param string $ref_id RefId of WorkforceAssignment (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\WorkforceAssignments
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\WorkforceAssignments
      */
     public function getWorkforceAssignmentByRefId($ref_id)
     {
@@ -2681,8 +2681,8 @@ class TeachersApi
      * Find WorkforceAssignment by RefId
      *
      * @param string $ref_id RefId of WorkforceAssignment (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\WorkforceAssignments, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\WorkforceAssignments, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWorkforceAssignmentByRefIdWithHttpInfo($ref_id)
     {
@@ -2728,19 +2728,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\WorkforceAssignments',
+                '\DataExchange\SIFUK20\Models\WorkforceAssignments',
                 '/WorkforceAssignments/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\WorkforceAssignments', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\WorkforceAssignments', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\WorkforceAssignments', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\WorkforceAssignments', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2756,8 +2756,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\WorkforceAssignments
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\WorkforceAssignments
      */
     public function getWorkforceAssignments($navigation_page = null, $navigation_page_size = null)
     {
@@ -2772,8 +2772,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\WorkforceAssignments, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\WorkforceAssignments, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWorkforceAssignmentsWithHttpInfo($navigation_page = null, $navigation_page_size = null)
     {
@@ -2815,19 +2815,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\WorkforceAssignments',
+                '\DataExchange\SIFUK20\Models\WorkforceAssignments',
                 '/WorkforceAssignments'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\WorkforceAssignments', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\WorkforceAssignments', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\WorkforceAssignments', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\WorkforceAssignments', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2842,8 +2842,8 @@ class TeachersApi
      * Find WorkforceContract by RefId
      *
      * @param string $ref_id RefId of WorkforceContract (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\WorkforceContracts
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\WorkforceContracts
      */
     public function getWorkforceContractByRefId($ref_id)
     {
@@ -2857,8 +2857,8 @@ class TeachersApi
      * Find WorkforceContract by RefId
      *
      * @param string $ref_id RefId of WorkforceContract (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\WorkforceContracts, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\WorkforceContracts, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWorkforceContractByRefIdWithHttpInfo($ref_id)
     {
@@ -2904,19 +2904,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\WorkforceContracts',
+                '\DataExchange\SIFUK20\Models\WorkforceContracts',
                 '/WorkforceContracts/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\WorkforceContracts', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\WorkforceContracts', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\WorkforceContracts', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\WorkforceContracts', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2932,8 +2932,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\WorkforceContracts
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\WorkforceContracts
      */
     public function getWorkforceContracts($navigation_page = null, $navigation_page_size = null)
     {
@@ -2948,8 +2948,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\WorkforceContracts, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\WorkforceContracts, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWorkforceContractsWithHttpInfo($navigation_page = null, $navigation_page_size = null)
     {
@@ -2991,19 +2991,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\WorkforceContracts',
+                '\DataExchange\SIFUK20\Models\WorkforceContracts',
                 '/WorkforceContracts'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\WorkforceContracts', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\WorkforceContracts', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\WorkforceContracts', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\WorkforceContracts', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3018,8 +3018,8 @@ class TeachersApi
      * Find WorkforcePersonal by RefId
      *
      * @param string $ref_id RefId of WorkforcePersonal (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\WorkforcePersonals
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\WorkforcePersonals
      */
     public function getWorkforcePersonalByRefId($ref_id)
     {
@@ -3033,8 +3033,8 @@ class TeachersApi
      * Find WorkforcePersonal by RefId
      *
      * @param string $ref_id RefId of WorkforcePersonal (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\WorkforcePersonals, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\WorkforcePersonals, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWorkforcePersonalByRefIdWithHttpInfo($ref_id)
     {
@@ -3080,19 +3080,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\WorkforcePersonals',
+                '\DataExchange\SIFUK20\Models\WorkforcePersonals',
                 '/WorkforcePersonals/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\WorkforcePersonals', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\WorkforcePersonals', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\WorkforcePersonals', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\WorkforcePersonals', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3108,8 +3108,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\WorkforcePersonals
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\WorkforcePersonals
      */
     public function getWorkforcePersonals($navigation_page = null, $navigation_page_size = null)
     {
@@ -3124,8 +3124,8 @@ class TeachersApi
      *
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\WorkforcePersonals, HTTP status code, HTTP response headers (array of strings)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\WorkforcePersonals, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWorkforcePersonalsWithHttpInfo($navigation_page = null, $navigation_page_size = null)
     {
@@ -3167,19 +3167,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\WorkforcePersonals',
+                '\DataExchange\SIFUK20\Models\WorkforcePersonals',
                 '/WorkforcePersonals'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\WorkforcePersonals', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\WorkforcePersonals', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\WorkforcePersonals', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\WorkforcePersonals', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3194,9 +3194,9 @@ class TeachersApi
      * Update PersonDietaryPreference by RefId
      *
      * @param string $ref_id RefId of PersonDietaryPreference (required)
-     * @param \DataExchange\UK\20\Models\PersonDietaryPreference $body PersonDietaryPreference to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\PersonDietaryPreference $body PersonDietaryPreference to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updatePersonDietaryPreferenceByRefId($ref_id, $body)
     {
@@ -3210,9 +3210,9 @@ class TeachersApi
      * Update PersonDietaryPreference by RefId
      *
      * @param string $ref_id RefId of PersonDietaryPreference (required)
-     * @param \DataExchange\UK\20\Models\PersonDietaryPreference $body PersonDietaryPreference to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\PersonDietaryPreference $body PersonDietaryPreference to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updatePersonDietaryPreferenceByRefIdWithHttpInfo($ref_id, $body)
     {
@@ -3267,19 +3267,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/PersonDietaryPreferences/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3293,9 +3293,9 @@ class TeachersApi
      *
      * Update multiple PersonDietaryPreferences
      *
-     * @param \DataExchange\UK\20\Models\PersonDietaryPreferences $body PersonDietaryPreferences to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\PersonDietaryPreferences $body PersonDietaryPreferences to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updatePersonDietaryPreferences($body)
     {
@@ -3308,9 +3308,9 @@ class TeachersApi
      *
      * Update multiple PersonDietaryPreferences
      *
-     * @param \DataExchange\UK\20\Models\PersonDietaryPreferences $body PersonDietaryPreferences to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\PersonDietaryPreferences $body PersonDietaryPreferences to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updatePersonDietaryPreferencesWithHttpInfo($body)
     {
@@ -3353,19 +3353,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/PersonDietaryPreferences'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3380,9 +3380,9 @@ class TeachersApi
      * Update TTSubject by RefId
      *
      * @param string $ref_id RefId of TTSubject (required)
-     * @param \DataExchange\UK\20\Models\TTSubject $body TTSubject to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\TTSubject $body TTSubject to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateTTSubjectByRefId($ref_id, $body)
     {
@@ -3396,9 +3396,9 @@ class TeachersApi
      * Update TTSubject by RefId
      *
      * @param string $ref_id RefId of TTSubject (required)
-     * @param \DataExchange\UK\20\Models\TTSubject $body TTSubject to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\TTSubject $body TTSubject to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateTTSubjectByRefIdWithHttpInfo($ref_id, $body)
     {
@@ -3453,19 +3453,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/TTSubjects/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3479,9 +3479,9 @@ class TeachersApi
      *
      * Update multiple TTSubjects
      *
-     * @param \DataExchange\UK\20\Models\TTSubjects $body TTSubjects to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\TTSubjects $body TTSubjects to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateTTSubjects($body)
     {
@@ -3494,9 +3494,9 @@ class TeachersApi
      *
      * Update multiple TTSubjects
      *
-     * @param \DataExchange\UK\20\Models\TTSubjects $body TTSubjects to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\TTSubjects $body TTSubjects to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateTTSubjectsWithHttpInfo($body)
     {
@@ -3539,19 +3539,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/TTSubjects'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3566,9 +3566,9 @@ class TeachersApi
      * Update TTTeacher by RefId
      *
      * @param string $ref_id RefId of TTTeacher (required)
-     * @param \DataExchange\UK\20\Models\TTTeacher $body TTTeacher to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\TTTeacher $body TTTeacher to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateTTTeacherByRefId($ref_id, $body)
     {
@@ -3582,9 +3582,9 @@ class TeachersApi
      * Update TTTeacher by RefId
      *
      * @param string $ref_id RefId of TTTeacher (required)
-     * @param \DataExchange\UK\20\Models\TTTeacher $body TTTeacher to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\TTTeacher $body TTTeacher to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateTTTeacherByRefIdWithHttpInfo($ref_id, $body)
     {
@@ -3639,19 +3639,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/TTTeachers/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3665,9 +3665,9 @@ class TeachersApi
      *
      * Update multiple TTTeachers
      *
-     * @param \DataExchange\UK\20\Models\TTTeachers $body TTTeachers to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\TTTeachers $body TTTeachers to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateTTTeachers($body)
     {
@@ -3680,9 +3680,9 @@ class TeachersApi
      *
      * Update multiple TTTeachers
      *
-     * @param \DataExchange\UK\20\Models\TTTeachers $body TTTeachers to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\TTTeachers $body TTTeachers to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateTTTeachersWithHttpInfo($body)
     {
@@ -3725,19 +3725,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/TTTeachers'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3752,9 +3752,9 @@ class TeachersApi
      * Update WorkforceAbsence by RefId
      *
      * @param string $ref_id RefId of WorkforceAbsence (required)
-     * @param \DataExchange\UK\20\Models\WorkforceAbsence $body WorkforceAbsence to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforceAbsence $body WorkforceAbsence to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateWorkforceAbsenceByRefId($ref_id, $body)
     {
@@ -3768,9 +3768,9 @@ class TeachersApi
      * Update WorkforceAbsence by RefId
      *
      * @param string $ref_id RefId of WorkforceAbsence (required)
-     * @param \DataExchange\UK\20\Models\WorkforceAbsence $body WorkforceAbsence to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforceAbsence $body WorkforceAbsence to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWorkforceAbsenceByRefIdWithHttpInfo($ref_id, $body)
     {
@@ -3825,19 +3825,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/WorkforceAbsences/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3851,9 +3851,9 @@ class TeachersApi
      *
      * Update multiple WorkforceAbsences
      *
-     * @param \DataExchange\UK\20\Models\WorkforceAbsences $body WorkforceAbsences to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforceAbsences $body WorkforceAbsences to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateWorkforceAbsences($body)
     {
@@ -3866,9 +3866,9 @@ class TeachersApi
      *
      * Update multiple WorkforceAbsences
      *
-     * @param \DataExchange\UK\20\Models\WorkforceAbsences $body WorkforceAbsences to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforceAbsences $body WorkforceAbsences to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWorkforceAbsencesWithHttpInfo($body)
     {
@@ -3911,19 +3911,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/WorkforceAbsences'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3938,9 +3938,9 @@ class TeachersApi
      * Update WorkforceAssignment by RefId
      *
      * @param string $ref_id RefId of WorkforceAssignment (required)
-     * @param \DataExchange\UK\20\Models\WorkforceAssignment $body WorkforceAssignment to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforceAssignment $body WorkforceAssignment to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateWorkforceAssignmentByRefId($ref_id, $body)
     {
@@ -3954,9 +3954,9 @@ class TeachersApi
      * Update WorkforceAssignment by RefId
      *
      * @param string $ref_id RefId of WorkforceAssignment (required)
-     * @param \DataExchange\UK\20\Models\WorkforceAssignment $body WorkforceAssignment to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforceAssignment $body WorkforceAssignment to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWorkforceAssignmentByRefIdWithHttpInfo($ref_id, $body)
     {
@@ -4011,19 +4011,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/WorkforceAssignments/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -4037,9 +4037,9 @@ class TeachersApi
      *
      * Update multiple WorkforceAssignments
      *
-     * @param \DataExchange\UK\20\Models\WorkforceAssignments $body WorkforceAssignments to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforceAssignments $body WorkforceAssignments to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateWorkforceAssignments($body)
     {
@@ -4052,9 +4052,9 @@ class TeachersApi
      *
      * Update multiple WorkforceAssignments
      *
-     * @param \DataExchange\UK\20\Models\WorkforceAssignments $body WorkforceAssignments to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforceAssignments $body WorkforceAssignments to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWorkforceAssignmentsWithHttpInfo($body)
     {
@@ -4097,19 +4097,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/WorkforceAssignments'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -4124,9 +4124,9 @@ class TeachersApi
      * Update WorkforceContract by RefId
      *
      * @param string $ref_id RefId of WorkforceContract (required)
-     * @param \DataExchange\UK\20\Models\WorkforceContract $body WorkforceContract to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforceContract $body WorkforceContract to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateWorkforceContractByRefId($ref_id, $body)
     {
@@ -4140,9 +4140,9 @@ class TeachersApi
      * Update WorkforceContract by RefId
      *
      * @param string $ref_id RefId of WorkforceContract (required)
-     * @param \DataExchange\UK\20\Models\WorkforceContract $body WorkforceContract to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforceContract $body WorkforceContract to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWorkforceContractByRefIdWithHttpInfo($ref_id, $body)
     {
@@ -4197,19 +4197,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/WorkforceContracts/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -4223,9 +4223,9 @@ class TeachersApi
      *
      * Update multiple WorkforceContracts
      *
-     * @param \DataExchange\UK\20\Models\WorkforceContracts $body WorkforceContracts to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforceContracts $body WorkforceContracts to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateWorkforceContracts($body)
     {
@@ -4238,9 +4238,9 @@ class TeachersApi
      *
      * Update multiple WorkforceContracts
      *
-     * @param \DataExchange\UK\20\Models\WorkforceContracts $body WorkforceContracts to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforceContracts $body WorkforceContracts to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWorkforceContractsWithHttpInfo($body)
     {
@@ -4283,19 +4283,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/WorkforceContracts'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -4310,9 +4310,9 @@ class TeachersApi
      * Update WorkforcePersonal by RefId
      *
      * @param string $ref_id RefId of WorkforcePersonal (required)
-     * @param \DataExchange\UK\20\Models\WorkforcePersonal $body WorkforcePersonal to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforcePersonal $body WorkforcePersonal to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateWorkforcePersonalByRefId($ref_id, $body)
     {
@@ -4326,9 +4326,9 @@ class TeachersApi
      * Update WorkforcePersonal by RefId
      *
      * @param string $ref_id RefId of WorkforcePersonal (required)
-     * @param \DataExchange\UK\20\Models\WorkforcePersonal $body WorkforcePersonal to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforcePersonal $body WorkforcePersonal to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWorkforcePersonalByRefIdWithHttpInfo($ref_id, $body)
     {
@@ -4383,19 +4383,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/WorkforcePersonals/{RefId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -4409,9 +4409,9 @@ class TeachersApi
      *
      * Update multiple WorkforcePersonals
      *
-     * @param \DataExchange\UK\20\Models\WorkforcePersonals $body WorkforcePersonals to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return \DataExchange\UK\20\Models\SifUpdateResponse
+     * @param \DataExchange\SIFUK20\Models\WorkforcePersonals $body WorkforcePersonals to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return \DataExchange\SIFUK20\Models\SifUpdateResponse
      */
     public function updateWorkforcePersonals($body)
     {
@@ -4424,9 +4424,9 @@ class TeachersApi
      *
      * Update multiple WorkforcePersonals
      *
-     * @param \DataExchange\UK\20\Models\WorkforcePersonals $body WorkforcePersonals to be updated (required)
-     * @throws \DataExchange\UK\20\ApiException on non-2xx response
-     * @return array of \DataExchange\UK\20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \DataExchange\SIFUK20\Models\WorkforcePersonals $body WorkforcePersonals to be updated (required)
+     * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
+     * @return array of \DataExchange\SIFUK20\Models\SifUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWorkforcePersonalsWithHttpInfo($body)
     {
@@ -4469,19 +4469,19 @@ class TeachersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\DataExchange\UK\20\Models\SifUpdateResponse',
+                '\DataExchange\SIFUK20\Models\SifUpdateResponse',
                 '/WorkforcePersonals'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\UK\20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\DataExchange\SIFUK20\Models\SifUpdateResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifUpdateResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifUpdateResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\UK\20\Models\SifError', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\DataExchange\SIFUK20\Models\SifError', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

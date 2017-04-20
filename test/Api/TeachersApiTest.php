@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace DataExchange\UK\20;
+namespace DataExchange\SIFUK20;
 
-use \DataExchange\UK\20\Configuration;
-use \DataExchange\UK\20\ApiClient;
-use \DataExchange\UK\20\ApiException;
-use \DataExchange\UK\20\ObjectSerializer;
+use \DataExchange\SIFUK20\Configuration;
+use \DataExchange\SIFUK20\ApiClient;
+use \DataExchange\SIFUK20\ApiException;
+use \DataExchange\SIFUK20\ObjectSerializer;
 
 /**
  * TeachersApiTest Class Doc Comment
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen

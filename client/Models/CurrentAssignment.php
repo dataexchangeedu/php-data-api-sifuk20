@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -66,10 +66,10 @@ class CurrentAssignment implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'sif_ref_id' => '\DataExchange\UK\20\Models\SIFRefId1',
+        'sif_ref_id' => '\DataExchange\SIFUK20\Models\SIFRefId1',
         'la_id' => 'string',
         'establishment_id' => 'string',
-        'posts' => '\DataExchange\UK\20\Models\Posts'
+        'posts' => '\DataExchange\SIFUK20\Models\Posts'
     ];
 
     public static function swaggerTypes()
@@ -174,7 +174,7 @@ class CurrentAssignment implements ArrayAccess
 
     /**
      * Gets sif_ref_id
-     * @return \DataExchange\UK\20\Models\SIFRefId1
+     * @return \DataExchange\SIFUK20\Models\SIFRefId1
      */
     public function getSifRefId()
     {
@@ -183,7 +183,7 @@ class CurrentAssignment implements ArrayAccess
 
     /**
      * Sets sif_ref_id
-     * @param \DataExchange\UK\20\Models\SIFRefId1 $sif_ref_id
+     * @param \DataExchange\SIFUK20\Models\SIFRefId1 $sif_ref_id
      * @return $this
      */
     public function setSifRefId($sif_ref_id)
@@ -237,7 +237,7 @@ class CurrentAssignment implements ArrayAccess
 
     /**
      * Gets posts
-     * @return \DataExchange\UK\20\Models\Posts
+     * @return \DataExchange\SIFUK20\Models\Posts
      */
     public function getPosts()
     {
@@ -246,7 +246,7 @@ class CurrentAssignment implements ArrayAccess
 
     /**
      * Sets posts
-     * @param \DataExchange\UK\20\Models\Posts $posts
+     * @param \DataExchange\SIFUK20\Models\Posts $posts
      * @return $this
      */
     public function setPosts($posts)
@@ -307,9 +307,9 @@ class CurrentAssignment implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

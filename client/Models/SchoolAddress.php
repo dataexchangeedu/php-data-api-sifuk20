@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The school&amp;#039;s published address.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -71,8 +71,8 @@ class SchoolAddress implements ArrayAccess
         'local_id' => 'string',
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'paon' => '\DataExchange\UK\20\Models\PAON',
-        'saon' => '\DataExchange\UK\20\Models\SAON',
+        'paon' => '\DataExchange\SIFUK20\Models\PAON',
+        'saon' => '\DataExchange\SIFUK20\Models\SAON',
         'street' => 'string',
         'locality' => 'string',
         'town' => 'string',
@@ -83,8 +83,8 @@ class SchoolAddress implements ArrayAccess
         'country' => 'string',
         'unique_property_reference_number' => 'int',
         'unique_street_reference_number' => 'int',
-        'location_context' => '\DataExchange\UK\20\Models\LocationContext',
-        'grid_location' => '\DataExchange\UK\20\Models\GridLocation'
+        'location_context' => '\DataExchange\SIFUK20\Models\LocationContext',
+        'grid_location' => '\DataExchange\SIFUK20\Models\GridLocation'
     ];
 
     public static function swaggerTypes()
@@ -335,7 +335,7 @@ class SchoolAddress implements ArrayAccess
 
     /**
      * Gets paon
-     * @return \DataExchange\UK\20\Models\PAON
+     * @return \DataExchange\SIFUK20\Models\PAON
      */
     public function getPaon()
     {
@@ -344,7 +344,7 @@ class SchoolAddress implements ArrayAccess
 
     /**
      * Sets paon
-     * @param \DataExchange\UK\20\Models\PAON $paon
+     * @param \DataExchange\SIFUK20\Models\PAON $paon
      * @return $this
      */
     public function setPaon($paon)
@@ -356,7 +356,7 @@ class SchoolAddress implements ArrayAccess
 
     /**
      * Gets saon
-     * @return \DataExchange\UK\20\Models\SAON
+     * @return \DataExchange\SIFUK20\Models\SAON
      */
     public function getSaon()
     {
@@ -365,7 +365,7 @@ class SchoolAddress implements ArrayAccess
 
     /**
      * Sets saon
-     * @param \DataExchange\UK\20\Models\SAON $saon
+     * @param \DataExchange\SIFUK20\Models\SAON $saon
      * @return $this
      */
     public function setSaon($saon)
@@ -587,7 +587,7 @@ class SchoolAddress implements ArrayAccess
 
     /**
      * Gets location_context
-     * @return \DataExchange\UK\20\Models\LocationContext
+     * @return \DataExchange\SIFUK20\Models\LocationContext
      */
     public function getLocationContext()
     {
@@ -596,7 +596,7 @@ class SchoolAddress implements ArrayAccess
 
     /**
      * Sets location_context
-     * @param \DataExchange\UK\20\Models\LocationContext $location_context
+     * @param \DataExchange\SIFUK20\Models\LocationContext $location_context
      * @return $this
      */
     public function setLocationContext($location_context)
@@ -608,7 +608,7 @@ class SchoolAddress implements ArrayAccess
 
     /**
      * Gets grid_location
-     * @return \DataExchange\UK\20\Models\GridLocation
+     * @return \DataExchange\SIFUK20\Models\GridLocation
      */
     public function getGridLocation()
     {
@@ -617,7 +617,7 @@ class SchoolAddress implements ArrayAccess
 
     /**
      * Sets grid_location
-     * @param \DataExchange\UK\20\Models\GridLocation $grid_location
+     * @param \DataExchange\SIFUK20\Models\GridLocation $grid_location
      * @return $this
      */
     public function setGridLocation($grid_location)
@@ -678,9 +678,9 @@ class SchoolAddress implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

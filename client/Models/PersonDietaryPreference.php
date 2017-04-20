@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,8 +68,8 @@ class PersonDietaryPreference implements ArrayAccess
     protected static $swaggerTypes = [
         'ref_id' => 'string',
         'person_ref_id' => 'string',
-        'weekly_meal_pattern_list' => '\DataExchange\UK\20\Models\WeeklyMealPattern[]',
-        'dietary_preference_list' => '\DataExchange\UK\20\Models\DietaryPreference[]'
+        'weekly_meal_pattern_list' => '\DataExchange\SIFUK20\Models\WeeklyMealPattern[]',
+        'dietary_preference_list' => '\DataExchange\SIFUK20\Models\DietaryPreference[]'
     ];
 
     public static function swaggerTypes()
@@ -228,7 +228,7 @@ class PersonDietaryPreference implements ArrayAccess
 
     /**
      * Gets weekly_meal_pattern_list
-     * @return \DataExchange\UK\20\Models\WeeklyMealPattern[]
+     * @return \DataExchange\SIFUK20\Models\WeeklyMealPattern[]
      */
     public function getWeeklyMealPatternList()
     {
@@ -237,7 +237,7 @@ class PersonDietaryPreference implements ArrayAccess
 
     /**
      * Sets weekly_meal_pattern_list
-     * @param \DataExchange\UK\20\Models\WeeklyMealPattern[] $weekly_meal_pattern_list
+     * @param \DataExchange\SIFUK20\Models\WeeklyMealPattern[] $weekly_meal_pattern_list
      * @return $this
      */
     public function setWeeklyMealPatternList($weekly_meal_pattern_list)
@@ -249,7 +249,7 @@ class PersonDietaryPreference implements ArrayAccess
 
     /**
      * Gets dietary_preference_list
-     * @return \DataExchange\UK\20\Models\DietaryPreference[]
+     * @return \DataExchange\SIFUK20\Models\DietaryPreference[]
      */
     public function getDietaryPreferenceList()
     {
@@ -258,7 +258,7 @@ class PersonDietaryPreference implements ArrayAccess
 
     /**
      * Sets dietary_preference_list
-     * @param \DataExchange\UK\20\Models\DietaryPreference[] $dietary_preference_list
+     * @param \DataExchange\SIFUK20\Models\DietaryPreference[] $dietary_preference_list
      * @return $this
      */
     public function setDietaryPreferenceList($dietary_preference_list)
@@ -319,9 +319,9 @@ class PersonDietaryPreference implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **assessment_subject_list** | **string[]** |  | [optional] 
 **stage_list** | **string[]** |  | [optional] 
 **assessment_result_grade_set_ref_id** | **string** | The gradeset associated with the component or aspect. | [optional] 
-**mark_set_list** | [**\DataExchange\UK\20\Models\MarkSet[]**](MarkSet.md) |  | [optional] 
+**mark_set_list** | [**\DataExchange\SIFUK20\Models\MarkSet[]**](MarkSet.md) |  | [optional] 
 **component_type** | **string** | Defines the associated result format. | 
 **result_qualifier** | **string** | Defines the format or type of result(s) awarded. | 
 **assessment_method** | **string** | The method or format of the Assessment. | 

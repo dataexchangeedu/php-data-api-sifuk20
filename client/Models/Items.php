@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -66,7 +66,7 @@ class Items implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'item' => '\DataExchange\UK\20\Models\Item'
+        'item' => '\DataExchange\SIFUK20\Models\Item'
     ];
 
     public static function swaggerTypes()
@@ -159,7 +159,7 @@ class Items implements ArrayAccess
 
     /**
      * Gets item
-     * @return \DataExchange\UK\20\Models\Item
+     * @return \DataExchange\SIFUK20\Models\Item
      */
     public function getItem()
     {
@@ -168,7 +168,7 @@ class Items implements ArrayAccess
 
     /**
      * Sets item
-     * @param \DataExchange\UK\20\Models\Item $item
+     * @param \DataExchange\SIFUK20\Models\Item $item
      * @return $this
      */
     public function setItem($item)
@@ -229,9 +229,9 @@ class Items implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

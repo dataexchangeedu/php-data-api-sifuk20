@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description Object to represent a behaviour incident at an educational establishment
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -69,9 +69,9 @@ class LearnerBehaviourIncident implements ArrayAccess
     protected static $swaggerTypes = [
         'ref_id' => 'string',
         'school_info_ref_id' => 'string',
-        'behaviour_type' => '\DataExchange\UK\20\Models\BehaviourType',
-        'incident' => '\DataExchange\UK\20\Models\Incident',
-        'participants' => '\DataExchange\UK\20\Models\Participants'
+        'behaviour_type' => '\DataExchange\SIFUK20\Models\BehaviourType',
+        'incident' => '\DataExchange\SIFUK20\Models\Incident',
+        'participants' => '\DataExchange\SIFUK20\Models\Participants'
     ];
 
     public static function swaggerTypes()
@@ -234,7 +234,7 @@ class LearnerBehaviourIncident implements ArrayAccess
 
     /**
      * Gets behaviour_type
-     * @return \DataExchange\UK\20\Models\BehaviourType
+     * @return \DataExchange\SIFUK20\Models\BehaviourType
      */
     public function getBehaviourType()
     {
@@ -243,7 +243,7 @@ class LearnerBehaviourIncident implements ArrayAccess
 
     /**
      * Sets behaviour_type
-     * @param \DataExchange\UK\20\Models\BehaviourType $behaviour_type
+     * @param \DataExchange\SIFUK20\Models\BehaviourType $behaviour_type
      * @return $this
      */
     public function setBehaviourType($behaviour_type)
@@ -255,7 +255,7 @@ class LearnerBehaviourIncident implements ArrayAccess
 
     /**
      * Gets incident
-     * @return \DataExchange\UK\20\Models\Incident
+     * @return \DataExchange\SIFUK20\Models\Incident
      */
     public function getIncident()
     {
@@ -264,7 +264,7 @@ class LearnerBehaviourIncident implements ArrayAccess
 
     /**
      * Sets incident
-     * @param \DataExchange\UK\20\Models\Incident $incident
+     * @param \DataExchange\SIFUK20\Models\Incident $incident
      * @return $this
      */
     public function setIncident($incident)
@@ -276,7 +276,7 @@ class LearnerBehaviourIncident implements ArrayAccess
 
     /**
      * Gets participants
-     * @return \DataExchange\UK\20\Models\Participants
+     * @return \DataExchange\SIFUK20\Models\Participants
      */
     public function getParticipants()
     {
@@ -285,7 +285,7 @@ class LearnerBehaviourIncident implements ArrayAccess
 
     /**
      * Sets participants
-     * @param \DataExchange\UK\20\Models\Participants $participants
+     * @param \DataExchange\SIFUK20\Models\Participants $participants
      * @return $this
      */
     public function setParticipants($participants)
@@ -346,9 +346,9 @@ class LearnerBehaviourIncident implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

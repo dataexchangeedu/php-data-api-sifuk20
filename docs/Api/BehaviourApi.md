@@ -1,4 +1,4 @@
-# DataExchange\UK\20\BehaviourApi
+# DataExchange\SIFUK20\BehaviourApi
 
 All URIs are relative to *https://uk.staging.dataexchange.education/rest/sif/requests*
 
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 
 # **createLearnerBehaviourIncidents**
-> \DataExchange\UK\20\Models\SifCreateResponse createLearnerBehaviourIncidents($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLearnerBehaviourIncidents($body)
 
 Create multiple LearnerBehaviourIncidents
 
@@ -30,8 +30,8 @@ Create multiple LearnerBehaviourIncidents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
-$body = new \DataExchange\UK\20\Models\LearnerBehaviourIncidents(); // \DataExchange\UK\20\Models\LearnerBehaviourIncidents | LearnerBehaviourIncidents to be created
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents(); // \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents | LearnerBehaviourIncidents to be created
 
 try {
     $result = $api_instance->createLearnerBehaviourIncidents($body);
@@ -46,11 +46,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerBehaviourIncidents**](../Model/\DataExchange\UK\20\Models\LearnerBehaviourIncidents.md)| LearnerBehaviourIncidents to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerBehaviourIncidents**](../Model/\DataExchange\SIFUK20\Models\LearnerBehaviourIncidents.md)| LearnerBehaviourIncidents to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLearnerExclusions**
-> \DataExchange\UK\20\Models\SifCreateResponse createLearnerExclusions($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLearnerExclusions($body)
 
 Create multiple LearnerExclusions
 
@@ -73,8 +73,8 @@ Create multiple LearnerExclusions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
-$body = new \DataExchange\UK\20\Models\LearnerExclusions(); // \DataExchange\UK\20\Models\LearnerExclusions | LearnerExclusions to be created
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerExclusions(); // \DataExchange\SIFUK20\Models\LearnerExclusions | LearnerExclusions to be created
 
 try {
     $result = $api_instance->createLearnerExclusions($body);
@@ -89,11 +89,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerExclusions**](../Model/\DataExchange\UK\20\Models\LearnerExclusions.md)| LearnerExclusions to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerExclusions**](../Model/\DataExchange\SIFUK20\Models\LearnerExclusions.md)| LearnerExclusions to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerBehaviourIncidentByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerBehaviourIncidentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerBehaviourIncidentByRefId($ref_id)
 
 Delete LearnerBehaviourIncident by RefId
 
@@ -116,7 +116,7 @@ Delete LearnerBehaviourIncident by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerBehaviourIncident
 
 try {
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -150,7 +150,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerBehaviourIncidents**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerBehaviourIncidents($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerBehaviourIncidents($body)
 
 Delete multiple LearnerBehaviourIncidents
 
@@ -159,8 +159,8 @@ Delete multiple LearnerBehaviourIncidents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLearnerBehaviourIncidents($body);
@@ -175,11 +175,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerExclusionByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerExclusionByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerExclusionByRefId($ref_id)
 
 Delete LearnerExclusion by RefId
 
@@ -202,7 +202,7 @@ Delete LearnerExclusion by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerExclusion
 
 try {
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -236,7 +236,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerExclusions**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerExclusions($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerExclusions($body)
 
 Delete multiple LearnerExclusions
 
@@ -245,8 +245,8 @@ Delete multiple LearnerExclusions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLearnerExclusions($body);
@@ -261,11 +261,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -279,7 +279,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerBehaviourIncidentByRefId**
-> \DataExchange\UK\20\Models\LearnerBehaviourIncidents getLearnerBehaviourIncidentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents getLearnerBehaviourIncidentByRefId($ref_id)
 
 Find LearnerBehaviourIncident by RefId
 
@@ -288,7 +288,7 @@ Find LearnerBehaviourIncident by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerBehaviourIncident
 
 try {
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerBehaviourIncidents**](../Model/LearnerBehaviourIncidents.md)
+[**\DataExchange\SIFUK20\Models\LearnerBehaviourIncidents**](../Model/LearnerBehaviourIncidents.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerBehaviourIncidents**
-> \DataExchange\UK\20\Models\LearnerBehaviourIncidents getLearnerBehaviourIncidents($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents getLearnerBehaviourIncidents($navigation_page, $navigation_page_size)
 
 Return all LearnerBehaviourIncidents
 
@@ -331,7 +331,7 @@ Return all LearnerBehaviourIncidents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerBehaviourIncidents**](../Model/LearnerBehaviourIncidents.md)
+[**\DataExchange\SIFUK20\Models\LearnerBehaviourIncidents**](../Model/LearnerBehaviourIncidents.md)
 
 ### Authorization
 
@@ -367,7 +367,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerExclusionByRefId**
-> \DataExchange\UK\20\Models\LearnerExclusions getLearnerExclusionByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\LearnerExclusions getLearnerExclusionByRefId($ref_id)
 
 Find LearnerExclusion by RefId
 
@@ -376,7 +376,7 @@ Find LearnerExclusion by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerExclusion
 
 try {
@@ -396,7 +396,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerExclusions**](../Model/LearnerExclusions.md)
+[**\DataExchange\SIFUK20\Models\LearnerExclusions**](../Model/LearnerExclusions.md)
 
 ### Authorization
 
@@ -410,7 +410,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerExclusions**
-> \DataExchange\UK\20\Models\LearnerExclusions getLearnerExclusions($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerExclusions getLearnerExclusions($navigation_page, $navigation_page_size)
 
 Return all LearnerExclusions
 
@@ -419,7 +419,7 @@ Return all LearnerExclusions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -441,7 +441,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerExclusions**](../Model/LearnerExclusions.md)
+[**\DataExchange\SIFUK20\Models\LearnerExclusions**](../Model/LearnerExclusions.md)
 
 ### Authorization
 
@@ -455,7 +455,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerBehaviourIncidentByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerBehaviourIncidentByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerBehaviourIncidentByRefId($ref_id, $body)
 
 Update LearnerBehaviourIncident by RefId
 
@@ -464,9 +464,9 @@ Update LearnerBehaviourIncident by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerBehaviourIncident
-$body = new \DataExchange\UK\20\Models\LearnerBehaviourIncident(); // \DataExchange\UK\20\Models\LearnerBehaviourIncident | LearnerBehaviourIncident to be updated
+$body = new \DataExchange\SIFUK20\Models\LearnerBehaviourIncident(); // \DataExchange\SIFUK20\Models\LearnerBehaviourIncident | LearnerBehaviourIncident to be updated
 
 try {
     $result = $api_instance->updateLearnerBehaviourIncidentByRefId($ref_id, $body);
@@ -482,11 +482,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of LearnerBehaviourIncident |
- **body** | [**\DataExchange\UK\20\Models\LearnerBehaviourIncident**](../Model/\DataExchange\UK\20\Models\LearnerBehaviourIncident.md)| LearnerBehaviourIncident to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerBehaviourIncident**](../Model/\DataExchange\SIFUK20\Models\LearnerBehaviourIncident.md)| LearnerBehaviourIncident to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -500,7 +500,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerBehaviourIncidents**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerBehaviourIncidents($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerBehaviourIncidents($body)
 
 Update multiple LearnerBehaviourIncidents
 
@@ -509,8 +509,8 @@ Update multiple LearnerBehaviourIncidents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
-$body = new \DataExchange\UK\20\Models\LearnerBehaviourIncidents(); // \DataExchange\UK\20\Models\LearnerBehaviourIncidents | LearnerBehaviourIncidents to be updated
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents(); // \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents | LearnerBehaviourIncidents to be updated
 
 try {
     $result = $api_instance->updateLearnerBehaviourIncidents($body);
@@ -525,11 +525,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerBehaviourIncidents**](../Model/\DataExchange\UK\20\Models\LearnerBehaviourIncidents.md)| LearnerBehaviourIncidents to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerBehaviourIncidents**](../Model/\DataExchange\SIFUK20\Models\LearnerBehaviourIncidents.md)| LearnerBehaviourIncidents to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -543,7 +543,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerExclusionByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerExclusionByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerExclusionByRefId($ref_id, $body)
 
 Update LearnerExclusion by RefId
 
@@ -552,9 +552,9 @@ Update LearnerExclusion by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerExclusion
-$body = new \DataExchange\UK\20\Models\LearnerExclusion(); // \DataExchange\UK\20\Models\LearnerExclusion | LearnerExclusion to be updated
+$body = new \DataExchange\SIFUK20\Models\LearnerExclusion(); // \DataExchange\SIFUK20\Models\LearnerExclusion | LearnerExclusion to be updated
 
 try {
     $result = $api_instance->updateLearnerExclusionByRefId($ref_id, $body);
@@ -570,11 +570,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of LearnerExclusion |
- **body** | [**\DataExchange\UK\20\Models\LearnerExclusion**](../Model/\DataExchange\UK\20\Models\LearnerExclusion.md)| LearnerExclusion to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerExclusion**](../Model/\DataExchange\SIFUK20\Models\LearnerExclusion.md)| LearnerExclusion to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -588,7 +588,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerExclusions**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerExclusions($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerExclusions($body)
 
 Update multiple LearnerExclusions
 
@@ -597,8 +597,8 @@ Update multiple LearnerExclusions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\BehaviourApi();
-$body = new \DataExchange\UK\20\Models\LearnerExclusions(); // \DataExchange\UK\20\Models\LearnerExclusions | LearnerExclusions to be updated
+$api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerExclusions(); // \DataExchange\SIFUK20\Models\LearnerExclusions | LearnerExclusions to be updated
 
 try {
     $result = $api_instance->updateLearnerExclusions($body);
@@ -613,11 +613,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerExclusions**](../Model/\DataExchange\UK\20\Models\LearnerExclusions.md)| LearnerExclusions to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerExclusions**](../Model/\DataExchange\SIFUK20\Models\LearnerExclusions.md)| LearnerExclusions to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 

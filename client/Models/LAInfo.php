@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This object contains information about a Local Authority (LA). Compare with US/Canada object:
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -72,11 +72,11 @@ class LAInfo implements ArrayAccess
         'la_name' => 'string',
         'la_full_name' => 'string',
         'laurl' => 'string',
-        'la_address' => '\DataExchange\UK\20\Models\LAAddress',
+        'la_address' => '\DataExchange\SIFUK20\Models\LAAddress',
         'address_list' => 'string[]',
-        'la_phone_number' => '\DataExchange\UK\20\Models\LAPhoneNumber',
+        'la_phone_number' => '\DataExchange\SIFUK20\Models\LAPhoneNumber',
         'phone_number_list' => 'string[]',
-        'la_contact_list' => '\DataExchange\UK\20\Models\Contact[]'
+        'la_contact_list' => '\DataExchange\SIFUK20\Models\Contact[]'
     ];
 
     public static function swaggerTypes()
@@ -334,7 +334,7 @@ class LAInfo implements ArrayAccess
 
     /**
      * Gets la_address
-     * @return \DataExchange\UK\20\Models\LAAddress
+     * @return \DataExchange\SIFUK20\Models\LAAddress
      */
     public function getLaAddress()
     {
@@ -343,7 +343,7 @@ class LAInfo implements ArrayAccess
 
     /**
      * Sets la_address
-     * @param \DataExchange\UK\20\Models\LAAddress $la_address
+     * @param \DataExchange\SIFUK20\Models\LAAddress $la_address
      * @return $this
      */
     public function setLaAddress($la_address)
@@ -376,7 +376,7 @@ class LAInfo implements ArrayAccess
 
     /**
      * Gets la_phone_number
-     * @return \DataExchange\UK\20\Models\LAPhoneNumber
+     * @return \DataExchange\SIFUK20\Models\LAPhoneNumber
      */
     public function getLaPhoneNumber()
     {
@@ -385,7 +385,7 @@ class LAInfo implements ArrayAccess
 
     /**
      * Sets la_phone_number
-     * @param \DataExchange\UK\20\Models\LAPhoneNumber $la_phone_number
+     * @param \DataExchange\SIFUK20\Models\LAPhoneNumber $la_phone_number
      * @return $this
      */
     public function setLaPhoneNumber($la_phone_number)
@@ -418,7 +418,7 @@ class LAInfo implements ArrayAccess
 
     /**
      * Gets la_contact_list
-     * @return \DataExchange\UK\20\Models\Contact[]
+     * @return \DataExchange\SIFUK20\Models\Contact[]
      */
     public function getLaContactList()
     {
@@ -427,7 +427,7 @@ class LAInfo implements ArrayAccess
 
     /**
      * Sets la_contact_list
-     * @param \DataExchange\UK\20\Models\Contact[] $la_contact_list A list of contacts within the LA.
+     * @param \DataExchange\SIFUK20\Models\Contact[] $la_contact_list A list of contacts within the LA.
      * @return $this
      */
     public function setLaContactList($la_contact_list)
@@ -488,9 +488,9 @@ class LAInfo implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

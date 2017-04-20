@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **contact_personal_ref_id** | **string** | The ID (GUID) of this contact. | 
 **relationship** | **string** | Defines the relationship of the contact to the learner. | 
 **local_id** | **string** | The locally-assigned identifier for this contact. | [optional] 
-**contact_flags** | [**\DataExchange\UK\20\Models\ContactFlags**](ContactFlags.md) |  | [optional] 
+**contact_flags** | [**\DataExchange\SIFUK20\Models\ContactFlags**](ContactFlags.md) |  | [optional] 
 **contact_sequence** | **int** |  | [optional] 
 **contact_sequence_source** | **string** | Indicates the person who provided the contact sequence order. | [optional] 
 

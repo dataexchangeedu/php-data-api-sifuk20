@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -70,7 +70,7 @@ class TTDay implements ArrayAccess
         'short_name' => 'string',
         'long_name' => 'string',
         'day_index' => 'int',
-        'period_list' => '\DataExchange\UK\20\Models\Period[]'
+        'period_list' => '\DataExchange\SIFUK20\Models\Period[]'
     ];
 
     public static function swaggerTypes()
@@ -287,7 +287,7 @@ class TTDay implements ArrayAccess
 
     /**
      * Gets period_list
-     * @return \DataExchange\UK\20\Models\Period[]
+     * @return \DataExchange\SIFUK20\Models\Period[]
      */
     public function getPeriodList()
     {
@@ -296,7 +296,7 @@ class TTDay implements ArrayAccess
 
     /**
      * Sets period_list
-     * @param \DataExchange\UK\20\Models\Period[] $period_list
+     * @param \DataExchange\SIFUK20\Models\Period[] $period_list
      * @return $this
      */
     public function setPeriodList($period_list)
@@ -357,9 +357,9 @@ class TTDay implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

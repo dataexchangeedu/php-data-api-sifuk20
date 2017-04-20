@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This object contains key personal information relating to a workforce member, who might be a teacher or other employee of the school or LA. Compare with US/Canada objects:
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -69,13 +69,13 @@ class WorkforcePersonal implements ArrayAccess
     protected static $swaggerTypes = [
         'ref_id' => 'string',
         'local_id' => 'string',
-        'alert_msg_list' => '\DataExchange\UK\20\Models\AlertMsg[]',
-        'medical_alert_msg_list' => '\DataExchange\UK\20\Models\MedicalAlertMsg[]',
-        'personal_information' => '\DataExchange\UK\20\Models\PersonalInformation',
+        'alert_msg_list' => '\DataExchange\SIFUK20\Models\AlertMsg[]',
+        'medical_alert_msg_list' => '\DataExchange\SIFUK20\Models\MedicalAlertMsg[]',
+        'personal_information' => '\DataExchange\SIFUK20\Models\PersonalInformation',
         'teacher_number' => 'string',
         'ni_number' => 'string',
-        'external_workforce_identifier_list' => '\DataExchange\UK\20\Models\ExternalLearnerIdentifier[]',
-        'current_assignment_list' => '\DataExchange\UK\20\Models\CurrentAssignment[]'
+        'external_workforce_identifier_list' => '\DataExchange\SIFUK20\Models\ExternalLearnerIdentifier[]',
+        'current_assignment_list' => '\DataExchange\SIFUK20\Models\CurrentAssignment[]'
     ];
 
     public static function swaggerTypes()
@@ -254,7 +254,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Gets alert_msg_list
-     * @return \DataExchange\UK\20\Models\AlertMsg[]
+     * @return \DataExchange\SIFUK20\Models\AlertMsg[]
      */
     public function getAlertMsgList()
     {
@@ -263,7 +263,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Sets alert_msg_list
-     * @param \DataExchange\UK\20\Models\AlertMsg[] $alert_msg_list
+     * @param \DataExchange\SIFUK20\Models\AlertMsg[] $alert_msg_list
      * @return $this
      */
     public function setAlertMsgList($alert_msg_list)
@@ -275,7 +275,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Gets medical_alert_msg_list
-     * @return \DataExchange\UK\20\Models\MedicalAlertMsg[]
+     * @return \DataExchange\SIFUK20\Models\MedicalAlertMsg[]
      */
     public function getMedicalAlertMsgList()
     {
@@ -284,7 +284,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Sets medical_alert_msg_list
-     * @param \DataExchange\UK\20\Models\MedicalAlertMsg[] $medical_alert_msg_list
+     * @param \DataExchange\SIFUK20\Models\MedicalAlertMsg[] $medical_alert_msg_list
      * @return $this
      */
     public function setMedicalAlertMsgList($medical_alert_msg_list)
@@ -296,7 +296,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Gets personal_information
-     * @return \DataExchange\UK\20\Models\PersonalInformation
+     * @return \DataExchange\SIFUK20\Models\PersonalInformation
      */
     public function getPersonalInformation()
     {
@@ -305,7 +305,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Sets personal_information
-     * @param \DataExchange\UK\20\Models\PersonalInformation $personal_information
+     * @param \DataExchange\SIFUK20\Models\PersonalInformation $personal_information
      * @return $this
      */
     public function setPersonalInformation($personal_information)
@@ -359,7 +359,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Gets external_workforce_identifier_list
-     * @return \DataExchange\UK\20\Models\ExternalLearnerIdentifier[]
+     * @return \DataExchange\SIFUK20\Models\ExternalLearnerIdentifier[]
      */
     public function getExternalWorkforceIdentifierList()
     {
@@ -368,7 +368,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Sets external_workforce_identifier_list
-     * @param \DataExchange\UK\20\Models\ExternalLearnerIdentifier[] $external_workforce_identifier_list
+     * @param \DataExchange\SIFUK20\Models\ExternalLearnerIdentifier[] $external_workforce_identifier_list
      * @return $this
      */
     public function setExternalWorkforceIdentifierList($external_workforce_identifier_list)
@@ -380,7 +380,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Gets current_assignment_list
-     * @return \DataExchange\UK\20\Models\CurrentAssignment[]
+     * @return \DataExchange\SIFUK20\Models\CurrentAssignment[]
      */
     public function getCurrentAssignmentList()
     {
@@ -389,7 +389,7 @@ class WorkforcePersonal implements ArrayAccess
 
     /**
      * Sets current_assignment_list
-     * @param \DataExchange\UK\20\Models\CurrentAssignment[] $current_assignment_list
+     * @param \DataExchange\SIFUK20\Models\CurrentAssignment[] $current_assignment_list
      * @return $this
      */
     public function setCurrentAssignmentList($current_assignment_list)
@@ -450,9 +450,9 @@ class WorkforcePersonal implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

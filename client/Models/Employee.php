@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -67,7 +67,7 @@ class Employee implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'workforce_personal_ref_id' => 'string',
-        'participation_types' => '\DataExchange\UK\20\Models\ParticipationTypes',
+        'participation_types' => '\DataExchange\SIFUK20\Models\ParticipationTypes',
         'participation_comment' => 'string'
     ];
 
@@ -196,7 +196,7 @@ class Employee implements ArrayAccess
 
     /**
      * Gets participation_types
-     * @return \DataExchange\UK\20\Models\ParticipationTypes
+     * @return \DataExchange\SIFUK20\Models\ParticipationTypes
      */
     public function getParticipationTypes()
     {
@@ -205,7 +205,7 @@ class Employee implements ArrayAccess
 
     /**
      * Sets participation_types
-     * @param \DataExchange\UK\20\Models\ParticipationTypes $participation_types
+     * @param \DataExchange\SIFUK20\Models\ParticipationTypes $participation_types
      * @return $this
      */
     public function setParticipationTypes($participation_types)
@@ -287,9 +287,9 @@ class Employee implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **end_date** | [**\DateTime**](Date.md) | Date Specific Entitlement Ends has to be on or after Start date. | [optional] 
 **note** | **string** | A note relating to entitlement period. | [optional] 
 **value** | **string** |  | [optional] 
-**provider_id** | [**\DataExchange\UK\20\Models\ProviderId**](ProviderId.md) |  | [optional] 
+**provider_id** | [**\DataExchange\SIFUK20\Models\ProviderId**](ProviderId.md) |  | [optional] 
 **next_review_date** | [**\DateTime**](Date.md) | Advises the date for next review of the listed entitlement, this element is not expected to be provided for instances where the EndDate is in the past as it refers to the entitlement, not periods of entitlement. Note that a review date could be prior to the end date of a current entitlement, and so is recorded separately. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
