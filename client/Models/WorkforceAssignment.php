@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description A more detailed, temporal and referenced view of the posts a person holds compared to the WorkforcePersonal CurrentAssignmentList element. Based around the US SIF 2.4 EmployeeAssignment object.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -69,7 +69,7 @@ class WorkforceAssignment implements ArrayAccess
     protected static $swaggerTypes = [
         'ref_id' => 'string',
         'workforce_personal_ref_id' => 'string',
-        'sif_ref_id' => '\DataExchange\UK\20\Models\SIFRefId2',
+        'sif_ref_id' => '\DataExchange\SIFUK20\Models\SIFRefId2',
         'assignment_start_date' => '\DateTime',
         'assignment_end_date' => '\DateTime',
         'post' => 'string'
@@ -251,7 +251,7 @@ class WorkforceAssignment implements ArrayAccess
 
     /**
      * Gets sif_ref_id
-     * @return \DataExchange\UK\20\Models\SIFRefId2
+     * @return \DataExchange\SIFUK20\Models\SIFRefId2
      */
     public function getSifRefId()
     {
@@ -260,7 +260,7 @@ class WorkforceAssignment implements ArrayAccess
 
     /**
      * Sets sif_ref_id
-     * @param \DataExchange\UK\20\Models\SIFRefId2 $sif_ref_id
+     * @param \DataExchange\SIFUK20\Models\SIFRefId2 $sif_ref_id
      * @return $this
      */
     public function setSifRefId($sif_ref_id)
@@ -384,9 +384,9 @@ class WorkforceAssignment implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

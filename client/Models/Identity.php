@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This object allows a system that stores network identities and/or passwords to share them with other applications through SIF. The provider of the Identity object may only support providing an identity or a password, or it may support both.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,11 +68,11 @@ class Identity implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'ref_id' => 'string',
-        'sif_ref_id' => '\DataExchange\UK\20\Models\SIFRefId',
+        'sif_ref_id' => '\DataExchange\SIFUK20\Models\SIFRefId',
         'main_role' => 'string',
         'authentication_source' => 'string',
-        'identity_assertions' => '\DataExchange\UK\20\Models\IdentityAssertions',
-        'password_list' => '\DataExchange\UK\20\Models\Password[]',
+        'identity_assertions' => '\DataExchange\SIFUK20\Models\IdentityAssertions',
+        'password_list' => '\DataExchange\SIFUK20\Models\Password[]',
         'authentication_source_global_uid' => 'string'
     ];
 
@@ -223,7 +223,7 @@ class Identity implements ArrayAccess
 
     /**
      * Gets sif_ref_id
-     * @return \DataExchange\UK\20\Models\SIFRefId
+     * @return \DataExchange\SIFUK20\Models\SIFRefId
      */
     public function getSifRefId()
     {
@@ -232,7 +232,7 @@ class Identity implements ArrayAccess
 
     /**
      * Sets sif_ref_id
-     * @param \DataExchange\UK\20\Models\SIFRefId $sif_ref_id
+     * @param \DataExchange\SIFUK20\Models\SIFRefId $sif_ref_id
      * @return $this
      */
     public function setSifRefId($sif_ref_id)
@@ -286,7 +286,7 @@ class Identity implements ArrayAccess
 
     /**
      * Gets identity_assertions
-     * @return \DataExchange\UK\20\Models\IdentityAssertions
+     * @return \DataExchange\SIFUK20\Models\IdentityAssertions
      */
     public function getIdentityAssertions()
     {
@@ -295,7 +295,7 @@ class Identity implements ArrayAccess
 
     /**
      * Sets identity_assertions
-     * @param \DataExchange\UK\20\Models\IdentityAssertions $identity_assertions
+     * @param \DataExchange\SIFUK20\Models\IdentityAssertions $identity_assertions
      * @return $this
      */
     public function setIdentityAssertions($identity_assertions)
@@ -307,7 +307,7 @@ class Identity implements ArrayAccess
 
     /**
      * Gets password_list
-     * @return \DataExchange\UK\20\Models\Password[]
+     * @return \DataExchange\SIFUK20\Models\Password[]
      */
     public function getPasswordList()
     {
@@ -316,7 +316,7 @@ class Identity implements ArrayAccess
 
     /**
      * Sets password_list
-     * @param \DataExchange\UK\20\Models\Password[] $password_list
+     * @param \DataExchange\SIFUK20\Models\Password[] $password_list
      * @return $this
      */
     public function setPasswordList($password_list)
@@ -398,9 +398,9 @@ class Identity implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

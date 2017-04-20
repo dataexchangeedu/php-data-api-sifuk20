@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,7 +68,7 @@ class GradeSet implements ArrayAccess
     protected static $swaggerTypes = [
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'grades' => '\DataExchange\UK\20\Models\Grades'
+        'grades' => '\DataExchange\SIFUK20\Models\Grades'
     ];
 
     public static function swaggerTypes()
@@ -217,7 +217,7 @@ class GradeSet implements ArrayAccess
 
     /**
      * Gets grades
-     * @return \DataExchange\UK\20\Models\Grades
+     * @return \DataExchange\SIFUK20\Models\Grades
      */
     public function getGrades()
     {
@@ -226,7 +226,7 @@ class GradeSet implements ArrayAccess
 
     /**
      * Sets grades
-     * @param \DataExchange\UK\20\Models\Grades $grades
+     * @param \DataExchange\SIFUK20\Models\Grades $grades
      * @return $this
      */
     public function setGrades($grades)
@@ -287,9 +287,9 @@ class GradeSet implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

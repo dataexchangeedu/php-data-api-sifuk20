@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This object contains personal information related to a learner. As most learners are enroled in the school or establishment publishing this object, basic enrolment information is also provided to aid in overall SIF performance.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -69,29 +69,29 @@ class LearnerPersonal implements ArrayAccess
     protected static $swaggerTypes = [
         'ref_id' => 'string',
         'local_id' => 'string',
-        'alert_msg_list' => '\DataExchange\UK\20\Models\AlertMsg[]',
-        'medical_alert_msg_list' => '\DataExchange\UK\20\Models\MedicalAlertMsg[]',
-        'personal_information' => '\DataExchange\UK\20\Models\PersonalInformation',
+        'alert_msg_list' => '\DataExchange\SIFUK20\Models\AlertMsg[]',
+        'medical_alert_msg_list' => '\DataExchange\SIFUK20\Models\MedicalAlertMsg[]',
+        'personal_information' => '\DataExchange\SIFUK20\Models\PersonalInformation',
         'uipi' => 'string',
         'upn' => 'string',
         'upn_allocation_date' => '\DateTime',
         'former_upn_list' => 'string[]',
         'uln' => 'string',
-        'external_learner_identifier_list' => '\DataExchange\UK\20\Models\ExternalLearnerIdentifier[]',
+        'external_learner_identifier_list' => '\DataExchange\SIFUK20\Models\ExternalLearnerIdentifier[]',
         'family_structure' => 'string',
-        'in_care' => '\DataExchange\UK\20\Models\InCare',
+        'in_care' => '\DataExchange\SIFUK20\Models\InCare',
         'connexions_agreement' => 'string',
-        'child_protection_register' => '\DataExchange\UK\20\Models\ChildProtectionRegister',
+        'child_protection_register' => '\DataExchange\SIFUK20\Models\ChildProtectionRegister',
         'gifted_talented' => 'string',
         'home_la' => 'string',
         'learner_identity' => 'string',
         'mode_of_travel' => 'string',
         'pregnant' => 'string',
-        'sibling_list' => '\DataExchange\UK\20\Models\Sibling[]',
+        'sibling_list' => '\DataExchange\SIFUK20\Models\Sibling[]',
         'uniform_allowance' => 'string',
-        'current_school_enrolment' => '\DataExchange\UK\20\Models\CurrentSchoolEnrolment',
-        'previous_establishment_list' => '\DataExchange\UK\20\Models\PreviousEstablishment[]',
-        'sif_extended_elements' => '\DataExchange\UK\20\Models\SIFExtendedElement1[]'
+        'current_school_enrolment' => '\DataExchange\SIFUK20\Models\CurrentSchoolEnrolment',
+        'previous_establishment_list' => '\DataExchange\SIFUK20\Models\PreviousEstablishment[]',
+        'sif_extended_elements' => '\DataExchange\SIFUK20\Models\SIFExtendedElement1[]'
     ];
 
     public static function swaggerTypes()
@@ -328,7 +328,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets alert_msg_list
-     * @return \DataExchange\UK\20\Models\AlertMsg[]
+     * @return \DataExchange\SIFUK20\Models\AlertMsg[]
      */
     public function getAlertMsgList()
     {
@@ -337,7 +337,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets alert_msg_list
-     * @param \DataExchange\UK\20\Models\AlertMsg[] $alert_msg_list
+     * @param \DataExchange\SIFUK20\Models\AlertMsg[] $alert_msg_list
      * @return $this
      */
     public function setAlertMsgList($alert_msg_list)
@@ -349,7 +349,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets medical_alert_msg_list
-     * @return \DataExchange\UK\20\Models\MedicalAlertMsg[]
+     * @return \DataExchange\SIFUK20\Models\MedicalAlertMsg[]
      */
     public function getMedicalAlertMsgList()
     {
@@ -358,7 +358,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets medical_alert_msg_list
-     * @param \DataExchange\UK\20\Models\MedicalAlertMsg[] $medical_alert_msg_list
+     * @param \DataExchange\SIFUK20\Models\MedicalAlertMsg[] $medical_alert_msg_list
      * @return $this
      */
     public function setMedicalAlertMsgList($medical_alert_msg_list)
@@ -370,7 +370,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets personal_information
-     * @return \DataExchange\UK\20\Models\PersonalInformation
+     * @return \DataExchange\SIFUK20\Models\PersonalInformation
      */
     public function getPersonalInformation()
     {
@@ -379,7 +379,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets personal_information
-     * @param \DataExchange\UK\20\Models\PersonalInformation $personal_information
+     * @param \DataExchange\SIFUK20\Models\PersonalInformation $personal_information
      * @return $this
      */
     public function setPersonalInformation($personal_information)
@@ -496,7 +496,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets external_learner_identifier_list
-     * @return \DataExchange\UK\20\Models\ExternalLearnerIdentifier[]
+     * @return \DataExchange\SIFUK20\Models\ExternalLearnerIdentifier[]
      */
     public function getExternalLearnerIdentifierList()
     {
@@ -505,7 +505,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets external_learner_identifier_list
-     * @param \DataExchange\UK\20\Models\ExternalLearnerIdentifier[] $external_learner_identifier_list
+     * @param \DataExchange\SIFUK20\Models\ExternalLearnerIdentifier[] $external_learner_identifier_list
      * @return $this
      */
     public function setExternalLearnerIdentifierList($external_learner_identifier_list)
@@ -538,7 +538,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets in_care
-     * @return \DataExchange\UK\20\Models\InCare
+     * @return \DataExchange\SIFUK20\Models\InCare
      */
     public function getInCare()
     {
@@ -547,7 +547,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets in_care
-     * @param \DataExchange\UK\20\Models\InCare $in_care
+     * @param \DataExchange\SIFUK20\Models\InCare $in_care
      * @return $this
      */
     public function setInCare($in_care)
@@ -580,7 +580,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets child_protection_register
-     * @return \DataExchange\UK\20\Models\ChildProtectionRegister
+     * @return \DataExchange\SIFUK20\Models\ChildProtectionRegister
      */
     public function getChildProtectionRegister()
     {
@@ -589,7 +589,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets child_protection_register
-     * @param \DataExchange\UK\20\Models\ChildProtectionRegister $child_protection_register
+     * @param \DataExchange\SIFUK20\Models\ChildProtectionRegister $child_protection_register
      * @return $this
      */
     public function setChildProtectionRegister($child_protection_register)
@@ -706,7 +706,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets sibling_list
-     * @return \DataExchange\UK\20\Models\Sibling[]
+     * @return \DataExchange\SIFUK20\Models\Sibling[]
      */
     public function getSiblingList()
     {
@@ -715,7 +715,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets sibling_list
-     * @param \DataExchange\UK\20\Models\Sibling[] $sibling_list
+     * @param \DataExchange\SIFUK20\Models\Sibling[] $sibling_list
      * @return $this
      */
     public function setSiblingList($sibling_list)
@@ -748,7 +748,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets current_school_enrolment
-     * @return \DataExchange\UK\20\Models\CurrentSchoolEnrolment
+     * @return \DataExchange\SIFUK20\Models\CurrentSchoolEnrolment
      */
     public function getCurrentSchoolEnrolment()
     {
@@ -757,7 +757,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets current_school_enrolment
-     * @param \DataExchange\UK\20\Models\CurrentSchoolEnrolment $current_school_enrolment
+     * @param \DataExchange\SIFUK20\Models\CurrentSchoolEnrolment $current_school_enrolment
      * @return $this
      */
     public function setCurrentSchoolEnrolment($current_school_enrolment)
@@ -769,7 +769,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets previous_establishment_list
-     * @return \DataExchange\UK\20\Models\PreviousEstablishment[]
+     * @return \DataExchange\SIFUK20\Models\PreviousEstablishment[]
      */
     public function getPreviousEstablishmentList()
     {
@@ -778,7 +778,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets previous_establishment_list
-     * @param \DataExchange\UK\20\Models\PreviousEstablishment[] $previous_establishment_list
+     * @param \DataExchange\SIFUK20\Models\PreviousEstablishment[] $previous_establishment_list
      * @return $this
      */
     public function setPreviousEstablishmentList($previous_establishment_list)
@@ -790,7 +790,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Gets sif_extended_elements
-     * @return \DataExchange\UK\20\Models\SIFExtendedElement1[]
+     * @return \DataExchange\SIFUK20\Models\SIFExtendedElement1[]
      */
     public function getSifExtendedElements()
     {
@@ -799,7 +799,7 @@ class LearnerPersonal implements ArrayAccess
 
     /**
      * Sets sif_extended_elements
-     * @param \DataExchange\UK\20\Models\SIFExtendedElement1[] $sif_extended_elements Allows an agent to include data not yet defined within a SIF data object as name/value pairs.
+     * @param \DataExchange\SIFUK20\Models\SIFExtendedElement1[] $sif_extended_elements Allows an agent to include data not yet defined within a SIF data object as name/value pairs.
      * @return $this
      */
     public function setSifExtendedElements($sif_extended_elements)
@@ -860,9 +860,9 @@ class LearnerPersonal implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

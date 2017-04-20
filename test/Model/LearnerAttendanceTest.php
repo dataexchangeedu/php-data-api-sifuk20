@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace DataExchange\UK\20;
+namespace DataExchange\SIFUK20;
 
 /**
  * LearnerAttendanceTest Class Doc Comment
@@ -47,7 +47,7 @@ namespace DataExchange\UK\20;
  * @category    Class */
 // * @description This object provides attendance information for a particular learner in a particular school for a particular period of time. The time can be specified as before, during, or after school and may be for any period of time, including lessons.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The set of all responses provided by a learner while taking an assessment. This information represents the raw input data that is then evaluated to produce one or more scores, marks, or grades for the learner.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -70,7 +70,7 @@ class LearnerAssessmentResponseSet implements ArrayAccess
         'ref_id' => 'string',
         'assessment_response_component_ref_id' => 'string',
         'learner_personal_ref_id' => 'string',
-        'items' => '\DataExchange\UK\20\Models\Items'
+        'items' => '\DataExchange\SIFUK20\Models\Items'
     ];
 
     public static function swaggerTypes()
@@ -256,7 +256,7 @@ class LearnerAssessmentResponseSet implements ArrayAccess
 
     /**
      * Gets items
-     * @return \DataExchange\UK\20\Models\Items
+     * @return \DataExchange\SIFUK20\Models\Items
      */
     public function getItems()
     {
@@ -265,7 +265,7 @@ class LearnerAssessmentResponseSet implements ArrayAccess
 
     /**
      * Sets items
-     * @param \DataExchange\UK\20\Models\Items $items
+     * @param \DataExchange\SIFUK20\Models\Items $items
      * @return $this
      */
     public function setItems($items)
@@ -326,9 +326,9 @@ class LearnerAssessmentResponseSet implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

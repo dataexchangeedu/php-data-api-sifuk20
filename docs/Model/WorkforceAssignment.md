@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ref_id** | **string** | The ID (GUID) of the WorkforceAssignment object. | 
 **workforce_personal_ref_id** | **string** | RefId of WorkforcePersonal object this applies to. | 
-**sif_ref_id** | [**\DataExchange\UK\20\Models\SIFRefId2**](SIFRefId2.md) |  | [optional] 
+**sif_ref_id** | [**\DataExchange\SIFUK20\Models\SIFRefId2**](SIFRefId2.md) |  | [optional] 
 **assignment_start_date** | [**\DateTime**](Date.md) | The date this assignment commenced. | 
 **assignment_end_date** | [**\DateTime**](Date.md) | The date this assignment ends. | [optional] 
 **post** | **string** | The post held under this particular assignment | 

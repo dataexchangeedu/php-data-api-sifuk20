@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace DataExchange\UK\20;
+namespace DataExchange\SIFUK20;
 
 /**
  * IdentityTest Class Doc Comment
@@ -47,7 +47,7 @@ namespace DataExchange\UK\20;
  * @category    Class */
 // * @description This object allows a system that stores network identities and/or passwords to share them with other applications through SIF. The provider of the Identity object may only support providing an identity or a password, or it may support both.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen

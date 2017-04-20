@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace DataExchange\UK\20;
+namespace DataExchange\SIFUK20;
 
 /**
  * AssessmentResultComponentTest Class Doc Comment
@@ -47,7 +47,7 @@ namespace DataExchange\UK\20;
  * @category    Class */
 // * @description A psychological construct measured by the assessment. Operationally, an assessment component or subtest is a class of scores within an assessment that might collectively represent a column within a mark book. Some assessments may consist of only one component, aspect or subtest although it is more common for assessments to have several.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen

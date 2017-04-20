@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace DataExchange\UK\20;
+namespace DataExchange\SIFUK20;
 
 /**
  * LearnerAttendanceSummaryTest Class Doc Comment
@@ -47,7 +47,7 @@ namespace DataExchange\UK\20;
  * @category    Class */
 // * @description This object provides a summary of a learner&amp;#039;s daily attendance and membership information for a given school during the time period between the StartDate and EndDate, inclusive. As such, there may be multiple instances of this object for a learner in a school over the course of an academic school year. Note that sessions are defined by each school and in most cases is two but can be any number in the range 1-10. Compare with US/Canada object:
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen

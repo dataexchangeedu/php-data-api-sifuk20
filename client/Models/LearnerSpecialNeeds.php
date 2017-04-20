@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This object contains information regarding a special education need (SEN) for a learner when provisioned within a school or establishment. A new object exists for each provision. The current status of any provision can be determined by querying StartDate and EndDate. Both dates are allowed to be in the future. The publisher of this object must support queries on these dates.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -76,7 +76,7 @@ class LearnerSpecialNeeds implements ArrayAccess
         'provision' => 'string',
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'sen_type_list' => '\DataExchange\UK\20\Models\SENType[]',
+        'sen_type_list' => '\DataExchange\SIFUK20\Models\SENType[]',
         'advice_and_assessment_level' => 'string',
         'grouping_and_support_level' => 'string',
         'specialised_resources_level' => 'string',
@@ -86,7 +86,7 @@ class LearnerSpecialNeeds implements ArrayAccess
         'literacy_level_end' => 'string',
         'numeracy_level_start' => 'string',
         'numeracy_level_end' => 'string',
-        'national_curriculum_list' => '\DataExchange\UK\20\Models\NationalCurriculum[]',
+        'national_curriculum_list' => '\DataExchange\SIFUK20\Models\NationalCurriculum[]',
         'medical_flag' => 'string',
         'paramedical_support' => 'string',
         'medical_notes' => 'string'
@@ -489,7 +489,7 @@ class LearnerSpecialNeeds implements ArrayAccess
 
     /**
      * Gets sen_type_list
-     * @return \DataExchange\UK\20\Models\SENType[]
+     * @return \DataExchange\SIFUK20\Models\SENType[]
      */
     public function getSenTypeList()
     {
@@ -498,7 +498,7 @@ class LearnerSpecialNeeds implements ArrayAccess
 
     /**
      * Sets sen_type_list
-     * @param \DataExchange\UK\20\Models\SENType[] $sen_type_list
+     * @param \DataExchange\SIFUK20\Models\SENType[] $sen_type_list
      * @return $this
      */
     public function setSenTypeList($sen_type_list)
@@ -699,7 +699,7 @@ class LearnerSpecialNeeds implements ArrayAccess
 
     /**
      * Gets national_curriculum_list
-     * @return \DataExchange\UK\20\Models\NationalCurriculum[]
+     * @return \DataExchange\SIFUK20\Models\NationalCurriculum[]
      */
     public function getNationalCurriculumList()
     {
@@ -708,7 +708,7 @@ class LearnerSpecialNeeds implements ArrayAccess
 
     /**
      * Sets national_curriculum_list
-     * @param \DataExchange\UK\20\Models\NationalCurriculum[] $national_curriculum_list
+     * @param \DataExchange\SIFUK20\Models\NationalCurriculum[] $national_curriculum_list
      * @return $this
      */
     public function setNationalCurriculumList($national_curriculum_list)
@@ -832,9 +832,9 @@ class LearnerSpecialNeeds implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

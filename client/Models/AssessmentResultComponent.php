@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description A psychological construct measured by the assessment. Operationally, an assessment component or subtest is a class of scores within an assessment that might collectively represent a column within a mark book. Some assessments may consist of only one component, aspect or subtest although it is more common for assessments to have several.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -76,7 +76,7 @@ class AssessmentResultComponent implements ArrayAccess
         'assessment_subject_list' => 'string[]',
         'stage_list' => 'string[]',
         'assessment_result_grade_set_ref_id' => 'string',
-        'mark_set_list' => '\DataExchange\UK\20\Models\MarkSet[]',
+        'mark_set_list' => '\DataExchange\SIFUK20\Models\MarkSet[]',
         'component_type' => 'string',
         'result_qualifier' => 'string',
         'assessment_method' => 'string',
@@ -456,7 +456,7 @@ class AssessmentResultComponent implements ArrayAccess
 
     /**
      * Gets mark_set_list
-     * @return \DataExchange\UK\20\Models\MarkSet[]
+     * @return \DataExchange\SIFUK20\Models\MarkSet[]
      */
     public function getMarkSetList()
     {
@@ -465,7 +465,7 @@ class AssessmentResultComponent implements ArrayAccess
 
     /**
      * Sets mark_set_list
-     * @param \DataExchange\UK\20\Models\MarkSet[] $mark_set_list
+     * @param \DataExchange\SIFUK20\Models\MarkSet[] $mark_set_list
      * @return $this
      */
     public function setMarkSetList($mark_set_list)
@@ -610,9 +610,9 @@ class AssessmentResultComponent implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

@@ -1,4 +1,4 @@
-# DataExchange\UK\20\InstitutionApi
+# DataExchange\SIFUK20\InstitutionApi
 
 All URIs are relative to *https://uk.staging.dataexchange.education/rest/sif/requests*
 
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 
 # **createLAInfos**
-> \DataExchange\UK\20\Models\SifCreateResponse createLAInfos($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLAInfos($body)
 
 Create multiple LAInfos
 
@@ -30,8 +30,8 @@ Create multiple LAInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
-$body = new \DataExchange\UK\20\Models\LAInfos(); // \DataExchange\UK\20\Models\LAInfos | LAInfos to be created
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
+$body = new \DataExchange\SIFUK20\Models\LAInfos(); // \DataExchange\SIFUK20\Models\LAInfos | LAInfos to be created
 
 try {
     $result = $api_instance->createLAInfos($body);
@@ -46,11 +46,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LAInfos**](../Model/\DataExchange\UK\20\Models\LAInfos.md)| LAInfos to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\LAInfos**](../Model/\DataExchange\SIFUK20\Models\LAInfos.md)| LAInfos to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSchoolInfos**
-> \DataExchange\UK\20\Models\SifCreateResponse createSchoolInfos($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createSchoolInfos($body)
 
 Create multiple SchoolInfos
 
@@ -73,8 +73,8 @@ Create multiple SchoolInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
-$body = new \DataExchange\UK\20\Models\SchoolInfos(); // \DataExchange\UK\20\Models\SchoolInfos | SchoolInfos to be created
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
+$body = new \DataExchange\SIFUK20\Models\SchoolInfos(); // \DataExchange\SIFUK20\Models\SchoolInfos | SchoolInfos to be created
 
 try {
     $result = $api_instance->createSchoolInfos($body);
@@ -89,11 +89,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SchoolInfos**](../Model/\DataExchange\UK\20\Models\SchoolInfos.md)| SchoolInfos to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolInfos**](../Model/\DataExchange\SIFUK20\Models\SchoolInfos.md)| SchoolInfos to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLAInfoByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLAInfoByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLAInfoByRefId($ref_id)
 
 Delete LAInfo by RefId
 
@@ -116,7 +116,7 @@ Delete LAInfo by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
 $ref_id = "ref_id_example"; // string | RefId of LAInfo
 
 try {
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -150,7 +150,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLAInfos**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLAInfos($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLAInfos($body)
 
 Delete multiple LAInfos
 
@@ -159,8 +159,8 @@ Delete multiple LAInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLAInfos($body);
@@ -175,11 +175,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSchoolInfoByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteSchoolInfoByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteSchoolInfoByRefId($ref_id)
 
 Delete SchoolInfo by RefId
 
@@ -202,7 +202,7 @@ Delete SchoolInfo by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolInfo
 
 try {
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -236,7 +236,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSchoolInfos**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteSchoolInfos($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteSchoolInfos($body)
 
 Delete multiple SchoolInfos
 
@@ -245,8 +245,8 @@ Delete multiple SchoolInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteSchoolInfos($body);
@@ -261,11 +261,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -279,7 +279,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLAInfoByRefId**
-> \DataExchange\UK\20\Models\LAInfos getLAInfoByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\LAInfos getLAInfoByRefId($ref_id)
 
 Find LAInfo by RefId
 
@@ -288,7 +288,7 @@ Find LAInfo by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
 $ref_id = "ref_id_example"; // string | RefId of LAInfo
 
 try {
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LAInfos**](../Model/LAInfos.md)
+[**\DataExchange\SIFUK20\Models\LAInfos**](../Model/LAInfos.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLAInfos**
-> \DataExchange\UK\20\Models\LAInfos getLAInfos($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LAInfos getLAInfos($navigation_page, $navigation_page_size)
 
 Return all LAInfos
 
@@ -331,7 +331,7 @@ Return all LAInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LAInfos**](../Model/LAInfos.md)
+[**\DataExchange\SIFUK20\Models\LAInfos**](../Model/LAInfos.md)
 
 ### Authorization
 
@@ -367,7 +367,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolInfoByRefId**
-> \DataExchange\UK\20\Models\SchoolInfos getSchoolInfoByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SchoolInfos getSchoolInfoByRefId($ref_id)
 
 Find SchoolInfo by RefId
 
@@ -376,7 +376,7 @@ Find SchoolInfo by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolInfo
 
 try {
@@ -396,7 +396,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SchoolInfos**](../Model/SchoolInfos.md)
+[**\DataExchange\SIFUK20\Models\SchoolInfos**](../Model/SchoolInfos.md)
 
 ### Authorization
 
@@ -410,7 +410,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolInfos**
-> \DataExchange\UK\20\Models\SchoolInfos getSchoolInfos($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\SchoolInfos getSchoolInfos($navigation_page, $navigation_page_size)
 
 Return all SchoolInfos
 
@@ -419,7 +419,7 @@ Return all SchoolInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -441,7 +441,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SchoolInfos**](../Model/SchoolInfos.md)
+[**\DataExchange\SIFUK20\Models\SchoolInfos**](../Model/SchoolInfos.md)
 
 ### Authorization
 
@@ -455,7 +455,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLAInfoByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLAInfoByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLAInfoByRefId($ref_id, $body)
 
 Update LAInfo by RefId
 
@@ -464,9 +464,9 @@ Update LAInfo by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
 $ref_id = "ref_id_example"; // string | RefId of LAInfo
-$body = new \DataExchange\UK\20\Models\LAInfo(); // \DataExchange\UK\20\Models\LAInfo | LAInfo to be updated
+$body = new \DataExchange\SIFUK20\Models\LAInfo(); // \DataExchange\SIFUK20\Models\LAInfo | LAInfo to be updated
 
 try {
     $result = $api_instance->updateLAInfoByRefId($ref_id, $body);
@@ -482,11 +482,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of LAInfo |
- **body** | [**\DataExchange\UK\20\Models\LAInfo**](../Model/\DataExchange\UK\20\Models\LAInfo.md)| LAInfo to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LAInfo**](../Model/\DataExchange\SIFUK20\Models\LAInfo.md)| LAInfo to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -500,7 +500,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLAInfos**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLAInfos($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLAInfos($body)
 
 Update multiple LAInfos
 
@@ -509,8 +509,8 @@ Update multiple LAInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
-$body = new \DataExchange\UK\20\Models\LAInfos(); // \DataExchange\UK\20\Models\LAInfos | LAInfos to be updated
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
+$body = new \DataExchange\SIFUK20\Models\LAInfos(); // \DataExchange\SIFUK20\Models\LAInfos | LAInfos to be updated
 
 try {
     $result = $api_instance->updateLAInfos($body);
@@ -525,11 +525,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LAInfos**](../Model/\DataExchange\UK\20\Models\LAInfos.md)| LAInfos to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LAInfos**](../Model/\DataExchange\SIFUK20\Models\LAInfos.md)| LAInfos to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -543,7 +543,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSchoolInfoByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateSchoolInfoByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateSchoolInfoByRefId($ref_id, $body)
 
 Update SchoolInfo by RefId
 
@@ -552,9 +552,9 @@ Update SchoolInfo by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolInfo
-$body = new \DataExchange\UK\20\Models\SchoolInfo(); // \DataExchange\UK\20\Models\SchoolInfo | SchoolInfo to be updated
+$body = new \DataExchange\SIFUK20\Models\SchoolInfo(); // \DataExchange\SIFUK20\Models\SchoolInfo | SchoolInfo to be updated
 
 try {
     $result = $api_instance->updateSchoolInfoByRefId($ref_id, $body);
@@ -570,11 +570,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of SchoolInfo |
- **body** | [**\DataExchange\UK\20\Models\SchoolInfo**](../Model/\DataExchange\UK\20\Models\SchoolInfo.md)| SchoolInfo to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolInfo**](../Model/\DataExchange\SIFUK20\Models\SchoolInfo.md)| SchoolInfo to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -588,7 +588,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSchoolInfos**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateSchoolInfos($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateSchoolInfos($body)
 
 Update multiple SchoolInfos
 
@@ -597,8 +597,8 @@ Update multiple SchoolInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\InstitutionApi();
-$body = new \DataExchange\UK\20\Models\SchoolInfos(); // \DataExchange\UK\20\Models\SchoolInfos | SchoolInfos to be updated
+$api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
+$body = new \DataExchange\SIFUK20\Models\SchoolInfos(); // \DataExchange\SIFUK20\Models\SchoolInfos | SchoolInfos to be updated
 
 try {
     $result = $api_instance->updateSchoolInfos($body);
@@ -613,11 +613,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SchoolInfos**](../Model/\DataExchange\UK\20\Models\SchoolInfos.md)| SchoolInfos to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolInfos**](../Model/\DataExchange\SIFUK20\Models\SchoolInfos.md)| SchoolInfos to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 

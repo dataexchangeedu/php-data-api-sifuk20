@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This element contains demographic data.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -67,23 +67,23 @@ class Demographics implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ethnicity_list' => '\DataExchange\UK\20\Models\Ethnicity[]',
+        'ethnicity_list' => '\DataExchange\SIFUK20\Models\Ethnicity[]',
         'gender' => 'string',
         'birth_date' => '\DateTime',
         'birth_date_verification' => 'string',
         'place_of_birth' => 'string',
         'county_of_birth' => 'string',
         'country_of_birth' => 'string',
-        'countries_of_citizenship' => '\DataExchange\UK\20\Models\CountriesOfCitizenship',
-        'countries_of_residency' => '\DataExchange\UK\20\Models\CountriesOfResidency',
+        'countries_of_citizenship' => '\DataExchange\SIFUK20\Models\CountriesOfCitizenship',
+        'countries_of_residency' => '\DataExchange\SIFUK20\Models\CountriesOfResidency',
         'country_arrival_date' => '\DateTime',
-        'english_proficiency' => '\DataExchange\UK\20\Models\EnglishProficiency',
-        'language_list' => '\DataExchange\UK\20\Models\Language[]',
+        'english_proficiency' => '\DataExchange\SIFUK20\Models\EnglishProficiency',
+        'language_list' => '\DataExchange\SIFUK20\Models\Language[]',
         'marital_status' => 'string',
         'non_uk_system_immigrant' => 'string',
         'refugee' => 'string',
-        'religion' => '\DataExchange\UK\20\Models\Religion',
-        'traveller' => '\DataExchange\UK\20\Models\Traveller'
+        'religion' => '\DataExchange\SIFUK20\Models\Religion',
+        'traveller' => '\DataExchange\SIFUK20\Models\Traveller'
     ];
 
     public static function swaggerTypes()
@@ -240,7 +240,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Gets ethnicity_list
-     * @return \DataExchange\UK\20\Models\Ethnicity[]
+     * @return \DataExchange\SIFUK20\Models\Ethnicity[]
      */
     public function getEthnicityList()
     {
@@ -249,7 +249,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Sets ethnicity_list
-     * @param \DataExchange\UK\20\Models\Ethnicity[] $ethnicity_list A list of the person&#039;s ethnicities by proportion.
+     * @param \DataExchange\SIFUK20\Models\Ethnicity[] $ethnicity_list A list of the person&#039;s ethnicities by proportion.
      * @return $this
      */
     public function setEthnicityList($ethnicity_list)
@@ -387,7 +387,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Gets countries_of_citizenship
-     * @return \DataExchange\UK\20\Models\CountriesOfCitizenship
+     * @return \DataExchange\SIFUK20\Models\CountriesOfCitizenship
      */
     public function getCountriesOfCitizenship()
     {
@@ -396,7 +396,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Sets countries_of_citizenship
-     * @param \DataExchange\UK\20\Models\CountriesOfCitizenship $countries_of_citizenship
+     * @param \DataExchange\SIFUK20\Models\CountriesOfCitizenship $countries_of_citizenship
      * @return $this
      */
     public function setCountriesOfCitizenship($countries_of_citizenship)
@@ -408,7 +408,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Gets countries_of_residency
-     * @return \DataExchange\UK\20\Models\CountriesOfResidency
+     * @return \DataExchange\SIFUK20\Models\CountriesOfResidency
      */
     public function getCountriesOfResidency()
     {
@@ -417,7 +417,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Sets countries_of_residency
-     * @param \DataExchange\UK\20\Models\CountriesOfResidency $countries_of_residency
+     * @param \DataExchange\SIFUK20\Models\CountriesOfResidency $countries_of_residency
      * @return $this
      */
     public function setCountriesOfResidency($countries_of_residency)
@@ -450,7 +450,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Gets english_proficiency
-     * @return \DataExchange\UK\20\Models\EnglishProficiency
+     * @return \DataExchange\SIFUK20\Models\EnglishProficiency
      */
     public function getEnglishProficiency()
     {
@@ -459,7 +459,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Sets english_proficiency
-     * @param \DataExchange\UK\20\Models\EnglishProficiency $english_proficiency
+     * @param \DataExchange\SIFUK20\Models\EnglishProficiency $english_proficiency
      * @return $this
      */
     public function setEnglishProficiency($english_proficiency)
@@ -471,7 +471,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Gets language_list
-     * @return \DataExchange\UK\20\Models\Language[]
+     * @return \DataExchange\SIFUK20\Models\Language[]
      */
     public function getLanguageList()
     {
@@ -480,7 +480,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Sets language_list
-     * @param \DataExchange\UK\20\Models\Language[] $language_list
+     * @param \DataExchange\SIFUK20\Models\Language[] $language_list
      * @return $this
      */
     public function setLanguageList($language_list)
@@ -555,7 +555,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Gets religion
-     * @return \DataExchange\UK\20\Models\Religion
+     * @return \DataExchange\SIFUK20\Models\Religion
      */
     public function getReligion()
     {
@@ -564,7 +564,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Sets religion
-     * @param \DataExchange\UK\20\Models\Religion $religion
+     * @param \DataExchange\SIFUK20\Models\Religion $religion
      * @return $this
      */
     public function setReligion($religion)
@@ -576,7 +576,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Gets traveller
-     * @return \DataExchange\UK\20\Models\Traveller
+     * @return \DataExchange\SIFUK20\Models\Traveller
      */
     public function getTraveller()
     {
@@ -585,7 +585,7 @@ class Demographics implements ArrayAccess
 
     /**
      * Sets traveller
-     * @param \DataExchange\UK\20\Models\Traveller $traveller
+     * @param \DataExchange\SIFUK20\Models\Traveller $traveller
      * @return $this
      */
     public function setTraveller($traveller)
@@ -646,9 +646,9 @@ class Demographics implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

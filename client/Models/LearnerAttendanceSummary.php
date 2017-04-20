@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This object provides a summary of a learner&amp;#039;s daily attendance and membership information for a given school during the time period between the StartDate and EndDate, inclusive. As such, there may be multiple instances of this object for a learner in a school over the course of an academic school year. Note that sessions are defined by each school and in most cases is two but can be any number in the range 1-10. Compare with US/Canada object:
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -73,7 +73,7 @@ class LearnerAttendanceSummary implements ArrayAccess
         'school_year' => 'string',
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'reasons_list' => '\DataExchange\UK\20\Models\Reason[]',
+        'reasons_list' => '\DataExchange\SIFUK20\Models\Reason[]',
         'sessions_attended_total' => 'int',
         'sessions_possible' => 'int',
         'authorised_absences' => 'int',
@@ -400,7 +400,7 @@ class LearnerAttendanceSummary implements ArrayAccess
 
     /**
      * Gets reasons_list
-     * @return \DataExchange\UK\20\Models\Reason[]
+     * @return \DataExchange\SIFUK20\Models\Reason[]
      */
     public function getReasonsList()
     {
@@ -409,7 +409,7 @@ class LearnerAttendanceSummary implements ArrayAccess
 
     /**
      * Sets reasons_list
-     * @param \DataExchange\UK\20\Models\Reason[] $reasons_list
+     * @param \DataExchange\SIFUK20\Models\Reason[] $reasons_list
      * @return $this
      */
     public function setReasonsList($reasons_list)
@@ -596,9 +596,9 @@ class LearnerAttendanceSummary implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

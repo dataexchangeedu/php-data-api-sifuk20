@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **label** | **string** |  | 
 **short_label** | **string** |  | 
 **local_type** | **string** |  | [optional] 
-**input_list** | [**\DataExchange\UK\20\Models\Input[]**](Input.md) |  | 
-**output_list** | [**\DataExchange\UK\20\Models\Output[]**](Output.md) |  | 
+**input_list** | [**\DataExchange\SIFUK20\Models\Input[]**](Input.md) |  | 
+**output_list** | [**\DataExchange\SIFUK20\Models\Output[]**](Output.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

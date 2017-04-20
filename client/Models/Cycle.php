@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The timetable cycle
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -72,9 +72,9 @@ class Cycle implements ArrayAccess
         'cycle_name' => 'string',
         'cycle_days' => 'int',
         'periods_per_day' => 'int',
-        'standard_period_list' => '\DataExchange\UK\20\Models\Period[]',
-        'tt_day_list' => '\DataExchange\UK\20\Models\TTDay[]',
-        'sif_extended_elements' => '\DataExchange\UK\20\Models\SIFExtendedElement[]'
+        'standard_period_list' => '\DataExchange\SIFUK20\Models\Period[]',
+        'tt_day_list' => '\DataExchange\SIFUK20\Models\TTDay[]',
+        'sif_extended_elements' => '\DataExchange\SIFUK20\Models\SIFExtendedElement[]'
     ];
 
     public static function swaggerTypes()
@@ -330,7 +330,7 @@ class Cycle implements ArrayAccess
 
     /**
      * Gets standard_period_list
-     * @return \DataExchange\UK\20\Models\Period[]
+     * @return \DataExchange\SIFUK20\Models\Period[]
      */
     public function getStandardPeriodList()
     {
@@ -339,7 +339,7 @@ class Cycle implements ArrayAccess
 
     /**
      * Sets standard_period_list
-     * @param \DataExchange\UK\20\Models\Period[] $standard_period_list
+     * @param \DataExchange\SIFUK20\Models\Period[] $standard_period_list
      * @return $this
      */
     public function setStandardPeriodList($standard_period_list)
@@ -351,7 +351,7 @@ class Cycle implements ArrayAccess
 
     /**
      * Gets tt_day_list
-     * @return \DataExchange\UK\20\Models\TTDay[]
+     * @return \DataExchange\SIFUK20\Models\TTDay[]
      */
     public function getTtDayList()
     {
@@ -360,7 +360,7 @@ class Cycle implements ArrayAccess
 
     /**
      * Sets tt_day_list
-     * @param \DataExchange\UK\20\Models\TTDay[] $tt_day_list
+     * @param \DataExchange\SIFUK20\Models\TTDay[] $tt_day_list
      * @return $this
      */
     public function setTtDayList($tt_day_list)
@@ -372,7 +372,7 @@ class Cycle implements ArrayAccess
 
     /**
      * Gets sif_extended_elements
-     * @return \DataExchange\UK\20\Models\SIFExtendedElement[]
+     * @return \DataExchange\SIFUK20\Models\SIFExtendedElement[]
      */
     public function getSifExtendedElements()
     {
@@ -381,7 +381,7 @@ class Cycle implements ArrayAccess
 
     /**
      * Sets sif_extended_elements
-     * @param \DataExchange\UK\20\Models\SIFExtendedElement[] $sif_extended_elements Allows an agent to include data not yet defined within a SIF data object as name/value pairs.
+     * @param \DataExchange\SIFUK20\Models\SIFExtendedElement[] $sif_extended_elements Allows an agent to include data not yet defined within a SIF data object as name/value pairs.
      * @return $this
      */
     public function setSifExtendedElements($sif_extended_elements)
@@ -442,9 +442,9 @@ class Cycle implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

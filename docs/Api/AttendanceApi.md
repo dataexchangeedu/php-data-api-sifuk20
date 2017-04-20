@@ -1,4 +1,4 @@
-# DataExchange\UK\20\AttendanceApi
+# DataExchange\SIFUK20\AttendanceApi
 
 All URIs are relative to *https://uk.staging.dataexchange.education/rest/sif/requests*
 
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 
 # **createLearnerAttendanceSummarys**
-> \DataExchange\UK\20\Models\SifCreateResponse createLearnerAttendanceSummarys($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLearnerAttendanceSummarys($body)
 
 Create multiple LearnerAttendanceSummarys
 
@@ -30,8 +30,8 @@ Create multiple LearnerAttendanceSummarys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
-$body = new \DataExchange\UK\20\Models\LearnerAttendanceSummarys(); // \DataExchange\UK\20\Models\LearnerAttendanceSummarys | LearnerAttendanceSummarys to be created
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys(); // \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys | LearnerAttendanceSummarys to be created
 
 try {
     $result = $api_instance->createLearnerAttendanceSummarys($body);
@@ -46,11 +46,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerAttendanceSummarys**](../Model/\DataExchange\UK\20\Models\LearnerAttendanceSummarys.md)| LearnerAttendanceSummarys to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAttendanceSummarys**](../Model/\DataExchange\SIFUK20\Models\LearnerAttendanceSummarys.md)| LearnerAttendanceSummarys to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLearnerAttendances**
-> \DataExchange\UK\20\Models\SifCreateResponse createLearnerAttendances($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLearnerAttendances($body)
 
 Create multiple LearnerAttendances
 
@@ -73,8 +73,8 @@ Create multiple LearnerAttendances
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
-$body = new \DataExchange\UK\20\Models\LearnerAttendances(); // \DataExchange\UK\20\Models\LearnerAttendances | LearnerAttendances to be created
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerAttendances(); // \DataExchange\SIFUK20\Models\LearnerAttendances | LearnerAttendances to be created
 
 try {
     $result = $api_instance->createLearnerAttendances($body);
@@ -89,11 +89,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerAttendances**](../Model/\DataExchange\UK\20\Models\LearnerAttendances.md)| LearnerAttendances to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAttendances**](../Model/\DataExchange\SIFUK20\Models\LearnerAttendances.md)| LearnerAttendances to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerAttendanceByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerAttendanceByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerAttendanceByRefId($ref_id)
 
 Delete LearnerAttendance by RefId
 
@@ -116,7 +116,7 @@ Delete LearnerAttendance by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAttendance
 
 try {
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -150,7 +150,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerAttendanceSummaryByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerAttendanceSummaryByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerAttendanceSummaryByRefId($ref_id)
 
 Delete LearnerAttendanceSummary by RefId
 
@@ -159,7 +159,7 @@ Delete LearnerAttendanceSummary by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAttendanceSummary
 
 try {
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerAttendanceSummarys**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerAttendanceSummarys($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerAttendanceSummarys($body)
 
 Delete multiple LearnerAttendanceSummarys
 
@@ -202,8 +202,8 @@ Delete multiple LearnerAttendanceSummarys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLearnerAttendanceSummarys($body);
@@ -218,11 +218,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -236,7 +236,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerAttendances**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerAttendances($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerAttendances($body)
 
 Delete multiple LearnerAttendances
 
@@ -245,8 +245,8 @@ Delete multiple LearnerAttendances
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLearnerAttendances($body);
@@ -261,11 +261,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -279,7 +279,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAttendanceByRefId**
-> \DataExchange\UK\20\Models\LearnerAttendances getLearnerAttendanceByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\LearnerAttendances getLearnerAttendanceByRefId($ref_id)
 
 Find LearnerAttendance by RefId
 
@@ -288,7 +288,7 @@ Find LearnerAttendance by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAttendance
 
 try {
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerAttendances**](../Model/LearnerAttendances.md)
+[**\DataExchange\SIFUK20\Models\LearnerAttendances**](../Model/LearnerAttendances.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAttendanceSummaryByRefId**
-> \DataExchange\UK\20\Models\LearnerAttendanceSummarys getLearnerAttendanceSummaryByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys getLearnerAttendanceSummaryByRefId($ref_id)
 
 Find LearnerAttendanceSummary by RefId
 
@@ -331,7 +331,7 @@ Find LearnerAttendanceSummary by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAttendanceSummary
 
 try {
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerAttendanceSummarys**](../Model/LearnerAttendanceSummarys.md)
+[**\DataExchange\SIFUK20\Models\LearnerAttendanceSummarys**](../Model/LearnerAttendanceSummarys.md)
 
 ### Authorization
 
@@ -365,7 +365,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAttendanceSummarys**
-> \DataExchange\UK\20\Models\LearnerAttendanceSummarys getLearnerAttendanceSummarys($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys getLearnerAttendanceSummarys($navigation_page, $navigation_page_size)
 
 Return all LearnerAttendanceSummarys
 
@@ -374,7 +374,7 @@ Return all LearnerAttendanceSummarys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -396,7 +396,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerAttendanceSummarys**](../Model/LearnerAttendanceSummarys.md)
+[**\DataExchange\SIFUK20\Models\LearnerAttendanceSummarys**](../Model/LearnerAttendanceSummarys.md)
 
 ### Authorization
 
@@ -410,7 +410,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAttendances**
-> \DataExchange\UK\20\Models\LearnerAttendances getLearnerAttendances($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAttendances getLearnerAttendances($navigation_page, $navigation_page_size)
 
 Return all LearnerAttendances
 
@@ -419,7 +419,7 @@ Return all LearnerAttendances
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -441,7 +441,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerAttendances**](../Model/LearnerAttendances.md)
+[**\DataExchange\SIFUK20\Models\LearnerAttendances**](../Model/LearnerAttendances.md)
 
 ### Authorization
 
@@ -455,7 +455,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerAttendanceByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerAttendanceByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerAttendanceByRefId($ref_id, $body)
 
 Update LearnerAttendance by RefId
 
@@ -464,9 +464,9 @@ Update LearnerAttendance by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAttendance
-$body = new \DataExchange\UK\20\Models\LearnerAttendance(); // \DataExchange\UK\20\Models\LearnerAttendance | LearnerAttendance to be updated
+$body = new \DataExchange\SIFUK20\Models\LearnerAttendance(); // \DataExchange\SIFUK20\Models\LearnerAttendance | LearnerAttendance to be updated
 
 try {
     $result = $api_instance->updateLearnerAttendanceByRefId($ref_id, $body);
@@ -482,11 +482,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of LearnerAttendance |
- **body** | [**\DataExchange\UK\20\Models\LearnerAttendance**](../Model/\DataExchange\UK\20\Models\LearnerAttendance.md)| LearnerAttendance to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAttendance**](../Model/\DataExchange\SIFUK20\Models\LearnerAttendance.md)| LearnerAttendance to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -500,7 +500,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerAttendanceSummaryByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerAttendanceSummaryByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerAttendanceSummaryByRefId($ref_id, $body)
 
 Update LearnerAttendanceSummary by RefId
 
@@ -509,9 +509,9 @@ Update LearnerAttendanceSummary by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAttendanceSummary
-$body = new \DataExchange\UK\20\Models\LearnerAttendanceSummary(); // \DataExchange\UK\20\Models\LearnerAttendanceSummary | LearnerAttendanceSummary to be updated
+$body = new \DataExchange\SIFUK20\Models\LearnerAttendanceSummary(); // \DataExchange\SIFUK20\Models\LearnerAttendanceSummary | LearnerAttendanceSummary to be updated
 
 try {
     $result = $api_instance->updateLearnerAttendanceSummaryByRefId($ref_id, $body);
@@ -527,11 +527,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of LearnerAttendanceSummary |
- **body** | [**\DataExchange\UK\20\Models\LearnerAttendanceSummary**](../Model/\DataExchange\UK\20\Models\LearnerAttendanceSummary.md)| LearnerAttendanceSummary to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAttendanceSummary**](../Model/\DataExchange\SIFUK20\Models\LearnerAttendanceSummary.md)| LearnerAttendanceSummary to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -545,7 +545,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerAttendanceSummarys**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerAttendanceSummarys($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerAttendanceSummarys($body)
 
 Update multiple LearnerAttendanceSummarys
 
@@ -554,8 +554,8 @@ Update multiple LearnerAttendanceSummarys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
-$body = new \DataExchange\UK\20\Models\LearnerAttendanceSummarys(); // \DataExchange\UK\20\Models\LearnerAttendanceSummarys | LearnerAttendanceSummarys to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys(); // \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys | LearnerAttendanceSummarys to be updated
 
 try {
     $result = $api_instance->updateLearnerAttendanceSummarys($body);
@@ -570,11 +570,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerAttendanceSummarys**](../Model/\DataExchange\UK\20\Models\LearnerAttendanceSummarys.md)| LearnerAttendanceSummarys to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAttendanceSummarys**](../Model/\DataExchange\SIFUK20\Models\LearnerAttendanceSummarys.md)| LearnerAttendanceSummarys to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -588,7 +588,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerAttendances**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerAttendances($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerAttendances($body)
 
 Update multiple LearnerAttendances
 
@@ -597,8 +597,8 @@ Update multiple LearnerAttendances
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AttendanceApi();
-$body = new \DataExchange\UK\20\Models\LearnerAttendances(); // \DataExchange\UK\20\Models\LearnerAttendances | LearnerAttendances to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AttendanceApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerAttendances(); // \DataExchange\SIFUK20\Models\LearnerAttendances | LearnerAttendances to be updated
 
 try {
     $result = $api_instance->updateLearnerAttendances($body);
@@ -613,11 +613,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerAttendances**](../Model/\DataExchange\UK\20\Models\LearnerAttendances.md)| LearnerAttendances to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAttendances**](../Model/\DataExchange\SIFUK20\Models\LearnerAttendances.md)| LearnerAttendances to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 

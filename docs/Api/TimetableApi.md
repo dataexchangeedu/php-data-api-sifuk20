@@ -1,4 +1,4 @@
-# DataExchange\UK\20\TimetableApi
+# DataExchange\SIFUK20\TimetableApi
 
 All URIs are relative to *https://uk.staging.dataexchange.education/rest/sif/requests*
 
@@ -119,7 +119,7 @@ Method | HTTP request | Description
 
 
 # **createCycles**
-> \DataExchange\UK\20\Models\SifCreateResponse createCycles($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createCycles($body)
 
 Create multiple Cycles
 
@@ -128,8 +128,8 @@ Create multiple Cycles
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\Cycles(); // \DataExchange\UK\20\Models\Cycles | Cycles to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\Cycles(); // \DataExchange\SIFUK20\Models\Cycles | Cycles to be created
 
 try {
     $result = $api_instance->createCycles($body);
@@ -144,11 +144,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\Cycles**](../Model/\DataExchange\UK\20\Models\Cycles.md)| Cycles to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\Cycles**](../Model/\DataExchange\SIFUK20\Models\Cycles.md)| Cycles to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createJunctions**
-> \DataExchange\UK\20\Models\SifCreateResponse createJunctions($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createJunctions($body)
 
 Create multiple Junctions
 
@@ -171,8 +171,8 @@ Create multiple Junctions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\Junctions(); // \DataExchange\UK\20\Models\Junctions | Junctions to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\Junctions(); // \DataExchange\SIFUK20\Models\Junctions | Junctions to be created
 
 try {
     $result = $api_instance->createJunctions($body);
@@ -187,11 +187,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\Junctions**](../Model/\DataExchange\UK\20\Models\Junctions.md)| Junctions to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\Junctions**](../Model/\DataExchange\SIFUK20\Models\Junctions.md)| Junctions to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLearnerGroupEnrolments**
-> \DataExchange\UK\20\Models\SifCreateResponse createLearnerGroupEnrolments($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLearnerGroupEnrolments($body)
 
 Create multiple LearnerGroupEnrolments
 
@@ -214,8 +214,8 @@ Create multiple LearnerGroupEnrolments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\LearnerGroupEnrolments(); // \DataExchange\UK\20\Models\LearnerGroupEnrolments | LearnerGroupEnrolments to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerGroupEnrolments(); // \DataExchange\SIFUK20\Models\LearnerGroupEnrolments | LearnerGroupEnrolments to be created
 
 try {
     $result = $api_instance->createLearnerGroupEnrolments($body);
@@ -230,11 +230,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerGroupEnrolments**](../Model/\DataExchange\UK\20\Models\LearnerGroupEnrolments.md)| LearnerGroupEnrolments to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerGroupEnrolments**](../Model/\DataExchange\SIFUK20\Models\LearnerGroupEnrolments.md)| LearnerGroupEnrolments to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLearnerSchoolEnrolments**
-> \DataExchange\UK\20\Models\SifCreateResponse createLearnerSchoolEnrolments($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLearnerSchoolEnrolments($body)
 
 Create multiple LearnerSchoolEnrolments
 
@@ -257,8 +257,8 @@ Create multiple LearnerSchoolEnrolments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\LearnerSchoolEnrolments(); // \DataExchange\UK\20\Models\LearnerSchoolEnrolments | LearnerSchoolEnrolments to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments(); // \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments | LearnerSchoolEnrolments to be created
 
 try {
     $result = $api_instance->createLearnerSchoolEnrolments($body);
@@ -273,11 +273,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerSchoolEnrolments**](../Model/\DataExchange\UK\20\Models\LearnerSchoolEnrolments.md)| LearnerSchoolEnrolments to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerSchoolEnrolments**](../Model/\DataExchange\SIFUK20\Models\LearnerSchoolEnrolments.md)| LearnerSchoolEnrolments to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -291,7 +291,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLessons**
-> \DataExchange\UK\20\Models\SifCreateResponse createLessons($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLessons($body)
 
 Create multiple Lessons
 
@@ -300,8 +300,8 @@ Create multiple Lessons
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\Lessons(); // \DataExchange\UK\20\Models\Lessons | Lessons to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\Lessons(); // \DataExchange\SIFUK20\Models\Lessons | Lessons to be created
 
 try {
     $result = $api_instance->createLessons($body);
@@ -316,11 +316,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\Lessons**](../Model/\DataExchange\UK\20\Models\Lessons.md)| Lessons to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\Lessons**](../Model/\DataExchange\SIFUK20\Models\Lessons.md)| Lessons to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -334,7 +334,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createNonTeachingActivitys**
-> \DataExchange\UK\20\Models\SifCreateResponse createNonTeachingActivitys($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createNonTeachingActivitys($body)
 
 Create multiple NonTeachingActivitys
 
@@ -343,8 +343,8 @@ Create multiple NonTeachingActivitys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\NonTeachingActivitys(); // \DataExchange\UK\20\Models\NonTeachingActivitys | NonTeachingActivitys to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\NonTeachingActivitys(); // \DataExchange\SIFUK20\Models\NonTeachingActivitys | NonTeachingActivitys to be created
 
 try {
     $result = $api_instance->createNonTeachingActivitys($body);
@@ -359,11 +359,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\NonTeachingActivitys**](../Model/\DataExchange\UK\20\Models\NonTeachingActivitys.md)| NonTeachingActivitys to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\NonTeachingActivitys**](../Model/\DataExchange\SIFUK20\Models\NonTeachingActivitys.md)| NonTeachingActivitys to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -377,7 +377,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSchoolDiaryEntrys**
-> \DataExchange\UK\20\Models\SifCreateResponse createSchoolDiaryEntrys($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createSchoolDiaryEntrys($body)
 
 Create multiple SchoolDiaryEntrys
 
@@ -386,8 +386,8 @@ Create multiple SchoolDiaryEntrys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SchoolDiaryEntrys(); // \DataExchange\UK\20\Models\SchoolDiaryEntrys | SchoolDiaryEntrys to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SchoolDiaryEntrys(); // \DataExchange\SIFUK20\Models\SchoolDiaryEntrys | SchoolDiaryEntrys to be created
 
 try {
     $result = $api_instance->createSchoolDiaryEntrys($body);
@@ -402,11 +402,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SchoolDiaryEntrys**](../Model/\DataExchange\UK\20\Models\SchoolDiaryEntrys.md)| SchoolDiaryEntrys to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolDiaryEntrys**](../Model/\DataExchange\SIFUK20\Models\SchoolDiaryEntrys.md)| SchoolDiaryEntrys to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -420,7 +420,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSchoolGroupTypes**
-> \DataExchange\UK\20\Models\SifCreateResponse createSchoolGroupTypes($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createSchoolGroupTypes($body)
 
 Create multiple SchoolGroupTypes
 
@@ -429,8 +429,8 @@ Create multiple SchoolGroupTypes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SchoolGroupTypes(); // \DataExchange\UK\20\Models\SchoolGroupTypes | SchoolGroupTypes to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SchoolGroupTypes(); // \DataExchange\SIFUK20\Models\SchoolGroupTypes | SchoolGroupTypes to be created
 
 try {
     $result = $api_instance->createSchoolGroupTypes($body);
@@ -445,11 +445,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SchoolGroupTypes**](../Model/\DataExchange\UK\20\Models\SchoolGroupTypes.md)| SchoolGroupTypes to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolGroupTypes**](../Model/\DataExchange\SIFUK20\Models\SchoolGroupTypes.md)| SchoolGroupTypes to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -463,7 +463,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSchoolGroups**
-> \DataExchange\UK\20\Models\SifCreateResponse createSchoolGroups($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createSchoolGroups($body)
 
 Create multiple SchoolGroups
 
@@ -472,8 +472,8 @@ Create multiple SchoolGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SchoolGroups(); // \DataExchange\UK\20\Models\SchoolGroups | SchoolGroups to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SchoolGroups(); // \DataExchange\SIFUK20\Models\SchoolGroups | SchoolGroups to be created
 
 try {
     $result = $api_instance->createSchoolGroups($body);
@@ -488,11 +488,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SchoolGroups**](../Model/\DataExchange\UK\20\Models\SchoolGroups.md)| SchoolGroups to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolGroups**](../Model/\DataExchange\SIFUK20\Models\SchoolGroups.md)| SchoolGroups to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -506,7 +506,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createScopes**
-> \DataExchange\UK\20\Models\SifCreateResponse createScopes($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createScopes($body)
 
 Create multiple Scopes
 
@@ -515,8 +515,8 @@ Create multiple Scopes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\Scopes(); // \DataExchange\UK\20\Models\Scopes | Scopes to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\Scopes(); // \DataExchange\SIFUK20\Models\Scopes | Scopes to be created
 
 try {
     $result = $api_instance->createScopes($body);
@@ -531,11 +531,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\Scopes**](../Model/\DataExchange\UK\20\Models\Scopes.md)| Scopes to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\Scopes**](../Model/\DataExchange\SIFUK20\Models\Scopes.md)| Scopes to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -549,7 +549,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createTTRooms**
-> \DataExchange\UK\20\Models\SifCreateResponse createTTRooms($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createTTRooms($body)
 
 Create multiple TTRooms
 
@@ -558,8 +558,8 @@ Create multiple TTRooms
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TTRooms(); // \DataExchange\UK\20\Models\TTRooms | TTRooms to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TTRooms(); // \DataExchange\SIFUK20\Models\TTRooms | TTRooms to be created
 
 try {
     $result = $api_instance->createTTRooms($body);
@@ -574,11 +574,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTRooms**](../Model/\DataExchange\UK\20\Models\TTRooms.md)| TTRooms to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\TTRooms**](../Model/\DataExchange\SIFUK20\Models\TTRooms.md)| TTRooms to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -592,7 +592,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createTTSites**
-> \DataExchange\UK\20\Models\SifCreateResponse createTTSites($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createTTSites($body)
 
 Create multiple TTSites
 
@@ -601,8 +601,8 @@ Create multiple TTSites
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TTSites(); // \DataExchange\UK\20\Models\TTSites | TTSites to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TTSites(); // \DataExchange\SIFUK20\Models\TTSites | TTSites to be created
 
 try {
     $result = $api_instance->createTTSites($body);
@@ -617,11 +617,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTSites**](../Model/\DataExchange\UK\20\Models\TTSites.md)| TTSites to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\TTSites**](../Model/\DataExchange\SIFUK20\Models\TTSites.md)| TTSites to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -635,7 +635,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createTTSubjects**
-> \DataExchange\UK\20\Models\SifCreateResponse createTTSubjects($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createTTSubjects($body)
 
 Create multiple TTSubjects
 
@@ -644,8 +644,8 @@ Create multiple TTSubjects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TTSubjects(); // \DataExchange\UK\20\Models\TTSubjects | TTSubjects to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TTSubjects(); // \DataExchange\SIFUK20\Models\TTSubjects | TTSubjects to be created
 
 try {
     $result = $api_instance->createTTSubjects($body);
@@ -660,11 +660,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTSubjects**](../Model/\DataExchange\UK\20\Models\TTSubjects.md)| TTSubjects to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\TTSubjects**](../Model/\DataExchange\SIFUK20\Models\TTSubjects.md)| TTSubjects to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -678,7 +678,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createTTTeachers**
-> \DataExchange\UK\20\Models\SifCreateResponse createTTTeachers($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createTTTeachers($body)
 
 Create multiple TTTeachers
 
@@ -687,8 +687,8 @@ Create multiple TTTeachers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TTTeachers(); // \DataExchange\UK\20\Models\TTTeachers | TTTeachers to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TTTeachers(); // \DataExchange\SIFUK20\Models\TTTeachers | TTTeachers to be created
 
 try {
     $result = $api_instance->createTTTeachers($body);
@@ -703,11 +703,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTTeachers**](../Model/\DataExchange\UK\20\Models\TTTeachers.md)| TTTeachers to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\TTTeachers**](../Model/\DataExchange\SIFUK20\Models\TTTeachers.md)| TTTeachers to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -721,7 +721,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createTeachingGroups**
-> \DataExchange\UK\20\Models\SifCreateResponse createTeachingGroups($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createTeachingGroups($body)
 
 Create multiple TeachingGroups
 
@@ -730,8 +730,8 @@ Create multiple TeachingGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TeachingGroups(); // \DataExchange\UK\20\Models\TeachingGroups | TeachingGroups to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TeachingGroups(); // \DataExchange\SIFUK20\Models\TeachingGroups | TeachingGroups to be created
 
 try {
     $result = $api_instance->createTeachingGroups($body);
@@ -746,11 +746,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TeachingGroups**](../Model/\DataExchange\UK\20\Models\TeachingGroups.md)| TeachingGroups to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\TeachingGroups**](../Model/\DataExchange\SIFUK20\Models\TeachingGroups.md)| TeachingGroups to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -764,7 +764,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createTermInfos**
-> \DataExchange\UK\20\Models\SifCreateResponse createTermInfos($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createTermInfos($body)
 
 Create multiple TermInfos
 
@@ -773,8 +773,8 @@ Create multiple TermInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TermInfos(); // \DataExchange\UK\20\Models\TermInfos | TermInfos to be created
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TermInfos(); // \DataExchange\SIFUK20\Models\TermInfos | TermInfos to be created
 
 try {
     $result = $api_instance->createTermInfos($body);
@@ -789,11 +789,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TermInfos**](../Model/\DataExchange\UK\20\Models\TermInfos.md)| TermInfos to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\TermInfos**](../Model/\DataExchange\SIFUK20\Models\TermInfos.md)| TermInfos to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -807,7 +807,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteCycleByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteCycleByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteCycleByRefId($ref_id)
 
 Delete Cycle by RefId
 
@@ -816,7 +816,7 @@ Delete Cycle by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Cycle
 
 try {
@@ -836,7 +836,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -850,7 +850,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteCycles**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteCycles($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteCycles($body)
 
 Delete multiple Cycles
 
@@ -859,8 +859,8 @@ Delete multiple Cycles
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteCycles($body);
@@ -875,11 +875,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -893,7 +893,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteJunctionByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteJunctionByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteJunctionByRefId($ref_id)
 
 Delete Junction by RefId
 
@@ -902,7 +902,7 @@ Delete Junction by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Junction
 
 try {
@@ -922,7 +922,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -936,7 +936,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteJunctions**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteJunctions($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteJunctions($body)
 
 Delete multiple Junctions
 
@@ -945,8 +945,8 @@ Delete multiple Junctions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteJunctions($body);
@@ -961,11 +961,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -979,7 +979,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerGroupEnrolmentByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerGroupEnrolmentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerGroupEnrolmentByRefId($ref_id)
 
 Delete LearnerGroupEnrolment by RefId
 
@@ -988,7 +988,7 @@ Delete LearnerGroupEnrolment by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerGroupEnrolment
 
 try {
@@ -1008,7 +1008,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1022,7 +1022,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerGroupEnrolments**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerGroupEnrolments($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerGroupEnrolments($body)
 
 Delete multiple LearnerGroupEnrolments
 
@@ -1031,8 +1031,8 @@ Delete multiple LearnerGroupEnrolments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLearnerGroupEnrolments($body);
@@ -1047,11 +1047,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1065,7 +1065,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerSchoolEnrolmentByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerSchoolEnrolmentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerSchoolEnrolmentByRefId($ref_id)
 
 Delete LearnerSchoolEnrolment by RefId
 
@@ -1074,7 +1074,7 @@ Delete LearnerSchoolEnrolment by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerSchoolEnrolment
 
 try {
@@ -1094,7 +1094,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1108,7 +1108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerSchoolEnrolments**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerSchoolEnrolments($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerSchoolEnrolments($body)
 
 Delete multiple LearnerSchoolEnrolments
 
@@ -1117,8 +1117,8 @@ Delete multiple LearnerSchoolEnrolments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLearnerSchoolEnrolments($body);
@@ -1133,11 +1133,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1151,7 +1151,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLessonByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLessonByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLessonByRefId($ref_id)
 
 Delete Lesson by RefId
 
@@ -1160,7 +1160,7 @@ Delete Lesson by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Lesson
 
 try {
@@ -1180,7 +1180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1194,7 +1194,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLessons**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLessons($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLessons($body)
 
 Delete multiple Lessons
 
@@ -1203,8 +1203,8 @@ Delete multiple Lessons
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLessons($body);
@@ -1219,11 +1219,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1237,7 +1237,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteNonTeachingActivityByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteNonTeachingActivityByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteNonTeachingActivityByRefId($ref_id)
 
 Delete NonTeachingActivity by RefId
 
@@ -1246,7 +1246,7 @@ Delete NonTeachingActivity by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of NonTeachingActivity
 
 try {
@@ -1266,7 +1266,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1280,7 +1280,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteNonTeachingActivitys**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteNonTeachingActivitys($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteNonTeachingActivitys($body)
 
 Delete multiple NonTeachingActivitys
 
@@ -1289,8 +1289,8 @@ Delete multiple NonTeachingActivitys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteNonTeachingActivitys($body);
@@ -1305,11 +1305,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1323,7 +1323,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSchoolDiaryEntryByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteSchoolDiaryEntryByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteSchoolDiaryEntryByRefId($ref_id)
 
 Delete SchoolDiaryEntry by RefId
 
@@ -1332,7 +1332,7 @@ Delete SchoolDiaryEntry by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolDiaryEntry
 
 try {
@@ -1352,7 +1352,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1366,7 +1366,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSchoolDiaryEntrys**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteSchoolDiaryEntrys($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteSchoolDiaryEntrys($body)
 
 Delete multiple SchoolDiaryEntrys
 
@@ -1375,8 +1375,8 @@ Delete multiple SchoolDiaryEntrys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteSchoolDiaryEntrys($body);
@@ -1391,11 +1391,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1409,7 +1409,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSchoolGroupByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteSchoolGroupByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteSchoolGroupByRefId($ref_id)
 
 Delete SchoolGroup by RefId
 
@@ -1418,7 +1418,7 @@ Delete SchoolGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolGroup
 
 try {
@@ -1438,7 +1438,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1452,7 +1452,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSchoolGroupTypeByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteSchoolGroupTypeByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteSchoolGroupTypeByRefId($ref_id)
 
 Delete SchoolGroupType by RefId
 
@@ -1461,7 +1461,7 @@ Delete SchoolGroupType by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolGroupType
 
 try {
@@ -1481,7 +1481,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1495,7 +1495,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSchoolGroupTypes**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteSchoolGroupTypes($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteSchoolGroupTypes($body)
 
 Delete multiple SchoolGroupTypes
 
@@ -1504,8 +1504,8 @@ Delete multiple SchoolGroupTypes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteSchoolGroupTypes($body);
@@ -1520,11 +1520,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1538,7 +1538,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSchoolGroups**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteSchoolGroups($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteSchoolGroups($body)
 
 Delete multiple SchoolGroups
 
@@ -1547,8 +1547,8 @@ Delete multiple SchoolGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteSchoolGroups($body);
@@ -1563,11 +1563,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1581,7 +1581,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteScopeByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteScopeByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteScopeByRefId($ref_id)
 
 Delete Scope by RefId
 
@@ -1590,7 +1590,7 @@ Delete Scope by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Scope
 
 try {
@@ -1610,7 +1610,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1624,7 +1624,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteScopes**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteScopes($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteScopes($body)
 
 Delete multiple Scopes
 
@@ -1633,8 +1633,8 @@ Delete multiple Scopes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteScopes($body);
@@ -1649,11 +1649,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1667,7 +1667,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTRoomByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTRoomByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTRoomByRefId($ref_id)
 
 Delete TTRoom by RefId
 
@@ -1676,7 +1676,7 @@ Delete TTRoom by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTRoom
 
 try {
@@ -1696,7 +1696,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1710,7 +1710,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTRooms**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTRooms($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTRooms($body)
 
 Delete multiple TTRooms
 
@@ -1719,8 +1719,8 @@ Delete multiple TTRooms
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteTTRooms($body);
@@ -1735,11 +1735,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1753,7 +1753,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTSiteByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTSiteByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTSiteByRefId($ref_id)
 
 Delete TTSite by RefId
 
@@ -1762,7 +1762,7 @@ Delete TTSite by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTSite
 
 try {
@@ -1782,7 +1782,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1796,7 +1796,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTSites**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTSites($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTSites($body)
 
 Delete multiple TTSites
 
@@ -1805,8 +1805,8 @@ Delete multiple TTSites
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteTTSites($body);
@@ -1821,11 +1821,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1839,7 +1839,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTSubjectByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTSubjectByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTSubjectByRefId($ref_id)
 
 Delete TTSubject by RefId
 
@@ -1848,7 +1848,7 @@ Delete TTSubject by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTSubject
 
 try {
@@ -1868,7 +1868,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1882,7 +1882,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTSubjects**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTSubjects($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTSubjects($body)
 
 Delete multiple TTSubjects
 
@@ -1891,8 +1891,8 @@ Delete multiple TTSubjects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteTTSubjects($body);
@@ -1907,11 +1907,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1925,7 +1925,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTTeacherByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTTeacherByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTTeacherByRefId($ref_id)
 
 Delete TTTeacher by RefId
 
@@ -1934,7 +1934,7 @@ Delete TTTeacher by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTTeacher
 
 try {
@@ -1954,7 +1954,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1968,7 +1968,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTTTeachers**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTTTeachers($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTTTeachers($body)
 
 Delete multiple TTTeachers
 
@@ -1977,8 +1977,8 @@ Delete multiple TTTeachers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteTTTeachers($body);
@@ -1993,11 +1993,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -2011,7 +2011,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTeachingGroupByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTeachingGroupByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTeachingGroupByRefId($ref_id)
 
 Delete TeachingGroup by RefId
 
@@ -2020,7 +2020,7 @@ Delete TeachingGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TeachingGroup
 
 try {
@@ -2040,7 +2040,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -2054,7 +2054,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTeachingGroups**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTeachingGroups($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTeachingGroups($body)
 
 Delete multiple TeachingGroups
 
@@ -2063,8 +2063,8 @@ Delete multiple TeachingGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteTeachingGroups($body);
@@ -2079,11 +2079,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -2097,7 +2097,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTermInfoByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTermInfoByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTermInfoByRefId($ref_id)
 
 Delete TermInfo by RefId
 
@@ -2106,7 +2106,7 @@ Delete TermInfo by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TermInfo
 
 try {
@@ -2126,7 +2126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -2140,7 +2140,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTermInfos**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteTermInfos($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteTermInfos($body)
 
 Delete multiple TermInfos
 
@@ -2149,8 +2149,8 @@ Delete multiple TermInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteTermInfos($body);
@@ -2165,11 +2165,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -2183,7 +2183,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCycleByRefId**
-> \DataExchange\UK\20\Models\Cycles getCycleByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\Cycles getCycleByRefId($ref_id)
 
 Find Cycle by RefId
 
@@ -2192,7 +2192,7 @@ Find Cycle by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Cycle
 
 try {
@@ -2212,7 +2212,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\Cycles**](../Model/Cycles.md)
+[**\DataExchange\SIFUK20\Models\Cycles**](../Model/Cycles.md)
 
 ### Authorization
 
@@ -2226,7 +2226,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCycles**
-> \DataExchange\UK\20\Models\Cycles getCycles($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\Cycles getCycles($navigation_page, $navigation_page_size)
 
 Return all Cycles
 
@@ -2235,7 +2235,7 @@ Return all Cycles
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2257,7 +2257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\Cycles**](../Model/Cycles.md)
+[**\DataExchange\SIFUK20\Models\Cycles**](../Model/Cycles.md)
 
 ### Authorization
 
@@ -2271,7 +2271,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getJunctionByRefId**
-> \DataExchange\UK\20\Models\Junctions getJunctionByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\Junctions getJunctionByRefId($ref_id)
 
 Find Junction by RefId
 
@@ -2280,7 +2280,7 @@ Find Junction by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Junction
 
 try {
@@ -2300,7 +2300,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\Junctions**](../Model/Junctions.md)
+[**\DataExchange\SIFUK20\Models\Junctions**](../Model/Junctions.md)
 
 ### Authorization
 
@@ -2314,7 +2314,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getJunctions**
-> \DataExchange\UK\20\Models\Junctions getJunctions($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\Junctions getJunctions($navigation_page, $navigation_page_size)
 
 Return all Junctions
 
@@ -2323,7 +2323,7 @@ Return all Junctions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2345,7 +2345,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\Junctions**](../Model/Junctions.md)
+[**\DataExchange\SIFUK20\Models\Junctions**](../Model/Junctions.md)
 
 ### Authorization
 
@@ -2359,7 +2359,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerGroupEnrolmentByRefId**
-> \DataExchange\UK\20\Models\LearnerGroupEnrolments getLearnerGroupEnrolmentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\LearnerGroupEnrolments getLearnerGroupEnrolmentByRefId($ref_id)
 
 Find LearnerGroupEnrolment by RefId
 
@@ -2368,7 +2368,7 @@ Find LearnerGroupEnrolment by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerGroupEnrolment
 
 try {
@@ -2388,7 +2388,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerGroupEnrolments**](../Model/LearnerGroupEnrolments.md)
+[**\DataExchange\SIFUK20\Models\LearnerGroupEnrolments**](../Model/LearnerGroupEnrolments.md)
 
 ### Authorization
 
@@ -2402,7 +2402,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerGroupEnrolments**
-> \DataExchange\UK\20\Models\LearnerGroupEnrolments getLearnerGroupEnrolments($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerGroupEnrolments getLearnerGroupEnrolments($navigation_page, $navigation_page_size)
 
 Return all LearnerGroupEnrolments
 
@@ -2411,7 +2411,7 @@ Return all LearnerGroupEnrolments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2433,7 +2433,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerGroupEnrolments**](../Model/LearnerGroupEnrolments.md)
+[**\DataExchange\SIFUK20\Models\LearnerGroupEnrolments**](../Model/LearnerGroupEnrolments.md)
 
 ### Authorization
 
@@ -2447,7 +2447,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerSchoolEnrolmentByRefId**
-> \DataExchange\UK\20\Models\LearnerSchoolEnrolments getLearnerSchoolEnrolmentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments getLearnerSchoolEnrolmentByRefId($ref_id)
 
 Find LearnerSchoolEnrolment by RefId
 
@@ -2456,7 +2456,7 @@ Find LearnerSchoolEnrolment by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerSchoolEnrolment
 
 try {
@@ -2476,7 +2476,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerSchoolEnrolments**](../Model/LearnerSchoolEnrolments.md)
+[**\DataExchange\SIFUK20\Models\LearnerSchoolEnrolments**](../Model/LearnerSchoolEnrolments.md)
 
 ### Authorization
 
@@ -2490,7 +2490,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerSchoolEnrolments**
-> \DataExchange\UK\20\Models\LearnerSchoolEnrolments getLearnerSchoolEnrolments($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments getLearnerSchoolEnrolments($navigation_page, $navigation_page_size)
 
 Return all LearnerSchoolEnrolments
 
@@ -2499,7 +2499,7 @@ Return all LearnerSchoolEnrolments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2521,7 +2521,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerSchoolEnrolments**](../Model/LearnerSchoolEnrolments.md)
+[**\DataExchange\SIFUK20\Models\LearnerSchoolEnrolments**](../Model/LearnerSchoolEnrolments.md)
 
 ### Authorization
 
@@ -2535,7 +2535,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLessonByRefId**
-> \DataExchange\UK\20\Models\Lessons getLessonByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\Lessons getLessonByRefId($ref_id)
 
 Find Lesson by RefId
 
@@ -2544,7 +2544,7 @@ Find Lesson by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Lesson
 
 try {
@@ -2564,7 +2564,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\Lessons**](../Model/Lessons.md)
+[**\DataExchange\SIFUK20\Models\Lessons**](../Model/Lessons.md)
 
 ### Authorization
 
@@ -2578,7 +2578,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLessons**
-> \DataExchange\UK\20\Models\Lessons getLessons($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\Lessons getLessons($navigation_page, $navigation_page_size)
 
 Return all Lessons
 
@@ -2587,7 +2587,7 @@ Return all Lessons
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2609,7 +2609,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\Lessons**](../Model/Lessons.md)
+[**\DataExchange\SIFUK20\Models\Lessons**](../Model/Lessons.md)
 
 ### Authorization
 
@@ -2623,7 +2623,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getNonTeachingActivityByRefId**
-> \DataExchange\UK\20\Models\NonTeachingActivitys getNonTeachingActivityByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\NonTeachingActivitys getNonTeachingActivityByRefId($ref_id)
 
 Find NonTeachingActivity by RefId
 
@@ -2632,7 +2632,7 @@ Find NonTeachingActivity by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of NonTeachingActivity
 
 try {
@@ -2652,7 +2652,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\NonTeachingActivitys**](../Model/NonTeachingActivitys.md)
+[**\DataExchange\SIFUK20\Models\NonTeachingActivitys**](../Model/NonTeachingActivitys.md)
 
 ### Authorization
 
@@ -2666,7 +2666,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getNonTeachingActivitys**
-> \DataExchange\UK\20\Models\NonTeachingActivitys getNonTeachingActivitys($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\NonTeachingActivitys getNonTeachingActivitys($navigation_page, $navigation_page_size)
 
 Return all NonTeachingActivitys
 
@@ -2675,7 +2675,7 @@ Return all NonTeachingActivitys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2697,7 +2697,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\NonTeachingActivitys**](../Model/NonTeachingActivitys.md)
+[**\DataExchange\SIFUK20\Models\NonTeachingActivitys**](../Model/NonTeachingActivitys.md)
 
 ### Authorization
 
@@ -2711,7 +2711,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolDiaryEntryByRefId**
-> \DataExchange\UK\20\Models\SchoolDiaryEntrys getSchoolDiaryEntryByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SchoolDiaryEntrys getSchoolDiaryEntryByRefId($ref_id)
 
 Find SchoolDiaryEntry by RefId
 
@@ -2720,7 +2720,7 @@ Find SchoolDiaryEntry by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolDiaryEntry
 
 try {
@@ -2740,7 +2740,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SchoolDiaryEntrys**](../Model/SchoolDiaryEntrys.md)
+[**\DataExchange\SIFUK20\Models\SchoolDiaryEntrys**](../Model/SchoolDiaryEntrys.md)
 
 ### Authorization
 
@@ -2754,7 +2754,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolDiaryEntrys**
-> \DataExchange\UK\20\Models\SchoolDiaryEntrys getSchoolDiaryEntrys($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\SchoolDiaryEntrys getSchoolDiaryEntrys($navigation_page, $navigation_page_size)
 
 Return all SchoolDiaryEntrys
 
@@ -2763,7 +2763,7 @@ Return all SchoolDiaryEntrys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2785,7 +2785,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SchoolDiaryEntrys**](../Model/SchoolDiaryEntrys.md)
+[**\DataExchange\SIFUK20\Models\SchoolDiaryEntrys**](../Model/SchoolDiaryEntrys.md)
 
 ### Authorization
 
@@ -2799,7 +2799,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolGroupByRefId**
-> \DataExchange\UK\20\Models\SchoolGroups getSchoolGroupByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SchoolGroups getSchoolGroupByRefId($ref_id)
 
 Find SchoolGroup by RefId
 
@@ -2808,7 +2808,7 @@ Find SchoolGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolGroup
 
 try {
@@ -2828,7 +2828,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SchoolGroups**](../Model/SchoolGroups.md)
+[**\DataExchange\SIFUK20\Models\SchoolGroups**](../Model/SchoolGroups.md)
 
 ### Authorization
 
@@ -2842,7 +2842,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolGroupTypeByRefId**
-> \DataExchange\UK\20\Models\SchoolGroupTypes getSchoolGroupTypeByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SchoolGroupTypes getSchoolGroupTypeByRefId($ref_id)
 
 Find SchoolGroupType by RefId
 
@@ -2851,7 +2851,7 @@ Find SchoolGroupType by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolGroupType
 
 try {
@@ -2871,7 +2871,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SchoolGroupTypes**](../Model/SchoolGroupTypes.md)
+[**\DataExchange\SIFUK20\Models\SchoolGroupTypes**](../Model/SchoolGroupTypes.md)
 
 ### Authorization
 
@@ -2885,7 +2885,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolGroupTypes**
-> \DataExchange\UK\20\Models\SchoolGroupTypes getSchoolGroupTypes($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\SchoolGroupTypes getSchoolGroupTypes($navigation_page, $navigation_page_size)
 
 Return all SchoolGroupTypes
 
@@ -2894,7 +2894,7 @@ Return all SchoolGroupTypes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2916,7 +2916,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SchoolGroupTypes**](../Model/SchoolGroupTypes.md)
+[**\DataExchange\SIFUK20\Models\SchoolGroupTypes**](../Model/SchoolGroupTypes.md)
 
 ### Authorization
 
@@ -2930,7 +2930,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolGroups**
-> \DataExchange\UK\20\Models\SchoolGroups getSchoolGroups($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\SchoolGroups getSchoolGroups($navigation_page, $navigation_page_size)
 
 Return all SchoolGroups
 
@@ -2939,7 +2939,7 @@ Return all SchoolGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2961,7 +2961,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SchoolGroups**](../Model/SchoolGroups.md)
+[**\DataExchange\SIFUK20\Models\SchoolGroups**](../Model/SchoolGroups.md)
 
 ### Authorization
 
@@ -2975,7 +2975,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getScopeByRefId**
-> \DataExchange\UK\20\Models\Scopes getScopeByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\Scopes getScopeByRefId($ref_id)
 
 Find Scope by RefId
 
@@ -2984,7 +2984,7 @@ Find Scope by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Scope
 
 try {
@@ -3004,7 +3004,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\Scopes**](../Model/Scopes.md)
+[**\DataExchange\SIFUK20\Models\Scopes**](../Model/Scopes.md)
 
 ### Authorization
 
@@ -3018,7 +3018,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getScopes**
-> \DataExchange\UK\20\Models\Scopes getScopes($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\Scopes getScopes($navigation_page, $navigation_page_size)
 
 Return all Scopes
 
@@ -3027,7 +3027,7 @@ Return all Scopes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -3049,7 +3049,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\Scopes**](../Model/Scopes.md)
+[**\DataExchange\SIFUK20\Models\Scopes**](../Model/Scopes.md)
 
 ### Authorization
 
@@ -3063,7 +3063,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTRoomByRefId**
-> \DataExchange\UK\20\Models\TTRooms getTTRoomByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\TTRooms getTTRoomByRefId($ref_id)
 
 Find TTRoom by RefId
 
@@ -3072,7 +3072,7 @@ Find TTRoom by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTRoom
 
 try {
@@ -3092,7 +3092,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTRooms**](../Model/TTRooms.md)
+[**\DataExchange\SIFUK20\Models\TTRooms**](../Model/TTRooms.md)
 
 ### Authorization
 
@@ -3106,7 +3106,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTRooms**
-> \DataExchange\UK\20\Models\TTRooms getTTRooms($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTRooms getTTRooms($navigation_page, $navigation_page_size)
 
 Return all TTRooms
 
@@ -3115,7 +3115,7 @@ Return all TTRooms
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -3137,7 +3137,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTRooms**](../Model/TTRooms.md)
+[**\DataExchange\SIFUK20\Models\TTRooms**](../Model/TTRooms.md)
 
 ### Authorization
 
@@ -3151,7 +3151,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTSiteByRefId**
-> \DataExchange\UK\20\Models\TTSites getTTSiteByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\TTSites getTTSiteByRefId($ref_id)
 
 Find TTSite by RefId
 
@@ -3160,7 +3160,7 @@ Find TTSite by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTSite
 
 try {
@@ -3180,7 +3180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTSites**](../Model/TTSites.md)
+[**\DataExchange\SIFUK20\Models\TTSites**](../Model/TTSites.md)
 
 ### Authorization
 
@@ -3194,7 +3194,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTSites**
-> \DataExchange\UK\20\Models\TTSites getTTSites($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTSites getTTSites($navigation_page, $navigation_page_size)
 
 Return all TTSites
 
@@ -3203,7 +3203,7 @@ Return all TTSites
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -3225,7 +3225,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTSites**](../Model/TTSites.md)
+[**\DataExchange\SIFUK20\Models\TTSites**](../Model/TTSites.md)
 
 ### Authorization
 
@@ -3239,7 +3239,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTSubjectByRefId**
-> \DataExchange\UK\20\Models\TTSubjects getTTSubjectByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\TTSubjects getTTSubjectByRefId($ref_id)
 
 Find TTSubject by RefId
 
@@ -3248,7 +3248,7 @@ Find TTSubject by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTSubject
 
 try {
@@ -3268,7 +3268,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTSubjects**](../Model/TTSubjects.md)
+[**\DataExchange\SIFUK20\Models\TTSubjects**](../Model/TTSubjects.md)
 
 ### Authorization
 
@@ -3282,7 +3282,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTSubjects**
-> \DataExchange\UK\20\Models\TTSubjects getTTSubjects($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTSubjects getTTSubjects($navigation_page, $navigation_page_size)
 
 Return all TTSubjects
 
@@ -3291,7 +3291,7 @@ Return all TTSubjects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -3313,7 +3313,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTSubjects**](../Model/TTSubjects.md)
+[**\DataExchange\SIFUK20\Models\TTSubjects**](../Model/TTSubjects.md)
 
 ### Authorization
 
@@ -3327,7 +3327,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTTeacherByRefId**
-> \DataExchange\UK\20\Models\TTTeachers getTTTeacherByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\TTTeachers getTTTeacherByRefId($ref_id)
 
 Find TTTeacher by RefId
 
@@ -3336,7 +3336,7 @@ Find TTTeacher by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTTeacher
 
 try {
@@ -3356,7 +3356,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTTeachers**](../Model/TTTeachers.md)
+[**\DataExchange\SIFUK20\Models\TTTeachers**](../Model/TTTeachers.md)
 
 ### Authorization
 
@@ -3370,7 +3370,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTTeachers**
-> \DataExchange\UK\20\Models\TTTeachers getTTTeachers($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTTeachers getTTTeachers($navigation_page, $navigation_page_size)
 
 Return all TTTeachers
 
@@ -3379,7 +3379,7 @@ Return all TTTeachers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -3401,7 +3401,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TTTeachers**](../Model/TTTeachers.md)
+[**\DataExchange\SIFUK20\Models\TTTeachers**](../Model/TTTeachers.md)
 
 ### Authorization
 
@@ -3415,7 +3415,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTeachingGroupByRefId**
-> \DataExchange\UK\20\Models\TeachingGroups getTeachingGroupByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\TeachingGroups getTeachingGroupByRefId($ref_id)
 
 Find TeachingGroup by RefId
 
@@ -3424,7 +3424,7 @@ Find TeachingGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TeachingGroup
 
 try {
@@ -3444,7 +3444,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TeachingGroups**](../Model/TeachingGroups.md)
+[**\DataExchange\SIFUK20\Models\TeachingGroups**](../Model/TeachingGroups.md)
 
 ### Authorization
 
@@ -3458,7 +3458,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTeachingGroups**
-> \DataExchange\UK\20\Models\TeachingGroups getTeachingGroups($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TeachingGroups getTeachingGroups($navigation_page, $navigation_page_size)
 
 Return all TeachingGroups
 
@@ -3467,7 +3467,7 @@ Return all TeachingGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -3489,7 +3489,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TeachingGroups**](../Model/TeachingGroups.md)
+[**\DataExchange\SIFUK20\Models\TeachingGroups**](../Model/TeachingGroups.md)
 
 ### Authorization
 
@@ -3503,7 +3503,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTermInfoByRefId**
-> \DataExchange\UK\20\Models\TermInfos getTermInfoByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\TermInfos getTermInfoByRefId($ref_id)
 
 Find TermInfo by RefId
 
@@ -3512,7 +3512,7 @@ Find TermInfo by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TermInfo
 
 try {
@@ -3532,7 +3532,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TermInfos**](../Model/TermInfos.md)
+[**\DataExchange\SIFUK20\Models\TermInfos**](../Model/TermInfos.md)
 
 ### Authorization
 
@@ -3546,7 +3546,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTermInfos**
-> \DataExchange\UK\20\Models\TermInfos getTermInfos($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TermInfos getTermInfos($navigation_page, $navigation_page_size)
 
 Return all TermInfos
 
@@ -3555,7 +3555,7 @@ Return all TermInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -3577,7 +3577,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\TermInfos**](../Model/TermInfos.md)
+[**\DataExchange\SIFUK20\Models\TermInfos**](../Model/TermInfos.md)
 
 ### Authorization
 
@@ -3591,7 +3591,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCycleByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateCycleByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateCycleByRefId($ref_id, $body)
 
 Update Cycle by RefId
 
@@ -3600,9 +3600,9 @@ Update Cycle by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Cycle
-$body = new \DataExchange\UK\20\Models\Cycle(); // \DataExchange\UK\20\Models\Cycle | Cycle to be updated
+$body = new \DataExchange\SIFUK20\Models\Cycle(); // \DataExchange\SIFUK20\Models\Cycle | Cycle to be updated
 
 try {
     $result = $api_instance->updateCycleByRefId($ref_id, $body);
@@ -3618,11 +3618,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of Cycle |
- **body** | [**\DataExchange\UK\20\Models\Cycle**](../Model/\DataExchange\UK\20\Models\Cycle.md)| Cycle to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\Cycle**](../Model/\DataExchange\SIFUK20\Models\Cycle.md)| Cycle to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -3636,7 +3636,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCycles**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateCycles($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateCycles($body)
 
 Update multiple Cycles
 
@@ -3645,8 +3645,8 @@ Update multiple Cycles
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\Cycles(); // \DataExchange\UK\20\Models\Cycles | Cycles to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\Cycles(); // \DataExchange\SIFUK20\Models\Cycles | Cycles to be updated
 
 try {
     $result = $api_instance->updateCycles($body);
@@ -3661,11 +3661,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\Cycles**](../Model/\DataExchange\UK\20\Models\Cycles.md)| Cycles to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\Cycles**](../Model/\DataExchange\SIFUK20\Models\Cycles.md)| Cycles to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -3679,7 +3679,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateJunctionByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateJunctionByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateJunctionByRefId($ref_id, $body)
 
 Update Junction by RefId
 
@@ -3688,9 +3688,9 @@ Update Junction by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Junction
-$body = new \DataExchange\UK\20\Models\Junction(); // \DataExchange\UK\20\Models\Junction | Junction to be updated
+$body = new \DataExchange\SIFUK20\Models\Junction(); // \DataExchange\SIFUK20\Models\Junction | Junction to be updated
 
 try {
     $result = $api_instance->updateJunctionByRefId($ref_id, $body);
@@ -3706,11 +3706,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of Junction |
- **body** | [**\DataExchange\UK\20\Models\Junction**](../Model/\DataExchange\UK\20\Models\Junction.md)| Junction to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\Junction**](../Model/\DataExchange\SIFUK20\Models\Junction.md)| Junction to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -3724,7 +3724,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateJunctions**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateJunctions($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateJunctions($body)
 
 Update multiple Junctions
 
@@ -3733,8 +3733,8 @@ Update multiple Junctions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\Junctions(); // \DataExchange\UK\20\Models\Junctions | Junctions to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\Junctions(); // \DataExchange\SIFUK20\Models\Junctions | Junctions to be updated
 
 try {
     $result = $api_instance->updateJunctions($body);
@@ -3749,11 +3749,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\Junctions**](../Model/\DataExchange\UK\20\Models\Junctions.md)| Junctions to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\Junctions**](../Model/\DataExchange\SIFUK20\Models\Junctions.md)| Junctions to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -3767,7 +3767,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerGroupEnrolmentByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerGroupEnrolmentByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerGroupEnrolmentByRefId($ref_id, $body)
 
 Update LearnerGroupEnrolment by RefId
 
@@ -3776,9 +3776,9 @@ Update LearnerGroupEnrolment by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerGroupEnrolment
-$body = new \DataExchange\UK\20\Models\LearnerGroupEnrolment(); // \DataExchange\UK\20\Models\LearnerGroupEnrolment | LearnerGroupEnrolment to be updated
+$body = new \DataExchange\SIFUK20\Models\LearnerGroupEnrolment(); // \DataExchange\SIFUK20\Models\LearnerGroupEnrolment | LearnerGroupEnrolment to be updated
 
 try {
     $result = $api_instance->updateLearnerGroupEnrolmentByRefId($ref_id, $body);
@@ -3794,11 +3794,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of LearnerGroupEnrolment |
- **body** | [**\DataExchange\UK\20\Models\LearnerGroupEnrolment**](../Model/\DataExchange\UK\20\Models\LearnerGroupEnrolment.md)| LearnerGroupEnrolment to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerGroupEnrolment**](../Model/\DataExchange\SIFUK20\Models\LearnerGroupEnrolment.md)| LearnerGroupEnrolment to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -3812,7 +3812,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerGroupEnrolments**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerGroupEnrolments($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerGroupEnrolments($body)
 
 Update multiple LearnerGroupEnrolments
 
@@ -3821,8 +3821,8 @@ Update multiple LearnerGroupEnrolments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\LearnerGroupEnrolments(); // \DataExchange\UK\20\Models\LearnerGroupEnrolments | LearnerGroupEnrolments to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerGroupEnrolments(); // \DataExchange\SIFUK20\Models\LearnerGroupEnrolments | LearnerGroupEnrolments to be updated
 
 try {
     $result = $api_instance->updateLearnerGroupEnrolments($body);
@@ -3837,11 +3837,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerGroupEnrolments**](../Model/\DataExchange\UK\20\Models\LearnerGroupEnrolments.md)| LearnerGroupEnrolments to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerGroupEnrolments**](../Model/\DataExchange\SIFUK20\Models\LearnerGroupEnrolments.md)| LearnerGroupEnrolments to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -3855,7 +3855,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerSchoolEnrolmentByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerSchoolEnrolmentByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerSchoolEnrolmentByRefId($ref_id, $body)
 
 Update LearnerSchoolEnrolment by RefId
 
@@ -3864,9 +3864,9 @@ Update LearnerSchoolEnrolment by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerSchoolEnrolment
-$body = new \DataExchange\UK\20\Models\LearnerSchoolEnrolment(); // \DataExchange\UK\20\Models\LearnerSchoolEnrolment | LearnerSchoolEnrolment to be updated
+$body = new \DataExchange\SIFUK20\Models\LearnerSchoolEnrolment(); // \DataExchange\SIFUK20\Models\LearnerSchoolEnrolment | LearnerSchoolEnrolment to be updated
 
 try {
     $result = $api_instance->updateLearnerSchoolEnrolmentByRefId($ref_id, $body);
@@ -3882,11 +3882,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of LearnerSchoolEnrolment |
- **body** | [**\DataExchange\UK\20\Models\LearnerSchoolEnrolment**](../Model/\DataExchange\UK\20\Models\LearnerSchoolEnrolment.md)| LearnerSchoolEnrolment to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerSchoolEnrolment**](../Model/\DataExchange\SIFUK20\Models\LearnerSchoolEnrolment.md)| LearnerSchoolEnrolment to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -3900,7 +3900,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerSchoolEnrolments**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerSchoolEnrolments($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerSchoolEnrolments($body)
 
 Update multiple LearnerSchoolEnrolments
 
@@ -3909,8 +3909,8 @@ Update multiple LearnerSchoolEnrolments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\LearnerSchoolEnrolments(); // \DataExchange\UK\20\Models\LearnerSchoolEnrolments | LearnerSchoolEnrolments to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments(); // \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments | LearnerSchoolEnrolments to be updated
 
 try {
     $result = $api_instance->updateLearnerSchoolEnrolments($body);
@@ -3925,11 +3925,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerSchoolEnrolments**](../Model/\DataExchange\UK\20\Models\LearnerSchoolEnrolments.md)| LearnerSchoolEnrolments to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerSchoolEnrolments**](../Model/\DataExchange\SIFUK20\Models\LearnerSchoolEnrolments.md)| LearnerSchoolEnrolments to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -3943,7 +3943,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLessonByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLessonByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLessonByRefId($ref_id, $body)
 
 Update Lesson by RefId
 
@@ -3952,9 +3952,9 @@ Update Lesson by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Lesson
-$body = new \DataExchange\UK\20\Models\Lesson(); // \DataExchange\UK\20\Models\Lesson | Lesson to be updated
+$body = new \DataExchange\SIFUK20\Models\Lesson(); // \DataExchange\SIFUK20\Models\Lesson | Lesson to be updated
 
 try {
     $result = $api_instance->updateLessonByRefId($ref_id, $body);
@@ -3970,11 +3970,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of Lesson |
- **body** | [**\DataExchange\UK\20\Models\Lesson**](../Model/\DataExchange\UK\20\Models\Lesson.md)| Lesson to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\Lesson**](../Model/\DataExchange\SIFUK20\Models\Lesson.md)| Lesson to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -3988,7 +3988,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLessons**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLessons($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLessons($body)
 
 Update multiple Lessons
 
@@ -3997,8 +3997,8 @@ Update multiple Lessons
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\Lessons(); // \DataExchange\UK\20\Models\Lessons | Lessons to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\Lessons(); // \DataExchange\SIFUK20\Models\Lessons | Lessons to be updated
 
 try {
     $result = $api_instance->updateLessons($body);
@@ -4013,11 +4013,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\Lessons**](../Model/\DataExchange\UK\20\Models\Lessons.md)| Lessons to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\Lessons**](../Model/\DataExchange\SIFUK20\Models\Lessons.md)| Lessons to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4031,7 +4031,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateNonTeachingActivityByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateNonTeachingActivityByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateNonTeachingActivityByRefId($ref_id, $body)
 
 Update NonTeachingActivity by RefId
 
@@ -4040,9 +4040,9 @@ Update NonTeachingActivity by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of NonTeachingActivity
-$body = new \DataExchange\UK\20\Models\NonTeachingActivity(); // \DataExchange\UK\20\Models\NonTeachingActivity | NonTeachingActivity to be updated
+$body = new \DataExchange\SIFUK20\Models\NonTeachingActivity(); // \DataExchange\SIFUK20\Models\NonTeachingActivity | NonTeachingActivity to be updated
 
 try {
     $result = $api_instance->updateNonTeachingActivityByRefId($ref_id, $body);
@@ -4058,11 +4058,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of NonTeachingActivity |
- **body** | [**\DataExchange\UK\20\Models\NonTeachingActivity**](../Model/\DataExchange\UK\20\Models\NonTeachingActivity.md)| NonTeachingActivity to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\NonTeachingActivity**](../Model/\DataExchange\SIFUK20\Models\NonTeachingActivity.md)| NonTeachingActivity to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4076,7 +4076,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateNonTeachingActivitys**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateNonTeachingActivitys($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateNonTeachingActivitys($body)
 
 Update multiple NonTeachingActivitys
 
@@ -4085,8 +4085,8 @@ Update multiple NonTeachingActivitys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\NonTeachingActivitys(); // \DataExchange\UK\20\Models\NonTeachingActivitys | NonTeachingActivitys to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\NonTeachingActivitys(); // \DataExchange\SIFUK20\Models\NonTeachingActivitys | NonTeachingActivitys to be updated
 
 try {
     $result = $api_instance->updateNonTeachingActivitys($body);
@@ -4101,11 +4101,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\NonTeachingActivitys**](../Model/\DataExchange\UK\20\Models\NonTeachingActivitys.md)| NonTeachingActivitys to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\NonTeachingActivitys**](../Model/\DataExchange\SIFUK20\Models\NonTeachingActivitys.md)| NonTeachingActivitys to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4119,7 +4119,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSchoolDiaryEntryByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateSchoolDiaryEntryByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateSchoolDiaryEntryByRefId($ref_id, $body)
 
 Update SchoolDiaryEntry by RefId
 
@@ -4128,9 +4128,9 @@ Update SchoolDiaryEntry by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolDiaryEntry
-$body = new \DataExchange\UK\20\Models\SchoolDiaryEntry(); // \DataExchange\UK\20\Models\SchoolDiaryEntry | SchoolDiaryEntry to be updated
+$body = new \DataExchange\SIFUK20\Models\SchoolDiaryEntry(); // \DataExchange\SIFUK20\Models\SchoolDiaryEntry | SchoolDiaryEntry to be updated
 
 try {
     $result = $api_instance->updateSchoolDiaryEntryByRefId($ref_id, $body);
@@ -4146,11 +4146,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of SchoolDiaryEntry |
- **body** | [**\DataExchange\UK\20\Models\SchoolDiaryEntry**](../Model/\DataExchange\UK\20\Models\SchoolDiaryEntry.md)| SchoolDiaryEntry to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolDiaryEntry**](../Model/\DataExchange\SIFUK20\Models\SchoolDiaryEntry.md)| SchoolDiaryEntry to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4164,7 +4164,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSchoolDiaryEntrys**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateSchoolDiaryEntrys($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateSchoolDiaryEntrys($body)
 
 Update multiple SchoolDiaryEntrys
 
@@ -4173,8 +4173,8 @@ Update multiple SchoolDiaryEntrys
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SchoolDiaryEntrys(); // \DataExchange\UK\20\Models\SchoolDiaryEntrys | SchoolDiaryEntrys to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SchoolDiaryEntrys(); // \DataExchange\SIFUK20\Models\SchoolDiaryEntrys | SchoolDiaryEntrys to be updated
 
 try {
     $result = $api_instance->updateSchoolDiaryEntrys($body);
@@ -4189,11 +4189,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SchoolDiaryEntrys**](../Model/\DataExchange\UK\20\Models\SchoolDiaryEntrys.md)| SchoolDiaryEntrys to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolDiaryEntrys**](../Model/\DataExchange\SIFUK20\Models\SchoolDiaryEntrys.md)| SchoolDiaryEntrys to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4207,7 +4207,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSchoolGroupByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateSchoolGroupByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateSchoolGroupByRefId($ref_id, $body)
 
 Update SchoolGroup by RefId
 
@@ -4216,9 +4216,9 @@ Update SchoolGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolGroup
-$body = new \DataExchange\UK\20\Models\SchoolGroup(); // \DataExchange\UK\20\Models\SchoolGroup | SchoolGroup to be updated
+$body = new \DataExchange\SIFUK20\Models\SchoolGroup(); // \DataExchange\SIFUK20\Models\SchoolGroup | SchoolGroup to be updated
 
 try {
     $result = $api_instance->updateSchoolGroupByRefId($ref_id, $body);
@@ -4234,11 +4234,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of SchoolGroup |
- **body** | [**\DataExchange\UK\20\Models\SchoolGroup**](../Model/\DataExchange\UK\20\Models\SchoolGroup.md)| SchoolGroup to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolGroup**](../Model/\DataExchange\SIFUK20\Models\SchoolGroup.md)| SchoolGroup to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4252,7 +4252,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSchoolGroupTypeByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateSchoolGroupTypeByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateSchoolGroupTypeByRefId($ref_id, $body)
 
 Update SchoolGroupType by RefId
 
@@ -4261,9 +4261,9 @@ Update SchoolGroupType by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of SchoolGroupType
-$body = new \DataExchange\UK\20\Models\SchoolGroupType(); // \DataExchange\UK\20\Models\SchoolGroupType | SchoolGroupType to be updated
+$body = new \DataExchange\SIFUK20\Models\SchoolGroupType(); // \DataExchange\SIFUK20\Models\SchoolGroupType | SchoolGroupType to be updated
 
 try {
     $result = $api_instance->updateSchoolGroupTypeByRefId($ref_id, $body);
@@ -4279,11 +4279,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of SchoolGroupType |
- **body** | [**\DataExchange\UK\20\Models\SchoolGroupType**](../Model/\DataExchange\UK\20\Models\SchoolGroupType.md)| SchoolGroupType to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolGroupType**](../Model/\DataExchange\SIFUK20\Models\SchoolGroupType.md)| SchoolGroupType to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4297,7 +4297,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSchoolGroupTypes**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateSchoolGroupTypes($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateSchoolGroupTypes($body)
 
 Update multiple SchoolGroupTypes
 
@@ -4306,8 +4306,8 @@ Update multiple SchoolGroupTypes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SchoolGroupTypes(); // \DataExchange\UK\20\Models\SchoolGroupTypes | SchoolGroupTypes to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SchoolGroupTypes(); // \DataExchange\SIFUK20\Models\SchoolGroupTypes | SchoolGroupTypes to be updated
 
 try {
     $result = $api_instance->updateSchoolGroupTypes($body);
@@ -4322,11 +4322,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SchoolGroupTypes**](../Model/\DataExchange\UK\20\Models\SchoolGroupTypes.md)| SchoolGroupTypes to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolGroupTypes**](../Model/\DataExchange\SIFUK20\Models\SchoolGroupTypes.md)| SchoolGroupTypes to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4340,7 +4340,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSchoolGroups**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateSchoolGroups($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateSchoolGroups($body)
 
 Update multiple SchoolGroups
 
@@ -4349,8 +4349,8 @@ Update multiple SchoolGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\SchoolGroups(); // \DataExchange\UK\20\Models\SchoolGroups | SchoolGroups to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\SchoolGroups(); // \DataExchange\SIFUK20\Models\SchoolGroups | SchoolGroups to be updated
 
 try {
     $result = $api_instance->updateSchoolGroups($body);
@@ -4365,11 +4365,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SchoolGroups**](../Model/\DataExchange\UK\20\Models\SchoolGroups.md)| SchoolGroups to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\SchoolGroups**](../Model/\DataExchange\SIFUK20\Models\SchoolGroups.md)| SchoolGroups to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4383,7 +4383,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateScopeByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateScopeByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateScopeByRefId($ref_id, $body)
 
 Update Scope by RefId
 
@@ -4392,9 +4392,9 @@ Update Scope by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of Scope
-$body = new \DataExchange\UK\20\Models\Scope(); // \DataExchange\UK\20\Models\Scope | Scope to be updated
+$body = new \DataExchange\SIFUK20\Models\Scope(); // \DataExchange\SIFUK20\Models\Scope | Scope to be updated
 
 try {
     $result = $api_instance->updateScopeByRefId($ref_id, $body);
@@ -4410,11 +4410,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of Scope |
- **body** | [**\DataExchange\UK\20\Models\Scope**](../Model/\DataExchange\UK\20\Models\Scope.md)| Scope to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\Scope**](../Model/\DataExchange\SIFUK20\Models\Scope.md)| Scope to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4428,7 +4428,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateScopes**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateScopes($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateScopes($body)
 
 Update multiple Scopes
 
@@ -4437,8 +4437,8 @@ Update multiple Scopes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\Scopes(); // \DataExchange\UK\20\Models\Scopes | Scopes to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\Scopes(); // \DataExchange\SIFUK20\Models\Scopes | Scopes to be updated
 
 try {
     $result = $api_instance->updateScopes($body);
@@ -4453,11 +4453,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\Scopes**](../Model/\DataExchange\UK\20\Models\Scopes.md)| Scopes to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\Scopes**](../Model/\DataExchange\SIFUK20\Models\Scopes.md)| Scopes to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4471,7 +4471,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTRoomByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTRoomByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTRoomByRefId($ref_id, $body)
 
 Update TTRoom by RefId
 
@@ -4480,9 +4480,9 @@ Update TTRoom by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTRoom
-$body = new \DataExchange\UK\20\Models\TTRoom(); // \DataExchange\UK\20\Models\TTRoom | TTRoom to be updated
+$body = new \DataExchange\SIFUK20\Models\TTRoom(); // \DataExchange\SIFUK20\Models\TTRoom | TTRoom to be updated
 
 try {
     $result = $api_instance->updateTTRoomByRefId($ref_id, $body);
@@ -4498,11 +4498,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of TTRoom |
- **body** | [**\DataExchange\UK\20\Models\TTRoom**](../Model/\DataExchange\UK\20\Models\TTRoom.md)| TTRoom to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTRoom**](../Model/\DataExchange\SIFUK20\Models\TTRoom.md)| TTRoom to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4516,7 +4516,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTRooms**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTRooms($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTRooms($body)
 
 Update multiple TTRooms
 
@@ -4525,8 +4525,8 @@ Update multiple TTRooms
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TTRooms(); // \DataExchange\UK\20\Models\TTRooms | TTRooms to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TTRooms(); // \DataExchange\SIFUK20\Models\TTRooms | TTRooms to be updated
 
 try {
     $result = $api_instance->updateTTRooms($body);
@@ -4541,11 +4541,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTRooms**](../Model/\DataExchange\UK\20\Models\TTRooms.md)| TTRooms to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTRooms**](../Model/\DataExchange\SIFUK20\Models\TTRooms.md)| TTRooms to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4559,7 +4559,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTSiteByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTSiteByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTSiteByRefId($ref_id, $body)
 
 Update TTSite by RefId
 
@@ -4568,9 +4568,9 @@ Update TTSite by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTSite
-$body = new \DataExchange\UK\20\Models\TTSite(); // \DataExchange\UK\20\Models\TTSite | TTSite to be updated
+$body = new \DataExchange\SIFUK20\Models\TTSite(); // \DataExchange\SIFUK20\Models\TTSite | TTSite to be updated
 
 try {
     $result = $api_instance->updateTTSiteByRefId($ref_id, $body);
@@ -4586,11 +4586,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of TTSite |
- **body** | [**\DataExchange\UK\20\Models\TTSite**](../Model/\DataExchange\UK\20\Models\TTSite.md)| TTSite to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTSite**](../Model/\DataExchange\SIFUK20\Models\TTSite.md)| TTSite to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4604,7 +4604,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTSites**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTSites($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTSites($body)
 
 Update multiple TTSites
 
@@ -4613,8 +4613,8 @@ Update multiple TTSites
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TTSites(); // \DataExchange\UK\20\Models\TTSites | TTSites to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TTSites(); // \DataExchange\SIFUK20\Models\TTSites | TTSites to be updated
 
 try {
     $result = $api_instance->updateTTSites($body);
@@ -4629,11 +4629,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTSites**](../Model/\DataExchange\UK\20\Models\TTSites.md)| TTSites to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTSites**](../Model/\DataExchange\SIFUK20\Models\TTSites.md)| TTSites to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4647,7 +4647,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTSubjectByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTSubjectByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTSubjectByRefId($ref_id, $body)
 
 Update TTSubject by RefId
 
@@ -4656,9 +4656,9 @@ Update TTSubject by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTSubject
-$body = new \DataExchange\UK\20\Models\TTSubject(); // \DataExchange\UK\20\Models\TTSubject | TTSubject to be updated
+$body = new \DataExchange\SIFUK20\Models\TTSubject(); // \DataExchange\SIFUK20\Models\TTSubject | TTSubject to be updated
 
 try {
     $result = $api_instance->updateTTSubjectByRefId($ref_id, $body);
@@ -4674,11 +4674,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of TTSubject |
- **body** | [**\DataExchange\UK\20\Models\TTSubject**](../Model/\DataExchange\UK\20\Models\TTSubject.md)| TTSubject to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTSubject**](../Model/\DataExchange\SIFUK20\Models\TTSubject.md)| TTSubject to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4692,7 +4692,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTSubjects**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTSubjects($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTSubjects($body)
 
 Update multiple TTSubjects
 
@@ -4701,8 +4701,8 @@ Update multiple TTSubjects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TTSubjects(); // \DataExchange\UK\20\Models\TTSubjects | TTSubjects to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TTSubjects(); // \DataExchange\SIFUK20\Models\TTSubjects | TTSubjects to be updated
 
 try {
     $result = $api_instance->updateTTSubjects($body);
@@ -4717,11 +4717,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTSubjects**](../Model/\DataExchange\UK\20\Models\TTSubjects.md)| TTSubjects to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTSubjects**](../Model/\DataExchange\SIFUK20\Models\TTSubjects.md)| TTSubjects to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4735,7 +4735,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTTeacherByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTTeacherByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTTeacherByRefId($ref_id, $body)
 
 Update TTTeacher by RefId
 
@@ -4744,9 +4744,9 @@ Update TTTeacher by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TTTeacher
-$body = new \DataExchange\UK\20\Models\TTTeacher(); // \DataExchange\UK\20\Models\TTTeacher | TTTeacher to be updated
+$body = new \DataExchange\SIFUK20\Models\TTTeacher(); // \DataExchange\SIFUK20\Models\TTTeacher | TTTeacher to be updated
 
 try {
     $result = $api_instance->updateTTTeacherByRefId($ref_id, $body);
@@ -4762,11 +4762,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of TTTeacher |
- **body** | [**\DataExchange\UK\20\Models\TTTeacher**](../Model/\DataExchange\UK\20\Models\TTTeacher.md)| TTTeacher to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTTeacher**](../Model/\DataExchange\SIFUK20\Models\TTTeacher.md)| TTTeacher to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4780,7 +4780,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTTTeachers**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTTTeachers($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTTTeachers($body)
 
 Update multiple TTTeachers
 
@@ -4789,8 +4789,8 @@ Update multiple TTTeachers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TTTeachers(); // \DataExchange\UK\20\Models\TTTeachers | TTTeachers to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TTTeachers(); // \DataExchange\SIFUK20\Models\TTTeachers | TTTeachers to be updated
 
 try {
     $result = $api_instance->updateTTTeachers($body);
@@ -4805,11 +4805,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TTTeachers**](../Model/\DataExchange\UK\20\Models\TTTeachers.md)| TTTeachers to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TTTeachers**](../Model/\DataExchange\SIFUK20\Models\TTTeachers.md)| TTTeachers to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4823,7 +4823,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTeachingGroupByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTeachingGroupByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTeachingGroupByRefId($ref_id, $body)
 
 Update TeachingGroup by RefId
 
@@ -4832,9 +4832,9 @@ Update TeachingGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TeachingGroup
-$body = new \DataExchange\UK\20\Models\TeachingGroup(); // \DataExchange\UK\20\Models\TeachingGroup | TeachingGroup to be updated
+$body = new \DataExchange\SIFUK20\Models\TeachingGroup(); // \DataExchange\SIFUK20\Models\TeachingGroup | TeachingGroup to be updated
 
 try {
     $result = $api_instance->updateTeachingGroupByRefId($ref_id, $body);
@@ -4850,11 +4850,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of TeachingGroup |
- **body** | [**\DataExchange\UK\20\Models\TeachingGroup**](../Model/\DataExchange\UK\20\Models\TeachingGroup.md)| TeachingGroup to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TeachingGroup**](../Model/\DataExchange\SIFUK20\Models\TeachingGroup.md)| TeachingGroup to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4868,7 +4868,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTeachingGroups**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTeachingGroups($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTeachingGroups($body)
 
 Update multiple TeachingGroups
 
@@ -4877,8 +4877,8 @@ Update multiple TeachingGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TeachingGroups(); // \DataExchange\UK\20\Models\TeachingGroups | TeachingGroups to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TeachingGroups(); // \DataExchange\SIFUK20\Models\TeachingGroups | TeachingGroups to be updated
 
 try {
     $result = $api_instance->updateTeachingGroups($body);
@@ -4893,11 +4893,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TeachingGroups**](../Model/\DataExchange\UK\20\Models\TeachingGroups.md)| TeachingGroups to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TeachingGroups**](../Model/\DataExchange\SIFUK20\Models\TeachingGroups.md)| TeachingGroups to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4911,7 +4911,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTermInfoByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTermInfoByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTermInfoByRefId($ref_id, $body)
 
 Update TermInfo by RefId
 
@@ -4920,9 +4920,9 @@ Update TermInfo by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
 $ref_id = "ref_id_example"; // string | RefId of TermInfo
-$body = new \DataExchange\UK\20\Models\TermInfo(); // \DataExchange\UK\20\Models\TermInfo | TermInfo to be updated
+$body = new \DataExchange\SIFUK20\Models\TermInfo(); // \DataExchange\SIFUK20\Models\TermInfo | TermInfo to be updated
 
 try {
     $result = $api_instance->updateTermInfoByRefId($ref_id, $body);
@@ -4938,11 +4938,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of TermInfo |
- **body** | [**\DataExchange\UK\20\Models\TermInfo**](../Model/\DataExchange\UK\20\Models\TermInfo.md)| TermInfo to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TermInfo**](../Model/\DataExchange\SIFUK20\Models\TermInfo.md)| TermInfo to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -4956,7 +4956,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTermInfos**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateTermInfos($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateTermInfos($body)
 
 Update multiple TermInfos
 
@@ -4965,8 +4965,8 @@ Update multiple TermInfos
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\TimetableApi();
-$body = new \DataExchange\UK\20\Models\TermInfos(); // \DataExchange\UK\20\Models\TermInfos | TermInfos to be updated
+$api_instance = new DataExchange\SIFUK20\Api\TimetableApi();
+$body = new \DataExchange\SIFUK20\Models\TermInfos(); // \DataExchange\SIFUK20\Models\TermInfos | TermInfos to be updated
 
 try {
     $result = $api_instance->updateTermInfos($body);
@@ -4981,11 +4981,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\TermInfos**](../Model/\DataExchange\UK\20\Models\TermInfos.md)| TermInfos to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\TermInfos**](../Model/\DataExchange\SIFUK20\Models\TermInfos.md)| TermInfos to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 

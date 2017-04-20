@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This object defines information related to a learner&amp;#039;s enrolment within a particular school or establishment.The current status on an enrolment is based on EntryDate and ExitDate. Future enrolments are supported where EntryDate is in the future. ExitDate may also be specified as a future occurance.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -75,11 +75,11 @@ class LearnerSchoolEnrolment implements ArrayAccess
         'nc_year_group_actual' => 'string',
         'class_type' => 'string',
         'exit_date' => '\DateTime',
-        'exit_type' => '\DataExchange\UK\20\Models\ExitType',
+        'exit_type' => '\DataExchange\SIFUK20\Models\ExitType',
         'sessions' => 'int',
         'ftpt_status' => 'string',
         'boarder' => 'string',
-        'alternative_tuition' => '\DataExchange\UK\20\Models\AlternativeTuition'
+        'alternative_tuition' => '\DataExchange\SIFUK20\Models\AlternativeTuition'
     ];
 
     public static function swaggerTypes()
@@ -424,7 +424,7 @@ class LearnerSchoolEnrolment implements ArrayAccess
 
     /**
      * Gets exit_type
-     * @return \DataExchange\UK\20\Models\ExitType
+     * @return \DataExchange\SIFUK20\Models\ExitType
      */
     public function getExitType()
     {
@@ -433,7 +433,7 @@ class LearnerSchoolEnrolment implements ArrayAccess
 
     /**
      * Sets exit_type
-     * @param \DataExchange\UK\20\Models\ExitType $exit_type
+     * @param \DataExchange\SIFUK20\Models\ExitType $exit_type
      * @return $this
      */
     public function setExitType($exit_type)
@@ -508,7 +508,7 @@ class LearnerSchoolEnrolment implements ArrayAccess
 
     /**
      * Gets alternative_tuition
-     * @return \DataExchange\UK\20\Models\AlternativeTuition
+     * @return \DataExchange\SIFUK20\Models\AlternativeTuition
      */
     public function getAlternativeTuition()
     {
@@ -517,7 +517,7 @@ class LearnerSchoolEnrolment implements ArrayAccess
 
     /**
      * Sets alternative_tuition
-     * @param \DataExchange\UK\20\Models\AlternativeTuition $alternative_tuition
+     * @param \DataExchange\SIFUK20\Models\AlternativeTuition $alternative_tuition
      * @return $this
      */
     public function setAlternativeTuition($alternative_tuition)
@@ -578,9 +578,9 @@ class LearnerSchoolEnrolment implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

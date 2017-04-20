@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,7 +68,7 @@ class SifDelete implements ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'string',
         'status_code' => 'string',
-        'error' => '\DataExchange\UK\20\Models\SifError'
+        'error' => '\DataExchange\SIFUK20\Models\SifError'
     ];
 
     public static function swaggerTypes()
@@ -223,7 +223,7 @@ class SifDelete implements ArrayAccess
 
     /**
      * Gets error
-     * @return \DataExchange\UK\20\Models\SifError
+     * @return \DataExchange\SIFUK20\Models\SifError
      */
     public function getError()
     {
@@ -232,7 +232,7 @@ class SifDelete implements ArrayAccess
 
     /**
      * Sets error
-     * @param \DataExchange\UK\20\Models\SifError $error
+     * @param \DataExchange\SIFUK20\Models\SifError $error
      * @return $this
      */
     public function setError($error)
@@ -293,9 +293,9 @@ class SifDelete implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

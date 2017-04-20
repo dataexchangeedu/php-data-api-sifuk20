@@ -3,18 +3,19 @@
     "version": "1.0.0",
     "description": "",
     "keywords": [
-        "dataexchange",
-        "education",
+        "swagger",
         "php",
         "sdk",
         "api"
     ],
-    "homepage": "http://dataexchange.education",
-    "license": "proprietary",
-    "authors": [{
-        "name": "ZiNET Data Solutions Limited",
-        "homepage": "https://zinethq.com"
-    }],
+    "homepage": "http://swagger.io",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Swagger and contributors",
+            "homepage": "https://github.com/swagger-api/swagger-codegen"
+        }
+    ],
     "require": {
         "php": ">=5.4",
         "ext-curl": "*",
@@ -28,13 +29,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": {
-            "DataExchange\\UK\\20\\": "client/"
-        }
+        "psr-4": { "DataExchange\\SIFUK20\\" : "client/" }
     },
     "autoload-dev": {
-        "psr-4": {
-            "DataExchange\\UK\\20\\": "test/"
-        }
+        "psr-4": { "DataExchange\\SIFUK20\\" : "test/" }
     }
 }

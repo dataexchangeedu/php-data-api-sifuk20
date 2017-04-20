@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description This object describes any person created as a contact at a school, LEA, or other institution, or associated with a Learner or other Workforce person.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -69,7 +69,7 @@ class ContactPersonal implements ArrayAccess
     protected static $swaggerTypes = [
         'ref_id' => 'string',
         'local_id' => 'string',
-        'personal_information' => '\DataExchange\UK\20\Models\PersonalInformation'
+        'personal_information' => '\DataExchange\SIFUK20\Models\PersonalInformation'
     ];
 
     public static function swaggerTypes()
@@ -218,7 +218,7 @@ class ContactPersonal implements ArrayAccess
 
     /**
      * Gets personal_information
-     * @return \DataExchange\UK\20\Models\PersonalInformation
+     * @return \DataExchange\SIFUK20\Models\PersonalInformation
      */
     public function getPersonalInformation()
     {
@@ -227,7 +227,7 @@ class ContactPersonal implements ArrayAccess
 
     /**
      * Sets personal_information
-     * @param \DataExchange\UK\20\Models\PersonalInformation $personal_information
+     * @param \DataExchange\SIFUK20\Models\PersonalInformation $personal_information
      * @return $this
      */
     public function setPersonalInformation($personal_information)
@@ -288,9 +288,9 @@ class ContactPersonal implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }

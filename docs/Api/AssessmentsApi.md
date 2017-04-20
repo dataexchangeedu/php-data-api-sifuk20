@@ -1,4 +1,4 @@
-# DataExchange\UK\20\AssessmentsApi
+# DataExchange\SIFUK20\AssessmentsApi
 
 All URIs are relative to *https://uk.staging.dataexchange.education/rest/sif/requests*
 
@@ -70,7 +70,7 @@ Method | HTTP request | Description
 
 
 # **createAssessmentLearnerSets**
-> \DataExchange\UK\20\Models\SifCreateResponse createAssessmentLearnerSets($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createAssessmentLearnerSets($body)
 
 Create multiple AssessmentLearnerSets
 
@@ -79,8 +79,8 @@ Create multiple AssessmentLearnerSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentLearnerSets(); // \DataExchange\UK\20\Models\AssessmentLearnerSets | AssessmentLearnerSets to be created
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentLearnerSets(); // \DataExchange\SIFUK20\Models\AssessmentLearnerSets | AssessmentLearnerSets to be created
 
 try {
     $result = $api_instance->createAssessmentLearnerSets($body);
@@ -95,11 +95,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentLearnerSets**](../Model/\DataExchange\UK\20\Models\AssessmentLearnerSets.md)| AssessmentLearnerSets to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentLearnerSets**](../Model/\DataExchange\SIFUK20\Models\AssessmentLearnerSets.md)| AssessmentLearnerSets to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -113,7 +113,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createAssessmentResponseComponentGroups**
-> \DataExchange\UK\20\Models\SifCreateResponse createAssessmentResponseComponentGroups($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createAssessmentResponseComponentGroups($body)
 
 Create multiple AssessmentResponseComponentGroups
 
@@ -122,8 +122,8 @@ Create multiple AssessmentResponseComponentGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResponseComponentGroups(); // \DataExchange\UK\20\Models\AssessmentResponseComponentGroups | AssessmentResponseComponentGroups to be created
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups(); // \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups | AssessmentResponseComponentGroups to be created
 
 try {
     $result = $api_instance->createAssessmentResponseComponentGroups($body);
@@ -138,11 +138,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResponseComponentGroups**](../Model/\DataExchange\UK\20\Models\AssessmentResponseComponentGroups.md)| AssessmentResponseComponentGroups to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups**](../Model/\DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups.md)| AssessmentResponseComponentGroups to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createAssessmentResponseComponents**
-> \DataExchange\UK\20\Models\SifCreateResponse createAssessmentResponseComponents($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createAssessmentResponseComponents($body)
 
 Create multiple AssessmentResponseComponents
 
@@ -165,8 +165,8 @@ Create multiple AssessmentResponseComponents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResponseComponents(); // \DataExchange\UK\20\Models\AssessmentResponseComponents | AssessmentResponseComponents to be created
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResponseComponents(); // \DataExchange\SIFUK20\Models\AssessmentResponseComponents | AssessmentResponseComponents to be created
 
 try {
     $result = $api_instance->createAssessmentResponseComponents($body);
@@ -181,11 +181,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResponseComponents**](../Model/\DataExchange\UK\20\Models\AssessmentResponseComponents.md)| AssessmentResponseComponents to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResponseComponents**](../Model/\DataExchange\SIFUK20\Models\AssessmentResponseComponents.md)| AssessmentResponseComponents to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createAssessmentResultComponentGroups**
-> \DataExchange\UK\20\Models\SifCreateResponse createAssessmentResultComponentGroups($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createAssessmentResultComponentGroups($body)
 
 Create multiple AssessmentResultComponentGroups
 
@@ -208,8 +208,8 @@ Create multiple AssessmentResultComponentGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResultComponentGroups(); // \DataExchange\UK\20\Models\AssessmentResultComponentGroups | AssessmentResultComponentGroups to be created
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups(); // \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups | AssessmentResultComponentGroups to be created
 
 try {
     $result = $api_instance->createAssessmentResultComponentGroups($body);
@@ -224,11 +224,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResultComponentGroups**](../Model/\DataExchange\UK\20\Models\AssessmentResultComponentGroups.md)| AssessmentResultComponentGroups to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResultComponentGroups**](../Model/\DataExchange\SIFUK20\Models\AssessmentResultComponentGroups.md)| AssessmentResultComponentGroups to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -242,7 +242,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createAssessmentResultComponents**
-> \DataExchange\UK\20\Models\SifCreateResponse createAssessmentResultComponents($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createAssessmentResultComponents($body)
 
 Create multiple AssessmentResultComponents
 
@@ -251,8 +251,8 @@ Create multiple AssessmentResultComponents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResultComponents(); // \DataExchange\UK\20\Models\AssessmentResultComponents | AssessmentResultComponents to be created
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResultComponents(); // \DataExchange\SIFUK20\Models\AssessmentResultComponents | AssessmentResultComponents to be created
 
 try {
     $result = $api_instance->createAssessmentResultComponents($body);
@@ -267,11 +267,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResultComponents**](../Model/\DataExchange\UK\20\Models\AssessmentResultComponents.md)| AssessmentResultComponents to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResultComponents**](../Model/\DataExchange\SIFUK20\Models\AssessmentResultComponents.md)| AssessmentResultComponents to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -285,7 +285,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createAssessmentResultGradeSets**
-> \DataExchange\UK\20\Models\SifCreateResponse createAssessmentResultGradeSets($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createAssessmentResultGradeSets($body)
 
 Create multiple AssessmentResultGradeSets
 
@@ -294,8 +294,8 @@ Create multiple AssessmentResultGradeSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResultGradeSets(); // \DataExchange\UK\20\Models\AssessmentResultGradeSets | AssessmentResultGradeSets to be created
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResultGradeSets(); // \DataExchange\SIFUK20\Models\AssessmentResultGradeSets | AssessmentResultGradeSets to be created
 
 try {
     $result = $api_instance->createAssessmentResultGradeSets($body);
@@ -310,11 +310,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResultGradeSets**](../Model/\DataExchange\UK\20\Models\AssessmentResultGradeSets.md)| AssessmentResultGradeSets to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResultGradeSets**](../Model/\DataExchange\SIFUK20\Models\AssessmentResultGradeSets.md)| AssessmentResultGradeSets to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -328,7 +328,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createAssessmentSessions**
-> \DataExchange\UK\20\Models\SifCreateResponse createAssessmentSessions($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createAssessmentSessions($body)
 
 Create multiple AssessmentSessions
 
@@ -337,8 +337,8 @@ Create multiple AssessmentSessions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentSessions(); // \DataExchange\UK\20\Models\AssessmentSessions | AssessmentSessions to be created
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentSessions(); // \DataExchange\SIFUK20\Models\AssessmentSessions | AssessmentSessions to be created
 
 try {
     $result = $api_instance->createAssessmentSessions($body);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentSessions**](../Model/\DataExchange\UK\20\Models\AssessmentSessions.md)| AssessmentSessions to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentSessions**](../Model/\DataExchange\SIFUK20\Models\AssessmentSessions.md)| AssessmentSessions to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -371,7 +371,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLearnerAssessmentResponseSets**
-> \DataExchange\UK\20\Models\SifCreateResponse createLearnerAssessmentResponseSets($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLearnerAssessmentResponseSets($body)
 
 Create multiple LearnerAssessmentResponseSets
 
@@ -380,8 +380,8 @@ Create multiple LearnerAssessmentResponseSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\LearnerAssessmentResponseSets(); // \DataExchange\UK\20\Models\LearnerAssessmentResponseSets | LearnerAssessmentResponseSets to be created
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets(); // \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets | LearnerAssessmentResponseSets to be created
 
 try {
     $result = $api_instance->createLearnerAssessmentResponseSets($body);
@@ -396,11 +396,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerAssessmentResponseSets**](../Model/\DataExchange\UK\20\Models\LearnerAssessmentResponseSets.md)| LearnerAssessmentResponseSets to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets**](../Model/\DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets.md)| LearnerAssessmentResponseSets to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -414,7 +414,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createLearnerAssessmentResults**
-> \DataExchange\UK\20\Models\SifCreateResponse createLearnerAssessmentResults($body)
+> \DataExchange\SIFUK20\Models\SifCreateResponse createLearnerAssessmentResults($body)
 
 Create multiple LearnerAssessmentResults
 
@@ -423,8 +423,8 @@ Create multiple LearnerAssessmentResults
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\LearnerAssessmentResults(); // \DataExchange\UK\20\Models\LearnerAssessmentResults | LearnerAssessmentResults to be created
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerAssessmentResults(); // \DataExchange\SIFUK20\Models\LearnerAssessmentResults | LearnerAssessmentResults to be created
 
 try {
     $result = $api_instance->createLearnerAssessmentResults($body);
@@ -439,11 +439,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerAssessmentResults**](../Model/\DataExchange\UK\20\Models\LearnerAssessmentResults.md)| LearnerAssessmentResults to be created |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAssessmentResults**](../Model/\DataExchange\SIFUK20\Models\LearnerAssessmentResults.md)| LearnerAssessmentResults to be created |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifCreateResponse**](../Model/SifCreateResponse.md)
 
 ### Authorization
 
@@ -457,7 +457,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentLearnerSetByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentLearnerSetByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentLearnerSetByRefId($ref_id)
 
 Delete AssessmentLearnerSet by RefId
 
@@ -466,7 +466,7 @@ Delete AssessmentLearnerSet by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentLearnerSet
 
 try {
@@ -486,7 +486,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -500,7 +500,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentLearnerSets**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentLearnerSets($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentLearnerSets($body)
 
 Delete multiple AssessmentLearnerSets
 
@@ -509,8 +509,8 @@ Delete multiple AssessmentLearnerSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteAssessmentLearnerSets($body);
@@ -525,11 +525,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -543,7 +543,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResponseComponentByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResponseComponentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResponseComponentByRefId($ref_id)
 
 Delete AssessmentResponseComponent by RefId
 
@@ -552,7 +552,7 @@ Delete AssessmentResponseComponent by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResponseComponent
 
 try {
@@ -572,7 +572,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -586,7 +586,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResponseComponentGroupByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResponseComponentGroupByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResponseComponentGroupByRefId($ref_id)
 
 Delete AssessmentResponseComponentGroup by RefId
 
@@ -595,7 +595,7 @@ Delete AssessmentResponseComponentGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResponseComponentGroup
 
 try {
@@ -615,7 +615,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -629,7 +629,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResponseComponentGroups**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResponseComponentGroups($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResponseComponentGroups($body)
 
 Delete multiple AssessmentResponseComponentGroups
 
@@ -638,8 +638,8 @@ Delete multiple AssessmentResponseComponentGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteAssessmentResponseComponentGroups($body);
@@ -654,11 +654,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -672,7 +672,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResponseComponents**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResponseComponents($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResponseComponents($body)
 
 Delete multiple AssessmentResponseComponents
 
@@ -681,8 +681,8 @@ Delete multiple AssessmentResponseComponents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteAssessmentResponseComponents($body);
@@ -697,11 +697,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -715,7 +715,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResultComponentByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResultComponentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResultComponentByRefId($ref_id)
 
 Delete AssessmentResultComponent by RefId
 
@@ -724,7 +724,7 @@ Delete AssessmentResultComponent by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResultComponent
 
 try {
@@ -744,7 +744,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -758,7 +758,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResultComponentGroupByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResultComponentGroupByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResultComponentGroupByRefId($ref_id)
 
 Delete AssessmentResultComponentGroup by RefId
 
@@ -767,7 +767,7 @@ Delete AssessmentResultComponentGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResultComponentGroup
 
 try {
@@ -787,7 +787,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -801,7 +801,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResultComponentGroups**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResultComponentGroups($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResultComponentGroups($body)
 
 Delete multiple AssessmentResultComponentGroups
 
@@ -810,8 +810,8 @@ Delete multiple AssessmentResultComponentGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteAssessmentResultComponentGroups($body);
@@ -826,11 +826,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -844,7 +844,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResultComponents**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResultComponents($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResultComponents($body)
 
 Delete multiple AssessmentResultComponents
 
@@ -853,8 +853,8 @@ Delete multiple AssessmentResultComponents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteAssessmentResultComponents($body);
@@ -869,11 +869,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -887,7 +887,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResultGradeSetByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResultGradeSetByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResultGradeSetByRefId($ref_id)
 
 Delete AssessmentResultGradeSet by RefId
 
@@ -896,7 +896,7 @@ Delete AssessmentResultGradeSet by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResultGradeSet
 
 try {
@@ -916,7 +916,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -930,7 +930,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentResultGradeSets**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentResultGradeSets($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentResultGradeSets($body)
 
 Delete multiple AssessmentResultGradeSets
 
@@ -939,8 +939,8 @@ Delete multiple AssessmentResultGradeSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteAssessmentResultGradeSets($body);
@@ -955,11 +955,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -973,7 +973,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentSessionByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentSessionByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentSessionByRefId($ref_id)
 
 Delete AssessmentSession by RefId
 
@@ -982,7 +982,7 @@ Delete AssessmentSession by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentSession
 
 try {
@@ -1002,7 +1002,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1016,7 +1016,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAssessmentSessions**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteAssessmentSessions($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteAssessmentSessions($body)
 
 Delete multiple AssessmentSessions
 
@@ -1025,8 +1025,8 @@ Delete multiple AssessmentSessions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteAssessmentSessions($body);
@@ -1041,11 +1041,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1059,7 +1059,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerAssessmentResponseSetByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerAssessmentResponseSetByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerAssessmentResponseSetByRefId($ref_id)
 
 Delete LearnerAssessmentResponseSet by RefId
 
@@ -1068,7 +1068,7 @@ Delete LearnerAssessmentResponseSet by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAssessmentResponseSet
 
 try {
@@ -1088,7 +1088,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1102,7 +1102,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerAssessmentResponseSets**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerAssessmentResponseSets($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerAssessmentResponseSets($body)
 
 Delete multiple LearnerAssessmentResponseSets
 
@@ -1111,8 +1111,8 @@ Delete multiple LearnerAssessmentResponseSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLearnerAssessmentResponseSets($body);
@@ -1127,11 +1127,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1145,7 +1145,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerAssessmentResultByRefId**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerAssessmentResultByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerAssessmentResultByRefId($ref_id)
 
 Delete LearnerAssessmentResult by RefId
 
@@ -1154,7 +1154,7 @@ Delete LearnerAssessmentResult by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAssessmentResult
 
 try {
@@ -1174,7 +1174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1188,7 +1188,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteLearnerAssessmentResults**
-> \DataExchange\UK\20\Models\SifDeleteResponse deleteLearnerAssessmentResults($body)
+> \DataExchange\SIFUK20\Models\SifDeleteResponse deleteLearnerAssessmentResults($body)
 
 Delete multiple LearnerAssessmentResults
 
@@ -1197,8 +1197,8 @@ Delete multiple LearnerAssessmentResults
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\SifDeleteRequest(); // \DataExchange\UK\20\Models\SifDeleteRequest | 
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
 
 try {
     $result = $api_instance->deleteLearnerAssessmentResults($body);
@@ -1213,11 +1213,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\SifDeleteRequest**](../Model/\DataExchange\UK\20\Models\SifDeleteRequest.md)|  |
+ **body** | [**\DataExchange\SIFUK20\Models\SifDeleteRequest**](../Model/\DataExchange\SIFUK20\Models\SifDeleteRequest.md)|  |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
+[**\DataExchange\SIFUK20\Models\SifDeleteResponse**](../Model/SifDeleteResponse.md)
 
 ### Authorization
 
@@ -1231,7 +1231,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentLearnerSetByRefId**
-> \DataExchange\UK\20\Models\AssessmentLearnerSets getAssessmentLearnerSetByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\AssessmentLearnerSets getAssessmentLearnerSetByRefId($ref_id)
 
 Find AssessmentLearnerSet by RefId
 
@@ -1240,7 +1240,7 @@ Find AssessmentLearnerSet by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentLearnerSet
 
 try {
@@ -1260,7 +1260,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentLearnerSets**](../Model/AssessmentLearnerSets.md)
+[**\DataExchange\SIFUK20\Models\AssessmentLearnerSets**](../Model/AssessmentLearnerSets.md)
 
 ### Authorization
 
@@ -1274,7 +1274,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentLearnerSets**
-> \DataExchange\UK\20\Models\AssessmentLearnerSets getAssessmentLearnerSets($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentLearnerSets getAssessmentLearnerSets($navigation_page, $navigation_page_size)
 
 Return all AssessmentLearnerSets
 
@@ -1283,7 +1283,7 @@ Return all AssessmentLearnerSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1305,7 +1305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentLearnerSets**](../Model/AssessmentLearnerSets.md)
+[**\DataExchange\SIFUK20\Models\AssessmentLearnerSets**](../Model/AssessmentLearnerSets.md)
 
 ### Authorization
 
@@ -1319,7 +1319,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResponseComponentByRefId**
-> \DataExchange\UK\20\Models\AssessmentResponseComponents getAssessmentResponseComponentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\AssessmentResponseComponents getAssessmentResponseComponentByRefId($ref_id)
 
 Find AssessmentResponseComponent by RefId
 
@@ -1328,7 +1328,7 @@ Find AssessmentResponseComponent by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResponseComponent
 
 try {
@@ -1348,7 +1348,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResponseComponents**](../Model/AssessmentResponseComponents.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResponseComponents**](../Model/AssessmentResponseComponents.md)
 
 ### Authorization
 
@@ -1362,7 +1362,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResponseComponentGroupByRefId**
-> \DataExchange\UK\20\Models\AssessmentResponseComponentGroups getAssessmentResponseComponentGroupByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups getAssessmentResponseComponentGroupByRefId($ref_id)
 
 Find AssessmentResponseComponentGroup by RefId
 
@@ -1371,7 +1371,7 @@ Find AssessmentResponseComponentGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResponseComponentGroup
 
 try {
@@ -1391,7 +1391,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResponseComponentGroups**](../Model/AssessmentResponseComponentGroups.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups**](../Model/AssessmentResponseComponentGroups.md)
 
 ### Authorization
 
@@ -1405,7 +1405,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResponseComponentGroups**
-> \DataExchange\UK\20\Models\AssessmentResponseComponentGroups getAssessmentResponseComponentGroups($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups getAssessmentResponseComponentGroups($navigation_page, $navigation_page_size)
 
 Return all AssessmentResponseComponentGroups
 
@@ -1414,7 +1414,7 @@ Return all AssessmentResponseComponentGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1436,7 +1436,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResponseComponentGroups**](../Model/AssessmentResponseComponentGroups.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups**](../Model/AssessmentResponseComponentGroups.md)
 
 ### Authorization
 
@@ -1450,7 +1450,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResponseComponents**
-> \DataExchange\UK\20\Models\AssessmentResponseComponents getAssessmentResponseComponents($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResponseComponents getAssessmentResponseComponents($navigation_page, $navigation_page_size)
 
 Return all AssessmentResponseComponents
 
@@ -1459,7 +1459,7 @@ Return all AssessmentResponseComponents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1481,7 +1481,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResponseComponents**](../Model/AssessmentResponseComponents.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResponseComponents**](../Model/AssessmentResponseComponents.md)
 
 ### Authorization
 
@@ -1495,7 +1495,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultComponentByRefId**
-> \DataExchange\UK\20\Models\AssessmentResultComponents getAssessmentResultComponentByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\AssessmentResultComponents getAssessmentResultComponentByRefId($ref_id)
 
 Find AssessmentResultComponent by RefId
 
@@ -1504,7 +1504,7 @@ Find AssessmentResultComponent by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResultComponent
 
 try {
@@ -1524,7 +1524,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResultComponents**](../Model/AssessmentResultComponents.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResultComponents**](../Model/AssessmentResultComponents.md)
 
 ### Authorization
 
@@ -1538,7 +1538,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultComponentGroupByRefId**
-> \DataExchange\UK\20\Models\AssessmentResultComponentGroups getAssessmentResultComponentGroupByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups getAssessmentResultComponentGroupByRefId($ref_id)
 
 Find AssessmentResultComponentGroup by RefId
 
@@ -1547,7 +1547,7 @@ Find AssessmentResultComponentGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResultComponentGroup
 
 try {
@@ -1567,7 +1567,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResultComponentGroups**](../Model/AssessmentResultComponentGroups.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResultComponentGroups**](../Model/AssessmentResultComponentGroups.md)
 
 ### Authorization
 
@@ -1581,7 +1581,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultComponentGroups**
-> \DataExchange\UK\20\Models\AssessmentResultComponentGroups getAssessmentResultComponentGroups($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups getAssessmentResultComponentGroups($navigation_page, $navigation_page_size)
 
 Return all AssessmentResultComponentGroups
 
@@ -1590,7 +1590,7 @@ Return all AssessmentResultComponentGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1612,7 +1612,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResultComponentGroups**](../Model/AssessmentResultComponentGroups.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResultComponentGroups**](../Model/AssessmentResultComponentGroups.md)
 
 ### Authorization
 
@@ -1626,7 +1626,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultComponents**
-> \DataExchange\UK\20\Models\AssessmentResultComponents getAssessmentResultComponents($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResultComponents getAssessmentResultComponents($navigation_page, $navigation_page_size)
 
 Return all AssessmentResultComponents
 
@@ -1635,7 +1635,7 @@ Return all AssessmentResultComponents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1657,7 +1657,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResultComponents**](../Model/AssessmentResultComponents.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResultComponents**](../Model/AssessmentResultComponents.md)
 
 ### Authorization
 
@@ -1671,7 +1671,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultGradeSetByRefId**
-> \DataExchange\UK\20\Models\AssessmentResultGradeSets getAssessmentResultGradeSetByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\AssessmentResultGradeSets getAssessmentResultGradeSetByRefId($ref_id)
 
 Find AssessmentResultGradeSet by RefId
 
@@ -1680,7 +1680,7 @@ Find AssessmentResultGradeSet by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResultGradeSet
 
 try {
@@ -1700,7 +1700,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResultGradeSets**](../Model/AssessmentResultGradeSets.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResultGradeSets**](../Model/AssessmentResultGradeSets.md)
 
 ### Authorization
 
@@ -1714,7 +1714,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultGradeSets**
-> \DataExchange\UK\20\Models\AssessmentResultGradeSets getAssessmentResultGradeSets($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResultGradeSets getAssessmentResultGradeSets($navigation_page, $navigation_page_size)
 
 Return all AssessmentResultGradeSets
 
@@ -1723,7 +1723,7 @@ Return all AssessmentResultGradeSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1745,7 +1745,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentResultGradeSets**](../Model/AssessmentResultGradeSets.md)
+[**\DataExchange\SIFUK20\Models\AssessmentResultGradeSets**](../Model/AssessmentResultGradeSets.md)
 
 ### Authorization
 
@@ -1759,7 +1759,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentSessionByRefId**
-> \DataExchange\UK\20\Models\AssessmentSessions getAssessmentSessionByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\AssessmentSessions getAssessmentSessionByRefId($ref_id)
 
 Find AssessmentSession by RefId
 
@@ -1768,7 +1768,7 @@ Find AssessmentSession by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentSession
 
 try {
@@ -1788,7 +1788,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentSessions**](../Model/AssessmentSessions.md)
+[**\DataExchange\SIFUK20\Models\AssessmentSessions**](../Model/AssessmentSessions.md)
 
 ### Authorization
 
@@ -1802,7 +1802,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentSessions**
-> \DataExchange\UK\20\Models\AssessmentSessions getAssessmentSessions($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentSessions getAssessmentSessions($navigation_page, $navigation_page_size)
 
 Return all AssessmentSessions
 
@@ -1811,7 +1811,7 @@ Return all AssessmentSessions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1833,7 +1833,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\AssessmentSessions**](../Model/AssessmentSessions.md)
+[**\DataExchange\SIFUK20\Models\AssessmentSessions**](../Model/AssessmentSessions.md)
 
 ### Authorization
 
@@ -1847,7 +1847,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAssessmentResponseSetByRefId**
-> \DataExchange\UK\20\Models\LearnerAssessmentResponseSets getLearnerAssessmentResponseSetByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets getLearnerAssessmentResponseSetByRefId($ref_id)
 
 Find LearnerAssessmentResponseSet by RefId
 
@@ -1856,7 +1856,7 @@ Find LearnerAssessmentResponseSet by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAssessmentResponseSet
 
 try {
@@ -1876,7 +1876,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerAssessmentResponseSets**](../Model/LearnerAssessmentResponseSets.md)
+[**\DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets**](../Model/LearnerAssessmentResponseSets.md)
 
 ### Authorization
 
@@ -1890,7 +1890,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAssessmentResponseSets**
-> \DataExchange\UK\20\Models\LearnerAssessmentResponseSets getLearnerAssessmentResponseSets($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets getLearnerAssessmentResponseSets($navigation_page, $navigation_page_size)
 
 Return all LearnerAssessmentResponseSets
 
@@ -1899,7 +1899,7 @@ Return all LearnerAssessmentResponseSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -1921,7 +1921,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerAssessmentResponseSets**](../Model/LearnerAssessmentResponseSets.md)
+[**\DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets**](../Model/LearnerAssessmentResponseSets.md)
 
 ### Authorization
 
@@ -1935,7 +1935,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAssessmentResultByRefId**
-> \DataExchange\UK\20\Models\LearnerAssessmentResults getLearnerAssessmentResultByRefId($ref_id)
+> \DataExchange\SIFUK20\Models\LearnerAssessmentResults getLearnerAssessmentResultByRefId($ref_id)
 
 Find LearnerAssessmentResult by RefId
 
@@ -1944,7 +1944,7 @@ Find LearnerAssessmentResult by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAssessmentResult
 
 try {
@@ -1964,7 +1964,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerAssessmentResults**](../Model/LearnerAssessmentResults.md)
+[**\DataExchange\SIFUK20\Models\LearnerAssessmentResults**](../Model/LearnerAssessmentResults.md)
 
 ### Authorization
 
@@ -1978,7 +1978,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAssessmentResults**
-> \DataExchange\UK\20\Models\LearnerAssessmentResults getLearnerAssessmentResults($navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAssessmentResults getLearnerAssessmentResults($navigation_page, $navigation_page_size)
 
 Return all LearnerAssessmentResults
 
@@ -1987,7 +1987,7 @@ Return all LearnerAssessmentResults
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
 
@@ -2009,7 +2009,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\LearnerAssessmentResults**](../Model/LearnerAssessmentResults.md)
+[**\DataExchange\SIFUK20\Models\LearnerAssessmentResults**](../Model/LearnerAssessmentResults.md)
 
 ### Authorization
 
@@ -2023,7 +2023,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentLearnerSetByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentLearnerSetByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentLearnerSetByRefId($ref_id, $body)
 
 Update AssessmentLearnerSet by RefId
 
@@ -2032,9 +2032,9 @@ Update AssessmentLearnerSet by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentLearnerSet
-$body = new \DataExchange\UK\20\Models\AssessmentLearnerSet(); // \DataExchange\UK\20\Models\AssessmentLearnerSet | AssessmentLearnerSet to be updated
+$body = new \DataExchange\SIFUK20\Models\AssessmentLearnerSet(); // \DataExchange\SIFUK20\Models\AssessmentLearnerSet | AssessmentLearnerSet to be updated
 
 try {
     $result = $api_instance->updateAssessmentLearnerSetByRefId($ref_id, $body);
@@ -2050,11 +2050,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of AssessmentLearnerSet |
- **body** | [**\DataExchange\UK\20\Models\AssessmentLearnerSet**](../Model/\DataExchange\UK\20\Models\AssessmentLearnerSet.md)| AssessmentLearnerSet to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentLearnerSet**](../Model/\DataExchange\SIFUK20\Models\AssessmentLearnerSet.md)| AssessmentLearnerSet to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2068,7 +2068,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentLearnerSets**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentLearnerSets($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentLearnerSets($body)
 
 Update multiple AssessmentLearnerSets
 
@@ -2077,8 +2077,8 @@ Update multiple AssessmentLearnerSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentLearnerSets(); // \DataExchange\UK\20\Models\AssessmentLearnerSets | AssessmentLearnerSets to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentLearnerSets(); // \DataExchange\SIFUK20\Models\AssessmentLearnerSets | AssessmentLearnerSets to be updated
 
 try {
     $result = $api_instance->updateAssessmentLearnerSets($body);
@@ -2093,11 +2093,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentLearnerSets**](../Model/\DataExchange\UK\20\Models\AssessmentLearnerSets.md)| AssessmentLearnerSets to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentLearnerSets**](../Model/\DataExchange\SIFUK20\Models\AssessmentLearnerSets.md)| AssessmentLearnerSets to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2111,7 +2111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResponseComponentByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResponseComponentByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResponseComponentByRefId($ref_id, $body)
 
 Update AssessmentResponseComponent by RefId
 
@@ -2120,9 +2120,9 @@ Update AssessmentResponseComponent by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResponseComponent
-$body = new \DataExchange\UK\20\Models\AssessmentResponseComponent(); // \DataExchange\UK\20\Models\AssessmentResponseComponent | AssessmentResponseComponent to be updated
+$body = new \DataExchange\SIFUK20\Models\AssessmentResponseComponent(); // \DataExchange\SIFUK20\Models\AssessmentResponseComponent | AssessmentResponseComponent to be updated
 
 try {
     $result = $api_instance->updateAssessmentResponseComponentByRefId($ref_id, $body);
@@ -2138,11 +2138,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of AssessmentResponseComponent |
- **body** | [**\DataExchange\UK\20\Models\AssessmentResponseComponent**](../Model/\DataExchange\UK\20\Models\AssessmentResponseComponent.md)| AssessmentResponseComponent to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResponseComponent**](../Model/\DataExchange\SIFUK20\Models\AssessmentResponseComponent.md)| AssessmentResponseComponent to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2156,7 +2156,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResponseComponentGroupByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResponseComponentGroupByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResponseComponentGroupByRefId($ref_id, $body)
 
 Update AssessmentResponseComponentGroup by RefId
 
@@ -2165,9 +2165,9 @@ Update AssessmentResponseComponentGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResponseComponentGroup
-$body = new \DataExchange\UK\20\Models\AssessmentResponseComponentGroup(); // \DataExchange\UK\20\Models\AssessmentResponseComponentGroup | AssessmentResponseComponentGroup to be updated
+$body = new \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroup(); // \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroup | AssessmentResponseComponentGroup to be updated
 
 try {
     $result = $api_instance->updateAssessmentResponseComponentGroupByRefId($ref_id, $body);
@@ -2183,11 +2183,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of AssessmentResponseComponentGroup |
- **body** | [**\DataExchange\UK\20\Models\AssessmentResponseComponentGroup**](../Model/\DataExchange\UK\20\Models\AssessmentResponseComponentGroup.md)| AssessmentResponseComponentGroup to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResponseComponentGroup**](../Model/\DataExchange\SIFUK20\Models\AssessmentResponseComponentGroup.md)| AssessmentResponseComponentGroup to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2201,7 +2201,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResponseComponentGroups**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResponseComponentGroups($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResponseComponentGroups($body)
 
 Update multiple AssessmentResponseComponentGroups
 
@@ -2210,8 +2210,8 @@ Update multiple AssessmentResponseComponentGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResponseComponentGroups(); // \DataExchange\UK\20\Models\AssessmentResponseComponentGroups | AssessmentResponseComponentGroups to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups(); // \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups | AssessmentResponseComponentGroups to be updated
 
 try {
     $result = $api_instance->updateAssessmentResponseComponentGroups($body);
@@ -2226,11 +2226,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResponseComponentGroups**](../Model/\DataExchange\UK\20\Models\AssessmentResponseComponentGroups.md)| AssessmentResponseComponentGroups to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups**](../Model/\DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups.md)| AssessmentResponseComponentGroups to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2244,7 +2244,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResponseComponents**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResponseComponents($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResponseComponents($body)
 
 Update multiple AssessmentResponseComponents
 
@@ -2253,8 +2253,8 @@ Update multiple AssessmentResponseComponents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResponseComponents(); // \DataExchange\UK\20\Models\AssessmentResponseComponents | AssessmentResponseComponents to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResponseComponents(); // \DataExchange\SIFUK20\Models\AssessmentResponseComponents | AssessmentResponseComponents to be updated
 
 try {
     $result = $api_instance->updateAssessmentResponseComponents($body);
@@ -2269,11 +2269,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResponseComponents**](../Model/\DataExchange\UK\20\Models\AssessmentResponseComponents.md)| AssessmentResponseComponents to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResponseComponents**](../Model/\DataExchange\SIFUK20\Models\AssessmentResponseComponents.md)| AssessmentResponseComponents to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2287,7 +2287,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResultComponentByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResultComponentByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResultComponentByRefId($ref_id, $body)
 
 Update AssessmentResultComponent by RefId
 
@@ -2296,9 +2296,9 @@ Update AssessmentResultComponent by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResultComponent
-$body = new \DataExchange\UK\20\Models\AssessmentResultComponent(); // \DataExchange\UK\20\Models\AssessmentResultComponent | AssessmentResultComponent to be updated
+$body = new \DataExchange\SIFUK20\Models\AssessmentResultComponent(); // \DataExchange\SIFUK20\Models\AssessmentResultComponent | AssessmentResultComponent to be updated
 
 try {
     $result = $api_instance->updateAssessmentResultComponentByRefId($ref_id, $body);
@@ -2314,11 +2314,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of AssessmentResultComponent |
- **body** | [**\DataExchange\UK\20\Models\AssessmentResultComponent**](../Model/\DataExchange\UK\20\Models\AssessmentResultComponent.md)| AssessmentResultComponent to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResultComponent**](../Model/\DataExchange\SIFUK20\Models\AssessmentResultComponent.md)| AssessmentResultComponent to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2332,7 +2332,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResultComponentGroupByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResultComponentGroupByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResultComponentGroupByRefId($ref_id, $body)
 
 Update AssessmentResultComponentGroup by RefId
 
@@ -2341,9 +2341,9 @@ Update AssessmentResultComponentGroup by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResultComponentGroup
-$body = new \DataExchange\UK\20\Models\AssessmentResultComponentGroup(); // \DataExchange\UK\20\Models\AssessmentResultComponentGroup | AssessmentResultComponentGroup to be updated
+$body = new \DataExchange\SIFUK20\Models\AssessmentResultComponentGroup(); // \DataExchange\SIFUK20\Models\AssessmentResultComponentGroup | AssessmentResultComponentGroup to be updated
 
 try {
     $result = $api_instance->updateAssessmentResultComponentGroupByRefId($ref_id, $body);
@@ -2359,11 +2359,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of AssessmentResultComponentGroup |
- **body** | [**\DataExchange\UK\20\Models\AssessmentResultComponentGroup**](../Model/\DataExchange\UK\20\Models\AssessmentResultComponentGroup.md)| AssessmentResultComponentGroup to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResultComponentGroup**](../Model/\DataExchange\SIFUK20\Models\AssessmentResultComponentGroup.md)| AssessmentResultComponentGroup to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2377,7 +2377,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResultComponentGroups**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResultComponentGroups($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResultComponentGroups($body)
 
 Update multiple AssessmentResultComponentGroups
 
@@ -2386,8 +2386,8 @@ Update multiple AssessmentResultComponentGroups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResultComponentGroups(); // \DataExchange\UK\20\Models\AssessmentResultComponentGroups | AssessmentResultComponentGroups to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups(); // \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups | AssessmentResultComponentGroups to be updated
 
 try {
     $result = $api_instance->updateAssessmentResultComponentGroups($body);
@@ -2402,11 +2402,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResultComponentGroups**](../Model/\DataExchange\UK\20\Models\AssessmentResultComponentGroups.md)| AssessmentResultComponentGroups to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResultComponentGroups**](../Model/\DataExchange\SIFUK20\Models\AssessmentResultComponentGroups.md)| AssessmentResultComponentGroups to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2420,7 +2420,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResultComponents**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResultComponents($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResultComponents($body)
 
 Update multiple AssessmentResultComponents
 
@@ -2429,8 +2429,8 @@ Update multiple AssessmentResultComponents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResultComponents(); // \DataExchange\UK\20\Models\AssessmentResultComponents | AssessmentResultComponents to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResultComponents(); // \DataExchange\SIFUK20\Models\AssessmentResultComponents | AssessmentResultComponents to be updated
 
 try {
     $result = $api_instance->updateAssessmentResultComponents($body);
@@ -2445,11 +2445,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResultComponents**](../Model/\DataExchange\UK\20\Models\AssessmentResultComponents.md)| AssessmentResultComponents to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResultComponents**](../Model/\DataExchange\SIFUK20\Models\AssessmentResultComponents.md)| AssessmentResultComponents to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2463,7 +2463,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResultGradeSetByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResultGradeSetByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResultGradeSetByRefId($ref_id, $body)
 
 Update AssessmentResultGradeSet by RefId
 
@@ -2472,9 +2472,9 @@ Update AssessmentResultGradeSet by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentResultGradeSet
-$body = new \DataExchange\UK\20\Models\AssessmentResultGradeSet(); // \DataExchange\UK\20\Models\AssessmentResultGradeSet | AssessmentResultGradeSet to be updated
+$body = new \DataExchange\SIFUK20\Models\AssessmentResultGradeSet(); // \DataExchange\SIFUK20\Models\AssessmentResultGradeSet | AssessmentResultGradeSet to be updated
 
 try {
     $result = $api_instance->updateAssessmentResultGradeSetByRefId($ref_id, $body);
@@ -2490,11 +2490,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of AssessmentResultGradeSet |
- **body** | [**\DataExchange\UK\20\Models\AssessmentResultGradeSet**](../Model/\DataExchange\UK\20\Models\AssessmentResultGradeSet.md)| AssessmentResultGradeSet to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResultGradeSet**](../Model/\DataExchange\SIFUK20\Models\AssessmentResultGradeSet.md)| AssessmentResultGradeSet to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2508,7 +2508,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentResultGradeSets**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentResultGradeSets($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentResultGradeSets($body)
 
 Update multiple AssessmentResultGradeSets
 
@@ -2517,8 +2517,8 @@ Update multiple AssessmentResultGradeSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentResultGradeSets(); // \DataExchange\UK\20\Models\AssessmentResultGradeSets | AssessmentResultGradeSets to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentResultGradeSets(); // \DataExchange\SIFUK20\Models\AssessmentResultGradeSets | AssessmentResultGradeSets to be updated
 
 try {
     $result = $api_instance->updateAssessmentResultGradeSets($body);
@@ -2533,11 +2533,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentResultGradeSets**](../Model/\DataExchange\UK\20\Models\AssessmentResultGradeSets.md)| AssessmentResultGradeSets to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentResultGradeSets**](../Model/\DataExchange\SIFUK20\Models\AssessmentResultGradeSets.md)| AssessmentResultGradeSets to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2551,7 +2551,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentSessionByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentSessionByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentSessionByRefId($ref_id, $body)
 
 Update AssessmentSession by RefId
 
@@ -2560,9 +2560,9 @@ Update AssessmentSession by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of AssessmentSession
-$body = new \DataExchange\UK\20\Models\AssessmentSession(); // \DataExchange\UK\20\Models\AssessmentSession | AssessmentSession to be updated
+$body = new \DataExchange\SIFUK20\Models\AssessmentSession(); // \DataExchange\SIFUK20\Models\AssessmentSession | AssessmentSession to be updated
 
 try {
     $result = $api_instance->updateAssessmentSessionByRefId($ref_id, $body);
@@ -2578,11 +2578,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of AssessmentSession |
- **body** | [**\DataExchange\UK\20\Models\AssessmentSession**](../Model/\DataExchange\UK\20\Models\AssessmentSession.md)| AssessmentSession to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentSession**](../Model/\DataExchange\SIFUK20\Models\AssessmentSession.md)| AssessmentSession to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2596,7 +2596,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssessmentSessions**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateAssessmentSessions($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateAssessmentSessions($body)
 
 Update multiple AssessmentSessions
 
@@ -2605,8 +2605,8 @@ Update multiple AssessmentSessions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\AssessmentSessions(); // \DataExchange\UK\20\Models\AssessmentSessions | AssessmentSessions to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\AssessmentSessions(); // \DataExchange\SIFUK20\Models\AssessmentSessions | AssessmentSessions to be updated
 
 try {
     $result = $api_instance->updateAssessmentSessions($body);
@@ -2621,11 +2621,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\AssessmentSessions**](../Model/\DataExchange\UK\20\Models\AssessmentSessions.md)| AssessmentSessions to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\AssessmentSessions**](../Model/\DataExchange\SIFUK20\Models\AssessmentSessions.md)| AssessmentSessions to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2639,7 +2639,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerAssessmentResponseSetByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerAssessmentResponseSetByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerAssessmentResponseSetByRefId($ref_id, $body)
 
 Update LearnerAssessmentResponseSet by RefId
 
@@ -2648,9 +2648,9 @@ Update LearnerAssessmentResponseSet by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAssessmentResponseSet
-$body = new \DataExchange\UK\20\Models\LearnerAssessmentResponseSet(); // \DataExchange\UK\20\Models\LearnerAssessmentResponseSet | LearnerAssessmentResponseSet to be updated
+$body = new \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSet(); // \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSet | LearnerAssessmentResponseSet to be updated
 
 try {
     $result = $api_instance->updateLearnerAssessmentResponseSetByRefId($ref_id, $body);
@@ -2666,11 +2666,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of LearnerAssessmentResponseSet |
- **body** | [**\DataExchange\UK\20\Models\LearnerAssessmentResponseSet**](../Model/\DataExchange\UK\20\Models\LearnerAssessmentResponseSet.md)| LearnerAssessmentResponseSet to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAssessmentResponseSet**](../Model/\DataExchange\SIFUK20\Models\LearnerAssessmentResponseSet.md)| LearnerAssessmentResponseSet to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2684,7 +2684,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerAssessmentResponseSets**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerAssessmentResponseSets($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerAssessmentResponseSets($body)
 
 Update multiple LearnerAssessmentResponseSets
 
@@ -2693,8 +2693,8 @@ Update multiple LearnerAssessmentResponseSets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\LearnerAssessmentResponseSets(); // \DataExchange\UK\20\Models\LearnerAssessmentResponseSets | LearnerAssessmentResponseSets to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets(); // \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets | LearnerAssessmentResponseSets to be updated
 
 try {
     $result = $api_instance->updateLearnerAssessmentResponseSets($body);
@@ -2709,11 +2709,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerAssessmentResponseSets**](../Model/\DataExchange\UK\20\Models\LearnerAssessmentResponseSets.md)| LearnerAssessmentResponseSets to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets**](../Model/\DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets.md)| LearnerAssessmentResponseSets to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2727,7 +2727,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerAssessmentResultByRefId**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerAssessmentResultByRefId($ref_id, $body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerAssessmentResultByRefId($ref_id, $body)
 
 Update LearnerAssessmentResult by RefId
 
@@ -2736,9 +2736,9 @@ Update LearnerAssessmentResult by RefId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerAssessmentResult
-$body = new \DataExchange\UK\20\Models\LearnerAssessmentResult(); // \DataExchange\UK\20\Models\LearnerAssessmentResult | LearnerAssessmentResult to be updated
+$body = new \DataExchange\SIFUK20\Models\LearnerAssessmentResult(); // \DataExchange\SIFUK20\Models\LearnerAssessmentResult | LearnerAssessmentResult to be updated
 
 try {
     $result = $api_instance->updateLearnerAssessmentResultByRefId($ref_id, $body);
@@ -2754,11 +2754,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ref_id** | **string**| RefId of LearnerAssessmentResult |
- **body** | [**\DataExchange\UK\20\Models\LearnerAssessmentResult**](../Model/\DataExchange\UK\20\Models\LearnerAssessmentResult.md)| LearnerAssessmentResult to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAssessmentResult**](../Model/\DataExchange\SIFUK20\Models\LearnerAssessmentResult.md)| LearnerAssessmentResult to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 
@@ -2772,7 +2772,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLearnerAssessmentResults**
-> \DataExchange\UK\20\Models\SifUpdateResponse updateLearnerAssessmentResults($body)
+> \DataExchange\SIFUK20\Models\SifUpdateResponse updateLearnerAssessmentResults($body)
 
 Update multiple LearnerAssessmentResults
 
@@ -2781,8 +2781,8 @@ Update multiple LearnerAssessmentResults
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new DataExchange\UK\20\Api\AssessmentsApi();
-$body = new \DataExchange\UK\20\Models\LearnerAssessmentResults(); // \DataExchange\UK\20\Models\LearnerAssessmentResults | LearnerAssessmentResults to be updated
+$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$body = new \DataExchange\SIFUK20\Models\LearnerAssessmentResults(); // \DataExchange\SIFUK20\Models\LearnerAssessmentResults | LearnerAssessmentResults to be updated
 
 try {
     $result = $api_instance->updateLearnerAssessmentResults($body);
@@ -2797,11 +2797,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\DataExchange\UK\20\Models\LearnerAssessmentResults**](../Model/\DataExchange\UK\20\Models\LearnerAssessmentResults.md)| LearnerAssessmentResults to be updated |
+ **body** | [**\DataExchange\SIFUK20\Models\LearnerAssessmentResults**](../Model/\DataExchange\SIFUK20\Models\LearnerAssessmentResults.md)| LearnerAssessmentResults to be updated |
 
 ### Return type
 
-[**\DataExchange\UK\20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
+[**\DataExchange\SIFUK20\Models\SifUpdateResponse**](../Model/SifUpdateResponse.md)
 
 ### Authorization
 

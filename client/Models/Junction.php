@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DataExchange\UK\20
+ * @package  DataExchange\SIFUK20
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace DataExchange\UK\20\Models;
+namespace DataExchange\SIFUK20\Models;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description A representation of the Curriculum Diagram.
 /**
- * @package     DataExchange\UK\20
+ * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -71,8 +71,8 @@ class Junction implements ArrayAccess
         'label' => 'string',
         'short_label' => 'string',
         'local_type' => 'string',
-        'input_list' => '\DataExchange\UK\20\Models\Input[]',
-        'output_list' => '\DataExchange\UK\20\Models\Output[]'
+        'input_list' => '\DataExchange\SIFUK20\Models\Input[]',
+        'output_list' => '\DataExchange\SIFUK20\Models\Output[]'
     ];
 
     public static function swaggerTypes()
@@ -299,7 +299,7 @@ class Junction implements ArrayAccess
 
     /**
      * Gets input_list
-     * @return \DataExchange\UK\20\Models\Input[]
+     * @return \DataExchange\SIFUK20\Models\Input[]
      */
     public function getInputList()
     {
@@ -308,7 +308,7 @@ class Junction implements ArrayAccess
 
     /**
      * Sets input_list
-     * @param \DataExchange\UK\20\Models\Input[] $input_list
+     * @param \DataExchange\SIFUK20\Models\Input[] $input_list
      * @return $this
      */
     public function setInputList($input_list)
@@ -320,7 +320,7 @@ class Junction implements ArrayAccess
 
     /**
      * Gets output_list
-     * @return \DataExchange\UK\20\Models\Output[]
+     * @return \DataExchange\SIFUK20\Models\Output[]
      */
     public function getOutputList()
     {
@@ -329,7 +329,7 @@ class Junction implements ArrayAccess
 
     /**
      * Sets output_list
-     * @param \DataExchange\UK\20\Models\Output[] $output_list
+     * @param \DataExchange\SIFUK20\Models\Output[] $output_list
      * @return $this
      */
     public function setOutputList($output_list)
@@ -390,9 +390,9 @@ class Junction implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\DataExchange\UK\20\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\DataExchange\SIFUK20\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
