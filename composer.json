@@ -1,0 +1,40 @@
+{
+    "name": "dataexchangeedu/php-data-api-sifuk20",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "dataexchange",
+        "education",
+        "php",
+        "sdk",
+        "api"
+    ],
+    "homepage": "http://dataexchange.education",
+    "license": "proprietary",
+    "authors": [{
+        "name": "ZiNET Data Solutions Limited",
+        "homepage": "https://zinethq.com"
+    }],
+    "require": {
+        "php": ">=5.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "satooshi/php-coveralls": "~1.0",
+        "squizlabs/php_codesniffer": "~2.6",
+        "friendsofphp/php-cs-fixer": "~1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "DataExchange\\UK\\20\\": "client/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DataExchange\\UK\\20\\": "test/"
+        }
+    }
+}
