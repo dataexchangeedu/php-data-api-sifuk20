@@ -173,7 +173,7 @@ class Input implements ArrayAccess
 
     /**
      * Sets type
-     * @param string $type Conditional and has only one value: &quot;SC&quot;. &quot;SC&quot; has special meaning – it means this is the top of the &quot;tree&quot; and the input is the whole school.
+     * @param string $type Conditional and has only one value: &quot;SC&quot;. &quot;SC&quot; has special meaning â€“ it means this is the top of the &quot;tree&quot; and the input is the whole school.
      * @return $this
      */
     public function setType($type)
