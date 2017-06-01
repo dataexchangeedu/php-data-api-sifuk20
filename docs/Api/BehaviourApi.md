@@ -30,6 +30,11 @@ Create multiple LearnerBehaviourIncidents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $body = new \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents(); // \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents | LearnerBehaviourIncidents to be created
 
@@ -54,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -72,6 +77,11 @@ Create multiple LearnerExclusions
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $body = new \DataExchange\SIFUK20\Models\LearnerExclusions(); // \DataExchange\SIFUK20\Models\LearnerExclusions | LearnerExclusions to be created
@@ -97,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -115,6 +125,11 @@ Delete LearnerBehaviourIncident by RefId
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerBehaviourIncident
@@ -140,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -158,6 +173,11 @@ Delete multiple LearnerBehaviourIncidents
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
@@ -183,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -201,6 +221,11 @@ Delete LearnerExclusion by RefId
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerExclusion
@@ -226,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -244,6 +269,11 @@ Delete multiple LearnerExclusions
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $body = new \DataExchange\SIFUK20\Models\SifDeleteRequest(); // \DataExchange\SIFUK20\Models\SifDeleteRequest | 
@@ -269,7 +299,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -287,6 +317,11 @@ Find LearnerBehaviourIncident by RefId
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerBehaviourIncident
@@ -312,7 +347,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -330,6 +365,11 @@ Return all LearnerBehaviourIncidents
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $navigation_page = 1; // int | Page to retrieve.
@@ -357,7 +397,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -375,6 +415,11 @@ Find LearnerExclusion by RefId
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerExclusion
@@ -400,7 +445,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -418,6 +463,11 @@ Return all LearnerExclusions
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $navigation_page = 1; // int | Page to retrieve.
@@ -445,7 +495,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -463,6 +513,11 @@ Update LearnerBehaviourIncident by RefId
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerBehaviourIncident
@@ -490,7 +545,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -508,6 +563,11 @@ Update multiple LearnerBehaviourIncidents
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $body = new \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents(); // \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents | LearnerBehaviourIncidents to be updated
@@ -533,7 +593,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -551,6 +611,11 @@ Update LearnerExclusion by RefId
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $ref_id = "ref_id_example"; // string | RefId of LearnerExclusion
@@ -578,7 +643,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -596,6 +661,11 @@ Update multiple LearnerExclusions
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
 $body = new \DataExchange\SIFUK20\Models\LearnerExclusions(); // \DataExchange\SIFUK20\Models\LearnerExclusions | LearnerExclusions to be updated
@@ -621,7 +691,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Bearer](../../README.md#Bearer)
 
 ### HTTP request headers
 

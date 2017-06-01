@@ -58,6 +58,11 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure API key authorization: Bearer
+DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 $api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
 $body = new \DataExchange\SIFUK20\Models\AssessmentLearnerSets(); // \DataExchange\SIFUK20\Models\AssessmentLearnerSets | AssessmentLearnerSets to be created
 
@@ -698,7 +703,12 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Authorization
 
- All endpoints do not require authorization.
+
+## Bearer
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
 
 
 ## Author
