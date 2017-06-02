@@ -63,14 +63,14 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
+$api_instance = new DataExchange\SIFUK20\Api\DefaultApi();
 $body = new \DataExchange\SIFUK20\Models\AssessmentLearnerSets(); // \DataExchange\SIFUK20\Models\AssessmentLearnerSets | AssessmentLearnerSets to be created
 
 try {
     $result = $api_instance->createAssessmentLearnerSets($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AssessmentsApi->createAssessmentLearnerSets: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling DefaultApi->createAssessmentLearnerSets: ', $e->getMessage(), PHP_EOL;
 }
 
 ?>
@@ -82,437 +82,304 @@ All URIs are relative to *https://uk.staging.dataexchange.education/rest/sif/req
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AssessmentsApi* | [**createAssessmentLearnerSets**](docs/Api/AssessmentsApi.md#createassessmentlearnersets) | **POST** /AssessmentLearnerSets | Create multiple AssessmentLearnerSets
-*AssessmentsApi* | [**createAssessmentResponseComponentGroups**](docs/Api/AssessmentsApi.md#createassessmentresponsecomponentgroups) | **POST** /AssessmentResponseComponentGroups | Create multiple AssessmentResponseComponentGroups
-*AssessmentsApi* | [**createAssessmentResponseComponents**](docs/Api/AssessmentsApi.md#createassessmentresponsecomponents) | **POST** /AssessmentResponseComponents | Create multiple AssessmentResponseComponents
-*AssessmentsApi* | [**createAssessmentResultComponentGroups**](docs/Api/AssessmentsApi.md#createassessmentresultcomponentgroups) | **POST** /AssessmentResultComponentGroups | Create multiple AssessmentResultComponentGroups
-*AssessmentsApi* | [**createAssessmentResultComponents**](docs/Api/AssessmentsApi.md#createassessmentresultcomponents) | **POST** /AssessmentResultComponents | Create multiple AssessmentResultComponents
-*AssessmentsApi* | [**createAssessmentResultGradeSets**](docs/Api/AssessmentsApi.md#createassessmentresultgradesets) | **POST** /AssessmentResultGradeSets | Create multiple AssessmentResultGradeSets
-*AssessmentsApi* | [**createAssessmentSessions**](docs/Api/AssessmentsApi.md#createassessmentsessions) | **POST** /AssessmentSessions | Create multiple AssessmentSessions
-*AssessmentsApi* | [**createLearnerAssessmentResponseSets**](docs/Api/AssessmentsApi.md#createlearnerassessmentresponsesets) | **POST** /LearnerAssessmentResponseSets | Create multiple LearnerAssessmentResponseSets
-*AssessmentsApi* | [**createLearnerAssessmentResults**](docs/Api/AssessmentsApi.md#createlearnerassessmentresults) | **POST** /LearnerAssessmentResults | Create multiple LearnerAssessmentResults
-*AssessmentsApi* | [**deleteAssessmentLearnerSetByRefId**](docs/Api/AssessmentsApi.md#deleteassessmentlearnersetbyrefid) | **DELETE** /AssessmentLearnerSets/{RefId} | Delete AssessmentLearnerSet by RefId
-*AssessmentsApi* | [**deleteAssessmentLearnerSets**](docs/Api/AssessmentsApi.md#deleteassessmentlearnersets) | **DELETE** /AssessmentLearnerSets | Delete multiple AssessmentLearnerSets
-*AssessmentsApi* | [**deleteAssessmentResponseComponentByRefId**](docs/Api/AssessmentsApi.md#deleteassessmentresponsecomponentbyrefid) | **DELETE** /AssessmentResponseComponents/{RefId} | Delete AssessmentResponseComponent by RefId
-*AssessmentsApi* | [**deleteAssessmentResponseComponentGroupByRefId**](docs/Api/AssessmentsApi.md#deleteassessmentresponsecomponentgroupbyrefid) | **DELETE** /AssessmentResponseComponentGroups/{RefId} | Delete AssessmentResponseComponentGroup by RefId
-*AssessmentsApi* | [**deleteAssessmentResponseComponentGroups**](docs/Api/AssessmentsApi.md#deleteassessmentresponsecomponentgroups) | **DELETE** /AssessmentResponseComponentGroups | Delete multiple AssessmentResponseComponentGroups
-*AssessmentsApi* | [**deleteAssessmentResponseComponents**](docs/Api/AssessmentsApi.md#deleteassessmentresponsecomponents) | **DELETE** /AssessmentResponseComponents | Delete multiple AssessmentResponseComponents
-*AssessmentsApi* | [**deleteAssessmentResultComponentByRefId**](docs/Api/AssessmentsApi.md#deleteassessmentresultcomponentbyrefid) | **DELETE** /AssessmentResultComponents/{RefId} | Delete AssessmentResultComponent by RefId
-*AssessmentsApi* | [**deleteAssessmentResultComponentGroupByRefId**](docs/Api/AssessmentsApi.md#deleteassessmentresultcomponentgroupbyrefid) | **DELETE** /AssessmentResultComponentGroups/{RefId} | Delete AssessmentResultComponentGroup by RefId
-*AssessmentsApi* | [**deleteAssessmentResultComponentGroups**](docs/Api/AssessmentsApi.md#deleteassessmentresultcomponentgroups) | **DELETE** /AssessmentResultComponentGroups | Delete multiple AssessmentResultComponentGroups
-*AssessmentsApi* | [**deleteAssessmentResultComponents**](docs/Api/AssessmentsApi.md#deleteassessmentresultcomponents) | **DELETE** /AssessmentResultComponents | Delete multiple AssessmentResultComponents
-*AssessmentsApi* | [**deleteAssessmentResultGradeSetByRefId**](docs/Api/AssessmentsApi.md#deleteassessmentresultgradesetbyrefid) | **DELETE** /AssessmentResultGradeSets/{RefId} | Delete AssessmentResultGradeSet by RefId
-*AssessmentsApi* | [**deleteAssessmentResultGradeSets**](docs/Api/AssessmentsApi.md#deleteassessmentresultgradesets) | **DELETE** /AssessmentResultGradeSets | Delete multiple AssessmentResultGradeSets
-*AssessmentsApi* | [**deleteAssessmentSessionByRefId**](docs/Api/AssessmentsApi.md#deleteassessmentsessionbyrefid) | **DELETE** /AssessmentSessions/{RefId} | Delete AssessmentSession by RefId
-*AssessmentsApi* | [**deleteAssessmentSessions**](docs/Api/AssessmentsApi.md#deleteassessmentsessions) | **DELETE** /AssessmentSessions | Delete multiple AssessmentSessions
-*AssessmentsApi* | [**deleteLearnerAssessmentResponseSetByRefId**](docs/Api/AssessmentsApi.md#deletelearnerassessmentresponsesetbyrefid) | **DELETE** /LearnerAssessmentResponseSets/{RefId} | Delete LearnerAssessmentResponseSet by RefId
-*AssessmentsApi* | [**deleteLearnerAssessmentResponseSets**](docs/Api/AssessmentsApi.md#deletelearnerassessmentresponsesets) | **DELETE** /LearnerAssessmentResponseSets | Delete multiple LearnerAssessmentResponseSets
-*AssessmentsApi* | [**deleteLearnerAssessmentResultByRefId**](docs/Api/AssessmentsApi.md#deletelearnerassessmentresultbyrefid) | **DELETE** /LearnerAssessmentResults/{RefId} | Delete LearnerAssessmentResult by RefId
-*AssessmentsApi* | [**deleteLearnerAssessmentResults**](docs/Api/AssessmentsApi.md#deletelearnerassessmentresults) | **DELETE** /LearnerAssessmentResults | Delete multiple LearnerAssessmentResults
-*AssessmentsApi* | [**getAssessmentLearnerSetByRefId**](docs/Api/AssessmentsApi.md#getassessmentlearnersetbyrefid) | **GET** /AssessmentLearnerSets/{RefId} | Find AssessmentLearnerSet by RefId
-*AssessmentsApi* | [**getAssessmentLearnerSets**](docs/Api/AssessmentsApi.md#getassessmentlearnersets) | **GET** /AssessmentLearnerSets | Return all AssessmentLearnerSets
-*AssessmentsApi* | [**getAssessmentResponseComponentByRefId**](docs/Api/AssessmentsApi.md#getassessmentresponsecomponentbyrefid) | **GET** /AssessmentResponseComponents/{RefId} | Find AssessmentResponseComponent by RefId
-*AssessmentsApi* | [**getAssessmentResponseComponentGroupByRefId**](docs/Api/AssessmentsApi.md#getassessmentresponsecomponentgroupbyrefid) | **GET** /AssessmentResponseComponentGroups/{RefId} | Find AssessmentResponseComponentGroup by RefId
-*AssessmentsApi* | [**getAssessmentResponseComponentGroups**](docs/Api/AssessmentsApi.md#getassessmentresponsecomponentgroups) | **GET** /AssessmentResponseComponentGroups | Return all AssessmentResponseComponentGroups
-*AssessmentsApi* | [**getAssessmentResponseComponents**](docs/Api/AssessmentsApi.md#getassessmentresponsecomponents) | **GET** /AssessmentResponseComponents | Return all AssessmentResponseComponents
-*AssessmentsApi* | [**getAssessmentResultComponentByRefId**](docs/Api/AssessmentsApi.md#getassessmentresultcomponentbyrefid) | **GET** /AssessmentResultComponents/{RefId} | Find AssessmentResultComponent by RefId
-*AssessmentsApi* | [**getAssessmentResultComponentGroupByRefId**](docs/Api/AssessmentsApi.md#getassessmentresultcomponentgroupbyrefid) | **GET** /AssessmentResultComponentGroups/{RefId} | Find AssessmentResultComponentGroup by RefId
-*AssessmentsApi* | [**getAssessmentResultComponentGroups**](docs/Api/AssessmentsApi.md#getassessmentresultcomponentgroups) | **GET** /AssessmentResultComponentGroups | Return all AssessmentResultComponentGroups
-*AssessmentsApi* | [**getAssessmentResultComponents**](docs/Api/AssessmentsApi.md#getassessmentresultcomponents) | **GET** /AssessmentResultComponents | Return all AssessmentResultComponents
-*AssessmentsApi* | [**getAssessmentResultGradeSetByRefId**](docs/Api/AssessmentsApi.md#getassessmentresultgradesetbyrefid) | **GET** /AssessmentResultGradeSets/{RefId} | Find AssessmentResultGradeSet by RefId
-*AssessmentsApi* | [**getAssessmentResultGradeSets**](docs/Api/AssessmentsApi.md#getassessmentresultgradesets) | **GET** /AssessmentResultGradeSets | Return all AssessmentResultGradeSets
-*AssessmentsApi* | [**getAssessmentSessionByRefId**](docs/Api/AssessmentsApi.md#getassessmentsessionbyrefid) | **GET** /AssessmentSessions/{RefId} | Find AssessmentSession by RefId
-*AssessmentsApi* | [**getAssessmentSessions**](docs/Api/AssessmentsApi.md#getassessmentsessions) | **GET** /AssessmentSessions | Return all AssessmentSessions
-*AssessmentsApi* | [**getLearnerAssessmentResponseSetByRefId**](docs/Api/AssessmentsApi.md#getlearnerassessmentresponsesetbyrefid) | **GET** /LearnerAssessmentResponseSets/{RefId} | Find LearnerAssessmentResponseSet by RefId
-*AssessmentsApi* | [**getLearnerAssessmentResponseSets**](docs/Api/AssessmentsApi.md#getlearnerassessmentresponsesets) | **GET** /LearnerAssessmentResponseSets | Return all LearnerAssessmentResponseSets
-*AssessmentsApi* | [**getLearnerAssessmentResultByRefId**](docs/Api/AssessmentsApi.md#getlearnerassessmentresultbyrefid) | **GET** /LearnerAssessmentResults/{RefId} | Find LearnerAssessmentResult by RefId
-*AssessmentsApi* | [**getLearnerAssessmentResults**](docs/Api/AssessmentsApi.md#getlearnerassessmentresults) | **GET** /LearnerAssessmentResults | Return all LearnerAssessmentResults
-*AssessmentsApi* | [**updateAssessmentLearnerSetByRefId**](docs/Api/AssessmentsApi.md#updateassessmentlearnersetbyrefid) | **PUT** /AssessmentLearnerSets/{RefId} | Update AssessmentLearnerSet by RefId
-*AssessmentsApi* | [**updateAssessmentLearnerSets**](docs/Api/AssessmentsApi.md#updateassessmentlearnersets) | **PUT** /AssessmentLearnerSets | Update multiple AssessmentLearnerSets
-*AssessmentsApi* | [**updateAssessmentResponseComponentByRefId**](docs/Api/AssessmentsApi.md#updateassessmentresponsecomponentbyrefid) | **PUT** /AssessmentResponseComponents/{RefId} | Update AssessmentResponseComponent by RefId
-*AssessmentsApi* | [**updateAssessmentResponseComponentGroupByRefId**](docs/Api/AssessmentsApi.md#updateassessmentresponsecomponentgroupbyrefid) | **PUT** /AssessmentResponseComponentGroups/{RefId} | Update AssessmentResponseComponentGroup by RefId
-*AssessmentsApi* | [**updateAssessmentResponseComponentGroups**](docs/Api/AssessmentsApi.md#updateassessmentresponsecomponentgroups) | **PUT** /AssessmentResponseComponentGroups | Update multiple AssessmentResponseComponentGroups
-*AssessmentsApi* | [**updateAssessmentResponseComponents**](docs/Api/AssessmentsApi.md#updateassessmentresponsecomponents) | **PUT** /AssessmentResponseComponents | Update multiple AssessmentResponseComponents
-*AssessmentsApi* | [**updateAssessmentResultComponentByRefId**](docs/Api/AssessmentsApi.md#updateassessmentresultcomponentbyrefid) | **PUT** /AssessmentResultComponents/{RefId} | Update AssessmentResultComponent by RefId
-*AssessmentsApi* | [**updateAssessmentResultComponentGroupByRefId**](docs/Api/AssessmentsApi.md#updateassessmentresultcomponentgroupbyrefid) | **PUT** /AssessmentResultComponentGroups/{RefId} | Update AssessmentResultComponentGroup by RefId
-*AssessmentsApi* | [**updateAssessmentResultComponentGroups**](docs/Api/AssessmentsApi.md#updateassessmentresultcomponentgroups) | **PUT** /AssessmentResultComponentGroups | Update multiple AssessmentResultComponentGroups
-*AssessmentsApi* | [**updateAssessmentResultComponents**](docs/Api/AssessmentsApi.md#updateassessmentresultcomponents) | **PUT** /AssessmentResultComponents | Update multiple AssessmentResultComponents
-*AssessmentsApi* | [**updateAssessmentResultGradeSetByRefId**](docs/Api/AssessmentsApi.md#updateassessmentresultgradesetbyrefid) | **PUT** /AssessmentResultGradeSets/{RefId} | Update AssessmentResultGradeSet by RefId
-*AssessmentsApi* | [**updateAssessmentResultGradeSets**](docs/Api/AssessmentsApi.md#updateassessmentresultgradesets) | **PUT** /AssessmentResultGradeSets | Update multiple AssessmentResultGradeSets
-*AssessmentsApi* | [**updateAssessmentSessionByRefId**](docs/Api/AssessmentsApi.md#updateassessmentsessionbyrefid) | **PUT** /AssessmentSessions/{RefId} | Update AssessmentSession by RefId
-*AssessmentsApi* | [**updateAssessmentSessions**](docs/Api/AssessmentsApi.md#updateassessmentsessions) | **PUT** /AssessmentSessions | Update multiple AssessmentSessions
-*AssessmentsApi* | [**updateLearnerAssessmentResponseSetByRefId**](docs/Api/AssessmentsApi.md#updatelearnerassessmentresponsesetbyrefid) | **PUT** /LearnerAssessmentResponseSets/{RefId} | Update LearnerAssessmentResponseSet by RefId
-*AssessmentsApi* | [**updateLearnerAssessmentResponseSets**](docs/Api/AssessmentsApi.md#updatelearnerassessmentresponsesets) | **PUT** /LearnerAssessmentResponseSets | Update multiple LearnerAssessmentResponseSets
-*AssessmentsApi* | [**updateLearnerAssessmentResultByRefId**](docs/Api/AssessmentsApi.md#updatelearnerassessmentresultbyrefid) | **PUT** /LearnerAssessmentResults/{RefId} | Update LearnerAssessmentResult by RefId
-*AssessmentsApi* | [**updateLearnerAssessmentResults**](docs/Api/AssessmentsApi.md#updatelearnerassessmentresults) | **PUT** /LearnerAssessmentResults | Update multiple LearnerAssessmentResults
-*AttendanceApi* | [**createLearnerAttendanceSummarys**](docs/Api/AttendanceApi.md#createlearnerattendancesummarys) | **POST** /LearnerAttendanceSummarys | Create multiple LearnerAttendanceSummarys
-*AttendanceApi* | [**createLearnerAttendances**](docs/Api/AttendanceApi.md#createlearnerattendances) | **POST** /LearnerAttendances | Create multiple LearnerAttendances
-*AttendanceApi* | [**deleteLearnerAttendanceByRefId**](docs/Api/AttendanceApi.md#deletelearnerattendancebyrefid) | **DELETE** /LearnerAttendances/{RefId} | Delete LearnerAttendance by RefId
-*AttendanceApi* | [**deleteLearnerAttendanceSummaryByRefId**](docs/Api/AttendanceApi.md#deletelearnerattendancesummarybyrefid) | **DELETE** /LearnerAttendanceSummarys/{RefId} | Delete LearnerAttendanceSummary by RefId
-*AttendanceApi* | [**deleteLearnerAttendanceSummarys**](docs/Api/AttendanceApi.md#deletelearnerattendancesummarys) | **DELETE** /LearnerAttendanceSummarys | Delete multiple LearnerAttendanceSummarys
-*AttendanceApi* | [**deleteLearnerAttendances**](docs/Api/AttendanceApi.md#deletelearnerattendances) | **DELETE** /LearnerAttendances | Delete multiple LearnerAttendances
-*AttendanceApi* | [**getLearnerAttendanceByRefId**](docs/Api/AttendanceApi.md#getlearnerattendancebyrefid) | **GET** /LearnerAttendances/{RefId} | Find LearnerAttendance by RefId
-*AttendanceApi* | [**getLearnerAttendanceSummaryByRefId**](docs/Api/AttendanceApi.md#getlearnerattendancesummarybyrefid) | **GET** /LearnerAttendanceSummarys/{RefId} | Find LearnerAttendanceSummary by RefId
-*AttendanceApi* | [**getLearnerAttendanceSummarys**](docs/Api/AttendanceApi.md#getlearnerattendancesummarys) | **GET** /LearnerAttendanceSummarys | Return all LearnerAttendanceSummarys
-*AttendanceApi* | [**getLearnerAttendances**](docs/Api/AttendanceApi.md#getlearnerattendances) | **GET** /LearnerAttendances | Return all LearnerAttendances
-*AttendanceApi* | [**updateLearnerAttendanceByRefId**](docs/Api/AttendanceApi.md#updatelearnerattendancebyrefid) | **PUT** /LearnerAttendances/{RefId} | Update LearnerAttendance by RefId
-*AttendanceApi* | [**updateLearnerAttendanceSummaryByRefId**](docs/Api/AttendanceApi.md#updatelearnerattendancesummarybyrefid) | **PUT** /LearnerAttendanceSummarys/{RefId} | Update LearnerAttendanceSummary by RefId
-*AttendanceApi* | [**updateLearnerAttendanceSummarys**](docs/Api/AttendanceApi.md#updatelearnerattendancesummarys) | **PUT** /LearnerAttendanceSummarys | Update multiple LearnerAttendanceSummarys
-*AttendanceApi* | [**updateLearnerAttendances**](docs/Api/AttendanceApi.md#updatelearnerattendances) | **PUT** /LearnerAttendances | Update multiple LearnerAttendances
-*BehaviourApi* | [**createLearnerBehaviourIncidents**](docs/Api/BehaviourApi.md#createlearnerbehaviourincidents) | **POST** /LearnerBehaviourIncidents | Create multiple LearnerBehaviourIncidents
-*BehaviourApi* | [**createLearnerExclusions**](docs/Api/BehaviourApi.md#createlearnerexclusions) | **POST** /LearnerExclusions | Create multiple LearnerExclusions
-*BehaviourApi* | [**deleteLearnerBehaviourIncidentByRefId**](docs/Api/BehaviourApi.md#deletelearnerbehaviourincidentbyrefid) | **DELETE** /LearnerBehaviourIncidents/{RefId} | Delete LearnerBehaviourIncident by RefId
-*BehaviourApi* | [**deleteLearnerBehaviourIncidents**](docs/Api/BehaviourApi.md#deletelearnerbehaviourincidents) | **DELETE** /LearnerBehaviourIncidents | Delete multiple LearnerBehaviourIncidents
-*BehaviourApi* | [**deleteLearnerExclusionByRefId**](docs/Api/BehaviourApi.md#deletelearnerexclusionbyrefid) | **DELETE** /LearnerExclusions/{RefId} | Delete LearnerExclusion by RefId
-*BehaviourApi* | [**deleteLearnerExclusions**](docs/Api/BehaviourApi.md#deletelearnerexclusions) | **DELETE** /LearnerExclusions | Delete multiple LearnerExclusions
-*BehaviourApi* | [**getLearnerBehaviourIncidentByRefId**](docs/Api/BehaviourApi.md#getlearnerbehaviourincidentbyrefid) | **GET** /LearnerBehaviourIncidents/{RefId} | Find LearnerBehaviourIncident by RefId
-*BehaviourApi* | [**getLearnerBehaviourIncidents**](docs/Api/BehaviourApi.md#getlearnerbehaviourincidents) | **GET** /LearnerBehaviourIncidents | Return all LearnerBehaviourIncidents
-*BehaviourApi* | [**getLearnerExclusionByRefId**](docs/Api/BehaviourApi.md#getlearnerexclusionbyrefid) | **GET** /LearnerExclusions/{RefId} | Find LearnerExclusion by RefId
-*BehaviourApi* | [**getLearnerExclusions**](docs/Api/BehaviourApi.md#getlearnerexclusions) | **GET** /LearnerExclusions | Return all LearnerExclusions
-*BehaviourApi* | [**updateLearnerBehaviourIncidentByRefId**](docs/Api/BehaviourApi.md#updatelearnerbehaviourincidentbyrefid) | **PUT** /LearnerBehaviourIncidents/{RefId} | Update LearnerBehaviourIncident by RefId
-*BehaviourApi* | [**updateLearnerBehaviourIncidents**](docs/Api/BehaviourApi.md#updatelearnerbehaviourincidents) | **PUT** /LearnerBehaviourIncidents | Update multiple LearnerBehaviourIncidents
-*BehaviourApi* | [**updateLearnerExclusionByRefId**](docs/Api/BehaviourApi.md#updatelearnerexclusionbyrefid) | **PUT** /LearnerExclusions/{RefId} | Update LearnerExclusion by RefId
-*BehaviourApi* | [**updateLearnerExclusions**](docs/Api/BehaviourApi.md#updatelearnerexclusions) | **PUT** /LearnerExclusions | Update multiple LearnerExclusions
-*InstitutionApi* | [**createLAInfos**](docs/Api/InstitutionApi.md#createlainfos) | **POST** /LAInfos | Create multiple LAInfos
-*InstitutionApi* | [**createSchoolInfos**](docs/Api/InstitutionApi.md#createschoolinfos) | **POST** /SchoolInfos | Create multiple SchoolInfos
-*InstitutionApi* | [**deleteLAInfoByRefId**](docs/Api/InstitutionApi.md#deletelainfobyrefid) | **DELETE** /LAInfos/{RefId} | Delete LAInfo by RefId
-*InstitutionApi* | [**deleteLAInfos**](docs/Api/InstitutionApi.md#deletelainfos) | **DELETE** /LAInfos | Delete multiple LAInfos
-*InstitutionApi* | [**deleteSchoolInfoByRefId**](docs/Api/InstitutionApi.md#deleteschoolinfobyrefid) | **DELETE** /SchoolInfos/{RefId} | Delete SchoolInfo by RefId
-*InstitutionApi* | [**deleteSchoolInfos**](docs/Api/InstitutionApi.md#deleteschoolinfos) | **DELETE** /SchoolInfos | Delete multiple SchoolInfos
-*InstitutionApi* | [**getLAInfoByRefId**](docs/Api/InstitutionApi.md#getlainfobyrefid) | **GET** /LAInfos/{RefId} | Find LAInfo by RefId
-*InstitutionApi* | [**getLAInfos**](docs/Api/InstitutionApi.md#getlainfos) | **GET** /LAInfos | Return all LAInfos
-*InstitutionApi* | [**getSchoolInfoByRefId**](docs/Api/InstitutionApi.md#getschoolinfobyrefid) | **GET** /SchoolInfos/{RefId} | Find SchoolInfo by RefId
-*InstitutionApi* | [**getSchoolInfos**](docs/Api/InstitutionApi.md#getschoolinfos) | **GET** /SchoolInfos | Return all SchoolInfos
-*InstitutionApi* | [**updateLAInfoByRefId**](docs/Api/InstitutionApi.md#updatelainfobyrefid) | **PUT** /LAInfos/{RefId} | Update LAInfo by RefId
-*InstitutionApi* | [**updateLAInfos**](docs/Api/InstitutionApi.md#updatelainfos) | **PUT** /LAInfos | Update multiple LAInfos
-*InstitutionApi* | [**updateSchoolInfoByRefId**](docs/Api/InstitutionApi.md#updateschoolinfobyrefid) | **PUT** /SchoolInfos/{RefId} | Update SchoolInfo by RefId
-*InstitutionApi* | [**updateSchoolInfos**](docs/Api/InstitutionApi.md#updateschoolinfos) | **PUT** /SchoolInfos | Update multiple SchoolInfos
-*LearnersApi* | [**createAssessmentLearnerSets**](docs/Api/LearnersApi.md#createassessmentlearnersets) | **POST** /AssessmentLearnerSets | Create multiple AssessmentLearnerSets
-*LearnersApi* | [**createLearnerAssessmentResponseSets**](docs/Api/LearnersApi.md#createlearnerassessmentresponsesets) | **POST** /LearnerAssessmentResponseSets | Create multiple LearnerAssessmentResponseSets
-*LearnersApi* | [**createLearnerAssessmentResults**](docs/Api/LearnersApi.md#createlearnerassessmentresults) | **POST** /LearnerAssessmentResults | Create multiple LearnerAssessmentResults
-*LearnersApi* | [**createLearnerAttendanceSummarys**](docs/Api/LearnersApi.md#createlearnerattendancesummarys) | **POST** /LearnerAttendanceSummarys | Create multiple LearnerAttendanceSummarys
-*LearnersApi* | [**createLearnerAttendances**](docs/Api/LearnersApi.md#createlearnerattendances) | **POST** /LearnerAttendances | Create multiple LearnerAttendances
-*LearnersApi* | [**createLearnerBehaviourIncidents**](docs/Api/LearnersApi.md#createlearnerbehaviourincidents) | **POST** /LearnerBehaviourIncidents | Create multiple LearnerBehaviourIncidents
-*LearnersApi* | [**createLearnerContacts**](docs/Api/LearnersApi.md#createlearnercontacts) | **POST** /LearnerContacts | Create multiple LearnerContacts
-*LearnersApi* | [**createLearnerEntitlements**](docs/Api/LearnersApi.md#createlearnerentitlements) | **POST** /LearnerEntitlements | Create multiple LearnerEntitlements
-*LearnersApi* | [**createLearnerExclusions**](docs/Api/LearnersApi.md#createlearnerexclusions) | **POST** /LearnerExclusions | Create multiple LearnerExclusions
-*LearnersApi* | [**createLearnerGroupEnrolments**](docs/Api/LearnersApi.md#createlearnergroupenrolments) | **POST** /LearnerGroupEnrolments | Create multiple LearnerGroupEnrolments
-*LearnersApi* | [**createLearnerPersonals**](docs/Api/LearnersApi.md#createlearnerpersonals) | **POST** /LearnerPersonals | Create multiple LearnerPersonals
-*LearnersApi* | [**createLearnerSchoolEnrolments**](docs/Api/LearnersApi.md#createlearnerschoolenrolments) | **POST** /LearnerSchoolEnrolments | Create multiple LearnerSchoolEnrolments
-*LearnersApi* | [**createLearnerSpecialNeedss**](docs/Api/LearnersApi.md#createlearnerspecialneedss) | **POST** /LearnerSpecialNeedss | Create multiple LearnerSpecialNeedss
-*LearnersApi* | [**createPersonDietaryPreferences**](docs/Api/LearnersApi.md#createpersondietarypreferences) | **POST** /PersonDietaryPreferences | Create multiple PersonDietaryPreferences
-*LearnersApi* | [**createTTSubjects**](docs/Api/LearnersApi.md#createttsubjects) | **POST** /TTSubjects | Create multiple TTSubjects
-*LearnersApi* | [**createTeachingGroups**](docs/Api/LearnersApi.md#createteachinggroups) | **POST** /TeachingGroups | Create multiple TeachingGroups
-*LearnersApi* | [**deleteAssessmentLearnerSetByRefId**](docs/Api/LearnersApi.md#deleteassessmentlearnersetbyrefid) | **DELETE** /AssessmentLearnerSets/{RefId} | Delete AssessmentLearnerSet by RefId
-*LearnersApi* | [**deleteAssessmentLearnerSets**](docs/Api/LearnersApi.md#deleteassessmentlearnersets) | **DELETE** /AssessmentLearnerSets | Delete multiple AssessmentLearnerSets
-*LearnersApi* | [**deleteLearnerAssessmentResponseSetByRefId**](docs/Api/LearnersApi.md#deletelearnerassessmentresponsesetbyrefid) | **DELETE** /LearnerAssessmentResponseSets/{RefId} | Delete LearnerAssessmentResponseSet by RefId
-*LearnersApi* | [**deleteLearnerAssessmentResponseSets**](docs/Api/LearnersApi.md#deletelearnerassessmentresponsesets) | **DELETE** /LearnerAssessmentResponseSets | Delete multiple LearnerAssessmentResponseSets
-*LearnersApi* | [**deleteLearnerAssessmentResultByRefId**](docs/Api/LearnersApi.md#deletelearnerassessmentresultbyrefid) | **DELETE** /LearnerAssessmentResults/{RefId} | Delete LearnerAssessmentResult by RefId
-*LearnersApi* | [**deleteLearnerAssessmentResults**](docs/Api/LearnersApi.md#deletelearnerassessmentresults) | **DELETE** /LearnerAssessmentResults | Delete multiple LearnerAssessmentResults
-*LearnersApi* | [**deleteLearnerAttendanceByRefId**](docs/Api/LearnersApi.md#deletelearnerattendancebyrefid) | **DELETE** /LearnerAttendances/{RefId} | Delete LearnerAttendance by RefId
-*LearnersApi* | [**deleteLearnerAttendanceSummaryByRefId**](docs/Api/LearnersApi.md#deletelearnerattendancesummarybyrefid) | **DELETE** /LearnerAttendanceSummarys/{RefId} | Delete LearnerAttendanceSummary by RefId
-*LearnersApi* | [**deleteLearnerAttendanceSummarys**](docs/Api/LearnersApi.md#deletelearnerattendancesummarys) | **DELETE** /LearnerAttendanceSummarys | Delete multiple LearnerAttendanceSummarys
-*LearnersApi* | [**deleteLearnerAttendances**](docs/Api/LearnersApi.md#deletelearnerattendances) | **DELETE** /LearnerAttendances | Delete multiple LearnerAttendances
-*LearnersApi* | [**deleteLearnerBehaviourIncidentByRefId**](docs/Api/LearnersApi.md#deletelearnerbehaviourincidentbyrefid) | **DELETE** /LearnerBehaviourIncidents/{RefId} | Delete LearnerBehaviourIncident by RefId
-*LearnersApi* | [**deleteLearnerBehaviourIncidents**](docs/Api/LearnersApi.md#deletelearnerbehaviourincidents) | **DELETE** /LearnerBehaviourIncidents | Delete multiple LearnerBehaviourIncidents
-*LearnersApi* | [**deleteLearnerContactByRefId**](docs/Api/LearnersApi.md#deletelearnercontactbyrefid) | **DELETE** /LearnerContacts/{RefId} | Delete LearnerContact by RefId
-*LearnersApi* | [**deleteLearnerContacts**](docs/Api/LearnersApi.md#deletelearnercontacts) | **DELETE** /LearnerContacts | Delete multiple LearnerContacts
-*LearnersApi* | [**deleteLearnerEntitlementByRefId**](docs/Api/LearnersApi.md#deletelearnerentitlementbyrefid) | **DELETE** /LearnerEntitlements/{RefId} | Delete LearnerEntitlement by RefId
-*LearnersApi* | [**deleteLearnerEntitlements**](docs/Api/LearnersApi.md#deletelearnerentitlements) | **DELETE** /LearnerEntitlements | Delete multiple LearnerEntitlements
-*LearnersApi* | [**deleteLearnerExclusionByRefId**](docs/Api/LearnersApi.md#deletelearnerexclusionbyrefid) | **DELETE** /LearnerExclusions/{RefId} | Delete LearnerExclusion by RefId
-*LearnersApi* | [**deleteLearnerExclusions**](docs/Api/LearnersApi.md#deletelearnerexclusions) | **DELETE** /LearnerExclusions | Delete multiple LearnerExclusions
-*LearnersApi* | [**deleteLearnerGroupEnrolmentByRefId**](docs/Api/LearnersApi.md#deletelearnergroupenrolmentbyrefid) | **DELETE** /LearnerGroupEnrolments/{RefId} | Delete LearnerGroupEnrolment by RefId
-*LearnersApi* | [**deleteLearnerGroupEnrolments**](docs/Api/LearnersApi.md#deletelearnergroupenrolments) | **DELETE** /LearnerGroupEnrolments | Delete multiple LearnerGroupEnrolments
-*LearnersApi* | [**deleteLearnerPersonalByRefId**](docs/Api/LearnersApi.md#deletelearnerpersonalbyrefid) | **DELETE** /LearnerPersonals/{RefId} | Delete LearnerPersonal by RefId
-*LearnersApi* | [**deleteLearnerPersonals**](docs/Api/LearnersApi.md#deletelearnerpersonals) | **DELETE** /LearnerPersonals | Delete multiple LearnerPersonals
-*LearnersApi* | [**deleteLearnerSchoolEnrolmentByRefId**](docs/Api/LearnersApi.md#deletelearnerschoolenrolmentbyrefid) | **DELETE** /LearnerSchoolEnrolments/{RefId} | Delete LearnerSchoolEnrolment by RefId
-*LearnersApi* | [**deleteLearnerSchoolEnrolments**](docs/Api/LearnersApi.md#deletelearnerschoolenrolments) | **DELETE** /LearnerSchoolEnrolments | Delete multiple LearnerSchoolEnrolments
-*LearnersApi* | [**deleteLearnerSpecialNeedsByRefId**](docs/Api/LearnersApi.md#deletelearnerspecialneedsbyrefid) | **DELETE** /LearnerSpecialNeedss/{RefId} | Delete LearnerSpecialNeeds by RefId
-*LearnersApi* | [**deleteLearnerSpecialNeedss**](docs/Api/LearnersApi.md#deletelearnerspecialneedss) | **DELETE** /LearnerSpecialNeedss | Delete multiple LearnerSpecialNeedss
-*LearnersApi* | [**deletePersonDietaryPreferenceByRefId**](docs/Api/LearnersApi.md#deletepersondietarypreferencebyrefid) | **DELETE** /PersonDietaryPreferences/{RefId} | Delete PersonDietaryPreference by RefId
-*LearnersApi* | [**deletePersonDietaryPreferences**](docs/Api/LearnersApi.md#deletepersondietarypreferences) | **DELETE** /PersonDietaryPreferences | Delete multiple PersonDietaryPreferences
-*LearnersApi* | [**deleteTTSubjectByRefId**](docs/Api/LearnersApi.md#deletettsubjectbyrefid) | **DELETE** /TTSubjects/{RefId} | Delete TTSubject by RefId
-*LearnersApi* | [**deleteTTSubjects**](docs/Api/LearnersApi.md#deletettsubjects) | **DELETE** /TTSubjects | Delete multiple TTSubjects
-*LearnersApi* | [**deleteTeachingGroupByRefId**](docs/Api/LearnersApi.md#deleteteachinggroupbyrefid) | **DELETE** /TeachingGroups/{RefId} | Delete TeachingGroup by RefId
-*LearnersApi* | [**deleteTeachingGroups**](docs/Api/LearnersApi.md#deleteteachinggroups) | **DELETE** /TeachingGroups | Delete multiple TeachingGroups
-*LearnersApi* | [**getAssessmentLearnerSetByRefId**](docs/Api/LearnersApi.md#getassessmentlearnersetbyrefid) | **GET** /AssessmentLearnerSets/{RefId} | Find AssessmentLearnerSet by RefId
-*LearnersApi* | [**getAssessmentLearnerSets**](docs/Api/LearnersApi.md#getassessmentlearnersets) | **GET** /AssessmentLearnerSets | Return all AssessmentLearnerSets
-*LearnersApi* | [**getLearnerAssessmentResponseSetByRefId**](docs/Api/LearnersApi.md#getlearnerassessmentresponsesetbyrefid) | **GET** /LearnerAssessmentResponseSets/{RefId} | Find LearnerAssessmentResponseSet by RefId
-*LearnersApi* | [**getLearnerAssessmentResponseSets**](docs/Api/LearnersApi.md#getlearnerassessmentresponsesets) | **GET** /LearnerAssessmentResponseSets | Return all LearnerAssessmentResponseSets
-*LearnersApi* | [**getLearnerAssessmentResultByRefId**](docs/Api/LearnersApi.md#getlearnerassessmentresultbyrefid) | **GET** /LearnerAssessmentResults/{RefId} | Find LearnerAssessmentResult by RefId
-*LearnersApi* | [**getLearnerAssessmentResults**](docs/Api/LearnersApi.md#getlearnerassessmentresults) | **GET** /LearnerAssessmentResults | Return all LearnerAssessmentResults
-*LearnersApi* | [**getLearnerAttendanceByRefId**](docs/Api/LearnersApi.md#getlearnerattendancebyrefid) | **GET** /LearnerAttendances/{RefId} | Find LearnerAttendance by RefId
-*LearnersApi* | [**getLearnerAttendanceSummaryByRefId**](docs/Api/LearnersApi.md#getlearnerattendancesummarybyrefid) | **GET** /LearnerAttendanceSummarys/{RefId} | Find LearnerAttendanceSummary by RefId
-*LearnersApi* | [**getLearnerAttendanceSummarys**](docs/Api/LearnersApi.md#getlearnerattendancesummarys) | **GET** /LearnerAttendanceSummarys | Return all LearnerAttendanceSummarys
-*LearnersApi* | [**getLearnerAttendances**](docs/Api/LearnersApi.md#getlearnerattendances) | **GET** /LearnerAttendances | Return all LearnerAttendances
-*LearnersApi* | [**getLearnerBehaviourIncidentByRefId**](docs/Api/LearnersApi.md#getlearnerbehaviourincidentbyrefid) | **GET** /LearnerBehaviourIncidents/{RefId} | Find LearnerBehaviourIncident by RefId
-*LearnersApi* | [**getLearnerBehaviourIncidents**](docs/Api/LearnersApi.md#getlearnerbehaviourincidents) | **GET** /LearnerBehaviourIncidents | Return all LearnerBehaviourIncidents
-*LearnersApi* | [**getLearnerContactByRefId**](docs/Api/LearnersApi.md#getlearnercontactbyrefid) | **GET** /LearnerContacts/{RefId} | Find LearnerContact by RefId
-*LearnersApi* | [**getLearnerContacts**](docs/Api/LearnersApi.md#getlearnercontacts) | **GET** /LearnerContacts | Return all LearnerContacts
-*LearnersApi* | [**getLearnerEntitlementByRefId**](docs/Api/LearnersApi.md#getlearnerentitlementbyrefid) | **GET** /LearnerEntitlements/{RefId} | Find LearnerEntitlement by RefId
-*LearnersApi* | [**getLearnerEntitlements**](docs/Api/LearnersApi.md#getlearnerentitlements) | **GET** /LearnerEntitlements | Return all LearnerEntitlements
-*LearnersApi* | [**getLearnerExclusionByRefId**](docs/Api/LearnersApi.md#getlearnerexclusionbyrefid) | **GET** /LearnerExclusions/{RefId} | Find LearnerExclusion by RefId
-*LearnersApi* | [**getLearnerExclusions**](docs/Api/LearnersApi.md#getlearnerexclusions) | **GET** /LearnerExclusions | Return all LearnerExclusions
-*LearnersApi* | [**getLearnerGroupEnrolmentByRefId**](docs/Api/LearnersApi.md#getlearnergroupenrolmentbyrefid) | **GET** /LearnerGroupEnrolments/{RefId} | Find LearnerGroupEnrolment by RefId
-*LearnersApi* | [**getLearnerGroupEnrolments**](docs/Api/LearnersApi.md#getlearnergroupenrolments) | **GET** /LearnerGroupEnrolments | Return all LearnerGroupEnrolments
-*LearnersApi* | [**getLearnerPersonalByRefId**](docs/Api/LearnersApi.md#getlearnerpersonalbyrefid) | **GET** /LearnerPersonals/{RefId} | Find LearnerPersonal by RefId
-*LearnersApi* | [**getLearnerPersonals**](docs/Api/LearnersApi.md#getlearnerpersonals) | **GET** /LearnerPersonals | Return all LearnerPersonals
-*LearnersApi* | [**getLearnerSchoolEnrolmentByRefId**](docs/Api/LearnersApi.md#getlearnerschoolenrolmentbyrefid) | **GET** /LearnerSchoolEnrolments/{RefId} | Find LearnerSchoolEnrolment by RefId
-*LearnersApi* | [**getLearnerSchoolEnrolments**](docs/Api/LearnersApi.md#getlearnerschoolenrolments) | **GET** /LearnerSchoolEnrolments | Return all LearnerSchoolEnrolments
-*LearnersApi* | [**getLearnerSpecialNeedsByRefId**](docs/Api/LearnersApi.md#getlearnerspecialneedsbyrefid) | **GET** /LearnerSpecialNeedss/{RefId} | Find LearnerSpecialNeeds by RefId
-*LearnersApi* | [**getLearnerSpecialNeedss**](docs/Api/LearnersApi.md#getlearnerspecialneedss) | **GET** /LearnerSpecialNeedss | Return all LearnerSpecialNeedss
-*LearnersApi* | [**getPersonDietaryPreferenceByRefId**](docs/Api/LearnersApi.md#getpersondietarypreferencebyrefid) | **GET** /PersonDietaryPreferences/{RefId} | Find PersonDietaryPreference by RefId
-*LearnersApi* | [**getPersonDietaryPreferences**](docs/Api/LearnersApi.md#getpersondietarypreferences) | **GET** /PersonDietaryPreferences | Return all PersonDietaryPreferences
-*LearnersApi* | [**getTTSubjectByRefId**](docs/Api/LearnersApi.md#getttsubjectbyrefid) | **GET** /TTSubjects/{RefId} | Find TTSubject by RefId
-*LearnersApi* | [**getTTSubjects**](docs/Api/LearnersApi.md#getttsubjects) | **GET** /TTSubjects | Return all TTSubjects
-*LearnersApi* | [**getTeachingGroupByRefId**](docs/Api/LearnersApi.md#getteachinggroupbyrefid) | **GET** /TeachingGroups/{RefId} | Find TeachingGroup by RefId
-*LearnersApi* | [**getTeachingGroups**](docs/Api/LearnersApi.md#getteachinggroups) | **GET** /TeachingGroups | Return all TeachingGroups
-*LearnersApi* | [**updateAssessmentLearnerSetByRefId**](docs/Api/LearnersApi.md#updateassessmentlearnersetbyrefid) | **PUT** /AssessmentLearnerSets/{RefId} | Update AssessmentLearnerSet by RefId
-*LearnersApi* | [**updateAssessmentLearnerSets**](docs/Api/LearnersApi.md#updateassessmentlearnersets) | **PUT** /AssessmentLearnerSets | Update multiple AssessmentLearnerSets
-*LearnersApi* | [**updateLearnerAssessmentResponseSetByRefId**](docs/Api/LearnersApi.md#updatelearnerassessmentresponsesetbyrefid) | **PUT** /LearnerAssessmentResponseSets/{RefId} | Update LearnerAssessmentResponseSet by RefId
-*LearnersApi* | [**updateLearnerAssessmentResponseSets**](docs/Api/LearnersApi.md#updatelearnerassessmentresponsesets) | **PUT** /LearnerAssessmentResponseSets | Update multiple LearnerAssessmentResponseSets
-*LearnersApi* | [**updateLearnerAssessmentResultByRefId**](docs/Api/LearnersApi.md#updatelearnerassessmentresultbyrefid) | **PUT** /LearnerAssessmentResults/{RefId} | Update LearnerAssessmentResult by RefId
-*LearnersApi* | [**updateLearnerAssessmentResults**](docs/Api/LearnersApi.md#updatelearnerassessmentresults) | **PUT** /LearnerAssessmentResults | Update multiple LearnerAssessmentResults
-*LearnersApi* | [**updateLearnerAttendanceByRefId**](docs/Api/LearnersApi.md#updatelearnerattendancebyrefid) | **PUT** /LearnerAttendances/{RefId} | Update LearnerAttendance by RefId
-*LearnersApi* | [**updateLearnerAttendanceSummaryByRefId**](docs/Api/LearnersApi.md#updatelearnerattendancesummarybyrefid) | **PUT** /LearnerAttendanceSummarys/{RefId} | Update LearnerAttendanceSummary by RefId
-*LearnersApi* | [**updateLearnerAttendanceSummarys**](docs/Api/LearnersApi.md#updatelearnerattendancesummarys) | **PUT** /LearnerAttendanceSummarys | Update multiple LearnerAttendanceSummarys
-*LearnersApi* | [**updateLearnerAttendances**](docs/Api/LearnersApi.md#updatelearnerattendances) | **PUT** /LearnerAttendances | Update multiple LearnerAttendances
-*LearnersApi* | [**updateLearnerBehaviourIncidentByRefId**](docs/Api/LearnersApi.md#updatelearnerbehaviourincidentbyrefid) | **PUT** /LearnerBehaviourIncidents/{RefId} | Update LearnerBehaviourIncident by RefId
-*LearnersApi* | [**updateLearnerBehaviourIncidents**](docs/Api/LearnersApi.md#updatelearnerbehaviourincidents) | **PUT** /LearnerBehaviourIncidents | Update multiple LearnerBehaviourIncidents
-*LearnersApi* | [**updateLearnerContactByRefId**](docs/Api/LearnersApi.md#updatelearnercontactbyrefid) | **PUT** /LearnerContacts/{RefId} | Update LearnerContact by RefId
-*LearnersApi* | [**updateLearnerContacts**](docs/Api/LearnersApi.md#updatelearnercontacts) | **PUT** /LearnerContacts | Update multiple LearnerContacts
-*LearnersApi* | [**updateLearnerEntitlementByRefId**](docs/Api/LearnersApi.md#updatelearnerentitlementbyrefid) | **PUT** /LearnerEntitlements/{RefId} | Update LearnerEntitlement by RefId
-*LearnersApi* | [**updateLearnerEntitlements**](docs/Api/LearnersApi.md#updatelearnerentitlements) | **PUT** /LearnerEntitlements | Update multiple LearnerEntitlements
-*LearnersApi* | [**updateLearnerExclusionByRefId**](docs/Api/LearnersApi.md#updatelearnerexclusionbyrefid) | **PUT** /LearnerExclusions/{RefId} | Update LearnerExclusion by RefId
-*LearnersApi* | [**updateLearnerExclusions**](docs/Api/LearnersApi.md#updatelearnerexclusions) | **PUT** /LearnerExclusions | Update multiple LearnerExclusions
-*LearnersApi* | [**updateLearnerGroupEnrolmentByRefId**](docs/Api/LearnersApi.md#updatelearnergroupenrolmentbyrefid) | **PUT** /LearnerGroupEnrolments/{RefId} | Update LearnerGroupEnrolment by RefId
-*LearnersApi* | [**updateLearnerGroupEnrolments**](docs/Api/LearnersApi.md#updatelearnergroupenrolments) | **PUT** /LearnerGroupEnrolments | Update multiple LearnerGroupEnrolments
-*LearnersApi* | [**updateLearnerPersonalByRefId**](docs/Api/LearnersApi.md#updatelearnerpersonalbyrefid) | **PUT** /LearnerPersonals/{RefId} | Update LearnerPersonal by RefId
-*LearnersApi* | [**updateLearnerPersonals**](docs/Api/LearnersApi.md#updatelearnerpersonals) | **PUT** /LearnerPersonals | Update multiple LearnerPersonals
-*LearnersApi* | [**updateLearnerSchoolEnrolmentByRefId**](docs/Api/LearnersApi.md#updatelearnerschoolenrolmentbyrefid) | **PUT** /LearnerSchoolEnrolments/{RefId} | Update LearnerSchoolEnrolment by RefId
-*LearnersApi* | [**updateLearnerSchoolEnrolments**](docs/Api/LearnersApi.md#updatelearnerschoolenrolments) | **PUT** /LearnerSchoolEnrolments | Update multiple LearnerSchoolEnrolments
-*LearnersApi* | [**updateLearnerSpecialNeedsByRefId**](docs/Api/LearnersApi.md#updatelearnerspecialneedsbyrefid) | **PUT** /LearnerSpecialNeedss/{RefId} | Update LearnerSpecialNeeds by RefId
-*LearnersApi* | [**updateLearnerSpecialNeedss**](docs/Api/LearnersApi.md#updatelearnerspecialneedss) | **PUT** /LearnerSpecialNeedss | Update multiple LearnerSpecialNeedss
-*LearnersApi* | [**updatePersonDietaryPreferenceByRefId**](docs/Api/LearnersApi.md#updatepersondietarypreferencebyrefid) | **PUT** /PersonDietaryPreferences/{RefId} | Update PersonDietaryPreference by RefId
-*LearnersApi* | [**updatePersonDietaryPreferences**](docs/Api/LearnersApi.md#updatepersondietarypreferences) | **PUT** /PersonDietaryPreferences | Update multiple PersonDietaryPreferences
-*LearnersApi* | [**updateTTSubjectByRefId**](docs/Api/LearnersApi.md#updatettsubjectbyrefid) | **PUT** /TTSubjects/{RefId} | Update TTSubject by RefId
-*LearnersApi* | [**updateTTSubjects**](docs/Api/LearnersApi.md#updatettsubjects) | **PUT** /TTSubjects | Update multiple TTSubjects
-*LearnersApi* | [**updateTeachingGroupByRefId**](docs/Api/LearnersApi.md#updateteachinggroupbyrefid) | **PUT** /TeachingGroups/{RefId} | Update TeachingGroup by RefId
-*LearnersApi* | [**updateTeachingGroups**](docs/Api/LearnersApi.md#updateteachinggroups) | **PUT** /TeachingGroups | Update multiple TeachingGroups
-*PersonalApi* | [**createContactPersonals**](docs/Api/PersonalApi.md#createcontactpersonals) | **POST** /ContactPersonals | Create multiple ContactPersonals
-*PersonalApi* | [**createIdentitys**](docs/Api/PersonalApi.md#createidentitys) | **POST** /Identitys | Create multiple Identitys
-*PersonalApi* | [**createLearnerContacts**](docs/Api/PersonalApi.md#createlearnercontacts) | **POST** /LearnerContacts | Create multiple LearnerContacts
-*PersonalApi* | [**createLearnerEntitlements**](docs/Api/PersonalApi.md#createlearnerentitlements) | **POST** /LearnerEntitlements | Create multiple LearnerEntitlements
-*PersonalApi* | [**createLearnerPersonals**](docs/Api/PersonalApi.md#createlearnerpersonals) | **POST** /LearnerPersonals | Create multiple LearnerPersonals
-*PersonalApi* | [**createPersonDietaryPreferences**](docs/Api/PersonalApi.md#createpersondietarypreferences) | **POST** /PersonDietaryPreferences | Create multiple PersonDietaryPreferences
-*PersonalApi* | [**createPersonPictures**](docs/Api/PersonalApi.md#createpersonpictures) | **POST** /PersonPictures | Create multiple PersonPictures
-*PersonalApi* | [**createWorkforcePersonals**](docs/Api/PersonalApi.md#createworkforcepersonals) | **POST** /WorkforcePersonals | Create multiple WorkforcePersonals
-*PersonalApi* | [**deleteContactPersonalByRefId**](docs/Api/PersonalApi.md#deletecontactpersonalbyrefid) | **DELETE** /ContactPersonals/{RefId} | Delete ContactPersonal by RefId
-*PersonalApi* | [**deleteContactPersonals**](docs/Api/PersonalApi.md#deletecontactpersonals) | **DELETE** /ContactPersonals | Delete multiple ContactPersonals
-*PersonalApi* | [**deleteIdentityByRefId**](docs/Api/PersonalApi.md#deleteidentitybyrefid) | **DELETE** /Identitys/{RefId} | Delete Identity by RefId
-*PersonalApi* | [**deleteIdentitys**](docs/Api/PersonalApi.md#deleteidentitys) | **DELETE** /Identitys | Delete multiple Identitys
-*PersonalApi* | [**deleteLearnerContactByRefId**](docs/Api/PersonalApi.md#deletelearnercontactbyrefid) | **DELETE** /LearnerContacts/{RefId} | Delete LearnerContact by RefId
-*PersonalApi* | [**deleteLearnerContacts**](docs/Api/PersonalApi.md#deletelearnercontacts) | **DELETE** /LearnerContacts | Delete multiple LearnerContacts
-*PersonalApi* | [**deleteLearnerEntitlementByRefId**](docs/Api/PersonalApi.md#deletelearnerentitlementbyrefid) | **DELETE** /LearnerEntitlements/{RefId} | Delete LearnerEntitlement by RefId
-*PersonalApi* | [**deleteLearnerEntitlements**](docs/Api/PersonalApi.md#deletelearnerentitlements) | **DELETE** /LearnerEntitlements | Delete multiple LearnerEntitlements
-*PersonalApi* | [**deleteLearnerPersonalByRefId**](docs/Api/PersonalApi.md#deletelearnerpersonalbyrefid) | **DELETE** /LearnerPersonals/{RefId} | Delete LearnerPersonal by RefId
-*PersonalApi* | [**deleteLearnerPersonals**](docs/Api/PersonalApi.md#deletelearnerpersonals) | **DELETE** /LearnerPersonals | Delete multiple LearnerPersonals
-*PersonalApi* | [**deletePersonDietaryPreferenceByRefId**](docs/Api/PersonalApi.md#deletepersondietarypreferencebyrefid) | **DELETE** /PersonDietaryPreferences/{RefId} | Delete PersonDietaryPreference by RefId
-*PersonalApi* | [**deletePersonDietaryPreferences**](docs/Api/PersonalApi.md#deletepersondietarypreferences) | **DELETE** /PersonDietaryPreferences | Delete multiple PersonDietaryPreferences
-*PersonalApi* | [**deletePersonPictures**](docs/Api/PersonalApi.md#deletepersonpictures) | **DELETE** /PersonPictures | Delete multiple PersonPictures
-*PersonalApi* | [**deleteWorkforcePersonalByRefId**](docs/Api/PersonalApi.md#deleteworkforcepersonalbyrefid) | **DELETE** /WorkforcePersonals/{RefId} | Delete WorkforcePersonal by RefId
-*PersonalApi* | [**deleteWorkforcePersonals**](docs/Api/PersonalApi.md#deleteworkforcepersonals) | **DELETE** /WorkforcePersonals | Delete multiple WorkforcePersonals
-*PersonalApi* | [**getContactPersonalByRefId**](docs/Api/PersonalApi.md#getcontactpersonalbyrefid) | **GET** /ContactPersonals/{RefId} | Find ContactPersonal by RefId
-*PersonalApi* | [**getContactPersonals**](docs/Api/PersonalApi.md#getcontactpersonals) | **GET** /ContactPersonals | Return all ContactPersonals
-*PersonalApi* | [**getIdentityByRefId**](docs/Api/PersonalApi.md#getidentitybyrefid) | **GET** /Identitys/{RefId} | Find Identity by RefId
-*PersonalApi* | [**getIdentitys**](docs/Api/PersonalApi.md#getidentitys) | **GET** /Identitys | Return all Identitys
-*PersonalApi* | [**getLearnerContactByRefId**](docs/Api/PersonalApi.md#getlearnercontactbyrefid) | **GET** /LearnerContacts/{RefId} | Find LearnerContact by RefId
-*PersonalApi* | [**getLearnerContacts**](docs/Api/PersonalApi.md#getlearnercontacts) | **GET** /LearnerContacts | Return all LearnerContacts
-*PersonalApi* | [**getLearnerEntitlementByRefId**](docs/Api/PersonalApi.md#getlearnerentitlementbyrefid) | **GET** /LearnerEntitlements/{RefId} | Find LearnerEntitlement by RefId
-*PersonalApi* | [**getLearnerEntitlements**](docs/Api/PersonalApi.md#getlearnerentitlements) | **GET** /LearnerEntitlements | Return all LearnerEntitlements
-*PersonalApi* | [**getLearnerPersonalByRefId**](docs/Api/PersonalApi.md#getlearnerpersonalbyrefid) | **GET** /LearnerPersonals/{RefId} | Find LearnerPersonal by RefId
-*PersonalApi* | [**getLearnerPersonals**](docs/Api/PersonalApi.md#getlearnerpersonals) | **GET** /LearnerPersonals | Return all LearnerPersonals
-*PersonalApi* | [**getPersonDietaryPreferenceByRefId**](docs/Api/PersonalApi.md#getpersondietarypreferencebyrefid) | **GET** /PersonDietaryPreferences/{RefId} | Find PersonDietaryPreference by RefId
-*PersonalApi* | [**getPersonDietaryPreferences**](docs/Api/PersonalApi.md#getpersondietarypreferences) | **GET** /PersonDietaryPreferences | Return all PersonDietaryPreferences
-*PersonalApi* | [**getPersonPictures**](docs/Api/PersonalApi.md#getpersonpictures) | **GET** /PersonPictures | Return all PersonPictures
-*PersonalApi* | [**getWorkforcePersonalByRefId**](docs/Api/PersonalApi.md#getworkforcepersonalbyrefid) | **GET** /WorkforcePersonals/{RefId} | Find WorkforcePersonal by RefId
-*PersonalApi* | [**getWorkforcePersonals**](docs/Api/PersonalApi.md#getworkforcepersonals) | **GET** /WorkforcePersonals | Return all WorkforcePersonals
-*PersonalApi* | [**updateContactPersonalByRefId**](docs/Api/PersonalApi.md#updatecontactpersonalbyrefid) | **PUT** /ContactPersonals/{RefId} | Update ContactPersonal by RefId
-*PersonalApi* | [**updateContactPersonals**](docs/Api/PersonalApi.md#updatecontactpersonals) | **PUT** /ContactPersonals | Update multiple ContactPersonals
-*PersonalApi* | [**updateIdentityByRefId**](docs/Api/PersonalApi.md#updateidentitybyrefid) | **PUT** /Identitys/{RefId} | Update Identity by RefId
-*PersonalApi* | [**updateIdentitys**](docs/Api/PersonalApi.md#updateidentitys) | **PUT** /Identitys | Update multiple Identitys
-*PersonalApi* | [**updateLearnerContactByRefId**](docs/Api/PersonalApi.md#updatelearnercontactbyrefid) | **PUT** /LearnerContacts/{RefId} | Update LearnerContact by RefId
-*PersonalApi* | [**updateLearnerContacts**](docs/Api/PersonalApi.md#updatelearnercontacts) | **PUT** /LearnerContacts | Update multiple LearnerContacts
-*PersonalApi* | [**updateLearnerEntitlementByRefId**](docs/Api/PersonalApi.md#updatelearnerentitlementbyrefid) | **PUT** /LearnerEntitlements/{RefId} | Update LearnerEntitlement by RefId
-*PersonalApi* | [**updateLearnerEntitlements**](docs/Api/PersonalApi.md#updatelearnerentitlements) | **PUT** /LearnerEntitlements | Update multiple LearnerEntitlements
-*PersonalApi* | [**updateLearnerPersonalByRefId**](docs/Api/PersonalApi.md#updatelearnerpersonalbyrefid) | **PUT** /LearnerPersonals/{RefId} | Update LearnerPersonal by RefId
-*PersonalApi* | [**updateLearnerPersonals**](docs/Api/PersonalApi.md#updatelearnerpersonals) | **PUT** /LearnerPersonals | Update multiple LearnerPersonals
-*PersonalApi* | [**updatePersonDietaryPreferenceByRefId**](docs/Api/PersonalApi.md#updatepersondietarypreferencebyrefid) | **PUT** /PersonDietaryPreferences/{RefId} | Update PersonDietaryPreference by RefId
-*PersonalApi* | [**updatePersonDietaryPreferences**](docs/Api/PersonalApi.md#updatepersondietarypreferences) | **PUT** /PersonDietaryPreferences | Update multiple PersonDietaryPreferences
-*PersonalApi* | [**updatePersonPictures**](docs/Api/PersonalApi.md#updatepersonpictures) | **PUT** /PersonPictures | Update multiple PersonPictures
-*PersonalApi* | [**updateWorkforcePersonalByRefId**](docs/Api/PersonalApi.md#updateworkforcepersonalbyrefid) | **PUT** /WorkforcePersonals/{RefId} | Update WorkforcePersonal by RefId
-*PersonalApi* | [**updateWorkforcePersonals**](docs/Api/PersonalApi.md#updateworkforcepersonals) | **PUT** /WorkforcePersonals | Update multiple WorkforcePersonals
-*TeachersApi* | [**createPersonDietaryPreferences**](docs/Api/TeachersApi.md#createpersondietarypreferences) | **POST** /PersonDietaryPreferences | Create multiple PersonDietaryPreferences
-*TeachersApi* | [**createTTSubjects**](docs/Api/TeachersApi.md#createttsubjects) | **POST** /TTSubjects | Create multiple TTSubjects
-*TeachersApi* | [**createTTTeachers**](docs/Api/TeachersApi.md#createttteachers) | **POST** /TTTeachers | Create multiple TTTeachers
-*TeachersApi* | [**createWorkforceAbsences**](docs/Api/TeachersApi.md#createworkforceabsences) | **POST** /WorkforceAbsences | Create multiple WorkforceAbsences
-*TeachersApi* | [**createWorkforceAssignments**](docs/Api/TeachersApi.md#createworkforceassignments) | **POST** /WorkforceAssignments | Create multiple WorkforceAssignments
-*TeachersApi* | [**createWorkforceContracts**](docs/Api/TeachersApi.md#createworkforcecontracts) | **POST** /WorkforceContracts | Create multiple WorkforceContracts
-*TeachersApi* | [**createWorkforcePersonals**](docs/Api/TeachersApi.md#createworkforcepersonals) | **POST** /WorkforcePersonals | Create multiple WorkforcePersonals
-*TeachersApi* | [**deletePersonDietaryPreferenceByRefId**](docs/Api/TeachersApi.md#deletepersondietarypreferencebyrefid) | **DELETE** /PersonDietaryPreferences/{RefId} | Delete PersonDietaryPreference by RefId
-*TeachersApi* | [**deletePersonDietaryPreferences**](docs/Api/TeachersApi.md#deletepersondietarypreferences) | **DELETE** /PersonDietaryPreferences | Delete multiple PersonDietaryPreferences
-*TeachersApi* | [**deleteTTSubjectByRefId**](docs/Api/TeachersApi.md#deletettsubjectbyrefid) | **DELETE** /TTSubjects/{RefId} | Delete TTSubject by RefId
-*TeachersApi* | [**deleteTTSubjects**](docs/Api/TeachersApi.md#deletettsubjects) | **DELETE** /TTSubjects | Delete multiple TTSubjects
-*TeachersApi* | [**deleteTTTeacherByRefId**](docs/Api/TeachersApi.md#deletettteacherbyrefid) | **DELETE** /TTTeachers/{RefId} | Delete TTTeacher by RefId
-*TeachersApi* | [**deleteTTTeachers**](docs/Api/TeachersApi.md#deletettteachers) | **DELETE** /TTTeachers | Delete multiple TTTeachers
-*TeachersApi* | [**deleteWorkforceAbsenceByRefId**](docs/Api/TeachersApi.md#deleteworkforceabsencebyrefid) | **DELETE** /WorkforceAbsences/{RefId} | Delete WorkforceAbsence by RefId
-*TeachersApi* | [**deleteWorkforceAbsences**](docs/Api/TeachersApi.md#deleteworkforceabsences) | **DELETE** /WorkforceAbsences | Delete multiple WorkforceAbsences
-*TeachersApi* | [**deleteWorkforceAssignmentByRefId**](docs/Api/TeachersApi.md#deleteworkforceassignmentbyrefid) | **DELETE** /WorkforceAssignments/{RefId} | Delete WorkforceAssignment by RefId
-*TeachersApi* | [**deleteWorkforceAssignments**](docs/Api/TeachersApi.md#deleteworkforceassignments) | **DELETE** /WorkforceAssignments | Delete multiple WorkforceAssignments
-*TeachersApi* | [**deleteWorkforceContractByRefId**](docs/Api/TeachersApi.md#deleteworkforcecontractbyrefid) | **DELETE** /WorkforceContracts/{RefId} | Delete WorkforceContract by RefId
-*TeachersApi* | [**deleteWorkforceContracts**](docs/Api/TeachersApi.md#deleteworkforcecontracts) | **DELETE** /WorkforceContracts | Delete multiple WorkforceContracts
-*TeachersApi* | [**deleteWorkforcePersonalByRefId**](docs/Api/TeachersApi.md#deleteworkforcepersonalbyrefid) | **DELETE** /WorkforcePersonals/{RefId} | Delete WorkforcePersonal by RefId
-*TeachersApi* | [**deleteWorkforcePersonals**](docs/Api/TeachersApi.md#deleteworkforcepersonals) | **DELETE** /WorkforcePersonals | Delete multiple WorkforcePersonals
-*TeachersApi* | [**getPersonDietaryPreferenceByRefId**](docs/Api/TeachersApi.md#getpersondietarypreferencebyrefid) | **GET** /PersonDietaryPreferences/{RefId} | Find PersonDietaryPreference by RefId
-*TeachersApi* | [**getPersonDietaryPreferences**](docs/Api/TeachersApi.md#getpersondietarypreferences) | **GET** /PersonDietaryPreferences | Return all PersonDietaryPreferences
-*TeachersApi* | [**getTTSubjectByRefId**](docs/Api/TeachersApi.md#getttsubjectbyrefid) | **GET** /TTSubjects/{RefId} | Find TTSubject by RefId
-*TeachersApi* | [**getTTSubjects**](docs/Api/TeachersApi.md#getttsubjects) | **GET** /TTSubjects | Return all TTSubjects
-*TeachersApi* | [**getTTTeacherByRefId**](docs/Api/TeachersApi.md#getttteacherbyrefid) | **GET** /TTTeachers/{RefId} | Find TTTeacher by RefId
-*TeachersApi* | [**getTTTeachers**](docs/Api/TeachersApi.md#getttteachers) | **GET** /TTTeachers | Return all TTTeachers
-*TeachersApi* | [**getWorkforceAbsenceByRefId**](docs/Api/TeachersApi.md#getworkforceabsencebyrefid) | **GET** /WorkforceAbsences/{RefId} | Find WorkforceAbsence by RefId
-*TeachersApi* | [**getWorkforceAbsences**](docs/Api/TeachersApi.md#getworkforceabsences) | **GET** /WorkforceAbsences | Return all WorkforceAbsences
-*TeachersApi* | [**getWorkforceAssignmentByRefId**](docs/Api/TeachersApi.md#getworkforceassignmentbyrefid) | **GET** /WorkforceAssignments/{RefId} | Find WorkforceAssignment by RefId
-*TeachersApi* | [**getWorkforceAssignments**](docs/Api/TeachersApi.md#getworkforceassignments) | **GET** /WorkforceAssignments | Return all WorkforceAssignments
-*TeachersApi* | [**getWorkforceContractByRefId**](docs/Api/TeachersApi.md#getworkforcecontractbyrefid) | **GET** /WorkforceContracts/{RefId} | Find WorkforceContract by RefId
-*TeachersApi* | [**getWorkforceContracts**](docs/Api/TeachersApi.md#getworkforcecontracts) | **GET** /WorkforceContracts | Return all WorkforceContracts
-*TeachersApi* | [**getWorkforcePersonalByRefId**](docs/Api/TeachersApi.md#getworkforcepersonalbyrefid) | **GET** /WorkforcePersonals/{RefId} | Find WorkforcePersonal by RefId
-*TeachersApi* | [**getWorkforcePersonals**](docs/Api/TeachersApi.md#getworkforcepersonals) | **GET** /WorkforcePersonals | Return all WorkforcePersonals
-*TeachersApi* | [**updatePersonDietaryPreferenceByRefId**](docs/Api/TeachersApi.md#updatepersondietarypreferencebyrefid) | **PUT** /PersonDietaryPreferences/{RefId} | Update PersonDietaryPreference by RefId
-*TeachersApi* | [**updatePersonDietaryPreferences**](docs/Api/TeachersApi.md#updatepersondietarypreferences) | **PUT** /PersonDietaryPreferences | Update multiple PersonDietaryPreferences
-*TeachersApi* | [**updateTTSubjectByRefId**](docs/Api/TeachersApi.md#updatettsubjectbyrefid) | **PUT** /TTSubjects/{RefId} | Update TTSubject by RefId
-*TeachersApi* | [**updateTTSubjects**](docs/Api/TeachersApi.md#updatettsubjects) | **PUT** /TTSubjects | Update multiple TTSubjects
-*TeachersApi* | [**updateTTTeacherByRefId**](docs/Api/TeachersApi.md#updatettteacherbyrefid) | **PUT** /TTTeachers/{RefId} | Update TTTeacher by RefId
-*TeachersApi* | [**updateTTTeachers**](docs/Api/TeachersApi.md#updatettteachers) | **PUT** /TTTeachers | Update multiple TTTeachers
-*TeachersApi* | [**updateWorkforceAbsenceByRefId**](docs/Api/TeachersApi.md#updateworkforceabsencebyrefid) | **PUT** /WorkforceAbsences/{RefId} | Update WorkforceAbsence by RefId
-*TeachersApi* | [**updateWorkforceAbsences**](docs/Api/TeachersApi.md#updateworkforceabsences) | **PUT** /WorkforceAbsences | Update multiple WorkforceAbsences
-*TeachersApi* | [**updateWorkforceAssignmentByRefId**](docs/Api/TeachersApi.md#updateworkforceassignmentbyrefid) | **PUT** /WorkforceAssignments/{RefId} | Update WorkforceAssignment by RefId
-*TeachersApi* | [**updateWorkforceAssignments**](docs/Api/TeachersApi.md#updateworkforceassignments) | **PUT** /WorkforceAssignments | Update multiple WorkforceAssignments
-*TeachersApi* | [**updateWorkforceContractByRefId**](docs/Api/TeachersApi.md#updateworkforcecontractbyrefid) | **PUT** /WorkforceContracts/{RefId} | Update WorkforceContract by RefId
-*TeachersApi* | [**updateWorkforceContracts**](docs/Api/TeachersApi.md#updateworkforcecontracts) | **PUT** /WorkforceContracts | Update multiple WorkforceContracts
-*TeachersApi* | [**updateWorkforcePersonalByRefId**](docs/Api/TeachersApi.md#updateworkforcepersonalbyrefid) | **PUT** /WorkforcePersonals/{RefId} | Update WorkforcePersonal by RefId
-*TeachersApi* | [**updateWorkforcePersonals**](docs/Api/TeachersApi.md#updateworkforcepersonals) | **PUT** /WorkforcePersonals | Update multiple WorkforcePersonals
-*TimetableApi* | [**createCycles**](docs/Api/TimetableApi.md#createcycles) | **POST** /Cycles | Create multiple Cycles
-*TimetableApi* | [**createJunctions**](docs/Api/TimetableApi.md#createjunctions) | **POST** /Junctions | Create multiple Junctions
-*TimetableApi* | [**createLearnerGroupEnrolments**](docs/Api/TimetableApi.md#createlearnergroupenrolments) | **POST** /LearnerGroupEnrolments | Create multiple LearnerGroupEnrolments
-*TimetableApi* | [**createLearnerSchoolEnrolments**](docs/Api/TimetableApi.md#createlearnerschoolenrolments) | **POST** /LearnerSchoolEnrolments | Create multiple LearnerSchoolEnrolments
-*TimetableApi* | [**createLessons**](docs/Api/TimetableApi.md#createlessons) | **POST** /Lessons | Create multiple Lessons
-*TimetableApi* | [**createNonTeachingActivitys**](docs/Api/TimetableApi.md#createnonteachingactivitys) | **POST** /NonTeachingActivitys | Create multiple NonTeachingActivitys
-*TimetableApi* | [**createSchoolDiaryEntrys**](docs/Api/TimetableApi.md#createschooldiaryentrys) | **POST** /SchoolDiaryEntrys | Create multiple SchoolDiaryEntrys
-*TimetableApi* | [**createSchoolGroupTypes**](docs/Api/TimetableApi.md#createschoolgrouptypes) | **POST** /SchoolGroupTypes | Create multiple SchoolGroupTypes
-*TimetableApi* | [**createSchoolGroups**](docs/Api/TimetableApi.md#createschoolgroups) | **POST** /SchoolGroups | Create multiple SchoolGroups
-*TimetableApi* | [**createScopes**](docs/Api/TimetableApi.md#createscopes) | **POST** /Scopes | Create multiple Scopes
-*TimetableApi* | [**createTTRooms**](docs/Api/TimetableApi.md#createttrooms) | **POST** /TTRooms | Create multiple TTRooms
-*TimetableApi* | [**createTTSites**](docs/Api/TimetableApi.md#createttsites) | **POST** /TTSites | Create multiple TTSites
-*TimetableApi* | [**createTTSubjects**](docs/Api/TimetableApi.md#createttsubjects) | **POST** /TTSubjects | Create multiple TTSubjects
-*TimetableApi* | [**createTTTeachers**](docs/Api/TimetableApi.md#createttteachers) | **POST** /TTTeachers | Create multiple TTTeachers
-*TimetableApi* | [**createTeachingGroups**](docs/Api/TimetableApi.md#createteachinggroups) | **POST** /TeachingGroups | Create multiple TeachingGroups
-*TimetableApi* | [**createTermInfos**](docs/Api/TimetableApi.md#createterminfos) | **POST** /TermInfos | Create multiple TermInfos
-*TimetableApi* | [**deleteCycleByRefId**](docs/Api/TimetableApi.md#deletecyclebyrefid) | **DELETE** /Cycles/{RefId} | Delete Cycle by RefId
-*TimetableApi* | [**deleteCycles**](docs/Api/TimetableApi.md#deletecycles) | **DELETE** /Cycles | Delete multiple Cycles
-*TimetableApi* | [**deleteJunctionByRefId**](docs/Api/TimetableApi.md#deletejunctionbyrefid) | **DELETE** /Junctions/{RefId} | Delete Junction by RefId
-*TimetableApi* | [**deleteJunctions**](docs/Api/TimetableApi.md#deletejunctions) | **DELETE** /Junctions | Delete multiple Junctions
-*TimetableApi* | [**deleteLearnerGroupEnrolmentByRefId**](docs/Api/TimetableApi.md#deletelearnergroupenrolmentbyrefid) | **DELETE** /LearnerGroupEnrolments/{RefId} | Delete LearnerGroupEnrolment by RefId
-*TimetableApi* | [**deleteLearnerGroupEnrolments**](docs/Api/TimetableApi.md#deletelearnergroupenrolments) | **DELETE** /LearnerGroupEnrolments | Delete multiple LearnerGroupEnrolments
-*TimetableApi* | [**deleteLearnerSchoolEnrolmentByRefId**](docs/Api/TimetableApi.md#deletelearnerschoolenrolmentbyrefid) | **DELETE** /LearnerSchoolEnrolments/{RefId} | Delete LearnerSchoolEnrolment by RefId
-*TimetableApi* | [**deleteLearnerSchoolEnrolments**](docs/Api/TimetableApi.md#deletelearnerschoolenrolments) | **DELETE** /LearnerSchoolEnrolments | Delete multiple LearnerSchoolEnrolments
-*TimetableApi* | [**deleteLessonByRefId**](docs/Api/TimetableApi.md#deletelessonbyrefid) | **DELETE** /Lessons/{RefId} | Delete Lesson by RefId
-*TimetableApi* | [**deleteLessons**](docs/Api/TimetableApi.md#deletelessons) | **DELETE** /Lessons | Delete multiple Lessons
-*TimetableApi* | [**deleteNonTeachingActivityByRefId**](docs/Api/TimetableApi.md#deletenonteachingactivitybyrefid) | **DELETE** /NonTeachingActivitys/{RefId} | Delete NonTeachingActivity by RefId
-*TimetableApi* | [**deleteNonTeachingActivitys**](docs/Api/TimetableApi.md#deletenonteachingactivitys) | **DELETE** /NonTeachingActivitys | Delete multiple NonTeachingActivitys
-*TimetableApi* | [**deleteSchoolDiaryEntryByRefId**](docs/Api/TimetableApi.md#deleteschooldiaryentrybyrefid) | **DELETE** /SchoolDiaryEntrys/{RefId} | Delete SchoolDiaryEntry by RefId
-*TimetableApi* | [**deleteSchoolDiaryEntrys**](docs/Api/TimetableApi.md#deleteschooldiaryentrys) | **DELETE** /SchoolDiaryEntrys | Delete multiple SchoolDiaryEntrys
-*TimetableApi* | [**deleteSchoolGroupByRefId**](docs/Api/TimetableApi.md#deleteschoolgroupbyrefid) | **DELETE** /SchoolGroups/{RefId} | Delete SchoolGroup by RefId
-*TimetableApi* | [**deleteSchoolGroupTypeByRefId**](docs/Api/TimetableApi.md#deleteschoolgrouptypebyrefid) | **DELETE** /SchoolGroupTypes/{RefId} | Delete SchoolGroupType by RefId
-*TimetableApi* | [**deleteSchoolGroupTypes**](docs/Api/TimetableApi.md#deleteschoolgrouptypes) | **DELETE** /SchoolGroupTypes | Delete multiple SchoolGroupTypes
-*TimetableApi* | [**deleteSchoolGroups**](docs/Api/TimetableApi.md#deleteschoolgroups) | **DELETE** /SchoolGroups | Delete multiple SchoolGroups
-*TimetableApi* | [**deleteScopeByRefId**](docs/Api/TimetableApi.md#deletescopebyrefid) | **DELETE** /Scopes/{RefId} | Delete Scope by RefId
-*TimetableApi* | [**deleteScopes**](docs/Api/TimetableApi.md#deletescopes) | **DELETE** /Scopes | Delete multiple Scopes
-*TimetableApi* | [**deleteTTRoomByRefId**](docs/Api/TimetableApi.md#deletettroombyrefid) | **DELETE** /TTRooms/{RefId} | Delete TTRoom by RefId
-*TimetableApi* | [**deleteTTRooms**](docs/Api/TimetableApi.md#deletettrooms) | **DELETE** /TTRooms | Delete multiple TTRooms
-*TimetableApi* | [**deleteTTSiteByRefId**](docs/Api/TimetableApi.md#deletettsitebyrefid) | **DELETE** /TTSites/{RefId} | Delete TTSite by RefId
-*TimetableApi* | [**deleteTTSites**](docs/Api/TimetableApi.md#deletettsites) | **DELETE** /TTSites | Delete multiple TTSites
-*TimetableApi* | [**deleteTTSubjectByRefId**](docs/Api/TimetableApi.md#deletettsubjectbyrefid) | **DELETE** /TTSubjects/{RefId} | Delete TTSubject by RefId
-*TimetableApi* | [**deleteTTSubjects**](docs/Api/TimetableApi.md#deletettsubjects) | **DELETE** /TTSubjects | Delete multiple TTSubjects
-*TimetableApi* | [**deleteTTTeacherByRefId**](docs/Api/TimetableApi.md#deletettteacherbyrefid) | **DELETE** /TTTeachers/{RefId} | Delete TTTeacher by RefId
-*TimetableApi* | [**deleteTTTeachers**](docs/Api/TimetableApi.md#deletettteachers) | **DELETE** /TTTeachers | Delete multiple TTTeachers
-*TimetableApi* | [**deleteTeachingGroupByRefId**](docs/Api/TimetableApi.md#deleteteachinggroupbyrefid) | **DELETE** /TeachingGroups/{RefId} | Delete TeachingGroup by RefId
-*TimetableApi* | [**deleteTeachingGroups**](docs/Api/TimetableApi.md#deleteteachinggroups) | **DELETE** /TeachingGroups | Delete multiple TeachingGroups
-*TimetableApi* | [**deleteTermInfoByRefId**](docs/Api/TimetableApi.md#deleteterminfobyrefid) | **DELETE** /TermInfos/{RefId} | Delete TermInfo by RefId
-*TimetableApi* | [**deleteTermInfos**](docs/Api/TimetableApi.md#deleteterminfos) | **DELETE** /TermInfos | Delete multiple TermInfos
-*TimetableApi* | [**getCycleByRefId**](docs/Api/TimetableApi.md#getcyclebyrefid) | **GET** /Cycles/{RefId} | Find Cycle by RefId
-*TimetableApi* | [**getCycles**](docs/Api/TimetableApi.md#getcycles) | **GET** /Cycles | Return all Cycles
-*TimetableApi* | [**getJunctionByRefId**](docs/Api/TimetableApi.md#getjunctionbyrefid) | **GET** /Junctions/{RefId} | Find Junction by RefId
-*TimetableApi* | [**getJunctions**](docs/Api/TimetableApi.md#getjunctions) | **GET** /Junctions | Return all Junctions
-*TimetableApi* | [**getLearnerGroupEnrolmentByRefId**](docs/Api/TimetableApi.md#getlearnergroupenrolmentbyrefid) | **GET** /LearnerGroupEnrolments/{RefId} | Find LearnerGroupEnrolment by RefId
-*TimetableApi* | [**getLearnerGroupEnrolments**](docs/Api/TimetableApi.md#getlearnergroupenrolments) | **GET** /LearnerGroupEnrolments | Return all LearnerGroupEnrolments
-*TimetableApi* | [**getLearnerSchoolEnrolmentByRefId**](docs/Api/TimetableApi.md#getlearnerschoolenrolmentbyrefid) | **GET** /LearnerSchoolEnrolments/{RefId} | Find LearnerSchoolEnrolment by RefId
-*TimetableApi* | [**getLearnerSchoolEnrolments**](docs/Api/TimetableApi.md#getlearnerschoolenrolments) | **GET** /LearnerSchoolEnrolments | Return all LearnerSchoolEnrolments
-*TimetableApi* | [**getLessonByRefId**](docs/Api/TimetableApi.md#getlessonbyrefid) | **GET** /Lessons/{RefId} | Find Lesson by RefId
-*TimetableApi* | [**getLessons**](docs/Api/TimetableApi.md#getlessons) | **GET** /Lessons | Return all Lessons
-*TimetableApi* | [**getNonTeachingActivityByRefId**](docs/Api/TimetableApi.md#getnonteachingactivitybyrefid) | **GET** /NonTeachingActivitys/{RefId} | Find NonTeachingActivity by RefId
-*TimetableApi* | [**getNonTeachingActivitys**](docs/Api/TimetableApi.md#getnonteachingactivitys) | **GET** /NonTeachingActivitys | Return all NonTeachingActivitys
-*TimetableApi* | [**getSchoolDiaryEntryByRefId**](docs/Api/TimetableApi.md#getschooldiaryentrybyrefid) | **GET** /SchoolDiaryEntrys/{RefId} | Find SchoolDiaryEntry by RefId
-*TimetableApi* | [**getSchoolDiaryEntrys**](docs/Api/TimetableApi.md#getschooldiaryentrys) | **GET** /SchoolDiaryEntrys | Return all SchoolDiaryEntrys
-*TimetableApi* | [**getSchoolGroupByRefId**](docs/Api/TimetableApi.md#getschoolgroupbyrefid) | **GET** /SchoolGroups/{RefId} | Find SchoolGroup by RefId
-*TimetableApi* | [**getSchoolGroupTypeByRefId**](docs/Api/TimetableApi.md#getschoolgrouptypebyrefid) | **GET** /SchoolGroupTypes/{RefId} | Find SchoolGroupType by RefId
-*TimetableApi* | [**getSchoolGroupTypes**](docs/Api/TimetableApi.md#getschoolgrouptypes) | **GET** /SchoolGroupTypes | Return all SchoolGroupTypes
-*TimetableApi* | [**getSchoolGroups**](docs/Api/TimetableApi.md#getschoolgroups) | **GET** /SchoolGroups | Return all SchoolGroups
-*TimetableApi* | [**getScopeByRefId**](docs/Api/TimetableApi.md#getscopebyrefid) | **GET** /Scopes/{RefId} | Find Scope by RefId
-*TimetableApi* | [**getScopes**](docs/Api/TimetableApi.md#getscopes) | **GET** /Scopes | Return all Scopes
-*TimetableApi* | [**getTTRoomByRefId**](docs/Api/TimetableApi.md#getttroombyrefid) | **GET** /TTRooms/{RefId} | Find TTRoom by RefId
-*TimetableApi* | [**getTTRooms**](docs/Api/TimetableApi.md#getttrooms) | **GET** /TTRooms | Return all TTRooms
-*TimetableApi* | [**getTTSiteByRefId**](docs/Api/TimetableApi.md#getttsitebyrefid) | **GET** /TTSites/{RefId} | Find TTSite by RefId
-*TimetableApi* | [**getTTSites**](docs/Api/TimetableApi.md#getttsites) | **GET** /TTSites | Return all TTSites
-*TimetableApi* | [**getTTSubjectByRefId**](docs/Api/TimetableApi.md#getttsubjectbyrefid) | **GET** /TTSubjects/{RefId} | Find TTSubject by RefId
-*TimetableApi* | [**getTTSubjects**](docs/Api/TimetableApi.md#getttsubjects) | **GET** /TTSubjects | Return all TTSubjects
-*TimetableApi* | [**getTTTeacherByRefId**](docs/Api/TimetableApi.md#getttteacherbyrefid) | **GET** /TTTeachers/{RefId} | Find TTTeacher by RefId
-*TimetableApi* | [**getTTTeachers**](docs/Api/TimetableApi.md#getttteachers) | **GET** /TTTeachers | Return all TTTeachers
-*TimetableApi* | [**getTeachingGroupByRefId**](docs/Api/TimetableApi.md#getteachinggroupbyrefid) | **GET** /TeachingGroups/{RefId} | Find TeachingGroup by RefId
-*TimetableApi* | [**getTeachingGroups**](docs/Api/TimetableApi.md#getteachinggroups) | **GET** /TeachingGroups | Return all TeachingGroups
-*TimetableApi* | [**getTermInfoByRefId**](docs/Api/TimetableApi.md#getterminfobyrefid) | **GET** /TermInfos/{RefId} | Find TermInfo by RefId
-*TimetableApi* | [**getTermInfos**](docs/Api/TimetableApi.md#getterminfos) | **GET** /TermInfos | Return all TermInfos
-*TimetableApi* | [**updateCycleByRefId**](docs/Api/TimetableApi.md#updatecyclebyrefid) | **PUT** /Cycles/{RefId} | Update Cycle by RefId
-*TimetableApi* | [**updateCycles**](docs/Api/TimetableApi.md#updatecycles) | **PUT** /Cycles | Update multiple Cycles
-*TimetableApi* | [**updateJunctionByRefId**](docs/Api/TimetableApi.md#updatejunctionbyrefid) | **PUT** /Junctions/{RefId} | Update Junction by RefId
-*TimetableApi* | [**updateJunctions**](docs/Api/TimetableApi.md#updatejunctions) | **PUT** /Junctions | Update multiple Junctions
-*TimetableApi* | [**updateLearnerGroupEnrolmentByRefId**](docs/Api/TimetableApi.md#updatelearnergroupenrolmentbyrefid) | **PUT** /LearnerGroupEnrolments/{RefId} | Update LearnerGroupEnrolment by RefId
-*TimetableApi* | [**updateLearnerGroupEnrolments**](docs/Api/TimetableApi.md#updatelearnergroupenrolments) | **PUT** /LearnerGroupEnrolments | Update multiple LearnerGroupEnrolments
-*TimetableApi* | [**updateLearnerSchoolEnrolmentByRefId**](docs/Api/TimetableApi.md#updatelearnerschoolenrolmentbyrefid) | **PUT** /LearnerSchoolEnrolments/{RefId} | Update LearnerSchoolEnrolment by RefId
-*TimetableApi* | [**updateLearnerSchoolEnrolments**](docs/Api/TimetableApi.md#updatelearnerschoolenrolments) | **PUT** /LearnerSchoolEnrolments | Update multiple LearnerSchoolEnrolments
-*TimetableApi* | [**updateLessonByRefId**](docs/Api/TimetableApi.md#updatelessonbyrefid) | **PUT** /Lessons/{RefId} | Update Lesson by RefId
-*TimetableApi* | [**updateLessons**](docs/Api/TimetableApi.md#updatelessons) | **PUT** /Lessons | Update multiple Lessons
-*TimetableApi* | [**updateNonTeachingActivityByRefId**](docs/Api/TimetableApi.md#updatenonteachingactivitybyrefid) | **PUT** /NonTeachingActivitys/{RefId} | Update NonTeachingActivity by RefId
-*TimetableApi* | [**updateNonTeachingActivitys**](docs/Api/TimetableApi.md#updatenonteachingactivitys) | **PUT** /NonTeachingActivitys | Update multiple NonTeachingActivitys
-*TimetableApi* | [**updateSchoolDiaryEntryByRefId**](docs/Api/TimetableApi.md#updateschooldiaryentrybyrefid) | **PUT** /SchoolDiaryEntrys/{RefId} | Update SchoolDiaryEntry by RefId
-*TimetableApi* | [**updateSchoolDiaryEntrys**](docs/Api/TimetableApi.md#updateschooldiaryentrys) | **PUT** /SchoolDiaryEntrys | Update multiple SchoolDiaryEntrys
-*TimetableApi* | [**updateSchoolGroupByRefId**](docs/Api/TimetableApi.md#updateschoolgroupbyrefid) | **PUT** /SchoolGroups/{RefId} | Update SchoolGroup by RefId
-*TimetableApi* | [**updateSchoolGroupTypeByRefId**](docs/Api/TimetableApi.md#updateschoolgrouptypebyrefid) | **PUT** /SchoolGroupTypes/{RefId} | Update SchoolGroupType by RefId
-*TimetableApi* | [**updateSchoolGroupTypes**](docs/Api/TimetableApi.md#updateschoolgrouptypes) | **PUT** /SchoolGroupTypes | Update multiple SchoolGroupTypes
-*TimetableApi* | [**updateSchoolGroups**](docs/Api/TimetableApi.md#updateschoolgroups) | **PUT** /SchoolGroups | Update multiple SchoolGroups
-*TimetableApi* | [**updateScopeByRefId**](docs/Api/TimetableApi.md#updatescopebyrefid) | **PUT** /Scopes/{RefId} | Update Scope by RefId
-*TimetableApi* | [**updateScopes**](docs/Api/TimetableApi.md#updatescopes) | **PUT** /Scopes | Update multiple Scopes
-*TimetableApi* | [**updateTTRoomByRefId**](docs/Api/TimetableApi.md#updatettroombyrefid) | **PUT** /TTRooms/{RefId} | Update TTRoom by RefId
-*TimetableApi* | [**updateTTRooms**](docs/Api/TimetableApi.md#updatettrooms) | **PUT** /TTRooms | Update multiple TTRooms
-*TimetableApi* | [**updateTTSiteByRefId**](docs/Api/TimetableApi.md#updatettsitebyrefid) | **PUT** /TTSites/{RefId} | Update TTSite by RefId
-*TimetableApi* | [**updateTTSites**](docs/Api/TimetableApi.md#updatettsites) | **PUT** /TTSites | Update multiple TTSites
-*TimetableApi* | [**updateTTSubjectByRefId**](docs/Api/TimetableApi.md#updatettsubjectbyrefid) | **PUT** /TTSubjects/{RefId} | Update TTSubject by RefId
-*TimetableApi* | [**updateTTSubjects**](docs/Api/TimetableApi.md#updatettsubjects) | **PUT** /TTSubjects | Update multiple TTSubjects
-*TimetableApi* | [**updateTTTeacherByRefId**](docs/Api/TimetableApi.md#updatettteacherbyrefid) | **PUT** /TTTeachers/{RefId} | Update TTTeacher by RefId
-*TimetableApi* | [**updateTTTeachers**](docs/Api/TimetableApi.md#updatettteachers) | **PUT** /TTTeachers | Update multiple TTTeachers
-*TimetableApi* | [**updateTeachingGroupByRefId**](docs/Api/TimetableApi.md#updateteachinggroupbyrefid) | **PUT** /TeachingGroups/{RefId} | Update TeachingGroup by RefId
-*TimetableApi* | [**updateTeachingGroups**](docs/Api/TimetableApi.md#updateteachinggroups) | **PUT** /TeachingGroups | Update multiple TeachingGroups
-*TimetableApi* | [**updateTermInfoByRefId**](docs/Api/TimetableApi.md#updateterminfobyrefid) | **PUT** /TermInfos/{RefId} | Update TermInfo by RefId
-*TimetableApi* | [**updateTermInfos**](docs/Api/TimetableApi.md#updateterminfos) | **PUT** /TermInfos | Update multiple TermInfos
+*DefaultApi* | [**createAssessmentLearnerSets**](docs/Api/DefaultApi.md#createassessmentlearnersets) | **POST** /AssessmentLearnerSets | Create multiple AssessmentLearnerSets
+*DefaultApi* | [**createAssessmentResponseComponentGroups**](docs/Api/DefaultApi.md#createassessmentresponsecomponentgroups) | **POST** /AssessmentResponseComponentGroups | Create multiple AssessmentResponseComponentGroups
+*DefaultApi* | [**createAssessmentResponseComponents**](docs/Api/DefaultApi.md#createassessmentresponsecomponents) | **POST** /AssessmentResponseComponents | Create multiple AssessmentResponseComponents
+*DefaultApi* | [**createAssessmentResultComponentGroups**](docs/Api/DefaultApi.md#createassessmentresultcomponentgroups) | **POST** /AssessmentResultComponentGroups | Create multiple AssessmentResultComponentGroups
+*DefaultApi* | [**createAssessmentResultComponents**](docs/Api/DefaultApi.md#createassessmentresultcomponents) | **POST** /AssessmentResultComponents | Create multiple AssessmentResultComponents
+*DefaultApi* | [**createAssessmentResultGradeSets**](docs/Api/DefaultApi.md#createassessmentresultgradesets) | **POST** /AssessmentResultGradeSets | Create multiple AssessmentResultGradeSets
+*DefaultApi* | [**createAssessmentSessions**](docs/Api/DefaultApi.md#createassessmentsessions) | **POST** /AssessmentSessions | Create multiple AssessmentSessions
+*DefaultApi* | [**createContactPersonals**](docs/Api/DefaultApi.md#createcontactpersonals) | **POST** /ContactPersonals | Create multiple ContactPersonals
+*DefaultApi* | [**createCycles**](docs/Api/DefaultApi.md#createcycles) | **POST** /Cycles | Create multiple Cycles
+*DefaultApi* | [**createIdentitys**](docs/Api/DefaultApi.md#createidentitys) | **POST** /Identitys | Create multiple Identitys
+*DefaultApi* | [**createJunctions**](docs/Api/DefaultApi.md#createjunctions) | **POST** /Junctions | Create multiple Junctions
+*DefaultApi* | [**createLAInfos**](docs/Api/DefaultApi.md#createlainfos) | **POST** /LAInfos | Create multiple LAInfos
+*DefaultApi* | [**createLearnerAssessmentResponseSets**](docs/Api/DefaultApi.md#createlearnerassessmentresponsesets) | **POST** /LearnerAssessmentResponseSets | Create multiple LearnerAssessmentResponseSets
+*DefaultApi* | [**createLearnerAssessmentResults**](docs/Api/DefaultApi.md#createlearnerassessmentresults) | **POST** /LearnerAssessmentResults | Create multiple LearnerAssessmentResults
+*DefaultApi* | [**createLearnerAttendanceSummarys**](docs/Api/DefaultApi.md#createlearnerattendancesummarys) | **POST** /LearnerAttendanceSummarys | Create multiple LearnerAttendanceSummarys
+*DefaultApi* | [**createLearnerAttendances**](docs/Api/DefaultApi.md#createlearnerattendances) | **POST** /LearnerAttendances | Create multiple LearnerAttendances
+*DefaultApi* | [**createLearnerBehaviourIncidents**](docs/Api/DefaultApi.md#createlearnerbehaviourincidents) | **POST** /LearnerBehaviourIncidents | Create multiple LearnerBehaviourIncidents
+*DefaultApi* | [**createLearnerContacts**](docs/Api/DefaultApi.md#createlearnercontacts) | **POST** /LearnerContacts | Create multiple LearnerContacts
+*DefaultApi* | [**createLearnerEntitlements**](docs/Api/DefaultApi.md#createlearnerentitlements) | **POST** /LearnerEntitlements | Create multiple LearnerEntitlements
+*DefaultApi* | [**createLearnerExclusions**](docs/Api/DefaultApi.md#createlearnerexclusions) | **POST** /LearnerExclusions | Create multiple LearnerExclusions
+*DefaultApi* | [**createLearnerGroupEnrolments**](docs/Api/DefaultApi.md#createlearnergroupenrolments) | **POST** /LearnerGroupEnrolments | Create multiple LearnerGroupEnrolments
+*DefaultApi* | [**createLearnerPersonals**](docs/Api/DefaultApi.md#createlearnerpersonals) | **POST** /LearnerPersonals | Create multiple LearnerPersonals
+*DefaultApi* | [**createLearnerSchoolEnrolments**](docs/Api/DefaultApi.md#createlearnerschoolenrolments) | **POST** /LearnerSchoolEnrolments | Create multiple LearnerSchoolEnrolments
+*DefaultApi* | [**createLearnerSpecialNeedss**](docs/Api/DefaultApi.md#createlearnerspecialneedss) | **POST** /LearnerSpecialNeedss | Create multiple LearnerSpecialNeedss
+*DefaultApi* | [**createLessons**](docs/Api/DefaultApi.md#createlessons) | **POST** /Lessons | Create multiple Lessons
+*DefaultApi* | [**createNonTeachingActivitys**](docs/Api/DefaultApi.md#createnonteachingactivitys) | **POST** /NonTeachingActivitys | Create multiple NonTeachingActivitys
+*DefaultApi* | [**createPersonDietaryPreferences**](docs/Api/DefaultApi.md#createpersondietarypreferences) | **POST** /PersonDietaryPreferences | Create multiple PersonDietaryPreferences
+*DefaultApi* | [**createPersonPictures**](docs/Api/DefaultApi.md#createpersonpictures) | **POST** /PersonPictures | Create multiple PersonPictures
+*DefaultApi* | [**createSchoolDiaryEntrys**](docs/Api/DefaultApi.md#createschooldiaryentrys) | **POST** /SchoolDiaryEntrys | Create multiple SchoolDiaryEntrys
+*DefaultApi* | [**createSchoolGroupTypes**](docs/Api/DefaultApi.md#createschoolgrouptypes) | **POST** /SchoolGroupTypes | Create multiple SchoolGroupTypes
+*DefaultApi* | [**createSchoolGroups**](docs/Api/DefaultApi.md#createschoolgroups) | **POST** /SchoolGroups | Create multiple SchoolGroups
+*DefaultApi* | [**createSchoolInfos**](docs/Api/DefaultApi.md#createschoolinfos) | **POST** /SchoolInfos | Create multiple SchoolInfos
+*DefaultApi* | [**createScopes**](docs/Api/DefaultApi.md#createscopes) | **POST** /Scopes | Create multiple Scopes
+*DefaultApi* | [**createTTRooms**](docs/Api/DefaultApi.md#createttrooms) | **POST** /TTRooms | Create multiple TTRooms
+*DefaultApi* | [**createTTSites**](docs/Api/DefaultApi.md#createttsites) | **POST** /TTSites | Create multiple TTSites
+*DefaultApi* | [**createTTSubjects**](docs/Api/DefaultApi.md#createttsubjects) | **POST** /TTSubjects | Create multiple TTSubjects
+*DefaultApi* | [**createTTTeachers**](docs/Api/DefaultApi.md#createttteachers) | **POST** /TTTeachers | Create multiple TTTeachers
+*DefaultApi* | [**createTeachingGroups**](docs/Api/DefaultApi.md#createteachinggroups) | **POST** /TeachingGroups | Create multiple TeachingGroups
+*DefaultApi* | [**createTermInfos**](docs/Api/DefaultApi.md#createterminfos) | **POST** /TermInfos | Create multiple TermInfos
+*DefaultApi* | [**createWorkforceAbsences**](docs/Api/DefaultApi.md#createworkforceabsences) | **POST** /WorkforceAbsences | Create multiple WorkforceAbsences
+*DefaultApi* | [**createWorkforceAssignments**](docs/Api/DefaultApi.md#createworkforceassignments) | **POST** /WorkforceAssignments | Create multiple WorkforceAssignments
+*DefaultApi* | [**createWorkforceContracts**](docs/Api/DefaultApi.md#createworkforcecontracts) | **POST** /WorkforceContracts | Create multiple WorkforceContracts
+*DefaultApi* | [**createWorkforcePersonals**](docs/Api/DefaultApi.md#createworkforcepersonals) | **POST** /WorkforcePersonals | Create multiple WorkforcePersonals
+*DefaultApi* | [**deleteAssessmentLearnerSetByRefId**](docs/Api/DefaultApi.md#deleteassessmentlearnersetbyrefid) | **DELETE** /AssessmentLearnerSets/{RefId} | Delete AssessmentLearnerSet by RefId
+*DefaultApi* | [**deleteAssessmentLearnerSets**](docs/Api/DefaultApi.md#deleteassessmentlearnersets) | **DELETE** /AssessmentLearnerSets | Delete multiple AssessmentLearnerSets
+*DefaultApi* | [**deleteAssessmentResponseComponentByRefId**](docs/Api/DefaultApi.md#deleteassessmentresponsecomponentbyrefid) | **DELETE** /AssessmentResponseComponents/{RefId} | Delete AssessmentResponseComponent by RefId
+*DefaultApi* | [**deleteAssessmentResponseComponentGroupByRefId**](docs/Api/DefaultApi.md#deleteassessmentresponsecomponentgroupbyrefid) | **DELETE** /AssessmentResponseComponentGroups/{RefId} | Delete AssessmentResponseComponentGroup by RefId
+*DefaultApi* | [**deleteAssessmentResponseComponentGroups**](docs/Api/DefaultApi.md#deleteassessmentresponsecomponentgroups) | **DELETE** /AssessmentResponseComponentGroups | Delete multiple AssessmentResponseComponentGroups
+*DefaultApi* | [**deleteAssessmentResponseComponents**](docs/Api/DefaultApi.md#deleteassessmentresponsecomponents) | **DELETE** /AssessmentResponseComponents | Delete multiple AssessmentResponseComponents
+*DefaultApi* | [**deleteAssessmentResultComponentByRefId**](docs/Api/DefaultApi.md#deleteassessmentresultcomponentbyrefid) | **DELETE** /AssessmentResultComponents/{RefId} | Delete AssessmentResultComponent by RefId
+*DefaultApi* | [**deleteAssessmentResultComponentGroupByRefId**](docs/Api/DefaultApi.md#deleteassessmentresultcomponentgroupbyrefid) | **DELETE** /AssessmentResultComponentGroups/{RefId} | Delete AssessmentResultComponentGroup by RefId
+*DefaultApi* | [**deleteAssessmentResultComponentGroups**](docs/Api/DefaultApi.md#deleteassessmentresultcomponentgroups) | **DELETE** /AssessmentResultComponentGroups | Delete multiple AssessmentResultComponentGroups
+*DefaultApi* | [**deleteAssessmentResultComponents**](docs/Api/DefaultApi.md#deleteassessmentresultcomponents) | **DELETE** /AssessmentResultComponents | Delete multiple AssessmentResultComponents
+*DefaultApi* | [**deleteAssessmentResultGradeSetByRefId**](docs/Api/DefaultApi.md#deleteassessmentresultgradesetbyrefid) | **DELETE** /AssessmentResultGradeSets/{RefId} | Delete AssessmentResultGradeSet by RefId
+*DefaultApi* | [**deleteAssessmentResultGradeSets**](docs/Api/DefaultApi.md#deleteassessmentresultgradesets) | **DELETE** /AssessmentResultGradeSets | Delete multiple AssessmentResultGradeSets
+*DefaultApi* | [**deleteAssessmentSessionByRefId**](docs/Api/DefaultApi.md#deleteassessmentsessionbyrefid) | **DELETE** /AssessmentSessions/{RefId} | Delete AssessmentSession by RefId
+*DefaultApi* | [**deleteAssessmentSessions**](docs/Api/DefaultApi.md#deleteassessmentsessions) | **DELETE** /AssessmentSessions | Delete multiple AssessmentSessions
+*DefaultApi* | [**deleteContactPersonalByRefId**](docs/Api/DefaultApi.md#deletecontactpersonalbyrefid) | **DELETE** /ContactPersonals/{RefId} | Delete ContactPersonal by RefId
+*DefaultApi* | [**deleteContactPersonals**](docs/Api/DefaultApi.md#deletecontactpersonals) | **DELETE** /ContactPersonals | Delete multiple ContactPersonals
+*DefaultApi* | [**deleteCycleByRefId**](docs/Api/DefaultApi.md#deletecyclebyrefid) | **DELETE** /Cycles/{RefId} | Delete Cycle by RefId
+*DefaultApi* | [**deleteCycles**](docs/Api/DefaultApi.md#deletecycles) | **DELETE** /Cycles | Delete multiple Cycles
+*DefaultApi* | [**deleteIdentityByRefId**](docs/Api/DefaultApi.md#deleteidentitybyrefid) | **DELETE** /Identitys/{RefId} | Delete Identity by RefId
+*DefaultApi* | [**deleteIdentitys**](docs/Api/DefaultApi.md#deleteidentitys) | **DELETE** /Identitys | Delete multiple Identitys
+*DefaultApi* | [**deleteJunctionByRefId**](docs/Api/DefaultApi.md#deletejunctionbyrefid) | **DELETE** /Junctions/{RefId} | Delete Junction by RefId
+*DefaultApi* | [**deleteJunctions**](docs/Api/DefaultApi.md#deletejunctions) | **DELETE** /Junctions | Delete multiple Junctions
+*DefaultApi* | [**deleteLAInfoByRefId**](docs/Api/DefaultApi.md#deletelainfobyrefid) | **DELETE** /LAInfos/{RefId} | Delete LAInfo by RefId
+*DefaultApi* | [**deleteLAInfos**](docs/Api/DefaultApi.md#deletelainfos) | **DELETE** /LAInfos | Delete multiple LAInfos
+*DefaultApi* | [**deleteLearnerAssessmentResponseSetByRefId**](docs/Api/DefaultApi.md#deletelearnerassessmentresponsesetbyrefid) | **DELETE** /LearnerAssessmentResponseSets/{RefId} | Delete LearnerAssessmentResponseSet by RefId
+*DefaultApi* | [**deleteLearnerAssessmentResponseSets**](docs/Api/DefaultApi.md#deletelearnerassessmentresponsesets) | **DELETE** /LearnerAssessmentResponseSets | Delete multiple LearnerAssessmentResponseSets
+*DefaultApi* | [**deleteLearnerAssessmentResultByRefId**](docs/Api/DefaultApi.md#deletelearnerassessmentresultbyrefid) | **DELETE** /LearnerAssessmentResults/{RefId} | Delete LearnerAssessmentResult by RefId
+*DefaultApi* | [**deleteLearnerAssessmentResults**](docs/Api/DefaultApi.md#deletelearnerassessmentresults) | **DELETE** /LearnerAssessmentResults | Delete multiple LearnerAssessmentResults
+*DefaultApi* | [**deleteLearnerAttendanceByRefId**](docs/Api/DefaultApi.md#deletelearnerattendancebyrefid) | **DELETE** /LearnerAttendances/{RefId} | Delete LearnerAttendance by RefId
+*DefaultApi* | [**deleteLearnerAttendanceSummaryByRefId**](docs/Api/DefaultApi.md#deletelearnerattendancesummarybyrefid) | **DELETE** /LearnerAttendanceSummarys/{RefId} | Delete LearnerAttendanceSummary by RefId
+*DefaultApi* | [**deleteLearnerAttendanceSummarys**](docs/Api/DefaultApi.md#deletelearnerattendancesummarys) | **DELETE** /LearnerAttendanceSummarys | Delete multiple LearnerAttendanceSummarys
+*DefaultApi* | [**deleteLearnerAttendances**](docs/Api/DefaultApi.md#deletelearnerattendances) | **DELETE** /LearnerAttendances | Delete multiple LearnerAttendances
+*DefaultApi* | [**deleteLearnerBehaviourIncidentByRefId**](docs/Api/DefaultApi.md#deletelearnerbehaviourincidentbyrefid) | **DELETE** /LearnerBehaviourIncidents/{RefId} | Delete LearnerBehaviourIncident by RefId
+*DefaultApi* | [**deleteLearnerBehaviourIncidents**](docs/Api/DefaultApi.md#deletelearnerbehaviourincidents) | **DELETE** /LearnerBehaviourIncidents | Delete multiple LearnerBehaviourIncidents
+*DefaultApi* | [**deleteLearnerContactByRefId**](docs/Api/DefaultApi.md#deletelearnercontactbyrefid) | **DELETE** /LearnerContacts/{RefId} | Delete LearnerContact by RefId
+*DefaultApi* | [**deleteLearnerContacts**](docs/Api/DefaultApi.md#deletelearnercontacts) | **DELETE** /LearnerContacts | Delete multiple LearnerContacts
+*DefaultApi* | [**deleteLearnerEntitlementByRefId**](docs/Api/DefaultApi.md#deletelearnerentitlementbyrefid) | **DELETE** /LearnerEntitlements/{RefId} | Delete LearnerEntitlement by RefId
+*DefaultApi* | [**deleteLearnerEntitlements**](docs/Api/DefaultApi.md#deletelearnerentitlements) | **DELETE** /LearnerEntitlements | Delete multiple LearnerEntitlements
+*DefaultApi* | [**deleteLearnerExclusionByRefId**](docs/Api/DefaultApi.md#deletelearnerexclusionbyrefid) | **DELETE** /LearnerExclusions/{RefId} | Delete LearnerExclusion by RefId
+*DefaultApi* | [**deleteLearnerExclusions**](docs/Api/DefaultApi.md#deletelearnerexclusions) | **DELETE** /LearnerExclusions | Delete multiple LearnerExclusions
+*DefaultApi* | [**deleteLearnerGroupEnrolmentByRefId**](docs/Api/DefaultApi.md#deletelearnergroupenrolmentbyrefid) | **DELETE** /LearnerGroupEnrolments/{RefId} | Delete LearnerGroupEnrolment by RefId
+*DefaultApi* | [**deleteLearnerGroupEnrolments**](docs/Api/DefaultApi.md#deletelearnergroupenrolments) | **DELETE** /LearnerGroupEnrolments | Delete multiple LearnerGroupEnrolments
+*DefaultApi* | [**deleteLearnerPersonalByRefId**](docs/Api/DefaultApi.md#deletelearnerpersonalbyrefid) | **DELETE** /LearnerPersonals/{RefId} | Delete LearnerPersonal by RefId
+*DefaultApi* | [**deleteLearnerPersonals**](docs/Api/DefaultApi.md#deletelearnerpersonals) | **DELETE** /LearnerPersonals | Delete multiple LearnerPersonals
+*DefaultApi* | [**deleteLearnerSchoolEnrolmentByRefId**](docs/Api/DefaultApi.md#deletelearnerschoolenrolmentbyrefid) | **DELETE** /LearnerSchoolEnrolments/{RefId} | Delete LearnerSchoolEnrolment by RefId
+*DefaultApi* | [**deleteLearnerSchoolEnrolments**](docs/Api/DefaultApi.md#deletelearnerschoolenrolments) | **DELETE** /LearnerSchoolEnrolments | Delete multiple LearnerSchoolEnrolments
+*DefaultApi* | [**deleteLearnerSpecialNeedsByRefId**](docs/Api/DefaultApi.md#deletelearnerspecialneedsbyrefid) | **DELETE** /LearnerSpecialNeedss/{RefId} | Delete LearnerSpecialNeeds by RefId
+*DefaultApi* | [**deleteLearnerSpecialNeedss**](docs/Api/DefaultApi.md#deletelearnerspecialneedss) | **DELETE** /LearnerSpecialNeedss | Delete multiple LearnerSpecialNeedss
+*DefaultApi* | [**deleteLessonByRefId**](docs/Api/DefaultApi.md#deletelessonbyrefid) | **DELETE** /Lessons/{RefId} | Delete Lesson by RefId
+*DefaultApi* | [**deleteLessons**](docs/Api/DefaultApi.md#deletelessons) | **DELETE** /Lessons | Delete multiple Lessons
+*DefaultApi* | [**deleteNonTeachingActivityByRefId**](docs/Api/DefaultApi.md#deletenonteachingactivitybyrefid) | **DELETE** /NonTeachingActivitys/{RefId} | Delete NonTeachingActivity by RefId
+*DefaultApi* | [**deleteNonTeachingActivitys**](docs/Api/DefaultApi.md#deletenonteachingactivitys) | **DELETE** /NonTeachingActivitys | Delete multiple NonTeachingActivitys
+*DefaultApi* | [**deletePersonDietaryPreferenceByRefId**](docs/Api/DefaultApi.md#deletepersondietarypreferencebyrefid) | **DELETE** /PersonDietaryPreferences/{RefId} | Delete PersonDietaryPreference by RefId
+*DefaultApi* | [**deletePersonDietaryPreferences**](docs/Api/DefaultApi.md#deletepersondietarypreferences) | **DELETE** /PersonDietaryPreferences | Delete multiple PersonDietaryPreferences
+*DefaultApi* | [**deletePersonPictures**](docs/Api/DefaultApi.md#deletepersonpictures) | **DELETE** /PersonPictures | Delete multiple PersonPictures
+*DefaultApi* | [**deleteSchoolDiaryEntryByRefId**](docs/Api/DefaultApi.md#deleteschooldiaryentrybyrefid) | **DELETE** /SchoolDiaryEntrys/{RefId} | Delete SchoolDiaryEntry by RefId
+*DefaultApi* | [**deleteSchoolDiaryEntrys**](docs/Api/DefaultApi.md#deleteschooldiaryentrys) | **DELETE** /SchoolDiaryEntrys | Delete multiple SchoolDiaryEntrys
+*DefaultApi* | [**deleteSchoolGroupByRefId**](docs/Api/DefaultApi.md#deleteschoolgroupbyrefid) | **DELETE** /SchoolGroups/{RefId} | Delete SchoolGroup by RefId
+*DefaultApi* | [**deleteSchoolGroupTypeByRefId**](docs/Api/DefaultApi.md#deleteschoolgrouptypebyrefid) | **DELETE** /SchoolGroupTypes/{RefId} | Delete SchoolGroupType by RefId
+*DefaultApi* | [**deleteSchoolGroupTypes**](docs/Api/DefaultApi.md#deleteschoolgrouptypes) | **DELETE** /SchoolGroupTypes | Delete multiple SchoolGroupTypes
+*DefaultApi* | [**deleteSchoolGroups**](docs/Api/DefaultApi.md#deleteschoolgroups) | **DELETE** /SchoolGroups | Delete multiple SchoolGroups
+*DefaultApi* | [**deleteSchoolInfoByRefId**](docs/Api/DefaultApi.md#deleteschoolinfobyrefid) | **DELETE** /SchoolInfos/{RefId} | Delete SchoolInfo by RefId
+*DefaultApi* | [**deleteSchoolInfos**](docs/Api/DefaultApi.md#deleteschoolinfos) | **DELETE** /SchoolInfos | Delete multiple SchoolInfos
+*DefaultApi* | [**deleteScopeByRefId**](docs/Api/DefaultApi.md#deletescopebyrefid) | **DELETE** /Scopes/{RefId} | Delete Scope by RefId
+*DefaultApi* | [**deleteScopes**](docs/Api/DefaultApi.md#deletescopes) | **DELETE** /Scopes | Delete multiple Scopes
+*DefaultApi* | [**deleteTTRoomByRefId**](docs/Api/DefaultApi.md#deletettroombyrefid) | **DELETE** /TTRooms/{RefId} | Delete TTRoom by RefId
+*DefaultApi* | [**deleteTTRooms**](docs/Api/DefaultApi.md#deletettrooms) | **DELETE** /TTRooms | Delete multiple TTRooms
+*DefaultApi* | [**deleteTTSiteByRefId**](docs/Api/DefaultApi.md#deletettsitebyrefid) | **DELETE** /TTSites/{RefId} | Delete TTSite by RefId
+*DefaultApi* | [**deleteTTSites**](docs/Api/DefaultApi.md#deletettsites) | **DELETE** /TTSites | Delete multiple TTSites
+*DefaultApi* | [**deleteTTSubjectByRefId**](docs/Api/DefaultApi.md#deletettsubjectbyrefid) | **DELETE** /TTSubjects/{RefId} | Delete TTSubject by RefId
+*DefaultApi* | [**deleteTTSubjects**](docs/Api/DefaultApi.md#deletettsubjects) | **DELETE** /TTSubjects | Delete multiple TTSubjects
+*DefaultApi* | [**deleteTTTeacherByRefId**](docs/Api/DefaultApi.md#deletettteacherbyrefid) | **DELETE** /TTTeachers/{RefId} | Delete TTTeacher by RefId
+*DefaultApi* | [**deleteTTTeachers**](docs/Api/DefaultApi.md#deletettteachers) | **DELETE** /TTTeachers | Delete multiple TTTeachers
+*DefaultApi* | [**deleteTeachingGroupByRefId**](docs/Api/DefaultApi.md#deleteteachinggroupbyrefid) | **DELETE** /TeachingGroups/{RefId} | Delete TeachingGroup by RefId
+*DefaultApi* | [**deleteTeachingGroups**](docs/Api/DefaultApi.md#deleteteachinggroups) | **DELETE** /TeachingGroups | Delete multiple TeachingGroups
+*DefaultApi* | [**deleteTermInfoByRefId**](docs/Api/DefaultApi.md#deleteterminfobyrefid) | **DELETE** /TermInfos/{RefId} | Delete TermInfo by RefId
+*DefaultApi* | [**deleteTermInfos**](docs/Api/DefaultApi.md#deleteterminfos) | **DELETE** /TermInfos | Delete multiple TermInfos
+*DefaultApi* | [**deleteWorkforceAbsenceByRefId**](docs/Api/DefaultApi.md#deleteworkforceabsencebyrefid) | **DELETE** /WorkforceAbsences/{RefId} | Delete WorkforceAbsence by RefId
+*DefaultApi* | [**deleteWorkforceAbsences**](docs/Api/DefaultApi.md#deleteworkforceabsences) | **DELETE** /WorkforceAbsences | Delete multiple WorkforceAbsences
+*DefaultApi* | [**deleteWorkforceAssignmentByRefId**](docs/Api/DefaultApi.md#deleteworkforceassignmentbyrefid) | **DELETE** /WorkforceAssignments/{RefId} | Delete WorkforceAssignment by RefId
+*DefaultApi* | [**deleteWorkforceAssignments**](docs/Api/DefaultApi.md#deleteworkforceassignments) | **DELETE** /WorkforceAssignments | Delete multiple WorkforceAssignments
+*DefaultApi* | [**deleteWorkforceContractByRefId**](docs/Api/DefaultApi.md#deleteworkforcecontractbyrefid) | **DELETE** /WorkforceContracts/{RefId} | Delete WorkforceContract by RefId
+*DefaultApi* | [**deleteWorkforceContracts**](docs/Api/DefaultApi.md#deleteworkforcecontracts) | **DELETE** /WorkforceContracts | Delete multiple WorkforceContracts
+*DefaultApi* | [**deleteWorkforcePersonalByRefId**](docs/Api/DefaultApi.md#deleteworkforcepersonalbyrefid) | **DELETE** /WorkforcePersonals/{RefId} | Delete WorkforcePersonal by RefId
+*DefaultApi* | [**deleteWorkforcePersonals**](docs/Api/DefaultApi.md#deleteworkforcepersonals) | **DELETE** /WorkforcePersonals | Delete multiple WorkforcePersonals
+*DefaultApi* | [**getAssessmentLearnerSetByRefId**](docs/Api/DefaultApi.md#getassessmentlearnersetbyrefid) | **GET** /AssessmentLearnerSets/{RefId} | Find AssessmentLearnerSet by RefId
+*DefaultApi* | [**getAssessmentLearnerSets**](docs/Api/DefaultApi.md#getassessmentlearnersets) | **GET** /AssessmentLearnerSets | Return all AssessmentLearnerSets
+*DefaultApi* | [**getAssessmentResponseComponentByRefId**](docs/Api/DefaultApi.md#getassessmentresponsecomponentbyrefid) | **GET** /AssessmentResponseComponents/{RefId} | Find AssessmentResponseComponent by RefId
+*DefaultApi* | [**getAssessmentResponseComponentGroupByRefId**](docs/Api/DefaultApi.md#getassessmentresponsecomponentgroupbyrefid) | **GET** /AssessmentResponseComponentGroups/{RefId} | Find AssessmentResponseComponentGroup by RefId
+*DefaultApi* | [**getAssessmentResponseComponentGroups**](docs/Api/DefaultApi.md#getassessmentresponsecomponentgroups) | **GET** /AssessmentResponseComponentGroups | Return all AssessmentResponseComponentGroups
+*DefaultApi* | [**getAssessmentResponseComponents**](docs/Api/DefaultApi.md#getassessmentresponsecomponents) | **GET** /AssessmentResponseComponents | Return all AssessmentResponseComponents
+*DefaultApi* | [**getAssessmentResultComponentByRefId**](docs/Api/DefaultApi.md#getassessmentresultcomponentbyrefid) | **GET** /AssessmentResultComponents/{RefId} | Find AssessmentResultComponent by RefId
+*DefaultApi* | [**getAssessmentResultComponentGroupByRefId**](docs/Api/DefaultApi.md#getassessmentresultcomponentgroupbyrefid) | **GET** /AssessmentResultComponentGroups/{RefId} | Find AssessmentResultComponentGroup by RefId
+*DefaultApi* | [**getAssessmentResultComponentGroups**](docs/Api/DefaultApi.md#getassessmentresultcomponentgroups) | **GET** /AssessmentResultComponentGroups | Return all AssessmentResultComponentGroups
+*DefaultApi* | [**getAssessmentResultComponents**](docs/Api/DefaultApi.md#getassessmentresultcomponents) | **GET** /AssessmentResultComponents | Return all AssessmentResultComponents
+*DefaultApi* | [**getAssessmentResultGradeSetByRefId**](docs/Api/DefaultApi.md#getassessmentresultgradesetbyrefid) | **GET** /AssessmentResultGradeSets/{RefId} | Find AssessmentResultGradeSet by RefId
+*DefaultApi* | [**getAssessmentResultGradeSets**](docs/Api/DefaultApi.md#getassessmentresultgradesets) | **GET** /AssessmentResultGradeSets | Return all AssessmentResultGradeSets
+*DefaultApi* | [**getAssessmentSessionByRefId**](docs/Api/DefaultApi.md#getassessmentsessionbyrefid) | **GET** /AssessmentSessions/{RefId} | Find AssessmentSession by RefId
+*DefaultApi* | [**getAssessmentSessions**](docs/Api/DefaultApi.md#getassessmentsessions) | **GET** /AssessmentSessions | Return all AssessmentSessions
+*DefaultApi* | [**getContactPersonalByRefId**](docs/Api/DefaultApi.md#getcontactpersonalbyrefid) | **GET** /ContactPersonals/{RefId} | Find ContactPersonal by RefId
+*DefaultApi* | [**getContactPersonals**](docs/Api/DefaultApi.md#getcontactpersonals) | **GET** /ContactPersonals | Return all ContactPersonals
+*DefaultApi* | [**getCycleByRefId**](docs/Api/DefaultApi.md#getcyclebyrefid) | **GET** /Cycles/{RefId} | Find Cycle by RefId
+*DefaultApi* | [**getCycles**](docs/Api/DefaultApi.md#getcycles) | **GET** /Cycles | Return all Cycles
+*DefaultApi* | [**getIdentityByRefId**](docs/Api/DefaultApi.md#getidentitybyrefid) | **GET** /Identitys/{RefId} | Find Identity by RefId
+*DefaultApi* | [**getIdentitys**](docs/Api/DefaultApi.md#getidentitys) | **GET** /Identitys | Return all Identitys
+*DefaultApi* | [**getJunctionByRefId**](docs/Api/DefaultApi.md#getjunctionbyrefid) | **GET** /Junctions/{RefId} | Find Junction by RefId
+*DefaultApi* | [**getJunctions**](docs/Api/DefaultApi.md#getjunctions) | **GET** /Junctions | Return all Junctions
+*DefaultApi* | [**getLAInfoByRefId**](docs/Api/DefaultApi.md#getlainfobyrefid) | **GET** /LAInfos/{RefId} | Find LAInfo by RefId
+*DefaultApi* | [**getLAInfos**](docs/Api/DefaultApi.md#getlainfos) | **GET** /LAInfos | Return all LAInfos
+*DefaultApi* | [**getLearnerAssessmentResponseSetByRefId**](docs/Api/DefaultApi.md#getlearnerassessmentresponsesetbyrefid) | **GET** /LearnerAssessmentResponseSets/{RefId} | Find LearnerAssessmentResponseSet by RefId
+*DefaultApi* | [**getLearnerAssessmentResponseSets**](docs/Api/DefaultApi.md#getlearnerassessmentresponsesets) | **GET** /LearnerAssessmentResponseSets | Return all LearnerAssessmentResponseSets
+*DefaultApi* | [**getLearnerAssessmentResultByRefId**](docs/Api/DefaultApi.md#getlearnerassessmentresultbyrefid) | **GET** /LearnerAssessmentResults/{RefId} | Find LearnerAssessmentResult by RefId
+*DefaultApi* | [**getLearnerAssessmentResults**](docs/Api/DefaultApi.md#getlearnerassessmentresults) | **GET** /LearnerAssessmentResults | Return all LearnerAssessmentResults
+*DefaultApi* | [**getLearnerAttendanceByRefId**](docs/Api/DefaultApi.md#getlearnerattendancebyrefid) | **GET** /LearnerAttendances/{RefId} | Find LearnerAttendance by RefId
+*DefaultApi* | [**getLearnerAttendanceSummaryByRefId**](docs/Api/DefaultApi.md#getlearnerattendancesummarybyrefid) | **GET** /LearnerAttendanceSummarys/{RefId} | Find LearnerAttendanceSummary by RefId
+*DefaultApi* | [**getLearnerAttendanceSummarys**](docs/Api/DefaultApi.md#getlearnerattendancesummarys) | **GET** /LearnerAttendanceSummarys | Return all LearnerAttendanceSummarys
+*DefaultApi* | [**getLearnerAttendances**](docs/Api/DefaultApi.md#getlearnerattendances) | **GET** /LearnerAttendances | Return all LearnerAttendances
+*DefaultApi* | [**getLearnerBehaviourIncidentByRefId**](docs/Api/DefaultApi.md#getlearnerbehaviourincidentbyrefid) | **GET** /LearnerBehaviourIncidents/{RefId} | Find LearnerBehaviourIncident by RefId
+*DefaultApi* | [**getLearnerBehaviourIncidents**](docs/Api/DefaultApi.md#getlearnerbehaviourincidents) | **GET** /LearnerBehaviourIncidents | Return all LearnerBehaviourIncidents
+*DefaultApi* | [**getLearnerContactByRefId**](docs/Api/DefaultApi.md#getlearnercontactbyrefid) | **GET** /LearnerContacts/{RefId} | Find LearnerContact by RefId
+*DefaultApi* | [**getLearnerContacts**](docs/Api/DefaultApi.md#getlearnercontacts) | **GET** /LearnerContacts | Return all LearnerContacts
+*DefaultApi* | [**getLearnerEntitlementByRefId**](docs/Api/DefaultApi.md#getlearnerentitlementbyrefid) | **GET** /LearnerEntitlements/{RefId} | Find LearnerEntitlement by RefId
+*DefaultApi* | [**getLearnerEntitlements**](docs/Api/DefaultApi.md#getlearnerentitlements) | **GET** /LearnerEntitlements | Return all LearnerEntitlements
+*DefaultApi* | [**getLearnerExclusionByRefId**](docs/Api/DefaultApi.md#getlearnerexclusionbyrefid) | **GET** /LearnerExclusions/{RefId} | Find LearnerExclusion by RefId
+*DefaultApi* | [**getLearnerExclusions**](docs/Api/DefaultApi.md#getlearnerexclusions) | **GET** /LearnerExclusions | Return all LearnerExclusions
+*DefaultApi* | [**getLearnerGroupEnrolmentByRefId**](docs/Api/DefaultApi.md#getlearnergroupenrolmentbyrefid) | **GET** /LearnerGroupEnrolments/{RefId} | Find LearnerGroupEnrolment by RefId
+*DefaultApi* | [**getLearnerGroupEnrolments**](docs/Api/DefaultApi.md#getlearnergroupenrolments) | **GET** /LearnerGroupEnrolments | Return all LearnerGroupEnrolments
+*DefaultApi* | [**getLearnerPersonalByRefId**](docs/Api/DefaultApi.md#getlearnerpersonalbyrefid) | **GET** /LearnerPersonals/{RefId} | Find LearnerPersonal by RefId
+*DefaultApi* | [**getLearnerPersonals**](docs/Api/DefaultApi.md#getlearnerpersonals) | **GET** /LearnerPersonals | Return all LearnerPersonals
+*DefaultApi* | [**getLearnerSchoolEnrolmentByRefId**](docs/Api/DefaultApi.md#getlearnerschoolenrolmentbyrefid) | **GET** /LearnerSchoolEnrolments/{RefId} | Find LearnerSchoolEnrolment by RefId
+*DefaultApi* | [**getLearnerSchoolEnrolments**](docs/Api/DefaultApi.md#getlearnerschoolenrolments) | **GET** /LearnerSchoolEnrolments | Return all LearnerSchoolEnrolments
+*DefaultApi* | [**getLearnerSpecialNeedsByRefId**](docs/Api/DefaultApi.md#getlearnerspecialneedsbyrefid) | **GET** /LearnerSpecialNeedss/{RefId} | Find LearnerSpecialNeeds by RefId
+*DefaultApi* | [**getLearnerSpecialNeedss**](docs/Api/DefaultApi.md#getlearnerspecialneedss) | **GET** /LearnerSpecialNeedss | Return all LearnerSpecialNeedss
+*DefaultApi* | [**getLessonByRefId**](docs/Api/DefaultApi.md#getlessonbyrefid) | **GET** /Lessons/{RefId} | Find Lesson by RefId
+*DefaultApi* | [**getLessons**](docs/Api/DefaultApi.md#getlessons) | **GET** /Lessons | Return all Lessons
+*DefaultApi* | [**getNonTeachingActivityByRefId**](docs/Api/DefaultApi.md#getnonteachingactivitybyrefid) | **GET** /NonTeachingActivitys/{RefId} | Find NonTeachingActivity by RefId
+*DefaultApi* | [**getNonTeachingActivitys**](docs/Api/DefaultApi.md#getnonteachingactivitys) | **GET** /NonTeachingActivitys | Return all NonTeachingActivitys
+*DefaultApi* | [**getPersonDietaryPreferenceByRefId**](docs/Api/DefaultApi.md#getpersondietarypreferencebyrefid) | **GET** /PersonDietaryPreferences/{RefId} | Find PersonDietaryPreference by RefId
+*DefaultApi* | [**getPersonDietaryPreferences**](docs/Api/DefaultApi.md#getpersondietarypreferences) | **GET** /PersonDietaryPreferences | Return all PersonDietaryPreferences
+*DefaultApi* | [**getPersonPictures**](docs/Api/DefaultApi.md#getpersonpictures) | **GET** /PersonPictures | Return all PersonPictures
+*DefaultApi* | [**getSchoolDiaryEntryByRefId**](docs/Api/DefaultApi.md#getschooldiaryentrybyrefid) | **GET** /SchoolDiaryEntrys/{RefId} | Find SchoolDiaryEntry by RefId
+*DefaultApi* | [**getSchoolDiaryEntrys**](docs/Api/DefaultApi.md#getschooldiaryentrys) | **GET** /SchoolDiaryEntrys | Return all SchoolDiaryEntrys
+*DefaultApi* | [**getSchoolGroupByRefId**](docs/Api/DefaultApi.md#getschoolgroupbyrefid) | **GET** /SchoolGroups/{RefId} | Find SchoolGroup by RefId
+*DefaultApi* | [**getSchoolGroupTypeByRefId**](docs/Api/DefaultApi.md#getschoolgrouptypebyrefid) | **GET** /SchoolGroupTypes/{RefId} | Find SchoolGroupType by RefId
+*DefaultApi* | [**getSchoolGroupTypes**](docs/Api/DefaultApi.md#getschoolgrouptypes) | **GET** /SchoolGroupTypes | Return all SchoolGroupTypes
+*DefaultApi* | [**getSchoolGroups**](docs/Api/DefaultApi.md#getschoolgroups) | **GET** /SchoolGroups | Return all SchoolGroups
+*DefaultApi* | [**getSchoolInfoByRefId**](docs/Api/DefaultApi.md#getschoolinfobyrefid) | **GET** /SchoolInfos/{RefId} | Find SchoolInfo by RefId
+*DefaultApi* | [**getSchoolInfos**](docs/Api/DefaultApi.md#getschoolinfos) | **GET** /SchoolInfos | Return all SchoolInfos
+*DefaultApi* | [**getScopeByRefId**](docs/Api/DefaultApi.md#getscopebyrefid) | **GET** /Scopes/{RefId} | Find Scope by RefId
+*DefaultApi* | [**getScopes**](docs/Api/DefaultApi.md#getscopes) | **GET** /Scopes | Return all Scopes
+*DefaultApi* | [**getTTRoomByRefId**](docs/Api/DefaultApi.md#getttroombyrefid) | **GET** /TTRooms/{RefId} | Find TTRoom by RefId
+*DefaultApi* | [**getTTRooms**](docs/Api/DefaultApi.md#getttrooms) | **GET** /TTRooms | Return all TTRooms
+*DefaultApi* | [**getTTSiteByRefId**](docs/Api/DefaultApi.md#getttsitebyrefid) | **GET** /TTSites/{RefId} | Find TTSite by RefId
+*DefaultApi* | [**getTTSites**](docs/Api/DefaultApi.md#getttsites) | **GET** /TTSites | Return all TTSites
+*DefaultApi* | [**getTTSubjectByRefId**](docs/Api/DefaultApi.md#getttsubjectbyrefid) | **GET** /TTSubjects/{RefId} | Find TTSubject by RefId
+*DefaultApi* | [**getTTSubjects**](docs/Api/DefaultApi.md#getttsubjects) | **GET** /TTSubjects | Return all TTSubjects
+*DefaultApi* | [**getTTTeacherByRefId**](docs/Api/DefaultApi.md#getttteacherbyrefid) | **GET** /TTTeachers/{RefId} | Find TTTeacher by RefId
+*DefaultApi* | [**getTTTeachers**](docs/Api/DefaultApi.md#getttteachers) | **GET** /TTTeachers | Return all TTTeachers
+*DefaultApi* | [**getTeachingGroupByRefId**](docs/Api/DefaultApi.md#getteachinggroupbyrefid) | **GET** /TeachingGroups/{RefId} | Find TeachingGroup by RefId
+*DefaultApi* | [**getTeachingGroups**](docs/Api/DefaultApi.md#getteachinggroups) | **GET** /TeachingGroups | Return all TeachingGroups
+*DefaultApi* | [**getTermInfoByRefId**](docs/Api/DefaultApi.md#getterminfobyrefid) | **GET** /TermInfos/{RefId} | Find TermInfo by RefId
+*DefaultApi* | [**getTermInfos**](docs/Api/DefaultApi.md#getterminfos) | **GET** /TermInfos | Return all TermInfos
+*DefaultApi* | [**getWorkforceAbsenceByRefId**](docs/Api/DefaultApi.md#getworkforceabsencebyrefid) | **GET** /WorkforceAbsences/{RefId} | Find WorkforceAbsence by RefId
+*DefaultApi* | [**getWorkforceAbsences**](docs/Api/DefaultApi.md#getworkforceabsences) | **GET** /WorkforceAbsences | Return all WorkforceAbsences
+*DefaultApi* | [**getWorkforceAssignmentByRefId**](docs/Api/DefaultApi.md#getworkforceassignmentbyrefid) | **GET** /WorkforceAssignments/{RefId} | Find WorkforceAssignment by RefId
+*DefaultApi* | [**getWorkforceAssignments**](docs/Api/DefaultApi.md#getworkforceassignments) | **GET** /WorkforceAssignments | Return all WorkforceAssignments
+*DefaultApi* | [**getWorkforceContractByRefId**](docs/Api/DefaultApi.md#getworkforcecontractbyrefid) | **GET** /WorkforceContracts/{RefId} | Find WorkforceContract by RefId
+*DefaultApi* | [**getWorkforceContracts**](docs/Api/DefaultApi.md#getworkforcecontracts) | **GET** /WorkforceContracts | Return all WorkforceContracts
+*DefaultApi* | [**getWorkforcePersonalByRefId**](docs/Api/DefaultApi.md#getworkforcepersonalbyrefid) | **GET** /WorkforcePersonals/{RefId} | Find WorkforcePersonal by RefId
+*DefaultApi* | [**getWorkforcePersonals**](docs/Api/DefaultApi.md#getworkforcepersonals) | **GET** /WorkforcePersonals | Return all WorkforcePersonals
+*DefaultApi* | [**updateAssessmentLearnerSetByRefId**](docs/Api/DefaultApi.md#updateassessmentlearnersetbyrefid) | **PUT** /AssessmentLearnerSets/{RefId} | Update AssessmentLearnerSet by RefId
+*DefaultApi* | [**updateAssessmentLearnerSets**](docs/Api/DefaultApi.md#updateassessmentlearnersets) | **PUT** /AssessmentLearnerSets | Update multiple AssessmentLearnerSets
+*DefaultApi* | [**updateAssessmentResponseComponentByRefId**](docs/Api/DefaultApi.md#updateassessmentresponsecomponentbyrefid) | **PUT** /AssessmentResponseComponents/{RefId} | Update AssessmentResponseComponent by RefId
+*DefaultApi* | [**updateAssessmentResponseComponentGroupByRefId**](docs/Api/DefaultApi.md#updateassessmentresponsecomponentgroupbyrefid) | **PUT** /AssessmentResponseComponentGroups/{RefId} | Update AssessmentResponseComponentGroup by RefId
+*DefaultApi* | [**updateAssessmentResponseComponentGroups**](docs/Api/DefaultApi.md#updateassessmentresponsecomponentgroups) | **PUT** /AssessmentResponseComponentGroups | Update multiple AssessmentResponseComponentGroups
+*DefaultApi* | [**updateAssessmentResponseComponents**](docs/Api/DefaultApi.md#updateassessmentresponsecomponents) | **PUT** /AssessmentResponseComponents | Update multiple AssessmentResponseComponents
+*DefaultApi* | [**updateAssessmentResultComponentByRefId**](docs/Api/DefaultApi.md#updateassessmentresultcomponentbyrefid) | **PUT** /AssessmentResultComponents/{RefId} | Update AssessmentResultComponent by RefId
+*DefaultApi* | [**updateAssessmentResultComponentGroupByRefId**](docs/Api/DefaultApi.md#updateassessmentresultcomponentgroupbyrefid) | **PUT** /AssessmentResultComponentGroups/{RefId} | Update AssessmentResultComponentGroup by RefId
+*DefaultApi* | [**updateAssessmentResultComponentGroups**](docs/Api/DefaultApi.md#updateassessmentresultcomponentgroups) | **PUT** /AssessmentResultComponentGroups | Update multiple AssessmentResultComponentGroups
+*DefaultApi* | [**updateAssessmentResultComponents**](docs/Api/DefaultApi.md#updateassessmentresultcomponents) | **PUT** /AssessmentResultComponents | Update multiple AssessmentResultComponents
+*DefaultApi* | [**updateAssessmentResultGradeSetByRefId**](docs/Api/DefaultApi.md#updateassessmentresultgradesetbyrefid) | **PUT** /AssessmentResultGradeSets/{RefId} | Update AssessmentResultGradeSet by RefId
+*DefaultApi* | [**updateAssessmentResultGradeSets**](docs/Api/DefaultApi.md#updateassessmentresultgradesets) | **PUT** /AssessmentResultGradeSets | Update multiple AssessmentResultGradeSets
+*DefaultApi* | [**updateAssessmentSessionByRefId**](docs/Api/DefaultApi.md#updateassessmentsessionbyrefid) | **PUT** /AssessmentSessions/{RefId} | Update AssessmentSession by RefId
+*DefaultApi* | [**updateAssessmentSessions**](docs/Api/DefaultApi.md#updateassessmentsessions) | **PUT** /AssessmentSessions | Update multiple AssessmentSessions
+*DefaultApi* | [**updateContactPersonalByRefId**](docs/Api/DefaultApi.md#updatecontactpersonalbyrefid) | **PUT** /ContactPersonals/{RefId} | Update ContactPersonal by RefId
+*DefaultApi* | [**updateContactPersonals**](docs/Api/DefaultApi.md#updatecontactpersonals) | **PUT** /ContactPersonals | Update multiple ContactPersonals
+*DefaultApi* | [**updateCycleByRefId**](docs/Api/DefaultApi.md#updatecyclebyrefid) | **PUT** /Cycles/{RefId} | Update Cycle by RefId
+*DefaultApi* | [**updateCycles**](docs/Api/DefaultApi.md#updatecycles) | **PUT** /Cycles | Update multiple Cycles
+*DefaultApi* | [**updateIdentityByRefId**](docs/Api/DefaultApi.md#updateidentitybyrefid) | **PUT** /Identitys/{RefId} | Update Identity by RefId
+*DefaultApi* | [**updateIdentitys**](docs/Api/DefaultApi.md#updateidentitys) | **PUT** /Identitys | Update multiple Identitys
+*DefaultApi* | [**updateJunctionByRefId**](docs/Api/DefaultApi.md#updatejunctionbyrefid) | **PUT** /Junctions/{RefId} | Update Junction by RefId
+*DefaultApi* | [**updateJunctions**](docs/Api/DefaultApi.md#updatejunctions) | **PUT** /Junctions | Update multiple Junctions
+*DefaultApi* | [**updateLAInfoByRefId**](docs/Api/DefaultApi.md#updatelainfobyrefid) | **PUT** /LAInfos/{RefId} | Update LAInfo by RefId
+*DefaultApi* | [**updateLAInfos**](docs/Api/DefaultApi.md#updatelainfos) | **PUT** /LAInfos | Update multiple LAInfos
+*DefaultApi* | [**updateLearnerAssessmentResponseSetByRefId**](docs/Api/DefaultApi.md#updatelearnerassessmentresponsesetbyrefid) | **PUT** /LearnerAssessmentResponseSets/{RefId} | Update LearnerAssessmentResponseSet by RefId
+*DefaultApi* | [**updateLearnerAssessmentResponseSets**](docs/Api/DefaultApi.md#updatelearnerassessmentresponsesets) | **PUT** /LearnerAssessmentResponseSets | Update multiple LearnerAssessmentResponseSets
+*DefaultApi* | [**updateLearnerAssessmentResultByRefId**](docs/Api/DefaultApi.md#updatelearnerassessmentresultbyrefid) | **PUT** /LearnerAssessmentResults/{RefId} | Update LearnerAssessmentResult by RefId
+*DefaultApi* | [**updateLearnerAssessmentResults**](docs/Api/DefaultApi.md#updatelearnerassessmentresults) | **PUT** /LearnerAssessmentResults | Update multiple LearnerAssessmentResults
+*DefaultApi* | [**updateLearnerAttendanceByRefId**](docs/Api/DefaultApi.md#updatelearnerattendancebyrefid) | **PUT** /LearnerAttendances/{RefId} | Update LearnerAttendance by RefId
+*DefaultApi* | [**updateLearnerAttendanceSummaryByRefId**](docs/Api/DefaultApi.md#updatelearnerattendancesummarybyrefid) | **PUT** /LearnerAttendanceSummarys/{RefId} | Update LearnerAttendanceSummary by RefId
+*DefaultApi* | [**updateLearnerAttendanceSummarys**](docs/Api/DefaultApi.md#updatelearnerattendancesummarys) | **PUT** /LearnerAttendanceSummarys | Update multiple LearnerAttendanceSummarys
+*DefaultApi* | [**updateLearnerAttendances**](docs/Api/DefaultApi.md#updatelearnerattendances) | **PUT** /LearnerAttendances | Update multiple LearnerAttendances
+*DefaultApi* | [**updateLearnerBehaviourIncidentByRefId**](docs/Api/DefaultApi.md#updatelearnerbehaviourincidentbyrefid) | **PUT** /LearnerBehaviourIncidents/{RefId} | Update LearnerBehaviourIncident by RefId
+*DefaultApi* | [**updateLearnerBehaviourIncidents**](docs/Api/DefaultApi.md#updatelearnerbehaviourincidents) | **PUT** /LearnerBehaviourIncidents | Update multiple LearnerBehaviourIncidents
+*DefaultApi* | [**updateLearnerContactByRefId**](docs/Api/DefaultApi.md#updatelearnercontactbyrefid) | **PUT** /LearnerContacts/{RefId} | Update LearnerContact by RefId
+*DefaultApi* | [**updateLearnerContacts**](docs/Api/DefaultApi.md#updatelearnercontacts) | **PUT** /LearnerContacts | Update multiple LearnerContacts
+*DefaultApi* | [**updateLearnerEntitlementByRefId**](docs/Api/DefaultApi.md#updatelearnerentitlementbyrefid) | **PUT** /LearnerEntitlements/{RefId} | Update LearnerEntitlement by RefId
+*DefaultApi* | [**updateLearnerEntitlements**](docs/Api/DefaultApi.md#updatelearnerentitlements) | **PUT** /LearnerEntitlements | Update multiple LearnerEntitlements
+*DefaultApi* | [**updateLearnerExclusionByRefId**](docs/Api/DefaultApi.md#updatelearnerexclusionbyrefid) | **PUT** /LearnerExclusions/{RefId} | Update LearnerExclusion by RefId
+*DefaultApi* | [**updateLearnerExclusions**](docs/Api/DefaultApi.md#updatelearnerexclusions) | **PUT** /LearnerExclusions | Update multiple LearnerExclusions
+*DefaultApi* | [**updateLearnerGroupEnrolmentByRefId**](docs/Api/DefaultApi.md#updatelearnergroupenrolmentbyrefid) | **PUT** /LearnerGroupEnrolments/{RefId} | Update LearnerGroupEnrolment by RefId
+*DefaultApi* | [**updateLearnerGroupEnrolments**](docs/Api/DefaultApi.md#updatelearnergroupenrolments) | **PUT** /LearnerGroupEnrolments | Update multiple LearnerGroupEnrolments
+*DefaultApi* | [**updateLearnerPersonalByRefId**](docs/Api/DefaultApi.md#updatelearnerpersonalbyrefid) | **PUT** /LearnerPersonals/{RefId} | Update LearnerPersonal by RefId
+*DefaultApi* | [**updateLearnerPersonals**](docs/Api/DefaultApi.md#updatelearnerpersonals) | **PUT** /LearnerPersonals | Update multiple LearnerPersonals
+*DefaultApi* | [**updateLearnerSchoolEnrolmentByRefId**](docs/Api/DefaultApi.md#updatelearnerschoolenrolmentbyrefid) | **PUT** /LearnerSchoolEnrolments/{RefId} | Update LearnerSchoolEnrolment by RefId
+*DefaultApi* | [**updateLearnerSchoolEnrolments**](docs/Api/DefaultApi.md#updatelearnerschoolenrolments) | **PUT** /LearnerSchoolEnrolments | Update multiple LearnerSchoolEnrolments
+*DefaultApi* | [**updateLearnerSpecialNeedsByRefId**](docs/Api/DefaultApi.md#updatelearnerspecialneedsbyrefid) | **PUT** /LearnerSpecialNeedss/{RefId} | Update LearnerSpecialNeeds by RefId
+*DefaultApi* | [**updateLearnerSpecialNeedss**](docs/Api/DefaultApi.md#updatelearnerspecialneedss) | **PUT** /LearnerSpecialNeedss | Update multiple LearnerSpecialNeedss
+*DefaultApi* | [**updateLessonByRefId**](docs/Api/DefaultApi.md#updatelessonbyrefid) | **PUT** /Lessons/{RefId} | Update Lesson by RefId
+*DefaultApi* | [**updateLessons**](docs/Api/DefaultApi.md#updatelessons) | **PUT** /Lessons | Update multiple Lessons
+*DefaultApi* | [**updateNonTeachingActivityByRefId**](docs/Api/DefaultApi.md#updatenonteachingactivitybyrefid) | **PUT** /NonTeachingActivitys/{RefId} | Update NonTeachingActivity by RefId
+*DefaultApi* | [**updateNonTeachingActivitys**](docs/Api/DefaultApi.md#updatenonteachingactivitys) | **PUT** /NonTeachingActivitys | Update multiple NonTeachingActivitys
+*DefaultApi* | [**updatePersonDietaryPreferenceByRefId**](docs/Api/DefaultApi.md#updatepersondietarypreferencebyrefid) | **PUT** /PersonDietaryPreferences/{RefId} | Update PersonDietaryPreference by RefId
+*DefaultApi* | [**updatePersonDietaryPreferences**](docs/Api/DefaultApi.md#updatepersondietarypreferences) | **PUT** /PersonDietaryPreferences | Update multiple PersonDietaryPreferences
+*DefaultApi* | [**updatePersonPictures**](docs/Api/DefaultApi.md#updatepersonpictures) | **PUT** /PersonPictures | Update multiple PersonPictures
+*DefaultApi* | [**updateSchoolDiaryEntryByRefId**](docs/Api/DefaultApi.md#updateschooldiaryentrybyrefid) | **PUT** /SchoolDiaryEntrys/{RefId} | Update SchoolDiaryEntry by RefId
+*DefaultApi* | [**updateSchoolDiaryEntrys**](docs/Api/DefaultApi.md#updateschooldiaryentrys) | **PUT** /SchoolDiaryEntrys | Update multiple SchoolDiaryEntrys
+*DefaultApi* | [**updateSchoolGroupByRefId**](docs/Api/DefaultApi.md#updateschoolgroupbyrefid) | **PUT** /SchoolGroups/{RefId} | Update SchoolGroup by RefId
+*DefaultApi* | [**updateSchoolGroupTypeByRefId**](docs/Api/DefaultApi.md#updateschoolgrouptypebyrefid) | **PUT** /SchoolGroupTypes/{RefId} | Update SchoolGroupType by RefId
+*DefaultApi* | [**updateSchoolGroupTypes**](docs/Api/DefaultApi.md#updateschoolgrouptypes) | **PUT** /SchoolGroupTypes | Update multiple SchoolGroupTypes
+*DefaultApi* | [**updateSchoolGroups**](docs/Api/DefaultApi.md#updateschoolgroups) | **PUT** /SchoolGroups | Update multiple SchoolGroups
+*DefaultApi* | [**updateSchoolInfoByRefId**](docs/Api/DefaultApi.md#updateschoolinfobyrefid) | **PUT** /SchoolInfos/{RefId} | Update SchoolInfo by RefId
+*DefaultApi* | [**updateSchoolInfos**](docs/Api/DefaultApi.md#updateschoolinfos) | **PUT** /SchoolInfos | Update multiple SchoolInfos
+*DefaultApi* | [**updateScopeByRefId**](docs/Api/DefaultApi.md#updatescopebyrefid) | **PUT** /Scopes/{RefId} | Update Scope by RefId
+*DefaultApi* | [**updateScopes**](docs/Api/DefaultApi.md#updatescopes) | **PUT** /Scopes | Update multiple Scopes
+*DefaultApi* | [**updateTTRoomByRefId**](docs/Api/DefaultApi.md#updatettroombyrefid) | **PUT** /TTRooms/{RefId} | Update TTRoom by RefId
+*DefaultApi* | [**updateTTRooms**](docs/Api/DefaultApi.md#updatettrooms) | **PUT** /TTRooms | Update multiple TTRooms
+*DefaultApi* | [**updateTTSiteByRefId**](docs/Api/DefaultApi.md#updatettsitebyrefid) | **PUT** /TTSites/{RefId} | Update TTSite by RefId
+*DefaultApi* | [**updateTTSites**](docs/Api/DefaultApi.md#updatettsites) | **PUT** /TTSites | Update multiple TTSites
+*DefaultApi* | [**updateTTSubjectByRefId**](docs/Api/DefaultApi.md#updatettsubjectbyrefid) | **PUT** /TTSubjects/{RefId} | Update TTSubject by RefId
+*DefaultApi* | [**updateTTSubjects**](docs/Api/DefaultApi.md#updatettsubjects) | **PUT** /TTSubjects | Update multiple TTSubjects
+*DefaultApi* | [**updateTTTeacherByRefId**](docs/Api/DefaultApi.md#updatettteacherbyrefid) | **PUT** /TTTeachers/{RefId} | Update TTTeacher by RefId
+*DefaultApi* | [**updateTTTeachers**](docs/Api/DefaultApi.md#updatettteachers) | **PUT** /TTTeachers | Update multiple TTTeachers
+*DefaultApi* | [**updateTeachingGroupByRefId**](docs/Api/DefaultApi.md#updateteachinggroupbyrefid) | **PUT** /TeachingGroups/{RefId} | Update TeachingGroup by RefId
+*DefaultApi* | [**updateTeachingGroups**](docs/Api/DefaultApi.md#updateteachinggroups) | **PUT** /TeachingGroups | Update multiple TeachingGroups
+*DefaultApi* | [**updateTermInfoByRefId**](docs/Api/DefaultApi.md#updateterminfobyrefid) | **PUT** /TermInfos/{RefId} | Update TermInfo by RefId
+*DefaultApi* | [**updateTermInfos**](docs/Api/DefaultApi.md#updateterminfos) | **PUT** /TermInfos | Update multiple TermInfos
+*DefaultApi* | [**updateWorkforceAbsenceByRefId**](docs/Api/DefaultApi.md#updateworkforceabsencebyrefid) | **PUT** /WorkforceAbsences/{RefId} | Update WorkforceAbsence by RefId
+*DefaultApi* | [**updateWorkforceAbsences**](docs/Api/DefaultApi.md#updateworkforceabsences) | **PUT** /WorkforceAbsences | Update multiple WorkforceAbsences
+*DefaultApi* | [**updateWorkforceAssignmentByRefId**](docs/Api/DefaultApi.md#updateworkforceassignmentbyrefid) | **PUT** /WorkforceAssignments/{RefId} | Update WorkforceAssignment by RefId
+*DefaultApi* | [**updateWorkforceAssignments**](docs/Api/DefaultApi.md#updateworkforceassignments) | **PUT** /WorkforceAssignments | Update multiple WorkforceAssignments
+*DefaultApi* | [**updateWorkforceContractByRefId**](docs/Api/DefaultApi.md#updateworkforcecontractbyrefid) | **PUT** /WorkforceContracts/{RefId} | Update WorkforceContract by RefId
+*DefaultApi* | [**updateWorkforceContracts**](docs/Api/DefaultApi.md#updateworkforcecontracts) | **PUT** /WorkforceContracts | Update multiple WorkforceContracts
+*DefaultApi* | [**updateWorkforcePersonalByRefId**](docs/Api/DefaultApi.md#updateworkforcepersonalbyrefid) | **PUT** /WorkforcePersonals/{RefId} | Update WorkforcePersonal by RefId
+*DefaultApi* | [**updateWorkforcePersonals**](docs/Api/DefaultApi.md#updateworkforcepersonals) | **PUT** /WorkforcePersonals | Update multiple WorkforcePersonals
 
 
 ## Documentation For Models
