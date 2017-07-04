@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerBehaviourIncidents**
-> \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents getLearnerBehaviourIncidents($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents getLearnerBehaviourIncidents($navigation_page, $navigation_page_size, $zone_id)
 
 Return all LearnerBehaviourIncidents
 
@@ -372,12 +372,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getLearnerBehaviourIncidents($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerBehaviourIncidents($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BehaviourApi->getLearnerBehaviourIncidents: ', $e->getMessage(), PHP_EOL;
@@ -389,9 +389,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -457,7 +457,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerExclusions**
-> \DataExchange\SIFUK20\Models\LearnerExclusions getLearnerExclusions($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerExclusions getLearnerExclusions($navigation_page, $navigation_page_size, $zone_id)
 
 Return all LearnerExclusions
 
@@ -472,12 +472,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\BehaviourApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getLearnerExclusions($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerExclusions($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BehaviourApi->getLearnerExclusions: ', $e->getMessage(), PHP_EOL;
@@ -489,9 +489,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 

@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLAInfos**
-> \DataExchange\SIFUK20\Models\LAInfos getLAInfos($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LAInfos getLAInfos($navigation_page, $navigation_page_size, $zone_id)
 
 Return all LAInfos
 
@@ -372,12 +372,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getLAInfos($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLAInfos($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling InstitutionApi->getLAInfos: ', $e->getMessage(), PHP_EOL;
@@ -389,9 +389,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -457,7 +457,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolInfos**
-> \DataExchange\SIFUK20\Models\SchoolInfos getSchoolInfos($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\SchoolInfos getSchoolInfos($navigation_page, $navigation_page_size, $zone_id)
 
 Return all SchoolInfos
 
@@ -472,12 +472,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\InstitutionApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getSchoolInfos($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getSchoolInfos($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling InstitutionApi->getSchoolInfos: ', $e->getMessage(), PHP_EOL;
@@ -489,9 +489,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 

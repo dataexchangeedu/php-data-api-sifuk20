@@ -760,15 +760,15 @@ class InstitutionApi
      *
      * Return all LAInfos
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LAInfos
      */
-    public function getLAInfos($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLAInfos($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLAInfosWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLAInfosWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -777,18 +777,14 @@ class InstitutionApi
      *
      * Return all LAInfos
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LAInfos, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLAInfosWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLAInfosWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLAInfos');
-        }
         // parse inputs
         $resourcePath = "/LAInfos";
         $httpBody = '';
@@ -956,15 +952,15 @@ class InstitutionApi
      *
      * Return all SchoolInfos
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\SchoolInfos
      */
-    public function getSchoolInfos($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolInfos($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getSchoolInfosWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getSchoolInfosWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -973,18 +969,14 @@ class InstitutionApi
      *
      * Return all SchoolInfos
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\SchoolInfos, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getSchoolInfosWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolInfosWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getSchoolInfos');
-        }
         // parse inputs
         $resourcePath = "/SchoolInfos";
         $httpBody = '';

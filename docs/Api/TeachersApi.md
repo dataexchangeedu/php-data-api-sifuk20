@@ -1112,7 +1112,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPersonDietaryPreferences**
-> \DataExchange\SIFUK20\Models\PersonDietaryPreferences getPersonDietaryPreferences($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\PersonDietaryPreferences getPersonDietaryPreferences($navigation_page, $navigation_page_size, $zone_id)
 
 Return all PersonDietaryPreferences
 
@@ -1127,12 +1127,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getPersonDietaryPreferences($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getPersonDietaryPreferences($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TeachersApi->getPersonDietaryPreferences: ', $e->getMessage(), PHP_EOL;
@@ -1144,9 +1144,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1212,7 +1212,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTSubjects**
-> \DataExchange\SIFUK20\Models\TTSubjects getTTSubjects($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTSubjects getTTSubjects($navigation_page, $navigation_page_size, $zone_id)
 
 Return all TTSubjects
 
@@ -1227,12 +1227,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getTTSubjects($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getTTSubjects($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TeachersApi->getTTSubjects: ', $e->getMessage(), PHP_EOL;
@@ -1244,9 +1244,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1312,7 +1312,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTTeachers**
-> \DataExchange\SIFUK20\Models\TTTeachers getTTTeachers($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTTeachers getTTTeachers($navigation_page, $navigation_page_size, $zone_id)
 
 Return all TTTeachers
 
@@ -1327,12 +1327,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getTTTeachers($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getTTTeachers($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TeachersApi->getTTTeachers: ', $e->getMessage(), PHP_EOL;
@@ -1344,9 +1344,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1412,7 +1412,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceAbsences**
-> \DataExchange\SIFUK20\Models\WorkforceAbsences getWorkforceAbsences($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforceAbsences getWorkforceAbsences($navigation_page, $navigation_page_size, $zone_id)
 
 Return all WorkforceAbsences
 
@@ -1427,12 +1427,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getWorkforceAbsences($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getWorkforceAbsences($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TeachersApi->getWorkforceAbsences: ', $e->getMessage(), PHP_EOL;
@@ -1444,9 +1444,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1512,7 +1512,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceAssignments**
-> \DataExchange\SIFUK20\Models\WorkforceAssignments getWorkforceAssignments($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforceAssignments getWorkforceAssignments($navigation_page, $navigation_page_size, $zone_id)
 
 Return all WorkforceAssignments
 
@@ -1527,12 +1527,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getWorkforceAssignments($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getWorkforceAssignments($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TeachersApi->getWorkforceAssignments: ', $e->getMessage(), PHP_EOL;
@@ -1544,9 +1544,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1612,7 +1612,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceContracts**
-> \DataExchange\SIFUK20\Models\WorkforceContracts getWorkforceContracts($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforceContracts getWorkforceContracts($navigation_page, $navigation_page_size, $zone_id)
 
 Return all WorkforceContracts
 
@@ -1627,12 +1627,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getWorkforceContracts($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getWorkforceContracts($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TeachersApi->getWorkforceContracts: ', $e->getMessage(), PHP_EOL;
@@ -1644,9 +1644,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1712,7 +1712,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforcePersonals**
-> \DataExchange\SIFUK20\Models\WorkforcePersonals getWorkforcePersonals($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforcePersonals getWorkforcePersonals($navigation_page, $navigation_page_size, $zone_id)
 
 Return all WorkforcePersonals
 
@@ -1727,12 +1727,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\TeachersApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getWorkforcePersonals($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getWorkforcePersonals($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TeachersApi->getWorkforcePersonals: ', $e->getMessage(), PHP_EOL;
@@ -1744,9 +1744,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 

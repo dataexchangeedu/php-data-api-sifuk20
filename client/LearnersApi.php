@@ -4680,13 +4680,13 @@ class LearnersApi
      *
      * Return all AssessmentLearnerSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentLearnerSets
      */
-    public function getAssessmentLearnerSets($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentLearnerSets($zone_id = null, $navigation_page = null, $navigation_page_size = null)
     {
         list($response) = $this->getAssessmentLearnerSetsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
         return $response;
@@ -4697,18 +4697,14 @@ class LearnersApi
      *
      * Return all AssessmentLearnerSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentLearnerSets, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentLearnerSetsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentLearnerSetsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getAssessmentLearnerSets');
-        }
         // parse inputs
         $resourcePath = "/AssessmentLearnerSets";
         $httpBody = '';
@@ -4876,15 +4872,15 @@ class LearnersApi
      *
      * Return all LearnerAssessmentResponseSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets
      */
-    public function getLearnerAssessmentResponseSets($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResponseSets($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerAssessmentResponseSetsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAssessmentResponseSetsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -4893,18 +4889,14 @@ class LearnersApi
      *
      * Return all LearnerAssessmentResponseSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAssessmentResponseSetsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResponseSetsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerAssessmentResponseSets');
-        }
         // parse inputs
         $resourcePath = "/LearnerAssessmentResponseSets";
         $httpBody = '';
@@ -5072,15 +5064,15 @@ class LearnersApi
      *
      * Return all LearnerAssessmentResults
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAssessmentResults
      */
-    public function getLearnerAssessmentResults($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResults($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerAssessmentResultsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAssessmentResultsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -5089,18 +5081,14 @@ class LearnersApi
      *
      * Return all LearnerAssessmentResults
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAssessmentResults, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAssessmentResultsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResultsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerAssessmentResults');
-        }
         // parse inputs
         $resourcePath = "/LearnerAssessmentResults";
         $httpBody = '';
@@ -5362,15 +5350,15 @@ class LearnersApi
      *
      * Return all LearnerAttendanceSummarys
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys
      */
-    public function getLearnerAttendanceSummarys($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendanceSummarys($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerAttendanceSummarysWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAttendanceSummarysWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -5379,18 +5367,14 @@ class LearnersApi
      *
      * Return all LearnerAttendanceSummarys
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAttendanceSummarysWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendanceSummarysWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerAttendanceSummarys');
-        }
         // parse inputs
         $resourcePath = "/LearnerAttendanceSummarys";
         $httpBody = '';
@@ -5464,15 +5448,15 @@ class LearnersApi
      *
      * Return all LearnerAttendances
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAttendances
      */
-    public function getLearnerAttendances($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendances($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerAttendancesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAttendancesWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -5481,18 +5465,14 @@ class LearnersApi
      *
      * Return all LearnerAttendances
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAttendances, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAttendancesWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendancesWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerAttendances');
-        }
         // parse inputs
         $resourcePath = "/LearnerAttendances";
         $httpBody = '';
@@ -5660,15 +5640,15 @@ class LearnersApi
      *
      * Return all LearnerBehaviourIncidents
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents
      */
-    public function getLearnerBehaviourIncidents($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerBehaviourIncidents($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerBehaviourIncidentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerBehaviourIncidentsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -5677,18 +5657,14 @@ class LearnersApi
      *
      * Return all LearnerBehaviourIncidents
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerBehaviourIncidentsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerBehaviourIncidentsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerBehaviourIncidents');
-        }
         // parse inputs
         $resourcePath = "/LearnerBehaviourIncidents";
         $httpBody = '';
@@ -5856,15 +5832,15 @@ class LearnersApi
      *
      * Return all LearnerContacts
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerContacts
      */
-    public function getLearnerContacts($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerContacts($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerContactsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerContactsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -5873,18 +5849,14 @@ class LearnersApi
      *
      * Return all LearnerContacts
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerContacts, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerContactsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerContactsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerContacts');
-        }
         // parse inputs
         $resourcePath = "/LearnerContacts";
         $httpBody = '';
@@ -6052,15 +6024,15 @@ class LearnersApi
      *
      * Return all LearnerEntitlements
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerEntitlements
      */
-    public function getLearnerEntitlements($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerEntitlements($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerEntitlementsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerEntitlementsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -6069,18 +6041,14 @@ class LearnersApi
      *
      * Return all LearnerEntitlements
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerEntitlements, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerEntitlementsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerEntitlementsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerEntitlements');
-        }
         // parse inputs
         $resourcePath = "/LearnerEntitlements";
         $httpBody = '';
@@ -6248,15 +6216,15 @@ class LearnersApi
      *
      * Return all LearnerExclusions
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerExclusions
      */
-    public function getLearnerExclusions($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerExclusions($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerExclusionsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerExclusionsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -6265,18 +6233,14 @@ class LearnersApi
      *
      * Return all LearnerExclusions
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerExclusions, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerExclusionsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerExclusionsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerExclusions');
-        }
         // parse inputs
         $resourcePath = "/LearnerExclusions";
         $httpBody = '';
@@ -6444,15 +6408,15 @@ class LearnersApi
      *
      * Return all LearnerGroupEnrolments
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerGroupEnrolments
      */
-    public function getLearnerGroupEnrolments($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerGroupEnrolments($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerGroupEnrolmentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerGroupEnrolmentsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -6461,18 +6425,14 @@ class LearnersApi
      *
      * Return all LearnerGroupEnrolments
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerGroupEnrolments, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerGroupEnrolmentsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerGroupEnrolmentsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerGroupEnrolments');
-        }
         // parse inputs
         $resourcePath = "/LearnerGroupEnrolments";
         $httpBody = '';
@@ -6640,15 +6600,15 @@ class LearnersApi
      *
      * Return all LearnerPersonals
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerPersonals
      */
-    public function getLearnerPersonals($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerPersonals($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerPersonalsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerPersonalsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -6657,18 +6617,14 @@ class LearnersApi
      *
      * Return all LearnerPersonals
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerPersonals, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerPersonalsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerPersonalsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerPersonals');
-        }
         // parse inputs
         $resourcePath = "/LearnerPersonals";
         $httpBody = '';
@@ -6836,15 +6792,15 @@ class LearnersApi
      *
      * Return all LearnerSchoolEnrolments
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments
      */
-    public function getLearnerSchoolEnrolments($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerSchoolEnrolments($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerSchoolEnrolmentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerSchoolEnrolmentsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -6853,18 +6809,14 @@ class LearnersApi
      *
      * Return all LearnerSchoolEnrolments
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerSchoolEnrolmentsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerSchoolEnrolmentsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerSchoolEnrolments');
-        }
         // parse inputs
         $resourcePath = "/LearnerSchoolEnrolments";
         $httpBody = '';
@@ -7032,15 +6984,15 @@ class LearnersApi
      *
      * Return all LearnerSpecialNeedss
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerSpecialNeedss
      */
-    public function getLearnerSpecialNeedss($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerSpecialNeedss($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerSpecialNeedssWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerSpecialNeedssWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -7049,18 +7001,14 @@ class LearnersApi
      *
      * Return all LearnerSpecialNeedss
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerSpecialNeedss, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerSpecialNeedssWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerSpecialNeedssWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerSpecialNeedss');
-        }
         // parse inputs
         $resourcePath = "/LearnerSpecialNeedss";
         $httpBody = '';
@@ -7228,15 +7176,15 @@ class LearnersApi
      *
      * Return all PersonDietaryPreferences
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\PersonDietaryPreferences
      */
-    public function getPersonDietaryPreferences($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getPersonDietaryPreferences($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getPersonDietaryPreferencesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getPersonDietaryPreferencesWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -7245,18 +7193,14 @@ class LearnersApi
      *
      * Return all PersonDietaryPreferences
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\PersonDietaryPreferences, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getPersonDietaryPreferencesWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getPersonDietaryPreferencesWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getPersonDietaryPreferences');
-        }
         // parse inputs
         $resourcePath = "/PersonDietaryPreferences";
         $httpBody = '';
@@ -7424,15 +7368,15 @@ class LearnersApi
      *
      * Return all TTSubjects
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TTSubjects
      */
-    public function getTTSubjects($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getTTSubjects($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getTTSubjectsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTTSubjectsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -7441,18 +7385,14 @@ class LearnersApi
      *
      * Return all TTSubjects
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TTSubjects, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTTSubjectsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getTTSubjectsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getTTSubjects');
-        }
         // parse inputs
         $resourcePath = "/TTSubjects";
         $httpBody = '';
@@ -7620,15 +7560,15 @@ class LearnersApi
      *
      * Return all TeachingGroups
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TeachingGroups
      */
-    public function getTeachingGroups($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getTeachingGroups($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getTeachingGroupsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTeachingGroupsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -7637,18 +7577,14 @@ class LearnersApi
      *
      * Return all TeachingGroups
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TeachingGroups, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTeachingGroupsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getTeachingGroupsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getTeachingGroups');
-        }
         // parse inputs
         $resourcePath = "/TeachingGroups";
         $httpBody = '';

@@ -2160,15 +2160,15 @@ class TeachersApi
      *
      * Return all PersonDietaryPreferences
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\PersonDietaryPreferences
      */
-    public function getPersonDietaryPreferences($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getPersonDietaryPreferences($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getPersonDietaryPreferencesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getPersonDietaryPreferencesWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -2177,18 +2177,14 @@ class TeachersApi
      *
      * Return all PersonDietaryPreferences
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\PersonDietaryPreferences, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getPersonDietaryPreferencesWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getPersonDietaryPreferencesWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getPersonDietaryPreferences');
-        }
         // parse inputs
         $resourcePath = "/PersonDietaryPreferences";
         $httpBody = '';
@@ -2356,15 +2352,15 @@ class TeachersApi
      *
      * Return all TTSubjects
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TTSubjects
      */
-    public function getTTSubjects($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getTTSubjects($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getTTSubjectsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTTSubjectsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -2373,18 +2369,14 @@ class TeachersApi
      *
      * Return all TTSubjects
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TTSubjects, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTTSubjectsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getTTSubjectsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getTTSubjects');
-        }
         // parse inputs
         $resourcePath = "/TTSubjects";
         $httpBody = '';
@@ -2552,15 +2544,15 @@ class TeachersApi
      *
      * Return all TTTeachers
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TTTeachers
      */
-    public function getTTTeachers($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getTTTeachers($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getTTTeachersWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTTTeachersWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -2569,18 +2561,14 @@ class TeachersApi
      *
      * Return all TTTeachers
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TTTeachers, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTTTeachersWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getTTTeachersWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getTTTeachers');
-        }
         // parse inputs
         $resourcePath = "/TTTeachers";
         $httpBody = '';
@@ -2748,15 +2736,15 @@ class TeachersApi
      *
      * Return all WorkforceAbsences
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\WorkforceAbsences
      */
-    public function getWorkforceAbsences($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceAbsences($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getWorkforceAbsencesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getWorkforceAbsencesWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -2765,18 +2753,14 @@ class TeachersApi
      *
      * Return all WorkforceAbsences
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\WorkforceAbsences, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getWorkforceAbsencesWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceAbsencesWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getWorkforceAbsences');
-        }
         // parse inputs
         $resourcePath = "/WorkforceAbsences";
         $httpBody = '';
@@ -2944,15 +2928,15 @@ class TeachersApi
      *
      * Return all WorkforceAssignments
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\WorkforceAssignments
      */
-    public function getWorkforceAssignments($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceAssignments($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getWorkforceAssignmentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getWorkforceAssignmentsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -2961,18 +2945,14 @@ class TeachersApi
      *
      * Return all WorkforceAssignments
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\WorkforceAssignments, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getWorkforceAssignmentsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceAssignmentsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getWorkforceAssignments');
-        }
         // parse inputs
         $resourcePath = "/WorkforceAssignments";
         $httpBody = '';
@@ -3140,15 +3120,15 @@ class TeachersApi
      *
      * Return all WorkforceContracts
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\WorkforceContracts
      */
-    public function getWorkforceContracts($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceContracts($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getWorkforceContractsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getWorkforceContractsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -3157,18 +3137,14 @@ class TeachersApi
      *
      * Return all WorkforceContracts
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\WorkforceContracts, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getWorkforceContractsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceContractsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getWorkforceContracts');
-        }
         // parse inputs
         $resourcePath = "/WorkforceContracts";
         $httpBody = '';
@@ -3336,15 +3312,15 @@ class TeachersApi
      *
      * Return all WorkforcePersonals
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\WorkforcePersonals
      */
-    public function getWorkforcePersonals($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforcePersonals($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getWorkforcePersonalsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getWorkforcePersonalsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -3353,18 +3329,14 @@ class TeachersApi
      *
      * Return all WorkforcePersonals
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\WorkforcePersonals, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getWorkforcePersonalsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforcePersonalsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getWorkforcePersonals');
-        }
         // parse inputs
         $resourcePath = "/WorkforcePersonals";
         $httpBody = '';

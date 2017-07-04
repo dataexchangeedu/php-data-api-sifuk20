@@ -1446,7 +1446,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
@@ -1562,7 +1562,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResponseComponentGroups**
-> \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups getAssessmentResponseComponentGroups($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups getAssessmentResponseComponentGroups($navigation_page, $navigation_page_size, $zone_id)
 
 Return all AssessmentResponseComponentGroups
 
@@ -1577,12 +1577,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getAssessmentResponseComponentGroups($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResponseComponentGroups($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssessmentsApi->getAssessmentResponseComponentGroups: ', $e->getMessage(), PHP_EOL;
@@ -1594,9 +1594,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1614,7 +1614,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResponseComponents**
-> \DataExchange\SIFUK20\Models\AssessmentResponseComponents getAssessmentResponseComponents($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResponseComponents getAssessmentResponseComponents($navigation_page, $navigation_page_size, $zone_id)
 
 Return all AssessmentResponseComponents
 
@@ -1629,12 +1629,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getAssessmentResponseComponents($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResponseComponents($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssessmentsApi->getAssessmentResponseComponents: ', $e->getMessage(), PHP_EOL;
@@ -1646,9 +1646,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1762,7 +1762,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultComponentGroups**
-> \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups getAssessmentResultComponentGroups($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups getAssessmentResultComponentGroups($navigation_page, $navigation_page_size, $zone_id)
 
 Return all AssessmentResultComponentGroups
 
@@ -1777,12 +1777,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getAssessmentResultComponentGroups($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResultComponentGroups($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssessmentsApi->getAssessmentResultComponentGroups: ', $e->getMessage(), PHP_EOL;
@@ -1794,9 +1794,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1814,7 +1814,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultComponents**
-> \DataExchange\SIFUK20\Models\AssessmentResultComponents getAssessmentResultComponents($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResultComponents getAssessmentResultComponents($navigation_page, $navigation_page_size, $zone_id)
 
 Return all AssessmentResultComponents
 
@@ -1829,12 +1829,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getAssessmentResultComponents($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResultComponents($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssessmentsApi->getAssessmentResultComponents: ', $e->getMessage(), PHP_EOL;
@@ -1846,9 +1846,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -1914,7 +1914,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultGradeSets**
-> \DataExchange\SIFUK20\Models\AssessmentResultGradeSets getAssessmentResultGradeSets($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResultGradeSets getAssessmentResultGradeSets($navigation_page, $navigation_page_size, $zone_id)
 
 Return all AssessmentResultGradeSets
 
@@ -1929,12 +1929,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getAssessmentResultGradeSets($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResultGradeSets($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssessmentsApi->getAssessmentResultGradeSets: ', $e->getMessage(), PHP_EOL;
@@ -1946,9 +1946,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -2014,7 +2014,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentSessions**
-> \DataExchange\SIFUK20\Models\AssessmentSessions getAssessmentSessions($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentSessions getAssessmentSessions($navigation_page, $navigation_page_size, $zone_id)
 
 Return all AssessmentSessions
 
@@ -2029,12 +2029,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getAssessmentSessions($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentSessions($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssessmentsApi->getAssessmentSessions: ', $e->getMessage(), PHP_EOL;
@@ -2046,9 +2046,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -2114,7 +2114,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAssessmentResponseSets**
-> \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets getLearnerAssessmentResponseSets($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets getLearnerAssessmentResponseSets($navigation_page, $navigation_page_size, $zone_id)
 
 Return all LearnerAssessmentResponseSets
 
@@ -2129,12 +2129,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getLearnerAssessmentResponseSets($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerAssessmentResponseSets($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssessmentsApi->getLearnerAssessmentResponseSets: ', $e->getMessage(), PHP_EOL;
@@ -2146,9 +2146,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 
@@ -2214,7 +2214,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAssessmentResults**
-> \DataExchange\SIFUK20\Models\LearnerAssessmentResults getLearnerAssessmentResults($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAssessmentResults getLearnerAssessmentResults($navigation_page, $navigation_page_size, $zone_id)
 
 Return all LearnerAssessmentResults
 
@@ -2229,12 +2229,12 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 // DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 $api_instance = new DataExchange\SIFUK20\Api\AssessmentsApi();
-$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 $navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$zone_id = "zone_id_example"; // string | The id of the zone to request data from.
 
 try {
-    $result = $api_instance->getLearnerAssessmentResults($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerAssessmentResults($navigation_page, $navigation_page_size, $zone_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssessmentsApi->getLearnerAssessmentResults: ', $e->getMessage(), PHP_EOL;
@@ -2246,9 +2246,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **zone_id** | **string**| The id of the zone to request data from. |
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
  **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
+ **zone_id** | **string**| The id of the zone to request data from. | [optional]
 
 ### Return type
 

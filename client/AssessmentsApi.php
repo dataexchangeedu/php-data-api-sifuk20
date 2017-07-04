@@ -2720,13 +2720,13 @@ class AssessmentsApi
      *
      * Return all AssessmentLearnerSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentLearnerSets
      */
-    public function getAssessmentLearnerSets($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentLearnerSets($zone_id = null, $navigation_page = null, $navigation_page_size = null)
     {
         list($response) = $this->getAssessmentLearnerSetsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
         return $response;
@@ -2737,18 +2737,14 @@ class AssessmentsApi
      *
      * Return all AssessmentLearnerSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentLearnerSets, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentLearnerSetsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentLearnerSetsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getAssessmentLearnerSets');
-        }
         // parse inputs
         $resourcePath = "/AssessmentLearnerSets";
         $httpBody = '';
@@ -3010,15 +3006,15 @@ class AssessmentsApi
      *
      * Return all AssessmentResponseComponentGroups
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups
      */
-    public function getAssessmentResponseComponentGroups($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResponseComponentGroups($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getAssessmentResponseComponentGroupsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResponseComponentGroupsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -3027,18 +3023,14 @@ class AssessmentsApi
      *
      * Return all AssessmentResponseComponentGroups
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResponseComponentGroupsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResponseComponentGroupsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getAssessmentResponseComponentGroups');
-        }
         // parse inputs
         $resourcePath = "/AssessmentResponseComponentGroups";
         $httpBody = '';
@@ -3112,15 +3104,15 @@ class AssessmentsApi
      *
      * Return all AssessmentResponseComponents
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResponseComponents
      */
-    public function getAssessmentResponseComponents($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResponseComponents($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getAssessmentResponseComponentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResponseComponentsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -3129,18 +3121,14 @@ class AssessmentsApi
      *
      * Return all AssessmentResponseComponents
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResponseComponents, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResponseComponentsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResponseComponentsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getAssessmentResponseComponents');
-        }
         // parse inputs
         $resourcePath = "/AssessmentResponseComponents";
         $httpBody = '';
@@ -3402,15 +3390,15 @@ class AssessmentsApi
      *
      * Return all AssessmentResultComponentGroups
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups
      */
-    public function getAssessmentResultComponentGroups($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultComponentGroups($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getAssessmentResultComponentGroupsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResultComponentGroupsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -3419,18 +3407,14 @@ class AssessmentsApi
      *
      * Return all AssessmentResultComponentGroups
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResultComponentGroupsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultComponentGroupsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getAssessmentResultComponentGroups');
-        }
         // parse inputs
         $resourcePath = "/AssessmentResultComponentGroups";
         $httpBody = '';
@@ -3504,15 +3488,15 @@ class AssessmentsApi
      *
      * Return all AssessmentResultComponents
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResultComponents
      */
-    public function getAssessmentResultComponents($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultComponents($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getAssessmentResultComponentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResultComponentsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -3521,18 +3505,14 @@ class AssessmentsApi
      *
      * Return all AssessmentResultComponents
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResultComponents, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResultComponentsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultComponentsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getAssessmentResultComponents');
-        }
         // parse inputs
         $resourcePath = "/AssessmentResultComponents";
         $httpBody = '';
@@ -3700,15 +3680,15 @@ class AssessmentsApi
      *
      * Return all AssessmentResultGradeSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResultGradeSets
      */
-    public function getAssessmentResultGradeSets($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultGradeSets($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getAssessmentResultGradeSetsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResultGradeSetsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -3717,18 +3697,14 @@ class AssessmentsApi
      *
      * Return all AssessmentResultGradeSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResultGradeSets, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResultGradeSetsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultGradeSetsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getAssessmentResultGradeSets');
-        }
         // parse inputs
         $resourcePath = "/AssessmentResultGradeSets";
         $httpBody = '';
@@ -3896,15 +3872,15 @@ class AssessmentsApi
      *
      * Return all AssessmentSessions
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentSessions
      */
-    public function getAssessmentSessions($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentSessions($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getAssessmentSessionsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentSessionsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -3913,18 +3889,14 @@ class AssessmentsApi
      *
      * Return all AssessmentSessions
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentSessions, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentSessionsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentSessionsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getAssessmentSessions');
-        }
         // parse inputs
         $resourcePath = "/AssessmentSessions";
         $httpBody = '';
@@ -4092,15 +4064,15 @@ class AssessmentsApi
      *
      * Return all LearnerAssessmentResponseSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets
      */
-    public function getLearnerAssessmentResponseSets($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResponseSets($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerAssessmentResponseSetsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAssessmentResponseSetsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -4109,18 +4081,14 @@ class AssessmentsApi
      *
      * Return all LearnerAssessmentResponseSets
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAssessmentResponseSetsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResponseSetsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerAssessmentResponseSets');
-        }
         // parse inputs
         $resourcePath = "/LearnerAssessmentResponseSets";
         $httpBody = '';
@@ -4288,15 +4256,15 @@ class AssessmentsApi
      *
      * Return all LearnerAssessmentResults
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAssessmentResults
      */
-    public function getLearnerAssessmentResults($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResults($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerAssessmentResultsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAssessmentResultsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -4305,18 +4273,14 @@ class AssessmentsApi
      *
      * Return all LearnerAssessmentResults
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAssessmentResults, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAssessmentResultsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResultsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerAssessmentResults');
-        }
         // parse inputs
         $resourcePath = "/LearnerAssessmentResults";
         $httpBody = '';

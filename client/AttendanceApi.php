@@ -854,15 +854,15 @@ class AttendanceApi
      *
      * Return all LearnerAttendanceSummarys
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys
      */
-    public function getLearnerAttendanceSummarys($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendanceSummarys($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerAttendanceSummarysWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAttendanceSummarysWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -871,18 +871,14 @@ class AttendanceApi
      *
      * Return all LearnerAttendanceSummarys
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAttendanceSummarysWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendanceSummarysWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerAttendanceSummarys');
-        }
         // parse inputs
         $resourcePath = "/LearnerAttendanceSummarys";
         $httpBody = '';
@@ -956,15 +952,15 @@ class AttendanceApi
      *
      * Return all LearnerAttendances
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAttendances
      */
-    public function getLearnerAttendances($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendances($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerAttendancesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAttendancesWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -973,18 +969,14 @@ class AttendanceApi
      *
      * Return all LearnerAttendances
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAttendances, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAttendancesWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendancesWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerAttendances');
-        }
         // parse inputs
         $resourcePath = "/LearnerAttendances";
         $httpBody = '';

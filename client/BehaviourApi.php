@@ -760,15 +760,15 @@ class BehaviourApi
      *
      * Return all LearnerBehaviourIncidents
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents
      */
-    public function getLearnerBehaviourIncidents($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerBehaviourIncidents($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerBehaviourIncidentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerBehaviourIncidentsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -777,18 +777,14 @@ class BehaviourApi
      *
      * Return all LearnerBehaviourIncidents
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerBehaviourIncidentsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerBehaviourIncidentsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerBehaviourIncidents');
-        }
         // parse inputs
         $resourcePath = "/LearnerBehaviourIncidents";
         $httpBody = '';
@@ -956,15 +952,15 @@ class BehaviourApi
      *
      * Return all LearnerExclusions
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerExclusions
      */
-    public function getLearnerExclusions($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerExclusions($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        list($response) = $this->getLearnerExclusionsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerExclusionsWithHttpInfo($navigation_page, $navigation_page_size, $zone_id);
         return $response;
     }
 
@@ -973,18 +969,14 @@ class BehaviourApi
      *
      * Return all LearnerExclusions
      *
-     * @param string $zone_id The id of the zone to request data from. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
      * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
+     * @param string $zone_id The id of the zone to request data from. (optional)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerExclusions, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerExclusionsWithHttpInfo($zone_id, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerExclusionsWithHttpInfo($navigation_page = null, $navigation_page_size = null, $zone_id = null)
     {
-        // verify the required parameter 'zone_id' is set
-        if ($zone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $zone_id when calling getLearnerExclusions');
-        }
         // parse inputs
         $resourcePath = "/LearnerExclusions";
         $httpBody = '';
