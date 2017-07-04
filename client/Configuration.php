@@ -101,7 +101,7 @@ class Configuration
      *
      * @var string
      */
-    protected $host = 'https://uk.dataexchange.education/rest/sif/requests';
+    protected $host = 'https://uk.stagingdataexchange.education/rest/sif/requests';
 
     /**
      * Timeout (second) of the HTTP request, by default set to 0, no timeout

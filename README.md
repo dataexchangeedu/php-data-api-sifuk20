@@ -78,7 +78,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://uk.dataexchange.education/rest/sif/requests*
+All URIs are relative to *https://uk.stagingdataexchange.education/rest/sif/requests*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

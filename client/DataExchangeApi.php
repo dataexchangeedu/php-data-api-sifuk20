@@ -72,7 +72,7 @@ class DataExchangeApi
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
-            $apiClient->getConfig()->setHost('https://uk.dataexchange.education/rest/sif/requests');
+            $apiClient->getConfig()->setHost('https://uk.stagingdataexchange.education/rest/sif/requests');
         }
 
         $this->apiClient = $apiClient;

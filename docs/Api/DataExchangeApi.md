@@ -1,6 +1,6 @@
 # DataExchange\SIFUK20\DataExchangeApi
 
-All URIs are relative to *https://uk.dataexchange.education/rest/sif/requests*
+All URIs are relative to *https://uk.stagingdataexchange.education/rest/sif/requests*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
