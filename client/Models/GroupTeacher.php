@@ -206,7 +206,7 @@ class GroupTeacher implements ArrayAccess
 
     /**
      * Sets type
-     * @param string $type The teacherâ€™s relationship with the TG
+     * @param string $type The teacher’s relationship with the TG
      * @return $this
      */
     public function setType($type)

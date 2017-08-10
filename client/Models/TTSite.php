@@ -47,7 +47,7 @@ use \ArrayAccess;
  * TTSite Class Doc Comment
  *
  * @category    Class */
- // @description A site used on the timetable. This may or may not be a â€œrealâ€ site stored in the MIS yet.
+ // @description A site used on the timetable. This may or may not be a “real” site stored in the MIS yet.
 /**
  * @package     DataExchange\SIFUK20
  * @author      http://github.com/swagger-api/swagger-codegen
