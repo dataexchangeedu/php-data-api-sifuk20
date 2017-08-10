@@ -6497,7 +6497,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentLearnerSets**
-> \DataExchange\SIFUK20\Models\AssessmentLearnerSets getAssessmentLearnerSets($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentLearnerSets getAssessmentLearnerSets($zone_id, $navigation_page_size, $navigation_page)
 
 Return all AssessmentLearnerSets
 
@@ -6513,11 +6513,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getAssessmentLearnerSets($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentLearnerSets($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getAssessmentLearnerSets: ', $e->getMessage(), PHP_EOL;
@@ -6530,8 +6530,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -6645,7 +6645,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResponseComponentGroups**
-> \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups getAssessmentResponseComponentGroups($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups getAssessmentResponseComponentGroups($zone_id, $navigation_page_size, $navigation_page)
 
 Return all AssessmentResponseComponentGroups
 
@@ -6661,11 +6661,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getAssessmentResponseComponentGroups($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResponseComponentGroups($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getAssessmentResponseComponentGroups: ', $e->getMessage(), PHP_EOL;
@@ -6678,8 +6678,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -6697,7 +6697,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResponseComponents**
-> \DataExchange\SIFUK20\Models\AssessmentResponseComponents getAssessmentResponseComponents($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResponseComponents getAssessmentResponseComponents($zone_id, $navigation_page_size, $navigation_page)
 
 Return all AssessmentResponseComponents
 
@@ -6713,11 +6713,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getAssessmentResponseComponents($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResponseComponents($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getAssessmentResponseComponents: ', $e->getMessage(), PHP_EOL;
@@ -6730,8 +6730,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -6845,7 +6845,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultComponentGroups**
-> \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups getAssessmentResultComponentGroups($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups getAssessmentResultComponentGroups($zone_id, $navigation_page_size, $navigation_page)
 
 Return all AssessmentResultComponentGroups
 
@@ -6861,11 +6861,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getAssessmentResultComponentGroups($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResultComponentGroups($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getAssessmentResultComponentGroups: ', $e->getMessage(), PHP_EOL;
@@ -6878,8 +6878,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -6897,7 +6897,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultComponents**
-> \DataExchange\SIFUK20\Models\AssessmentResultComponents getAssessmentResultComponents($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResultComponents getAssessmentResultComponents($zone_id, $navigation_page_size, $navigation_page)
 
 Return all AssessmentResultComponents
 
@@ -6913,11 +6913,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getAssessmentResultComponents($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResultComponents($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getAssessmentResultComponents: ', $e->getMessage(), PHP_EOL;
@@ -6930,8 +6930,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -6997,7 +6997,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentResultGradeSets**
-> \DataExchange\SIFUK20\Models\AssessmentResultGradeSets getAssessmentResultGradeSets($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentResultGradeSets getAssessmentResultGradeSets($zone_id, $navigation_page_size, $navigation_page)
 
 Return all AssessmentResultGradeSets
 
@@ -7013,11 +7013,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getAssessmentResultGradeSets($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentResultGradeSets($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getAssessmentResultGradeSets: ', $e->getMessage(), PHP_EOL;
@@ -7030,8 +7030,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7097,7 +7097,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssessmentSessions**
-> \DataExchange\SIFUK20\Models\AssessmentSessions getAssessmentSessions($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\AssessmentSessions getAssessmentSessions($zone_id, $navigation_page_size, $navigation_page)
 
 Return all AssessmentSessions
 
@@ -7113,11 +7113,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getAssessmentSessions($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getAssessmentSessions($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getAssessmentSessions: ', $e->getMessage(), PHP_EOL;
@@ -7130,8 +7130,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7197,7 +7197,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactPersonals**
-> \DataExchange\SIFUK20\Models\ContactPersonals getContactPersonals($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\ContactPersonals getContactPersonals($zone_id, $navigation_page_size, $navigation_page)
 
 Return all ContactPersonals
 
@@ -7213,11 +7213,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getContactPersonals($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getContactPersonals($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getContactPersonals: ', $e->getMessage(), PHP_EOL;
@@ -7230,8 +7230,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7297,7 +7297,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCycles**
-> \DataExchange\SIFUK20\Models\Cycles getCycles($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\Cycles getCycles($zone_id, $navigation_page_size, $navigation_page)
 
 Return all Cycles
 
@@ -7313,11 +7313,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getCycles($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getCycles($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getCycles: ', $e->getMessage(), PHP_EOL;
@@ -7330,8 +7330,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7397,7 +7397,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getIdentitys**
-> \DataExchange\SIFUK20\Models\Identitys getIdentitys($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\Identitys getIdentitys($zone_id, $navigation_page_size, $navigation_page)
 
 Return all Identitys
 
@@ -7413,11 +7413,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getIdentitys($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getIdentitys($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getIdentitys: ', $e->getMessage(), PHP_EOL;
@@ -7430,8 +7430,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7497,7 +7497,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getJunctions**
-> \DataExchange\SIFUK20\Models\Junctions getJunctions($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\Junctions getJunctions($zone_id, $navigation_page_size, $navigation_page)
 
 Return all Junctions
 
@@ -7513,11 +7513,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getJunctions($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getJunctions($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getJunctions: ', $e->getMessage(), PHP_EOL;
@@ -7530,8 +7530,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7597,7 +7597,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLAInfos**
-> \DataExchange\SIFUK20\Models\LAInfos getLAInfos($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LAInfos getLAInfos($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LAInfos
 
@@ -7613,11 +7613,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLAInfos($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLAInfos($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLAInfos: ', $e->getMessage(), PHP_EOL;
@@ -7630,8 +7630,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7697,7 +7697,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAssessmentResponseSets**
-> \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets getLearnerAssessmentResponseSets($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets getLearnerAssessmentResponseSets($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerAssessmentResponseSets
 
@@ -7713,11 +7713,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerAssessmentResponseSets($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerAssessmentResponseSets($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerAssessmentResponseSets: ', $e->getMessage(), PHP_EOL;
@@ -7730,8 +7730,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7797,7 +7797,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAssessmentResults**
-> \DataExchange\SIFUK20\Models\LearnerAssessmentResults getLearnerAssessmentResults($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAssessmentResults getLearnerAssessmentResults($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerAssessmentResults
 
@@ -7813,11 +7813,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerAssessmentResults($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerAssessmentResults($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerAssessmentResults: ', $e->getMessage(), PHP_EOL;
@@ -7830,8 +7830,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7945,7 +7945,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAttendanceSummarys**
-> \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys getLearnerAttendanceSummarys($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys getLearnerAttendanceSummarys($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerAttendanceSummarys
 
@@ -7961,11 +7961,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerAttendanceSummarys($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerAttendanceSummarys($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerAttendanceSummarys: ', $e->getMessage(), PHP_EOL;
@@ -7978,8 +7978,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -7997,7 +7997,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerAttendances**
-> \DataExchange\SIFUK20\Models\LearnerAttendances getLearnerAttendances($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerAttendances getLearnerAttendances($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerAttendances
 
@@ -8013,11 +8013,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerAttendances($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerAttendances($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerAttendances: ', $e->getMessage(), PHP_EOL;
@@ -8030,8 +8030,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8097,7 +8097,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerBehaviourIncidents**
-> \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents getLearnerBehaviourIncidents($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents getLearnerBehaviourIncidents($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerBehaviourIncidents
 
@@ -8113,11 +8113,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerBehaviourIncidents($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerBehaviourIncidents($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerBehaviourIncidents: ', $e->getMessage(), PHP_EOL;
@@ -8130,8 +8130,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8197,7 +8197,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerContacts**
-> \DataExchange\SIFUK20\Models\LearnerContacts getLearnerContacts($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerContacts getLearnerContacts($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerContacts
 
@@ -8213,11 +8213,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerContacts($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerContacts($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerContacts: ', $e->getMessage(), PHP_EOL;
@@ -8230,8 +8230,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8297,7 +8297,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerEntitlements**
-> \DataExchange\SIFUK20\Models\LearnerEntitlements getLearnerEntitlements($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerEntitlements getLearnerEntitlements($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerEntitlements
 
@@ -8313,11 +8313,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerEntitlements($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerEntitlements($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerEntitlements: ', $e->getMessage(), PHP_EOL;
@@ -8330,8 +8330,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8397,7 +8397,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerExclusions**
-> \DataExchange\SIFUK20\Models\LearnerExclusions getLearnerExclusions($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerExclusions getLearnerExclusions($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerExclusions
 
@@ -8413,11 +8413,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerExclusions($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerExclusions($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerExclusions: ', $e->getMessage(), PHP_EOL;
@@ -8430,8 +8430,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8497,7 +8497,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerGroupEnrolments**
-> \DataExchange\SIFUK20\Models\LearnerGroupEnrolments getLearnerGroupEnrolments($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerGroupEnrolments getLearnerGroupEnrolments($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerGroupEnrolments
 
@@ -8513,11 +8513,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerGroupEnrolments($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerGroupEnrolments($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerGroupEnrolments: ', $e->getMessage(), PHP_EOL;
@@ -8530,8 +8530,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8597,7 +8597,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerPersonals**
-> \DataExchange\SIFUK20\Models\LearnerPersonals getLearnerPersonals($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerPersonals getLearnerPersonals($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerPersonals
 
@@ -8613,11 +8613,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerPersonals($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerPersonals($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerPersonals: ', $e->getMessage(), PHP_EOL;
@@ -8630,8 +8630,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8697,7 +8697,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerSchoolEnrolments**
-> \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments getLearnerSchoolEnrolments($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments getLearnerSchoolEnrolments($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerSchoolEnrolments
 
@@ -8713,11 +8713,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerSchoolEnrolments($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerSchoolEnrolments($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerSchoolEnrolments: ', $e->getMessage(), PHP_EOL;
@@ -8730,8 +8730,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8797,7 +8797,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLearnerSpecialNeedss**
-> \DataExchange\SIFUK20\Models\LearnerSpecialNeedss getLearnerSpecialNeedss($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\LearnerSpecialNeedss getLearnerSpecialNeedss($zone_id, $navigation_page_size, $navigation_page)
 
 Return all LearnerSpecialNeedss
 
@@ -8813,11 +8813,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLearnerSpecialNeedss($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLearnerSpecialNeedss($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLearnerSpecialNeedss: ', $e->getMessage(), PHP_EOL;
@@ -8830,8 +8830,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8897,7 +8897,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLessons**
-> \DataExchange\SIFUK20\Models\Lessons getLessons($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\Lessons getLessons($zone_id, $navigation_page_size, $navigation_page)
 
 Return all Lessons
 
@@ -8913,11 +8913,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getLessons($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getLessons($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getLessons: ', $e->getMessage(), PHP_EOL;
@@ -8930,8 +8930,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -8997,7 +8997,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getNonTeachingActivitys**
-> \DataExchange\SIFUK20\Models\NonTeachingActivitys getNonTeachingActivitys($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\NonTeachingActivitys getNonTeachingActivitys($zone_id, $navigation_page_size, $navigation_page)
 
 Return all NonTeachingActivitys
 
@@ -9013,11 +9013,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getNonTeachingActivitys($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getNonTeachingActivitys($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getNonTeachingActivitys: ', $e->getMessage(), PHP_EOL;
@@ -9030,8 +9030,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9097,7 +9097,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPersonDietaryPreferences**
-> \DataExchange\SIFUK20\Models\PersonDietaryPreferences getPersonDietaryPreferences($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\PersonDietaryPreferences getPersonDietaryPreferences($zone_id, $navigation_page_size, $navigation_page)
 
 Return all PersonDietaryPreferences
 
@@ -9113,11 +9113,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getPersonDietaryPreferences($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getPersonDietaryPreferences($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getPersonDietaryPreferences: ', $e->getMessage(), PHP_EOL;
@@ -9130,8 +9130,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9149,7 +9149,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPersonPictures**
-> \DataExchange\SIFUK20\Models\PersonPictures getPersonPictures($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\PersonPictures getPersonPictures($zone_id, $navigation_page_size, $navigation_page)
 
 Return all PersonPictures
 
@@ -9165,11 +9165,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getPersonPictures($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getPersonPictures($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getPersonPictures: ', $e->getMessage(), PHP_EOL;
@@ -9182,8 +9182,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9249,7 +9249,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolDiaryEntrys**
-> \DataExchange\SIFUK20\Models\SchoolDiaryEntrys getSchoolDiaryEntrys($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\SchoolDiaryEntrys getSchoolDiaryEntrys($zone_id, $navigation_page_size, $navigation_page)
 
 Return all SchoolDiaryEntrys
 
@@ -9265,11 +9265,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getSchoolDiaryEntrys($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getSchoolDiaryEntrys($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getSchoolDiaryEntrys: ', $e->getMessage(), PHP_EOL;
@@ -9282,8 +9282,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9397,7 +9397,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolGroupTypes**
-> \DataExchange\SIFUK20\Models\SchoolGroupTypes getSchoolGroupTypes($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\SchoolGroupTypes getSchoolGroupTypes($zone_id, $navigation_page_size, $navigation_page)
 
 Return all SchoolGroupTypes
 
@@ -9413,11 +9413,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getSchoolGroupTypes($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getSchoolGroupTypes($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getSchoolGroupTypes: ', $e->getMessage(), PHP_EOL;
@@ -9430,8 +9430,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9449,7 +9449,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolGroups**
-> \DataExchange\SIFUK20\Models\SchoolGroups getSchoolGroups($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\SchoolGroups getSchoolGroups($zone_id, $navigation_page_size, $navigation_page)
 
 Return all SchoolGroups
 
@@ -9465,11 +9465,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getSchoolGroups($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getSchoolGroups($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getSchoolGroups: ', $e->getMessage(), PHP_EOL;
@@ -9482,8 +9482,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9549,7 +9549,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSchoolInfos**
-> \DataExchange\SIFUK20\Models\SchoolInfos getSchoolInfos($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\SchoolInfos getSchoolInfos($zone_id, $navigation_page_size, $navigation_page)
 
 Return all SchoolInfos
 
@@ -9565,11 +9565,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getSchoolInfos($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getSchoolInfos($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getSchoolInfos: ', $e->getMessage(), PHP_EOL;
@@ -9582,8 +9582,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9649,7 +9649,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getScopes**
-> \DataExchange\SIFUK20\Models\Scopes getScopes($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\Scopes getScopes($zone_id, $navigation_page_size, $navigation_page)
 
 Return all Scopes
 
@@ -9665,11 +9665,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getScopes($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getScopes($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getScopes: ', $e->getMessage(), PHP_EOL;
@@ -9682,8 +9682,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9749,7 +9749,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTRooms**
-> \DataExchange\SIFUK20\Models\TTRooms getTTRooms($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTRooms getTTRooms($zone_id, $navigation_page_size, $navigation_page)
 
 Return all TTRooms
 
@@ -9765,11 +9765,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getTTRooms($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getTTRooms($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getTTRooms: ', $e->getMessage(), PHP_EOL;
@@ -9782,8 +9782,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9849,7 +9849,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTSites**
-> \DataExchange\SIFUK20\Models\TTSites getTTSites($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTSites getTTSites($zone_id, $navigation_page_size, $navigation_page)
 
 Return all TTSites
 
@@ -9865,11 +9865,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getTTSites($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getTTSites($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getTTSites: ', $e->getMessage(), PHP_EOL;
@@ -9882,8 +9882,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -9949,7 +9949,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTSubjects**
-> \DataExchange\SIFUK20\Models\TTSubjects getTTSubjects($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTSubjects getTTSubjects($zone_id, $navigation_page_size, $navigation_page)
 
 Return all TTSubjects
 
@@ -9965,11 +9965,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getTTSubjects($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getTTSubjects($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getTTSubjects: ', $e->getMessage(), PHP_EOL;
@@ -9982,8 +9982,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -10049,7 +10049,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTTTeachers**
-> \DataExchange\SIFUK20\Models\TTTeachers getTTTeachers($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TTTeachers getTTTeachers($zone_id, $navigation_page_size, $navigation_page)
 
 Return all TTTeachers
 
@@ -10065,11 +10065,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getTTTeachers($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getTTTeachers($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getTTTeachers: ', $e->getMessage(), PHP_EOL;
@@ -10082,8 +10082,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -10149,7 +10149,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTeachingGroups**
-> \DataExchange\SIFUK20\Models\TeachingGroups getTeachingGroups($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TeachingGroups getTeachingGroups($zone_id, $navigation_page_size, $navigation_page)
 
 Return all TeachingGroups
 
@@ -10165,11 +10165,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getTeachingGroups($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getTeachingGroups($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getTeachingGroups: ', $e->getMessage(), PHP_EOL;
@@ -10182,8 +10182,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -10249,7 +10249,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTermInfos**
-> \DataExchange\SIFUK20\Models\TermInfos getTermInfos($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\TermInfos getTermInfos($zone_id, $navigation_page_size, $navigation_page)
 
 Return all TermInfos
 
@@ -10265,11 +10265,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getTermInfos($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getTermInfos($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getTermInfos: ', $e->getMessage(), PHP_EOL;
@@ -10282,8 +10282,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -10349,7 +10349,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceAbsences**
-> \DataExchange\SIFUK20\Models\WorkforceAbsences getWorkforceAbsences($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforceAbsences getWorkforceAbsences($zone_id, $navigation_page_size, $navigation_page)
 
 Return all WorkforceAbsences
 
@@ -10365,11 +10365,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getWorkforceAbsences($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getWorkforceAbsences($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getWorkforceAbsences: ', $e->getMessage(), PHP_EOL;
@@ -10382,8 +10382,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -10449,7 +10449,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceAssignments**
-> \DataExchange\SIFUK20\Models\WorkforceAssignments getWorkforceAssignments($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforceAssignments getWorkforceAssignments($zone_id, $navigation_page_size, $navigation_page)
 
 Return all WorkforceAssignments
 
@@ -10465,11 +10465,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getWorkforceAssignments($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getWorkforceAssignments($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getWorkforceAssignments: ', $e->getMessage(), PHP_EOL;
@@ -10482,8 +10482,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -10549,7 +10549,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforceContracts**
-> \DataExchange\SIFUK20\Models\WorkforceContracts getWorkforceContracts($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforceContracts getWorkforceContracts($zone_id, $navigation_page_size, $navigation_page)
 
 Return all WorkforceContracts
 
@@ -10565,11 +10565,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getWorkforceContracts($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getWorkforceContracts($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getWorkforceContracts: ', $e->getMessage(), PHP_EOL;
@@ -10582,8 +10582,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 
@@ -10649,7 +10649,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWorkforcePersonals**
-> \DataExchange\SIFUK20\Models\WorkforcePersonals getWorkforcePersonals($zone_id, $navigation_page, $navigation_page_size)
+> \DataExchange\SIFUK20\Models\WorkforcePersonals getWorkforcePersonals($zone_id, $navigation_page_size, $navigation_page)
 
 Return all WorkforcePersonals
 
@@ -10665,11 +10665,11 @@ DataExchange\SIFUK20\Configuration::getDefaultConfiguration()->setApiKey('Author
 
 $api_instance = new DataExchange\SIFUK20\Api\DataExchangeApi();
 $zone_id = "zone_id_example"; // string | The id of the zone to request data from.
-$navigation_page = 1; // int | Page to retrieve.
 $navigation_page_size = 50; // int | Number of resources to retrieve.
+$navigation_page = 1; // int | Page to retrieve.
 
 try {
-    $result = $api_instance->getWorkforcePersonals($zone_id, $navigation_page, $navigation_page_size);
+    $result = $api_instance->getWorkforcePersonals($zone_id, $navigation_page_size, $navigation_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DataExchangeApi->getWorkforcePersonals: ', $e->getMessage(), PHP_EOL;
@@ -10682,8 +10682,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
 
 ### Return type
 

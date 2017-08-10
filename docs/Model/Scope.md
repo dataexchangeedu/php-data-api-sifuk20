@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **ref_id** | **string** | Unique GUID for this Timetable transfer | 
 **tt_scope_name** | **string** |  | 
 **supplier_name** | **string** |  | 
-**supplier_url** | **string** | A URL to a page on the supplierâ€™s website that gives information about the transfer and/or contact details for the supplier. | [optional] 
+**supplier_url** | **string** | A URL to a page on the supplier’s website that gives information about the transfer and/or contact details for the supplier. | [optional] 
 **product** | **string** |  | 
 **version** | **string** |  | 
 **school_info_ref_id** | **string** | The unique school ID, taken from the existing SchoolInfo object (requested from ZIS) | 

@@ -356,7 +356,7 @@ class Scope implements ArrayAccess
 
     /**
      * Sets supplier_url
-     * @param string $supplier_url A URL to a page on the supplierâ€™s website that gives information about the transfer and/or contact details for the supplier.
+     * @param string $supplier_url A URL to a page on the supplier’s website that gives information about the transfer and/or contact details for the supplier.
      * @return $this
      */
     public function setSupplierUrl($supplier_url)

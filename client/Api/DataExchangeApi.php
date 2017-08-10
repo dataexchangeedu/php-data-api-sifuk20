@@ -12147,14 +12147,14 @@ class DataExchangeApi
      * Return all AssessmentLearnerSets
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentLearnerSets
      */
-    public function getAssessmentLearnerSets($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentLearnerSets($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getAssessmentLearnerSetsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentLearnerSetsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -12164,13 +12164,17 @@ class DataExchangeApi
      * Return all AssessmentLearnerSets
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentLearnerSets, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentLearnerSetsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentLearnerSetsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getAssessmentLearnerSets');
+        }
         // parse inputs
         $resourcePath = "/AssessmentLearnerSets";
         $httpBody = '';
@@ -12183,17 +12187,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -12433,14 +12437,14 @@ class DataExchangeApi
      * Return all AssessmentResponseComponentGroups
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups
      */
-    public function getAssessmentResponseComponentGroups($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResponseComponentGroups($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getAssessmentResponseComponentGroupsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResponseComponentGroupsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -12450,13 +12454,17 @@ class DataExchangeApi
      * Return all AssessmentResponseComponentGroups
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResponseComponentGroups, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResponseComponentGroupsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResponseComponentGroupsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getAssessmentResponseComponentGroups');
+        }
         // parse inputs
         $resourcePath = "/AssessmentResponseComponentGroups";
         $httpBody = '';
@@ -12469,17 +12477,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -12531,14 +12539,14 @@ class DataExchangeApi
      * Return all AssessmentResponseComponents
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResponseComponents
      */
-    public function getAssessmentResponseComponents($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResponseComponents($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getAssessmentResponseComponentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResponseComponentsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -12548,13 +12556,17 @@ class DataExchangeApi
      * Return all AssessmentResponseComponents
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResponseComponents, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResponseComponentsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResponseComponentsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getAssessmentResponseComponents');
+        }
         // parse inputs
         $resourcePath = "/AssessmentResponseComponents";
         $httpBody = '';
@@ -12567,17 +12579,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -12817,14 +12829,14 @@ class DataExchangeApi
      * Return all AssessmentResultComponentGroups
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups
      */
-    public function getAssessmentResultComponentGroups($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultComponentGroups($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getAssessmentResultComponentGroupsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResultComponentGroupsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -12834,13 +12846,17 @@ class DataExchangeApi
      * Return all AssessmentResultComponentGroups
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResultComponentGroups, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResultComponentGroupsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultComponentGroupsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getAssessmentResultComponentGroups');
+        }
         // parse inputs
         $resourcePath = "/AssessmentResultComponentGroups";
         $httpBody = '';
@@ -12853,17 +12869,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -12915,14 +12931,14 @@ class DataExchangeApi
      * Return all AssessmentResultComponents
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResultComponents
      */
-    public function getAssessmentResultComponents($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultComponents($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getAssessmentResultComponentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResultComponentsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -12932,13 +12948,17 @@ class DataExchangeApi
      * Return all AssessmentResultComponents
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResultComponents, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResultComponentsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultComponentsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getAssessmentResultComponents');
+        }
         // parse inputs
         $resourcePath = "/AssessmentResultComponents";
         $httpBody = '';
@@ -12951,17 +12971,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -13107,14 +13127,14 @@ class DataExchangeApi
      * Return all AssessmentResultGradeSets
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentResultGradeSets
      */
-    public function getAssessmentResultGradeSets($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultGradeSets($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getAssessmentResultGradeSetsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentResultGradeSetsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -13124,13 +13144,17 @@ class DataExchangeApi
      * Return all AssessmentResultGradeSets
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentResultGradeSets, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentResultGradeSetsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentResultGradeSetsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getAssessmentResultGradeSets');
+        }
         // parse inputs
         $resourcePath = "/AssessmentResultGradeSets";
         $httpBody = '';
@@ -13143,17 +13167,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -13299,14 +13323,14 @@ class DataExchangeApi
      * Return all AssessmentSessions
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\AssessmentSessions
      */
-    public function getAssessmentSessions($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentSessions($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getAssessmentSessionsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getAssessmentSessionsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -13316,13 +13340,17 @@ class DataExchangeApi
      * Return all AssessmentSessions
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\AssessmentSessions, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getAssessmentSessionsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getAssessmentSessionsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getAssessmentSessions');
+        }
         // parse inputs
         $resourcePath = "/AssessmentSessions";
         $httpBody = '';
@@ -13335,17 +13363,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -13491,14 +13519,14 @@ class DataExchangeApi
      * Return all ContactPersonals
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\ContactPersonals
      */
-    public function getContactPersonals($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getContactPersonals($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getContactPersonalsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getContactPersonalsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -13508,13 +13536,17 @@ class DataExchangeApi
      * Return all ContactPersonals
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\ContactPersonals, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getContactPersonalsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getContactPersonalsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getContactPersonals');
+        }
         // parse inputs
         $resourcePath = "/ContactPersonals";
         $httpBody = '';
@@ -13527,17 +13559,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -13683,14 +13715,14 @@ class DataExchangeApi
      * Return all Cycles
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\Cycles
      */
-    public function getCycles($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getCycles($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getCyclesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getCyclesWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -13700,13 +13732,17 @@ class DataExchangeApi
      * Return all Cycles
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\Cycles, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getCyclesWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getCyclesWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getCycles');
+        }
         // parse inputs
         $resourcePath = "/Cycles";
         $httpBody = '';
@@ -13719,17 +13755,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -13875,14 +13911,14 @@ class DataExchangeApi
      * Return all Identitys
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\Identitys
      */
-    public function getIdentitys($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getIdentitys($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getIdentitysWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getIdentitysWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -13892,13 +13928,17 @@ class DataExchangeApi
      * Return all Identitys
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\Identitys, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getIdentitysWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getIdentitysWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getIdentitys');
+        }
         // parse inputs
         $resourcePath = "/Identitys";
         $httpBody = '';
@@ -13911,17 +13951,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -14067,14 +14107,14 @@ class DataExchangeApi
      * Return all Junctions
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\Junctions
      */
-    public function getJunctions($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getJunctions($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getJunctionsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getJunctionsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -14084,13 +14124,17 @@ class DataExchangeApi
      * Return all Junctions
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\Junctions, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getJunctionsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getJunctionsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getJunctions');
+        }
         // parse inputs
         $resourcePath = "/Junctions";
         $httpBody = '';
@@ -14103,17 +14147,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -14259,14 +14303,14 @@ class DataExchangeApi
      * Return all LAInfos
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LAInfos
      */
-    public function getLAInfos($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLAInfos($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLAInfosWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLAInfosWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -14276,13 +14320,17 @@ class DataExchangeApi
      * Return all LAInfos
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LAInfos, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLAInfosWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLAInfosWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLAInfos');
+        }
         // parse inputs
         $resourcePath = "/LAInfos";
         $httpBody = '';
@@ -14295,17 +14343,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -14451,14 +14499,14 @@ class DataExchangeApi
      * Return all LearnerAssessmentResponseSets
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets
      */
-    public function getLearnerAssessmentResponseSets($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResponseSets($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerAssessmentResponseSetsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAssessmentResponseSetsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -14468,13 +14516,17 @@ class DataExchangeApi
      * Return all LearnerAssessmentResponseSets
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAssessmentResponseSets, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAssessmentResponseSetsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResponseSetsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerAssessmentResponseSets');
+        }
         // parse inputs
         $resourcePath = "/LearnerAssessmentResponseSets";
         $httpBody = '';
@@ -14487,17 +14539,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -14643,14 +14695,14 @@ class DataExchangeApi
      * Return all LearnerAssessmentResults
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAssessmentResults
      */
-    public function getLearnerAssessmentResults($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResults($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerAssessmentResultsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAssessmentResultsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -14660,13 +14712,17 @@ class DataExchangeApi
      * Return all LearnerAssessmentResults
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAssessmentResults, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAssessmentResultsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAssessmentResultsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerAssessmentResults');
+        }
         // parse inputs
         $resourcePath = "/LearnerAssessmentResults";
         $httpBody = '';
@@ -14679,17 +14735,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -14929,14 +14985,14 @@ class DataExchangeApi
      * Return all LearnerAttendanceSummarys
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys
      */
-    public function getLearnerAttendanceSummarys($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendanceSummarys($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerAttendanceSummarysWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAttendanceSummarysWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -14946,13 +15002,17 @@ class DataExchangeApi
      * Return all LearnerAttendanceSummarys
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAttendanceSummarys, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAttendanceSummarysWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendanceSummarysWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerAttendanceSummarys');
+        }
         // parse inputs
         $resourcePath = "/LearnerAttendanceSummarys";
         $httpBody = '';
@@ -14965,17 +15025,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -15027,14 +15087,14 @@ class DataExchangeApi
      * Return all LearnerAttendances
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerAttendances
      */
-    public function getLearnerAttendances($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendances($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerAttendancesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerAttendancesWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -15044,13 +15104,17 @@ class DataExchangeApi
      * Return all LearnerAttendances
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerAttendances, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerAttendancesWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerAttendancesWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerAttendances');
+        }
         // parse inputs
         $resourcePath = "/LearnerAttendances";
         $httpBody = '';
@@ -15063,17 +15127,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -15219,14 +15283,14 @@ class DataExchangeApi
      * Return all LearnerBehaviourIncidents
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents
      */
-    public function getLearnerBehaviourIncidents($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerBehaviourIncidents($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerBehaviourIncidentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerBehaviourIncidentsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -15236,13 +15300,17 @@ class DataExchangeApi
      * Return all LearnerBehaviourIncidents
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerBehaviourIncidents, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerBehaviourIncidentsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerBehaviourIncidentsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerBehaviourIncidents');
+        }
         // parse inputs
         $resourcePath = "/LearnerBehaviourIncidents";
         $httpBody = '';
@@ -15255,17 +15323,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -15411,14 +15479,14 @@ class DataExchangeApi
      * Return all LearnerContacts
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerContacts
      */
-    public function getLearnerContacts($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerContacts($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerContactsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerContactsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -15428,13 +15496,17 @@ class DataExchangeApi
      * Return all LearnerContacts
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerContacts, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerContactsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerContactsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerContacts');
+        }
         // parse inputs
         $resourcePath = "/LearnerContacts";
         $httpBody = '';
@@ -15447,17 +15519,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -15603,14 +15675,14 @@ class DataExchangeApi
      * Return all LearnerEntitlements
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerEntitlements
      */
-    public function getLearnerEntitlements($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerEntitlements($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerEntitlementsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerEntitlementsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -15620,13 +15692,17 @@ class DataExchangeApi
      * Return all LearnerEntitlements
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerEntitlements, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerEntitlementsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerEntitlementsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerEntitlements');
+        }
         // parse inputs
         $resourcePath = "/LearnerEntitlements";
         $httpBody = '';
@@ -15639,17 +15715,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -15795,14 +15871,14 @@ class DataExchangeApi
      * Return all LearnerExclusions
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerExclusions
      */
-    public function getLearnerExclusions($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerExclusions($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerExclusionsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerExclusionsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -15812,13 +15888,17 @@ class DataExchangeApi
      * Return all LearnerExclusions
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerExclusions, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerExclusionsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerExclusionsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerExclusions');
+        }
         // parse inputs
         $resourcePath = "/LearnerExclusions";
         $httpBody = '';
@@ -15831,17 +15911,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -15987,14 +16067,14 @@ class DataExchangeApi
      * Return all LearnerGroupEnrolments
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerGroupEnrolments
      */
-    public function getLearnerGroupEnrolments($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerGroupEnrolments($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerGroupEnrolmentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerGroupEnrolmentsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -16004,13 +16084,17 @@ class DataExchangeApi
      * Return all LearnerGroupEnrolments
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerGroupEnrolments, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerGroupEnrolmentsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerGroupEnrolmentsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerGroupEnrolments');
+        }
         // parse inputs
         $resourcePath = "/LearnerGroupEnrolments";
         $httpBody = '';
@@ -16023,17 +16107,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -16179,14 +16263,14 @@ class DataExchangeApi
      * Return all LearnerPersonals
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerPersonals
      */
-    public function getLearnerPersonals($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerPersonals($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerPersonalsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerPersonalsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -16196,13 +16280,17 @@ class DataExchangeApi
      * Return all LearnerPersonals
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerPersonals, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerPersonalsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerPersonalsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerPersonals');
+        }
         // parse inputs
         $resourcePath = "/LearnerPersonals";
         $httpBody = '';
@@ -16215,17 +16303,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -16371,14 +16459,14 @@ class DataExchangeApi
      * Return all LearnerSchoolEnrolments
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments
      */
-    public function getLearnerSchoolEnrolments($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerSchoolEnrolments($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerSchoolEnrolmentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerSchoolEnrolmentsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -16388,13 +16476,17 @@ class DataExchangeApi
      * Return all LearnerSchoolEnrolments
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerSchoolEnrolments, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerSchoolEnrolmentsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerSchoolEnrolmentsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerSchoolEnrolments');
+        }
         // parse inputs
         $resourcePath = "/LearnerSchoolEnrolments";
         $httpBody = '';
@@ -16407,17 +16499,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -16563,14 +16655,14 @@ class DataExchangeApi
      * Return all LearnerSpecialNeedss
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\LearnerSpecialNeedss
      */
-    public function getLearnerSpecialNeedss($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerSpecialNeedss($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLearnerSpecialNeedssWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLearnerSpecialNeedssWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -16580,13 +16672,17 @@ class DataExchangeApi
      * Return all LearnerSpecialNeedss
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\LearnerSpecialNeedss, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLearnerSpecialNeedssWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLearnerSpecialNeedssWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLearnerSpecialNeedss');
+        }
         // parse inputs
         $resourcePath = "/LearnerSpecialNeedss";
         $httpBody = '';
@@ -16599,17 +16695,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -16755,14 +16851,14 @@ class DataExchangeApi
      * Return all Lessons
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\Lessons
      */
-    public function getLessons($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLessons($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getLessonsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getLessonsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -16772,13 +16868,17 @@ class DataExchangeApi
      * Return all Lessons
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\Lessons, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getLessonsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getLessonsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getLessons');
+        }
         // parse inputs
         $resourcePath = "/Lessons";
         $httpBody = '';
@@ -16791,17 +16891,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -16947,14 +17047,14 @@ class DataExchangeApi
      * Return all NonTeachingActivitys
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\NonTeachingActivitys
      */
-    public function getNonTeachingActivitys($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getNonTeachingActivitys($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getNonTeachingActivitysWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getNonTeachingActivitysWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -16964,13 +17064,17 @@ class DataExchangeApi
      * Return all NonTeachingActivitys
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\NonTeachingActivitys, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getNonTeachingActivitysWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getNonTeachingActivitysWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getNonTeachingActivitys');
+        }
         // parse inputs
         $resourcePath = "/NonTeachingActivitys";
         $httpBody = '';
@@ -16983,17 +17087,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -17139,14 +17243,14 @@ class DataExchangeApi
      * Return all PersonDietaryPreferences
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\PersonDietaryPreferences
      */
-    public function getPersonDietaryPreferences($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getPersonDietaryPreferences($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getPersonDietaryPreferencesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getPersonDietaryPreferencesWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -17156,13 +17260,17 @@ class DataExchangeApi
      * Return all PersonDietaryPreferences
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\PersonDietaryPreferences, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getPersonDietaryPreferencesWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getPersonDietaryPreferencesWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getPersonDietaryPreferences');
+        }
         // parse inputs
         $resourcePath = "/PersonDietaryPreferences";
         $httpBody = '';
@@ -17175,17 +17283,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -17237,14 +17345,14 @@ class DataExchangeApi
      * Return all PersonPictures
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\PersonPictures
      */
-    public function getPersonPictures($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getPersonPictures($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getPersonPicturesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getPersonPicturesWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -17254,13 +17362,17 @@ class DataExchangeApi
      * Return all PersonPictures
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\PersonPictures, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getPersonPicturesWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getPersonPicturesWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getPersonPictures');
+        }
         // parse inputs
         $resourcePath = "/PersonPictures";
         $httpBody = '';
@@ -17273,17 +17385,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -17429,14 +17541,14 @@ class DataExchangeApi
      * Return all SchoolDiaryEntrys
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\SchoolDiaryEntrys
      */
-    public function getSchoolDiaryEntrys($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolDiaryEntrys($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getSchoolDiaryEntrysWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getSchoolDiaryEntrysWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -17446,13 +17558,17 @@ class DataExchangeApi
      * Return all SchoolDiaryEntrys
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\SchoolDiaryEntrys, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getSchoolDiaryEntrysWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolDiaryEntrysWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getSchoolDiaryEntrys');
+        }
         // parse inputs
         $resourcePath = "/SchoolDiaryEntrys";
         $httpBody = '';
@@ -17465,17 +17581,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -17715,14 +17831,14 @@ class DataExchangeApi
      * Return all SchoolGroupTypes
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\SchoolGroupTypes
      */
-    public function getSchoolGroupTypes($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolGroupTypes($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getSchoolGroupTypesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getSchoolGroupTypesWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -17732,13 +17848,17 @@ class DataExchangeApi
      * Return all SchoolGroupTypes
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\SchoolGroupTypes, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getSchoolGroupTypesWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolGroupTypesWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getSchoolGroupTypes');
+        }
         // parse inputs
         $resourcePath = "/SchoolGroupTypes";
         $httpBody = '';
@@ -17751,17 +17871,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -17813,14 +17933,14 @@ class DataExchangeApi
      * Return all SchoolGroups
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\SchoolGroups
      */
-    public function getSchoolGroups($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolGroups($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getSchoolGroupsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getSchoolGroupsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -17830,13 +17950,17 @@ class DataExchangeApi
      * Return all SchoolGroups
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\SchoolGroups, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getSchoolGroupsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolGroupsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getSchoolGroups');
+        }
         // parse inputs
         $resourcePath = "/SchoolGroups";
         $httpBody = '';
@@ -17849,17 +17973,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -18005,14 +18129,14 @@ class DataExchangeApi
      * Return all SchoolInfos
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\SchoolInfos
      */
-    public function getSchoolInfos($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolInfos($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getSchoolInfosWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getSchoolInfosWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -18022,13 +18146,17 @@ class DataExchangeApi
      * Return all SchoolInfos
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\SchoolInfos, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getSchoolInfosWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getSchoolInfosWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getSchoolInfos');
+        }
         // parse inputs
         $resourcePath = "/SchoolInfos";
         $httpBody = '';
@@ -18041,17 +18169,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -18197,14 +18325,14 @@ class DataExchangeApi
      * Return all Scopes
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\Scopes
      */
-    public function getScopes($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getScopes($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getScopesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getScopesWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -18214,13 +18342,17 @@ class DataExchangeApi
      * Return all Scopes
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\Scopes, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getScopesWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getScopesWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getScopes');
+        }
         // parse inputs
         $resourcePath = "/Scopes";
         $httpBody = '';
@@ -18233,17 +18365,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -18389,14 +18521,14 @@ class DataExchangeApi
      * Return all TTRooms
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TTRooms
      */
-    public function getTTRooms($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTTRooms($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getTTRoomsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTTRoomsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -18406,13 +18538,17 @@ class DataExchangeApi
      * Return all TTRooms
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TTRooms, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTTRoomsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTTRoomsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getTTRooms');
+        }
         // parse inputs
         $resourcePath = "/TTRooms";
         $httpBody = '';
@@ -18425,17 +18561,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -18581,14 +18717,14 @@ class DataExchangeApi
      * Return all TTSites
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TTSites
      */
-    public function getTTSites($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTTSites($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getTTSitesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTTSitesWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -18598,13 +18734,17 @@ class DataExchangeApi
      * Return all TTSites
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TTSites, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTTSitesWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTTSitesWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getTTSites');
+        }
         // parse inputs
         $resourcePath = "/TTSites";
         $httpBody = '';
@@ -18617,17 +18757,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -18773,14 +18913,14 @@ class DataExchangeApi
      * Return all TTSubjects
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TTSubjects
      */
-    public function getTTSubjects($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTTSubjects($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getTTSubjectsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTTSubjectsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -18790,13 +18930,17 @@ class DataExchangeApi
      * Return all TTSubjects
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TTSubjects, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTTSubjectsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTTSubjectsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getTTSubjects');
+        }
         // parse inputs
         $resourcePath = "/TTSubjects";
         $httpBody = '';
@@ -18809,17 +18953,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -18965,14 +19109,14 @@ class DataExchangeApi
      * Return all TTTeachers
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TTTeachers
      */
-    public function getTTTeachers($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTTTeachers($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getTTTeachersWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTTTeachersWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -18982,13 +19126,17 @@ class DataExchangeApi
      * Return all TTTeachers
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TTTeachers, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTTTeachersWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTTTeachersWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getTTTeachers');
+        }
         // parse inputs
         $resourcePath = "/TTTeachers";
         $httpBody = '';
@@ -19001,17 +19149,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -19157,14 +19305,14 @@ class DataExchangeApi
      * Return all TeachingGroups
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TeachingGroups
      */
-    public function getTeachingGroups($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTeachingGroups($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getTeachingGroupsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTeachingGroupsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -19174,13 +19322,17 @@ class DataExchangeApi
      * Return all TeachingGroups
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TeachingGroups, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTeachingGroupsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTeachingGroupsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getTeachingGroups');
+        }
         // parse inputs
         $resourcePath = "/TeachingGroups";
         $httpBody = '';
@@ -19193,17 +19345,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -19349,14 +19501,14 @@ class DataExchangeApi
      * Return all TermInfos
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\TermInfos
      */
-    public function getTermInfos($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTermInfos($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getTermInfosWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getTermInfosWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -19366,13 +19518,17 @@ class DataExchangeApi
      * Return all TermInfos
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\TermInfos, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getTermInfosWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getTermInfosWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getTermInfos');
+        }
         // parse inputs
         $resourcePath = "/TermInfos";
         $httpBody = '';
@@ -19385,17 +19541,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -19541,14 +19697,14 @@ class DataExchangeApi
      * Return all WorkforceAbsences
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\WorkforceAbsences
      */
-    public function getWorkforceAbsences($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceAbsences($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getWorkforceAbsencesWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getWorkforceAbsencesWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -19558,13 +19714,17 @@ class DataExchangeApi
      * Return all WorkforceAbsences
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\WorkforceAbsences, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getWorkforceAbsencesWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceAbsencesWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getWorkforceAbsences');
+        }
         // parse inputs
         $resourcePath = "/WorkforceAbsences";
         $httpBody = '';
@@ -19577,17 +19737,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -19733,14 +19893,14 @@ class DataExchangeApi
      * Return all WorkforceAssignments
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\WorkforceAssignments
      */
-    public function getWorkforceAssignments($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceAssignments($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getWorkforceAssignmentsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getWorkforceAssignmentsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -19750,13 +19910,17 @@ class DataExchangeApi
      * Return all WorkforceAssignments
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\WorkforceAssignments, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getWorkforceAssignmentsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceAssignmentsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getWorkforceAssignments');
+        }
         // parse inputs
         $resourcePath = "/WorkforceAssignments";
         $httpBody = '';
@@ -19769,17 +19933,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -19925,14 +20089,14 @@ class DataExchangeApi
      * Return all WorkforceContracts
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\WorkforceContracts
      */
-    public function getWorkforceContracts($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceContracts($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getWorkforceContractsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getWorkforceContractsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -19942,13 +20106,17 @@ class DataExchangeApi
      * Return all WorkforceContracts
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\WorkforceContracts, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getWorkforceContractsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforceContractsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getWorkforceContracts');
+        }
         // parse inputs
         $resourcePath = "/WorkforceContracts";
         $httpBody = '';
@@ -19961,17 +20129,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);
@@ -20117,14 +20285,14 @@ class DataExchangeApi
      * Return all WorkforcePersonals
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return \DataExchange\SIFUK20\Models\WorkforcePersonals
      */
-    public function getWorkforcePersonals($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforcePersonals($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
-        list($response) = $this->getWorkforcePersonalsWithHttpInfo($zone_id, $navigation_page, $navigation_page_size);
+        list($response) = $this->getWorkforcePersonalsWithHttpInfo($zone_id, $navigation_page_size, $navigation_page);
         return $response;
     }
 
@@ -20134,13 +20302,17 @@ class DataExchangeApi
      * Return all WorkforcePersonals
      *
      * @param string $zone_id The id of the zone to request data from. (optional)
+     * @param int $navigation_page_size Number of resources to retrieve. (required)
      * @param int $navigation_page Page to retrieve. (optional, default to 1)
-     * @param int $navigation_page_size Number of resources to retrieve. (optional, default to 50)
      * @throws \DataExchange\SIFUK20\ApiException on non-2xx response
      * @return array of \DataExchange\SIFUK20\Models\WorkforcePersonals, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getWorkforcePersonalsWithHttpInfo($zone_id = null, $navigation_page = null, $navigation_page_size = null)
+    public function getWorkforcePersonalsWithHttpInfo($zone_id = null, $navigation_page_size, $navigation_page = null)
     {
+        // verify the required parameter 'navigation_page_size' is set
+        if ($navigation_page_size === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $navigation_page_size when calling getWorkforcePersonals');
+        }
         // parse inputs
         $resourcePath = "/WorkforcePersonals";
         $httpBody = '';
@@ -20153,17 +20325,17 @@ class DataExchangeApi
         }
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/xml']);
 
-        // query params
-        if ($navigation_page !== null) {
-            $queryParams['navigationPage'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page);
-        }
-        // query params
-        if ($navigation_page_size !== null) {
-            $queryParams['navigationPageSize'] = $this->apiClient->getSerializer()->toQueryValue($navigation_page_size);
-        }
         // header params
         if ($zone_id !== null) {
             $headerParams['zoneId'] = $this->apiClient->getSerializer()->toHeaderValue($zone_id);
+        }
+        // header params
+        if ($navigation_page_size !== null) {
+            $headerParams['navigationPageSize'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page_size);
+        }
+        // header params
+        if ($navigation_page !== null) {
+            $headerParams['navigationPage'] = $this->apiClient->getSerializer()->toHeaderValue($navigation_page);
         }
         // default format to json
         $resourcePath = str_replace("{format}", "json", $resourcePath);

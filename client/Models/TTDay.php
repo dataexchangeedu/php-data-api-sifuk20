@@ -275,7 +275,7 @@ class TTDay implements ArrayAccess
 
     /**
      * Sets day_index
-     * @param int $day_index The dayâ€™s position in the cycle (1,2,3,etc).
+     * @param int $day_index The day’s position in the cycle (1,2,3,etc).
      * @return $this
      */
     public function setDayIndex($day_index)

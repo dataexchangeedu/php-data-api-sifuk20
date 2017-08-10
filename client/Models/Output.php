@@ -204,7 +204,7 @@ class Output implements ArrayAccess
 
     /**
      * Sets type
-     * @param string $type &quot;TG&quot; has special meaning â€“ it means this is the bottom of the &quot;tree&quot; and the output is a TeachingGroup. &quot;YR&quot; means a year (or &quot;principal division&quot;) within the school (7,8,9,etc).
+     * @param string $type &quot;TG&quot; has special meaning – it means this is the bottom of the &quot;tree&quot; and the output is a TeachingGroup. &quot;YR&quot; means a year (or &quot;principal division&quot;) within the school (7,8,9,etc).
      * @return $this
      */
     public function setType($type)
