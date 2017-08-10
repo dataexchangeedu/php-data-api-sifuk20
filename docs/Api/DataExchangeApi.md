@@ -6530,7 +6530,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -6678,7 +6678,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -6730,7 +6730,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -6878,7 +6878,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -6930,7 +6930,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7030,7 +7030,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7130,7 +7130,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7230,7 +7230,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7330,7 +7330,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7430,7 +7430,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7530,7 +7530,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7630,7 +7630,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7730,7 +7730,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7830,7 +7830,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -7978,7 +7978,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8030,7 +8030,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8130,7 +8130,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8230,7 +8230,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8330,7 +8330,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8430,7 +8430,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8530,7 +8530,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8630,7 +8630,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8730,7 +8730,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8830,7 +8830,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -8930,7 +8930,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9030,7 +9030,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9130,7 +9130,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9182,7 +9182,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9282,7 +9282,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9430,7 +9430,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9482,7 +9482,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9582,7 +9582,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9682,7 +9682,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9782,7 +9782,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9882,7 +9882,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -9982,7 +9982,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -10082,7 +10082,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -10182,7 +10182,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -10282,7 +10282,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -10382,7 +10382,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -10482,7 +10482,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -10582,7 +10582,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
@@ -10682,7 +10682,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **zone_id** | **string**| The id of the zone to request data from. | [optional]
- **navigation_page_size** | **int**| Number of resources to retrieve. | [default to 50]
+ **navigation_page_size** | **int**| Number of resources to retrieve. | [optional] [default to 50]
  **navigation_page** | **int**| Page to retrieve. | [optional] [default to 1]
 
 ### Return type
