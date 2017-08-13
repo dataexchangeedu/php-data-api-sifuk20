@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **group_name** | **string** | The name associated with this group for display purposes. | 
 **description** | **string** | A textual description. | [optional] 
 **parent_school_group_ref_id** | **string** | The parent group associated with this group, if any. | [optional] 
-**schedule_info_list** | [**\DataExchange\UK\20\Models\ScheduleInfo[]**](ScheduleInfo.md) |  | [optional] 
+**schedule_info_list** | [**\DataExchange\SIFUK20\Models\ScheduleInfo[]**](ScheduleInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

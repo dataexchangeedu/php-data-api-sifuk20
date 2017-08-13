@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **nt_code_ref** | **string** | If there is no TeachingGroupRefID (see NTCode) | [optional] 
 **teacher_list** | **string[]** |  | [optional] 
 **tt_room_ref_id** | **string** | The room (or location) where this lesson is taking place (see TTRoom) | [optional] 
-**sif_extended_elements** | [**\DataExchange\UK\20\Models\SIFExtendedElement2[]**](SIFExtendedElement2.md) | Allows an agent to include data not yet defined within a SIF data object as name/value pairs. | [optional] 
+**sif_extended_elements** | [**\DataExchange\SIFUK20\Models\SIFExtendedElement2[]**](SIFExtendedElement2.md) | Allows an agent to include data not yet defined within a SIF data object as name/value pairs. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -14,7 +14,7 @@
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./client</directory>
+            <directory suffix=".php">./client/Api</directory>
             <directory suffix=".php">./client/Models</directory>
         </whitelist>
     </filter>
